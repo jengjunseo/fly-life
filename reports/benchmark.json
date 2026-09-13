@@ -1,0 +1,458 @@
+{
+  "dataset": "male-cns:v1.0",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false
+  },
+  "model": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 2.0,
+    "baseline_current": 0.65,
+    "baseline_heterogeneity": 0.18,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "seed": 20260913,
+  "runtime_metadata_sha256": "dc88a9935ce0c4915d654046c620d8d4b21f54473c46e1db4f18f2f887a711c7",
+  "neuron_count": 165122,
+  "retained_connection_count": 6474533,
+  "effective_nonzero_connections": 6327564,
+  "neural_simulated_seconds": 10.0,
+  "simulation_wall_seconds": 99.43054029997438,
+  "neural_seconds_per_wall_second": 0.10057272111597464,
+  "wall_seconds_per_neural_second": 9.943054029997437,
+  "warmup_ms": 200.0,
+  "load_wall_seconds": 0.4008472000132315,
+  "total_spikes": 902590,
+  "mean_population_hz": 0.5466200748537445,
+  "bins": [
+    {
+      "end_ms": 100.0,
+      "spikes": 9077
+    },
+    {
+      "end_ms": 200.0,
+      "spikes": 9011
+    },
+    {
+      "end_ms": 300.0,
+      "spikes": 9024
+    },
+    {
+      "end_ms": 400.0,
+      "spikes": 8967
+    },
+    {
+      "end_ms": 500.0,
+      "spikes": 9078
+    },
+    {
+      "end_ms": 600.0,
+      "spikes": 9024
+    },
+    {
+      "end_ms": 700.0,
+      "spikes": 9043
+    },
+    {
+      "end_ms": 800.0,
+      "spikes": 9069
+    },
+    {
+      "end_ms": 900.0,
+      "spikes": 8990
+    },
+    {
+      "end_ms": 1000.0,
+      "spikes": 9066
+    },
+    {
+      "end_ms": 1100.0,
+      "spikes": 9020
+    },
+    {
+      "end_ms": 1200.0,
+      "spikes": 8992
+    },
+    {
+      "end_ms": 1300.0,
+      "spikes": 9029
+    },
+    {
+      "end_ms": 1400.0,
+      "spikes": 9067
+    },
+    {
+      "end_ms": 1500.0,
+      "spikes": 8985
+    },
+    {
+      "end_ms": 1600.0,
+      "spikes": 9060
+    },
+    {
+      "end_ms": 1700.0,
+      "spikes": 8928
+    },
+    {
+      "end_ms": 1800.0,
+      "spikes": 9115
+    },
+    {
+      "end_ms": 1900.0,
+      "spikes": 9030
+    },
+    {
+      "end_ms": 2000.0,
+      "spikes": 9010
+    },
+    {
+      "end_ms": 2100.0,
+      "spikes": 9016
+    },
+    {
+      "end_ms": 2200.0,
+      "spikes": 9006
+    },
+    {
+      "end_ms": 2300.0,
+      "spikes": 9021
+    },
+    {
+      "end_ms": 2400.0,
+      "spikes": 8966
+    },
+    {
+      "end_ms": 2500.0,
+      "spikes": 9008
+    },
+    {
+      "end_ms": 2600.0,
+      "spikes": 9024
+    },
+    {
+      "end_ms": 2700.0,
+      "spikes": 9059
+    },
+    {
+      "end_ms": 2800.0,
+      "spikes": 9024
+    },
+    {
+      "end_ms": 2900.0,
+      "spikes": 9017
+    },
+    {
+      "end_ms": 3000.0,
+      "spikes": 9056
+    },
+    {
+      "end_ms": 3100.0,
+      "spikes": 9025
+    },
+    {
+      "end_ms": 3200.0,
+      "spikes": 9065
+    },
+    {
+      "end_ms": 3300.0,
+      "spikes": 9029
+    },
+    {
+      "end_ms": 3400.0,
+      "spikes": 9046
+    },
+    {
+      "end_ms": 3500.0,
+      "spikes": 8946
+    },
+    {
+      "end_ms": 3600.0,
+      "spikes": 9058
+    },
+    {
+      "end_ms": 3700.0,
+      "spikes": 8973
+    },
+    {
+      "end_ms": 3800.0,
+      "spikes": 9022
+    },
+    {
+      "end_ms": 3900.0,
+      "spikes": 8994
+    },
+    {
+      "end_ms": 4000.0,
+      "spikes": 9006
+    },
+    {
+      "end_ms": 4100.0,
+      "spikes": 8991
+    },
+    {
+      "end_ms": 4200.0,
+      "spikes": 9094
+    },
+    {
+      "end_ms": 4300.0,
+      "spikes": 9023
+    },
+    {
+      "end_ms": 4400.0,
+      "spikes": 8967
+    },
+    {
+      "end_ms": 4500.0,
+      "spikes": 9076
+    },
+    {
+      "end_ms": 4600.0,
+      "spikes": 9042
+    },
+    {
+      "end_ms": 4700.0,
+      "spikes": 9002
+    },
+    {
+      "end_ms": 4800.0,
+      "spikes": 9068
+    },
+    {
+      "end_ms": 4900.0,
+      "spikes": 8972
+    },
+    {
+      "end_ms": 5000.0,
+      "spikes": 9031
+    },
+    {
+      "end_ms": 5100.0,
+      "spikes": 9052
+    },
+    {
+      "end_ms": 5200.0,
+      "spikes": 9026
+    },
+    {
+      "end_ms": 5300.0,
+      "spikes": 9031
+    },
+    {
+      "end_ms": 5400.0,
+      "spikes": 8968
+    },
+    {
+      "end_ms": 5500.0,
+      "spikes": 9030
+    },
+    {
+      "end_ms": 5600.0,
+      "spikes": 9000
+    },
+    {
+      "end_ms": 5700.0,
+      "spikes": 9056
+    },
+    {
+      "end_ms": 5800.0,
+      "spikes": 9042
+    },
+    {
+      "end_ms": 5900.0,
+      "spikes": 9038
+    },
+    {
+      "end_ms": 6000.0,
+      "spikes": 9013
+    },
+    {
+      "end_ms": 6100.0,
+      "spikes": 9007
+    },
+    {
+      "end_ms": 6200.0,
+      "spikes": 9053
+    },
+    {
+      "end_ms": 6300.0,
+      "spikes": 9014
+    },
+    {
+      "end_ms": 6400.0,
+      "spikes": 9046
+    },
+    {
+      "end_ms": 6500.0,
+      "spikes": 8964
+    },
+    {
+      "end_ms": 6600.0,
+      "spikes": 9082
+    },
+    {
+      "end_ms": 6700.0,
+      "spikes": 9025
+    },
+    {
+      "end_ms": 6800.0,
+      "spikes": 9030
+    },
+    {
+      "end_ms": 6900.0,
+      "spikes": 9028
+    },
+    {
+      "end_ms": 7000.0,
+      "spikes": 8991
+    },
+    {
+      "end_ms": 7100.0,
+      "spikes": 9081
+    },
+    {
+      "end_ms": 7200.0,
+      "spikes": 9006
+    },
+    {
+      "end_ms": 7300.0,
+      "spikes": 9002
+    },
+    {
+      "end_ms": 7400.0,
+      "spikes": 9046
+    },
+    {
+      "end_ms": 7500.0,
+      "spikes": 9063
+    },
+    {
+      "end_ms": 7600.0,
+      "spikes": 9045
+    },
+    {
+      "end_ms": 7700.0,
+      "spikes": 8928
+    },
+    {
+      "end_ms": 7800.0,
+      "spikes": 9084
+    },
+    {
+      "end_ms": 7900.0,
+      "spikes": 9072
+    },
+    {
+      "end_ms": 8000.0,
+      "spikes": 9023
+    },
+    {
+      "end_ms": 8100.0,
+      "spikes": 9024
+    },
+    {
+      "end_ms": 8200.0,
+      "spikes": 9033
+    },
+    {
+      "end_ms": 8300.0,
+      "spikes": 9031
+    },
+    {
+      "end_ms": 8400.0,
+      "spikes": 9046
+    },
+    {
+      "end_ms": 8500.0,
+      "spikes": 9028
+    },
+    {
+      "end_ms": 8600.0,
+      "spikes": 9017
+    },
+    {
+      "end_ms": 8700.0,
+      "spikes": 9022
+    },
+    {
+      "end_ms": 8800.0,
+      "spikes": 9069
+    },
+    {
+      "end_ms": 8900.0,
+      "spikes": 9035
+    },
+    {
+      "end_ms": 9000.0,
+      "spikes": 8861
+    },
+    {
+      "end_ms": 9100.0,
+      "spikes": 9081
+    },
+    {
+      "end_ms": 9200.0,
+      "spikes": 9120
+    },
+    {
+      "end_ms": 9300.0,
+      "spikes": 9043
+    },
+    {
+      "end_ms": 9400.0,
+      "spikes": 8938
+    },
+    {
+      "end_ms": 9500.0,
+      "spikes": 9111
+    },
+    {
+      "end_ms": 9600.0,
+      "spikes": 8929
+    },
+    {
+      "end_ms": 9700.0,
+      "spikes": 9048
+    },
+    {
+      "end_ms": 9800.0,
+      "spikes": 9062
+    },
+    {
+      "end_ms": 9900.0,
+      "spikes": 8993
+    },
+    {
+      "end_ms": 10000.0,
+      "spikes": 9041
+    }
+  ],
+  "finite_state": true,
+  "sparse_bytes": 51281004,
+  "resources": {
+    "wall_seconds": 101.776653500041,
+    "sampled_peak_rss_bytes": 325464064,
+    "os_process_peak_rss_bytes": 374579200,
+    "representative_rss_bytes": 321191936,
+    "minimum_available_system_ram_bytes": 4396216320,
+    "sampling_interval_seconds": 0.02
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "real_dataset": "male-cns:v1.0",
+  "python_socket_connect_and_dns_audit_guard": true,
+  "network_attempts": 0,
+  "entire_sanity_suite_passed": true,
+  "limitation": "Python socket audit guard, not physical disconnection of the entire machine."
+}

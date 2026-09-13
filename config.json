@@ -1,0 +1,42 @@
+{
+  "dataset": "male-cns:v1.0",
+  "preprocessing": {
+    "statuses": ["Traced"],
+    "weight_threshold": 5,
+    "protected_groups": ["looming", "escape", "steering", "courtship", "giant_fiber"]
+  },
+  "groups": {
+    "looming": {"types": ["LC4", "LPLC2"]},
+    "LC4": {"types": ["LC4"]},
+    "LPLC2": {"types": ["LPLC2"]},
+    "escape": {"types": ["MDN"]},
+    "steering": {"types": ["DNa01", "DNa02"]},
+    "courtship": {"type_regex": "^pC1"},
+    "giant_fiber": {"types": ["DNp01"]},
+    "food": {"bodyIds": []},
+    "temperature": {"bodyIds": []},
+    "pain": {"bodyIds": []}
+  },
+  "sign_policy": {
+    "field": "consensus_nt",
+    "signs": {"acetylcholine": 1, "gaba": -1, "glutamate": -1, "histamine": -1,
+      "dopamine": 0, "octopamine": 0, "serotonin": 0, "unclear": 0},
+    "unknown_sign": 0,
+    "normalization": "incoming absolute effective synapse count, minimum denominator 1"
+  },
+  "model": {
+    "dt_ms": 1.0, "tau_m_ms": 20.0, "tau_syn_ms": 5.0,
+    "threshold": 1.0, "reset": 0.0, "rest": 0.0,
+    "refractory_ms": 2.0, "recurrent_gain": 2.0,
+    "baseline_current": 0.65, "baseline_heterogeneity": 0.18,
+    "noise_std": 0.1, "activity_tau_ms": 50.0
+  },
+  "experiment": {
+    "seed": 20260913, "warmup_ms": 500.0,
+    "baseline_ms": 500.0, "stimulus_ms": 500.0, "recovery_ms": 500.0,
+    "input_group": "looming", "stimulus_current": 3.0,
+    "observe_groups": ["LC4", "LPLC2", "giant_fiber", "escape", "steering", "courtship"],
+    "bin_ms": 50.0
+  },
+  "benchmark": {"warmup_ms": 200.0, "duration_ms": 1000.0}
+}

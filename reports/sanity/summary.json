@@ -1,0 +1,244 @@
+{
+  "dataset": "male-cns:v1.0",
+  "config": {
+    "dataset": "male-cns:v1.0",
+    "preprocessing": {
+      "statuses": [
+        "Traced"
+      ],
+      "weight_threshold": 5,
+      "protected_groups": [
+        "looming",
+        "escape",
+        "steering",
+        "courtship",
+        "giant_fiber"
+      ]
+    },
+    "groups": {
+      "looming": {
+        "types": [
+          "LC4",
+          "LPLC2"
+        ]
+      },
+      "LC4": {
+        "types": [
+          "LC4"
+        ]
+      },
+      "LPLC2": {
+        "types": [
+          "LPLC2"
+        ]
+      },
+      "escape": {
+        "types": [
+          "MDN"
+        ]
+      },
+      "steering": {
+        "types": [
+          "DNa01",
+          "DNa02"
+        ]
+      },
+      "courtship": {
+        "type_regex": "^pC1"
+      },
+      "giant_fiber": {
+        "types": [
+          "DNp01"
+        ]
+      },
+      "food": {
+        "bodyIds": []
+      },
+      "temperature": {
+        "bodyIds": []
+      },
+      "pain": {
+        "bodyIds": []
+      }
+    },
+    "sign_policy": {
+      "field": "consensus_nt",
+      "signs": {
+        "acetylcholine": 1,
+        "gaba": -1,
+        "glutamate": -1,
+        "histamine": -1,
+        "dopamine": 0,
+        "octopamine": 0,
+        "serotonin": 0,
+        "unclear": 0
+      },
+      "unknown_sign": 0,
+      "normalization": "incoming absolute effective synapse count, minimum denominator 1"
+    },
+    "model": {
+      "dt_ms": 1.0,
+      "tau_m_ms": 20.0,
+      "tau_syn_ms": 5.0,
+      "threshold": 1.0,
+      "reset": 0.0,
+      "rest": 0.0,
+      "refractory_ms": 2.0,
+      "recurrent_gain": 2.0,
+      "baseline_current": 0.65,
+      "baseline_heterogeneity": 0.18,
+      "noise_std": 0.1,
+      "activity_tau_ms": 50.0
+    },
+    "experiment": {
+      "seed": 20260913,
+      "warmup_ms": 500.0,
+      "baseline_ms": 500.0,
+      "stimulus_ms": 500.0,
+      "recovery_ms": 500.0,
+      "input_group": "looming",
+      "stimulus_current": 3.0,
+      "observe_groups": [
+        "LC4",
+        "LPLC2",
+        "giant_fiber",
+        "escape",
+        "steering",
+        "courtship"
+      ],
+      "bin_ms": 50.0
+    },
+    "benchmark": {
+      "warmup_ms": 200.0,
+      "duration_ms": 1000.0
+    }
+  },
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "runtime_metadata_sha256": "dc88a9935ce0c4915d654046c620d8d4b21f54473c46e1db4f18f2f887a711c7",
+  "retained_neurons": 165122,
+  "real_input_count": 311,
+  "real_direct_downstream_count": 10620,
+  "replay_identical_spike_sequence": true,
+  "paired_baselines_identical": true,
+  "operating_regime_usable": true,
+  "usability_criteria": "Every post-warmup bin nonzero; finite state; mean population <100Hz; simultaneous spiking <25%. Engineering guardrails, not physiological targets.",
+  "downstream_synaptic_propagation": true,
+  "downstream_spike_rate_increase": true,
+  "paired_differences": {
+    "LC4": {
+      "stimulated_hz": 118.88888888888889,
+      "control_hz": 0.8571428571428571,
+      "ablated_hz": 116.11111111111111,
+      "stimulus_minus_control_hz": 118.03174603174602,
+      "stimulated_minus_ablated_synaptic_current": 0.09012775933045124
+    },
+    "LPLC2": {
+      "stimulated_hz": 120.19459459459459,
+      "control_hz": 0.7675675675675676,
+      "ablated_hz": 115.6,
+      "stimulus_minus_control_hz": 119.42702702702702,
+      "stimulated_minus_ablated_synaptic_current": 0.17667930097198406
+    },
+    "giant_fiber": {
+      "stimulated_hz": 25.0,
+      "control_hz": 9.0,
+      "ablated_hz": 9.0,
+      "stimulus_minus_control_hz": 16.0,
+      "stimulated_minus_ablated_synaptic_current": 0.40609310903266305
+    },
+    "escape": {
+      "stimulated_hz": 0.0,
+      "control_hz": 0.0,
+      "ablated_hz": 0.0,
+      "stimulus_minus_control_hz": 0.0,
+      "stimulated_minus_ablated_synaptic_current": 4.739893359510458e-05
+    },
+    "steering": {
+      "stimulated_hz": 0.0,
+      "control_hz": 0.0,
+      "ablated_hz": 0.0,
+      "stimulus_minus_control_hz": 0.0,
+      "stimulated_minus_ablated_synaptic_current": 0.0003960230039083399
+    },
+    "courtship": {
+      "stimulated_hz": 0.8846153846153846,
+      "control_hz": 0.8846153846153846,
+      "ablated_hz": 0.8846153846153846,
+      "stimulus_minus_control_hz": 0.0,
+      "stimulated_minus_ablated_synaptic_current": -0.0008928200329240781
+    },
+    "direct_downstream": {
+      "stimulated_hz": 0.8779661016949153,
+      "control_hz": 0.584180790960452,
+      "ablated_hz": 0.5839924670433145,
+      "stimulus_minus_control_hz": 0.29378531073446335,
+      "stimulated_minus_ablated_synaptic_current": 0.01454457692798178
+    }
+  },
+  "stimulus_baseline_difference_hz": 0.24258427102384905,
+  "trials": {
+    "control": {
+      "spike_sequence_sha256": "c65555dd7995fd034ec6f0df3ca49b7490cbd2f022ef32c49ff86d8aba35a023",
+      "resources": {
+        "wall_seconds": 22.371476500004064,
+        "sampled_peak_rss_bytes": 371662848,
+        "os_process_peak_rss_bytes": 418078720,
+        "representative_rss_bytes": 332312576,
+        "minimum_available_system_ram_bytes": 3815772160,
+        "sampling_interval_seconds": 0.02
+      }
+    },
+    "stimulated": {
+      "spike_sequence_sha256": "3eb5ec578f26a8975e099837e81418e5f92af6c93afb36d62629adde867dbcbc",
+      "resources": {
+        "wall_seconds": 22.20262419997016,
+        "sampled_peak_rss_bytes": 397746176,
+        "os_process_peak_rss_bytes": 445665280,
+        "representative_rss_bytes": 356560896,
+        "minimum_available_system_ram_bytes": 4469248000,
+        "sampling_interval_seconds": 0.02
+      }
+    },
+    "ablated": {
+      "spike_sequence_sha256": "8c2c78e91eda7680e25b8f0495e40f7a94f0876882d707562f111e7e46d39a5f",
+      "resources": {
+        "wall_seconds": 22.480517700023483,
+        "sampled_peak_rss_bytes": 479309824,
+        "os_process_peak_rss_bytes": 504664064,
+        "representative_rss_bytes": 371113984,
+        "minimum_available_system_ram_bytes": 4580085760,
+        "sampling_interval_seconds": 0.02
+      }
+    },
+    "replay": {
+      "spike_sequence_sha256": "3eb5ec578f26a8975e099837e81418e5f92af6c93afb36d62629adde867dbcbc",
+      "resources": {
+        "wall_seconds": 22.031665400019847,
+        "sampled_peak_rss_bytes": 418254848,
+        "os_process_peak_rss_bytes": 504664064,
+        "representative_rss_bytes": 384438272,
+        "minimum_available_system_ram_bytes": 4595228672,
+        "sampling_interval_seconds": 0.02
+      }
+    }
+  }
+}

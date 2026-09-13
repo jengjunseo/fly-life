@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+data/raw/*.feather
+data/raw/*.partial
+data/runtime/*.npz
+data/runtime/*.parquet

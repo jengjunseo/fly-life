@@ -1,0 +1,25 @@
+{
+  "all_runtime_files_bit_identical": true,
+  "files": {
+    "counts.npz": {
+      "original_sha256": "dc575c76b4114c00664eb5643509532538221c0ab1acd71326a0c1166b182751",
+      "regenerated_sha256": "dc575c76b4114c00664eb5643509532538221c0ab1acd71326a0c1166b182751",
+      "identical": true
+    },
+    "weights.npz": {
+      "original_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+      "regenerated_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+      "identical": true
+    },
+    "neurons.parquet": {
+      "original_sha256": "f470a0b2934a1f3491d674f59c8a88e9a00fe6ca93643f67a8449d5f9a4c2084",
+      "regenerated_sha256": "f470a0b2934a1f3491d674f59c8a88e9a00fe6ca93643f67a8449d5f9a4c2084",
+      "identical": true
+    },
+    "resolved_groups.json": {
+      "original_sha256": "a025036a2bfbe87f1984cb7d2d74478bb22da092d41ce9ccb8a13d2f2e71d856",
+      "regenerated_sha256": "a025036a2bfbe87f1984cb7d2d74478bb22da092d41ce9ccb8a13d2f2e71d856",
+      "identical": true
+    }
+  }
+}

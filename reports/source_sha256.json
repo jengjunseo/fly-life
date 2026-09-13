@@ -1,0 +1,15 @@
+{
+  "acquire.py": "4abada9059d86996e39d9fcebcfaaf9ea29398b5b087ab42f064dae058a3949a",
+  "inspect_annotations.py": "5db591b8c7a2c3c6ae63e6b6147f44f9fefacfcf2ad1114c8016757bd0931280",
+  "offline_check.py": "4e4cf84236335d01b7c56361894502a185e852cd058af7b309bd54c94fd433c4",
+  "preprocess.py": "163f4467e1dff7cbe0beab6c178e6ec472f11c85a120b2abbe3210e1f3ee4d2c",
+  "run.py": "1b33a0d6794a9e9507fb80442c0484eef91c3d96afbbd86a319e61f9cc9eee40",
+  "verify.py": "158e9ed400a828ba6815b8c504d0cb124bd5febb7b5be9f196f2e71c3dc14bfa",
+  "braincore\\core.py": "7ed7803a88305b9b4a6bf7a20218e4f7dae06898a6fec209de6c32cc537779c9",
+  "braincore\\evidence.py": "5708b5141ec124815101fcf1f0346608cb14ac31ae8a4b4f6e8d385eb1a11d7c",
+  "braincore\\__init__.py": "142538381953a444af59980f1c906c5735fc7c80a3baa4e2e8b7242abdaa3c65",
+  "tests\\test_core.py": "c198c78ee32d03d2881e3642302c0d94a1a8d20452e159c4510da161e3280665",
+  "tests\\test_real.py": "f4f2c933812828233e4081c3e6dbf2acd3d6e297174a8e659e5977c78112c9cd",
+  "config.json": "5c19f8803ea63d6975697d3eeb16c54446e96a398614e3ced0541319d78c0186",
+  "requirements.txt": "b6333294786a523b22efabb6da69fb85315ff4a8b955b1f9e8fce25dce0896d6"
+}
