@@ -1,0 +1,5 @@
+{
+  "command": "body/test_decoder.py",
+  "exit_code": 0,
+  "output": "test_invalid_and_saturation (__main__.DecoderTests.test_invalid_and_saturation) ... ok\ntest_left_right_forward (__main__.DecoderTests.test_left_right_forward) ... ok\ntest_no_activity_no_movement (__main__.DecoderTests.test_no_activity_no_movement) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+}

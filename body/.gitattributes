@@ -1,0 +1,7 @@
+.gitattributes text eol=lf
+*.gd text eol=lf
+*.tscn text eol=lf
+*.uid text eol=lf
+project.godot text eol=lf
+*.jsonl -text
+reports/**/*.txt -text -whitespace

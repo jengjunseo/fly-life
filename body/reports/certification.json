@@ -1,0 +1,138 @@
+{
+  "checks": {
+    "actual_real_dataset_loaded": true,
+    "one_neural_movement_path": true,
+    "keyboard_contains_no_body_mutation": true,
+    "every_body_commit_has_real_brain_source": true,
+    "decoder_reads_only_real_neural_activity": true,
+    "world_equals_completed_neural_motor_time": true,
+    "heading_integrates_only_neural_turn": true,
+    "left_turn_body_positive_yaw": true,
+    "right_turn_body_negative_yaw": true,
+    "forward_body_translation": true,
+    "disabled_same_key_no_current_injection": true,
+    "disabled_same_key_no_direct_body_motion": true,
+    "reset_same_seed_readouts_reproduced": true,
+    "reset_body_initial_conditions_reproduced": true,
+    "real_brain_kill_observed": true,
+    "disconnect_body_and_world_frozen": true,
+    "no_owned_orphan_processes": true,
+    "normal_godot_window_shutdown_without_orphans": true,
+    "ram_under_target_16gb": true,
+    "baseline_tracked_core_and_reports_unchanged": true,
+    "baseline_source_sha_matches_commit": true
+  },
+  "all_checks_passed": true,
+  "phase_metrics": {
+    "left": {
+      "start_world_s": 0.2,
+      "end_world_s": 0.9,
+      "heading_delta_radians": 0.844239413738251,
+      "position_distance": 0.0,
+      "max_abs_decoder_turn": 1.0,
+      "max_decoder_forward": 0.0,
+      "max_left_hz": 121.317474365234,
+      "max_right_hz": 0.0,
+      "max_forward_hz": 0.0
+    },
+    "right": {
+      "start_world_s": 0.9,
+      "end_world_s": 1.6,
+      "heading_delta_radians": -0.8010112196207049,
+      "position_distance": 0.0,
+      "max_abs_decoder_turn": 1.0,
+      "max_decoder_forward": 0.0,
+      "max_left_hz": 0.118921853601933,
+      "max_right_hz": 104.95915222168,
+      "max_forward_hz": 0.0
+    },
+    "forward": {
+      "start_world_s": 1.6,
+      "end_world_s": 2.3,
+      "heading_delta_radians": -0.00017241388559340043,
+      "position_distance": 0.8349161858315187,
+      "max_abs_decoder_turn": 0.0010897264426611,
+      "max_decoder_forward": 1.0,
+      "max_left_hz": 9.8887461774666e-08,
+      "max_right_hz": 0.108972743153572,
+      "max_forward_hz": 113.767608642578
+    }
+  },
+  "throughput": {
+    "neural_wall_ratio_excluding_warmup": 0.08771929824561404,
+    "control_updates_per_wall_second": 1.7543859649122808,
+    "godot_ready_fps_min": 60.0,
+    "godot_ready_fps_max": 61.0,
+    "peak_python_process_tree_rss_bytes": 375324672,
+    "peak_godot_process_tree_rss_bytes": 221593600,
+    "peak_combined_process_tree_rss_bytes": 591233024,
+    "minimum_available_system_ram_bytes": 4546478080
+  },
+  "body_commit_count": 62,
+  "actual_mapping": {
+    "left": [
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "instance": "DNa01(VES006)_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "instance": "DNa02_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "right": [
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "instance": "DNa02_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "instance": "DNa01(VES006)_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "forward": [
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "instance": "DNp09_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "instance": "DNp09_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ]
+  },
+  "evidence": {
+    "brain_log": "integration/brain.jsonl",
+    "godot_log": "integration/godot.jsonl",
+    "resources": "integration/resources.json"
+  },
+  "limitations": [
+    "Engine-generated InputEventKey events via Input.parse_input_event; physical OS keyboard injection not certified because computer-use approval timed out.",
+    "Decoder is experimental, not proof of biological motor behaviour. FPS is actual rendered Godot, not headless.",
+    "RSS sums process trees including Windows venv redirectors; GPU VRAM and unrelated apps are not counted as process RSS."
+  ]
+}
