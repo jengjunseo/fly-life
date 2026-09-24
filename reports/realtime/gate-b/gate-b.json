@@ -1,0 +1,3037 @@
+{
+  "classification": "PASS — NOT YET COMPUTE REALTIME",
+  "b0_pass": true,
+  "b1_compute_realtime": false,
+  "b1_worst_p99_workload": "baseline",
+  "b1_statistics": {
+    "baseline": {
+      "windows": 1200,
+      "mean_ms": 337.3722825,
+      "p50_ms": 335.79499999999996,
+      "p95_ms": 347.34235,
+      "p99_ms": 368.08923999999996,
+      "max_ms": 420.166,
+      "deadline_misses": 1200,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 1200,
+      "neural_seconds": 60.0,
+      "network_compute_seconds": 425.421806,
+      "window_compute_seconds": 404.846739,
+      "neural_wall_ratio": 0.14103649402494428,
+      "compute_realtime": false,
+      "clean_quality": false
+    },
+    "looming": {
+      "windows": 400,
+      "mean_ms": 338.394865,
+      "p50_ms": 337.6835,
+      "p95_ms": 344.5064,
+      "p99_ms": 350.43663,
+      "max_ms": 365.367,
+      "deadline_misses": 400,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 400,
+      "neural_seconds": 20.0,
+      "network_compute_seconds": 136.267781,
+      "window_compute_seconds": 135.357946,
+      "neural_wall_ratio": 0.14676983695801135,
+      "compute_realtime": false,
+      "clean_quality": false
+    },
+    "real_predator": {
+      "windows": 400,
+      "mean_ms": 335.6616,
+      "p50_ms": 333.4075,
+      "p95_ms": 346.59704999999997,
+      "p99_ms": 356.53835,
+      "max_ms": 360.639,
+      "deadline_misses": 400,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 400,
+      "neural_seconds": 20.0,
+      "network_compute_seconds": 134.600273,
+      "window_compute_seconds": 134.26464,
+      "neural_wall_ratio": 0.14858810873288497,
+      "compute_realtime": false,
+      "clean_quality": false
+    },
+    "compound": {
+      "windows": 400,
+      "mean_ms": 342.95095499999996,
+      "p50_ms": 342.432,
+      "p95_ms": 346.79055,
+      "p99_ms": 351.77073,
+      "max_ms": 356.443,
+      "deadline_misses": 400,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 400,
+      "neural_seconds": 20.0,
+      "network_compute_seconds": 137.702945,
+      "window_compute_seconds": 137.18038199999998,
+      "neural_wall_ratio": 0.14524017623588226,
+      "compute_realtime": false,
+      "clean_quality": false
+    }
+  },
+  "b2_pass": true,
+  "b2_classification": "BOUNDED / NUMERICALLY STABLE CANDIDATE",
+  "b2_trajectory": [
+    {
+      "time_s": 1.0,
+      "reference_population_spikes": 72421,
+      "brian2_population_spikes": 72421,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 81,
+          "brian2_cumulative": 81,
+          "difference": 0,
+          "reference_ema_hz": 0.6119542121887207,
+          "brian2_ema_hz": 0.6119541932666113,
+          "ema_difference_hz": -1.8922109434882373e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 111,
+          "brian2_cumulative": 111,
+          "difference": 0,
+          "reference_ema_hz": 0.6353919506072998,
+          "brian2_ema_hz": 0.635391919677322,
+          "ema_difference_hz": -3.0929977801186226e-08
+        },
+        "GF": {
+          "reference_cumulative": 16,
+          "brian2_cumulative": 16,
+          "difference": 0,
+          "reference_ema_hz": 4.486415386199951,
+          "brian2_ema_hz": 4.486415386199951,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 2.0,
+      "reference_population_spikes": 147057,
+      "brian2_population_spikes": 147057,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 165,
+          "brian2_cumulative": 165,
+          "difference": 0,
+          "reference_ema_hz": 0.6624175906181335,
+          "brian2_ema_hz": 0.66241759345645,
+          "ema_difference_hz": 2.838316470743507e-09
+        },
+        "LPLC2": {
+          "reference_cumulative": 226,
+          "brian2_cumulative": 226,
+          "difference": 0,
+          "reference_ema_hz": 0.7049222588539124,
+          "brian2_ema_hz": 0.7049222018267657,
+          "ema_difference_hz": -5.7027146671551066e-08
+        },
+        "GF": {
+          "reference_cumulative": 33,
+          "brian2_cumulative": 33,
+          "difference": 0,
+          "reference_ema_hz": 5.0507426261901855,
+          "brian2_ema_hz": 5.0507426261901855,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 3.0,
+      "reference_population_spikes": 221558,
+      "brian2_population_spikes": 221558,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 249,
+          "brian2_cumulative": 249,
+          "difference": 0,
+          "reference_ema_hz": 0.7358947396278381,
+          "brian2_ema_hz": 0.7358947557116312,
+          "ema_difference_hz": 1.6083793075161168e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 339,
+          "brian2_cumulative": 339,
+          "difference": 0,
+          "reference_ema_hz": 0.6268417239189148,
+          "brian2_ema_hz": 0.6268416791348844,
+          "ema_difference_hz": -4.4784030373001826e-08
+        },
+        "GF": {
+          "reference_cumulative": 50,
+          "brian2_cumulative": 50,
+          "difference": 0,
+          "reference_ema_hz": 5.799998760223389,
+          "brian2_ema_hz": 5.799998760223389,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 4.0,
+      "reference_population_spikes": 296186,
+      "brian2_population_spikes": 296186,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 333,
+          "brian2_cumulative": 333,
+          "difference": 0,
+          "reference_ema_hz": 0.7952239513397217,
+          "brian2_ema_hz": 0.7952239626929873,
+          "ema_difference_hz": 1.1353265660929424e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 454,
+          "brian2_cumulative": 454,
+          "difference": 0,
+          "reference_ema_hz": 0.7679594159126282,
+          "brian2_ema_hz": 0.7679594194566881,
+          "ema_difference_hz": 3.5440599344127577e-09
+        },
+        "GF": {
+          "reference_cumulative": 67,
+          "brian2_cumulative": 67,
+          "difference": 0,
+          "reference_ema_hz": 6.910248756408691,
+          "brian2_ema_hz": 6.910248756408691,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 5.0,
+      "reference_population_spikes": 370765,
+      "brian2_population_spikes": 370765,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 417,
+          "brian2_cumulative": 417,
+          "difference": 0,
+          "reference_ema_hz": 0.9074961543083191,
+          "brian2_ema_hz": 0.9074961874220107,
+          "ema_difference_hz": 3.3113691566555303e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 567,
+          "brian2_cumulative": 567,
+          "difference": 0,
+          "reference_ema_hz": 0.6863994002342224,
+          "brian2_ema_hz": 0.6863994289088894,
+          "ema_difference_hz": 2.86746669742044e-08
+        },
+        "GF": {
+          "reference_cumulative": 84,
+          "brian2_cumulative": 84,
+          "difference": 0,
+          "reference_ema_hz": 7.646572113037109,
+          "brian2_ema_hz": 7.646572113037109,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 6.0,
+      "reference_population_spikes": 445287,
+      "brian2_population_spikes": 445287,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 500,
+          "brian2_cumulative": 500,
+          "difference": 0,
+          "reference_ema_hz": 0.8036522269248962,
+          "brian2_ema_hz": 0.8036522600385878,
+          "ema_difference_hz": 3.3113691566555303e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 679,
+          "brian2_cumulative": 679,
+          "difference": 0,
+          "reference_ema_hz": 0.5351529717445374,
+          "brian2_ema_hz": 0.5351529624011065,
+          "ema_difference_hz": -9.343430806829645e-09
+        },
+        "GF": {
+          "reference_cumulative": 101,
+          "brian2_cumulative": 101,
+          "difference": 0,
+          "reference_ema_hz": 8.667258262634277,
+          "brian2_ema_hz": 8.667258262634277,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 7.0,
+      "reference_population_spikes": 519676,
+      "brian2_population_spikes": 519676,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 583,
+          "brian2_cumulative": 583,
+          "difference": 0,
+          "reference_ema_hz": 0.67303866147995,
+          "brian2_ema_hz": 0.6730386643182664,
+          "ema_difference_hz": 2.838316470743507e-09
+        },
+        "LPLC2": {
+          "reference_cumulative": 794,
+          "brian2_cumulative": 794,
+          "difference": 0,
+          "reference_ema_hz": 0.651076078414917,
+          "brian2_ema_hz": 0.6510760642386771,
+          "ema_difference_hz": -1.4176239848673333e-08
+        },
+        "GF": {
+          "reference_cumulative": 118,
+          "brian2_cumulative": 118,
+          "difference": 0,
+          "reference_ema_hz": 9.792135238647461,
+          "brian2_ema_hz": 9.792135238647461,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 8.0,
+      "reference_population_spikes": 594327,
+      "brian2_population_spikes": 594327,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 666,
+          "brian2_cumulative": 666,
+          "difference": 0,
+          "reference_ema_hz": 0.5744748711585999,
+          "brian2_ema_hz": 0.5744748645358615,
+          "ema_difference_hz": -6.622738357719982e-09
+        },
+        "LPLC2": {
+          "reference_cumulative": 908,
+          "brian2_cumulative": 908,
+          "difference": 0,
+          "reference_ema_hz": 0.6968796253204346,
+          "brian2_ema_hz": 0.6968796291866818,
+          "ema_difference_hz": 3.8662472112704904e-09
+        },
+        "GF": {
+          "reference_cumulative": 135,
+          "brian2_cumulative": 135,
+          "difference": 0,
+          "reference_ema_hz": 11.168057441711426,
+          "brian2_ema_hz": 11.168057441711426,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 9.0,
+      "reference_population_spikes": 668823,
+      "brian2_population_spikes": 668823,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 751,
+          "brian2_cumulative": 751,
+          "difference": 0,
+          "reference_ema_hz": 0.7895711064338684,
+          "brian2_ema_hz": 0.7895711263020834,
+          "ema_difference_hz": 1.9868214962137642e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1021,
+          "brian2_cumulative": 1021,
+          "difference": 0,
+          "reference_ema_hz": 0.6559337973594666,
+          "brian2_ema_hz": 0.6559338234566353,
+          "ema_difference_hz": 2.6097168759342537e-08
+        },
+        "GF": {
+          "reference_cumulative": 152,
+          "brian2_cumulative": 152,
+          "difference": 0,
+          "reference_ema_hz": 12.752425193786621,
+          "brian2_ema_hz": 12.752425193786621,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 10.0,
+      "reference_population_spikes": 743421,
+      "brian2_population_spikes": 743421,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 835,
+          "brian2_cumulative": 835,
+          "difference": 0,
+          "reference_ema_hz": 0.8780600428581238,
+          "brian2_ema_hz": 0.8780600456964403,
+          "ema_difference_hz": 2.838316470743507e-09
+        },
+        "LPLC2": {
+          "reference_cumulative": 1135,
+          "brian2_cumulative": 1135,
+          "difference": 0,
+          "reference_ema_hz": 0.7025555372238159,
+          "brian2_ema_hz": 0.7025555997281461,
+          "ema_difference_hz": 6.250433015608792e-08
+        },
+        "GF": {
+          "reference_cumulative": 169,
+          "brian2_cumulative": 169,
+          "difference": 0,
+          "reference_ema_hz": 13.982695579528809,
+          "brian2_ema_hz": 13.982695579528809,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 11.0,
+      "reference_population_spikes": 817947,
+      "brian2_population_spikes": 817947,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 917,
+          "brian2_cumulative": 917,
+          "difference": 0,
+          "reference_ema_hz": 0.6082453727722168,
+          "brian2_ema_hz": 0.6082453197903104,
+          "ema_difference_hz": -5.2981906417670643e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1248,
+          "brian2_cumulative": 1248,
+          "difference": 0,
+          "reference_ema_hz": 0.6162806153297424,
+          "brian2_ema_hz": 0.6162805686125884,
+          "ema_difference_hz": -4.671715403414822e-08
+        },
+        "GF": {
+          "reference_cumulative": 185,
+          "brian2_cumulative": 185,
+          "difference": 0,
+          "reference_ema_hz": 5.245068550109863,
+          "brian2_ema_hz": 5.245068550109863,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 12.0,
+      "reference_population_spikes": 892465,
+      "brian2_population_spikes": 892465,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1002,
+          "brian2_cumulative": 1002,
+          "difference": 0,
+          "reference_ema_hz": 0.8094895482063293,
+          "brian2_ema_hz": 0.8094895453680129,
+          "ema_difference_hz": -2.838316470743507e-09
+        },
+        "LPLC2": {
+          "reference_cumulative": 1361,
+          "brian2_cumulative": 1361,
+          "difference": 0,
+          "reference_ema_hz": 0.5444149971008301,
+          "brian2_ema_hz": 0.5444149906570847,
+          "ema_difference_hz": -6.443745426132352e-09
+        },
+        "GF": {
+          "reference_cumulative": 202,
+          "brian2_cumulative": 202,
+          "difference": 0,
+          "reference_ema_hz": 6.044212341308594,
+          "brian2_ema_hz": 6.044212341308594,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 13.0,
+      "reference_population_spikes": 967171,
+      "brian2_population_spikes": 967171,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1084,
+          "brian2_cumulative": 1084,
+          "difference": 0,
+          "reference_ema_hz": 0.5651463866233826,
+          "brian2_ema_hz": 0.5651463705395895,
+          "ema_difference_hz": -1.6083793075161168e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1475,
+          "brian2_cumulative": 1475,
+          "difference": 0,
+          "reference_ema_hz": 0.5883752107620239,
+          "brian2_ema_hz": 0.5883752255826383,
+          "ema_difference_hz": 1.4820614402388799e-08
+        },
+        "GF": {
+          "reference_cumulative": 219,
+          "brian2_cumulative": 219,
+          "difference": 0,
+          "reference_ema_hz": 6.9425482749938965,
+          "brian2_ema_hz": 6.9425482749938965,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 14.0,
+      "reference_population_spikes": 1041537,
+      "brian2_population_spikes": 1041537,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1169,
+          "brian2_cumulative": 1169,
+          "difference": 0,
+          "reference_ema_hz": 0.7989861369132996,
+          "brian2_ema_hz": 0.7989861851646787,
+          "ema_difference_hz": 4.82513791144612e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1589,
+          "brian2_cumulative": 1589,
+          "difference": 0,
+          "reference_ema_hz": 0.646571159362793,
+          "brian2_ema_hz": 0.6465711335878115,
+          "ema_difference_hz": -2.5774981482484804e-08
+        },
+        "GF": {
+          "reference_cumulative": 236,
+          "brian2_cumulative": 236,
+          "difference": 0,
+          "reference_ema_hz": 7.372366905212402,
+          "brian2_ema_hz": 7.372366905212402,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 15.0,
+      "reference_population_spikes": 1116037,
+      "brian2_population_spikes": 1116037,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1252,
+          "brian2_cumulative": 1252,
+          "difference": 0,
+          "reference_ema_hz": 0.7186064124107361,
+          "brian2_ema_hz": 0.718606434171162,
+          "ema_difference_hz": 2.176042590562588e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1703,
+          "brian2_cumulative": 1703,
+          "difference": 0,
+          "reference_ema_hz": 0.6564508080482483,
+          "brian2_ema_hz": 0.6564508206135518,
+          "ema_difference_hz": 1.256530346438467e-08
+        },
+        "GF": {
+          "reference_cumulative": 253,
+          "brian2_cumulative": 253,
+          "difference": 0,
+          "reference_ema_hz": 8.264341354370117,
+          "brian2_ema_hz": 8.264341354370117,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 16.0,
+      "reference_population_spikes": 1190634,
+      "brian2_population_spikes": 1190633,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -8.398886643586527e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1335,
+          "brian2_cumulative": 1335,
+          "difference": 0,
+          "reference_ema_hz": 0.5911262035369873,
+          "brian2_ema_hz": 0.59112624895005,
+          "ema_difference_hz": 4.5413062643717694e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1816,
+          "brian2_cumulative": 1816,
+          "difference": 0,
+          "reference_ema_hz": 0.5589877367019653,
+          "brian2_ema_hz": 0.558987705127613,
+          "ema_difference_hz": -3.157435235490169e-08
+        },
+        "GF": {
+          "reference_cumulative": 270,
+          "brian2_cumulative": 270,
+          "difference": 0,
+          "reference_ema_hz": 9.034528732299805,
+          "brian2_ema_hz": 9.034528732299805,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 17.0,
+      "reference_population_spikes": 1265082,
+      "brian2_population_spikes": 1265081,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -7.904625945195648e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1420,
+          "brian2_cumulative": 1420,
+          "difference": 0,
+          "reference_ema_hz": 0.8195981383323669,
+          "brian2_ema_hz": 0.8195980730510893,
+          "ema_difference_hz": -6.528127760585534e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 1931,
+          "brian2_cumulative": 1931,
+          "difference": 0,
+          "reference_ema_hz": 0.6619278192520142,
+          "brian2_ema_hz": 0.6619277979876544,
+          "ema_difference_hz": -2.126435971749885e-08
+        },
+        "GF": {
+          "reference_cumulative": 287,
+          "brian2_cumulative": 287,
+          "difference": 0,
+          "reference_ema_hz": 9.914616584777832,
+          "brian2_ema_hz": 9.914616584777832,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 18.0,
+      "reference_population_spikes": 1339828,
+      "brian2_population_spikes": 1339827,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -7.463644587215672e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1503,
+          "brian2_cumulative": 1503,
+          "difference": 0,
+          "reference_ema_hz": 0.7034363150596619,
+          "brian2_ema_hz": 0.7034362687004937,
+          "ema_difference_hz": -4.6359168170972964e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 2045,
+          "brian2_cumulative": 2045,
+          "difference": 0,
+          "reference_ema_hz": 0.6591272950172424,
+          "brian2_ema_hz": 0.6591272843850625,
+          "ema_difference_hz": -1.0632179914260576e-08
+        },
+        "GF": {
+          "reference_cumulative": 304,
+          "brian2_cumulative": 304,
+          "difference": 0,
+          "reference_ema_hz": 11.681960105895996,
+          "brian2_ema_hz": 11.681960105895996,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 19.0,
+      "reference_population_spikes": 1414136,
+      "brian2_population_spikes": 1414135,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -7.071455645001612e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1587,
+          "brian2_cumulative": 1587,
+          "difference": 0,
+          "reference_ema_hz": 0.7806265950202942,
+          "brian2_ema_hz": 0.7806265619066026,
+          "ema_difference_hz": -3.3113691566555303e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 2158,
+          "brian2_cumulative": 2158,
+          "difference": 0,
+          "reference_ema_hz": 0.5529598593711853,
+          "brian2_ema_hz": 0.5529599060883393,
+          "ema_difference_hz": 4.671715403414822e-08
+        },
+        "GF": {
+          "reference_cumulative": 321,
+          "brian2_cumulative": 321,
+          "difference": 0,
+          "reference_ema_hz": 12.440977096557617,
+          "brian2_ema_hz": 12.440977096557617,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 20.0,
+      "reference_population_spikes": 1488790,
+      "brian2_population_spikes": 1488789,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -6.71686403052143e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 1671,
+          "brian2_cumulative": 1671,
+          "difference": 0,
+          "reference_ema_hz": 0.9112746119499207,
+          "brian2_ema_hz": 0.9112746374947684,
+          "ema_difference_hz": 2.5544847792602354e-08
+        },
+        "LPLC2": {
+          "reference_cumulative": 2273,
+          "brian2_cumulative": 2273,
+          "difference": 0,
+          "reference_ema_hz": 0.6767426133155823,
+          "brian2_ema_hz": 0.6767426310358821,
+          "ema_difference_hz": 1.772029978308609e-08
+        },
+        "GF": {
+          "reference_cumulative": 337,
+          "brian2_cumulative": 337,
+          "difference": 0,
+          "reference_ema_hz": 4.540363788604736,
+          "brian2_ema_hz": 4.540363788604736,
+          "ema_difference_hz": 0.0
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 21.0,
+      "reference_population_spikes": 1603285,
+      "brian2_population_spikes": 1603284,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -6.237194260533842e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 16560,
+          "brian2_cumulative": 16560,
+          "difference": 0,
+          "reference_ema_hz": 113.17833709716797,
+          "brian2_ema_hz": 113.17833067878844,
+          "ema_difference_hz": -6.418379527417528e-06
+        },
+        "LPLC2": {
+          "reference_cumulative": 24446,
+          "brian2_cumulative": 24446,
+          "difference": 0,
+          "reference_ema_hz": 115.46793365478516,
+          "brian2_ema_hz": 115.46792751002955,
+          "ema_difference_hz": -6.144755602122132e-06
+        },
+        "GF": {
+          "reference_cumulative": 380,
+          "brian2_cumulative": 380,
+          "difference": 0,
+          "reference_ema_hz": 20.784578323364258,
+          "brian2_ema_hz": 20.784578561782837,
+          "ema_difference_hz": 2.384185791015625e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 22.0,
+      "reference_population_spikes": 1717771,
+      "brian2_population_spikes": 1717770,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -5.8214977432964e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 31445,
+          "brian2_cumulative": 31445,
+          "difference": 0,
+          "reference_ema_hz": 112.11566925048828,
+          "brian2_ema_hz": 112.11566174219526,
+          "ema_difference_hz": -7.5082930237613255e-06
+        },
+        "LPLC2": {
+          "reference_cumulative": 46611,
+          "brian2_cumulative": 46611,
+          "difference": 0,
+          "reference_ema_hz": 114.68994903564453,
+          "brian2_ema_hz": 114.6899501903637,
+          "ema_difference_hz": 1.1547191718364047e-06
+        },
+        "GF": {
+          "reference_cumulative": 423,
+          "brian2_cumulative": 423,
+          "difference": 0,
+          "reference_ema_hz": 20.543081283569336,
+          "brian2_ema_hz": 20.543080868199468,
+          "ema_difference_hz": -4.153698682785034e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 23.0,
+      "reference_population_spikes": 1832249,
+      "brian2_population_spikes": 1832249,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 46357,
+          "brian2_cumulative": 46357,
+          "difference": 0,
+          "reference_ema_hz": 114.98567199707031,
+          "brian2_ema_hz": 114.98566073463077,
+          "ema_difference_hz": -1.1262439542747416e-05
+        },
+        "LPLC2": {
+          "reference_cumulative": 68782,
+          "brian2_cumulative": 68782,
+          "difference": 0,
+          "reference_ema_hz": 114.95458221435547,
+          "brian2_ema_hz": 114.95457792539854,
+          "ema_difference_hz": -4.288956930054155e-06
+        },
+        "GF": {
+          "reference_cumulative": 468,
+          "brian2_cumulative": 468,
+          "difference": 0,
+          "reference_ema_hz": 22.4201602935791,
+          "brian2_ema_hz": 22.420160114765167,
+          "ema_difference_hz": -1.7881393432617188e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 24.0,
+      "reference_population_spikes": 1946606,
+      "brian2_population_spikes": 1946606,
+      "difference": 0,
+      "absolute_difference": 0,
+      "relative_difference": 0.0,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 61266,
+          "brian2_cumulative": 61266,
+          "difference": 0,
+          "reference_ema_hz": 117.43438720703125,
+          "brian2_ema_hz": 117.43439084007626,
+          "ema_difference_hz": 3.6330450114974155e-06
+        },
+        "LPLC2": {
+          "reference_cumulative": 90983,
+          "brian2_cumulative": 90983,
+          "difference": 0,
+          "reference_ema_hz": 117.96036529541016,
+          "brian2_ema_hz": 117.96035585145692,
+          "ema_difference_hz": -9.443953231880187e-06
+        },
+        "GF": {
+          "reference_cumulative": 511,
+          "brian2_cumulative": 511,
+          "difference": 0,
+          "reference_ema_hz": 24.206212997436523,
+          "brian2_ema_hz": 24.20621332153678,
+          "ema_difference_hz": 3.241002559661865e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 25.0,
+      "reference_population_spikes": 2061028,
+      "brian2_population_spikes": 2061026,
+      "difference": -2,
+      "absolute_difference": 2,
+      "relative_difference": -9.703895337666445e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 76168,
+          "brian2_cumulative": 76168,
+          "difference": 0,
+          "reference_ema_hz": 118.40055084228516,
+          "brian2_ema_hz": 118.40055156889416,
+          "ema_difference_hz": 7.266090022994831e-07
+        },
+        "LPLC2": {
+          "reference_cumulative": 113171,
+          "brian2_cumulative": 113170,
+          "difference": -1,
+          "reference_ema_hz": 118.9856185913086,
+          "brian2_ema_hz": 118.98557920713682,
+          "ema_difference_hz": -3.9384171770961984e-05
+        },
+        "GF": {
+          "reference_cumulative": 553,
+          "brian2_cumulative": 553,
+          "difference": 0,
+          "reference_ema_hz": 17.22927474975586,
+          "brian2_ema_hz": 17.22927398639149,
+          "ema_difference_hz": -7.633643690496683e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 26.0,
+      "reference_population_spikes": 2175647,
+      "brian2_population_spikes": 2175651,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 1.8385335488707497e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 91055,
+          "brian2_cumulative": 91055,
+          "difference": 0,
+          "reference_ema_hz": 117.21955108642578,
+          "brian2_ema_hz": 117.21931233481756,
+          "ema_difference_hz": -0.00023875160822228736
+        },
+        "LPLC2": {
+          "reference_cumulative": 135342,
+          "brian2_cumulative": 135341,
+          "difference": -1,
+          "reference_ema_hz": 118.8426742553711,
+          "brian2_ema_hz": 118.84267099741344,
+          "ema_difference_hz": -3.257957658320265e-06
+        },
+        "GF": {
+          "reference_cumulative": 598,
+          "brian2_cumulative": 598,
+          "difference": 0,
+          "reference_ema_hz": 18.397581100463867,
+          "brian2_ema_hz": 18.397580966353416,
+          "ema_difference_hz": -1.341104507446289e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 27.0,
+      "reference_population_spikes": 2290096,
+      "brian2_population_spikes": 2290100,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 1.7466516687510043e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 105945,
+          "brian2_cumulative": 105945,
+          "difference": 0,
+          "reference_ema_hz": 116.24983978271484,
+          "brian2_ema_hz": 116.24982785421705,
+          "ema_difference_hz": -1.1928497798407989e-05
+        },
+        "LPLC2": {
+          "reference_cumulative": 157506,
+          "brian2_cumulative": 157505,
+          "difference": -1,
+          "reference_ema_hz": 117.84022521972656,
+          "brian2_ema_hz": 117.8613730353278,
+          "ema_difference_hz": 0.021147815601239017
+        },
+        "GF": {
+          "reference_cumulative": 641,
+          "brian2_cumulative": 641,
+          "difference": 0,
+          "reference_ema_hz": 20.219430923461914,
+          "brian2_ema_hz": 20.21943066845415,
+          "ema_difference_hz": -2.550077624619007e-07
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 28.0,
+      "reference_population_spikes": 2404443,
+      "brian2_population_spikes": 2404447,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 1.6635869513230298e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 120832,
+          "brian2_cumulative": 120832,
+          "difference": 0,
+          "reference_ema_hz": 115.18562316894531,
+          "brian2_ema_hz": 115.19662233382937,
+          "ema_difference_hz": 0.010999164884054835
+        },
+        "LPLC2": {
+          "reference_cumulative": 179675,
+          "brian2_cumulative": 179675,
+          "difference": 0,
+          "reference_ema_hz": 117.30375671386719,
+          "brian2_ema_hz": 117.41294283480258,
+          "ema_difference_hz": 0.10918612093539082
+        },
+        "GF": {
+          "reference_cumulative": 685,
+          "brian2_cumulative": 685,
+          "difference": 0,
+          "reference_ema_hz": 21.582805633544922,
+          "brian2_ema_hz": 22.46786663122475,
+          "ema_difference_hz": 0.8850609976798296
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 29.0,
+      "reference_population_spikes": 2518988,
+      "brian2_population_spikes": 2518983,
+      "difference": -5,
+      "absolute_difference": 5,
+      "relative_difference": -1.9849241044419424e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 135719,
+          "brian2_cumulative": 135718,
+          "difference": -1,
+          "reference_ema_hz": 114.1452865600586,
+          "brian2_ema_hz": 113.97376523699079,
+          "ema_difference_hz": -0.17152132306780743
+        },
+        "LPLC2": {
+          "reference_cumulative": 201841,
+          "brian2_cumulative": 201840,
+          "difference": -1,
+          "reference_ema_hz": 116.4927978515625,
+          "brian2_ema_hz": 116.41996901228622,
+          "ema_difference_hz": -0.07282883927628347
+        },
+        "GF": {
+          "reference_cumulative": 730,
+          "brian2_cumulative": 729,
+          "difference": -1,
+          "reference_ema_hz": 26.80278205871582,
+          "brian2_ema_hz": 25.21564492583275,
+          "ema_difference_hz": -1.587137132883072
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 30.0,
+      "reference_population_spikes": 2633316,
+      "brian2_population_spikes": 2633306,
+      "difference": -10,
+      "absolute_difference": 10,
+      "relative_difference": -3.797493350589143e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 150607,
+          "brian2_cumulative": 150606,
+          "difference": -1,
+          "reference_ema_hz": 113.05757904052734,
+          "brian2_ema_hz": 113.07803029862662,
+          "ema_difference_hz": 0.020451258099271286
+        },
+        "LPLC2": {
+          "reference_cumulative": 224008,
+          "brian2_cumulative": 224004,
+          "difference": -4,
+          "reference_ema_hz": 115.56277465820312,
+          "brian2_ema_hz": 115.56859720590953,
+          "ema_difference_hz": 0.0058225477064013376
+        },
+        "GF": {
+          "reference_cumulative": 773,
+          "brian2_cumulative": 771,
+          "difference": -2,
+          "reference_ema_hz": 17.86001968383789,
+          "brian2_ema_hz": 17.803067177534103,
+          "ema_difference_hz": -0.05695250630378723
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 31.0,
+      "reference_population_spikes": 2747584,
+      "brian2_population_spikes": 2747574,
+      "difference": -10,
+      "absolute_difference": 10,
+      "relative_difference": -3.639561156274021e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 165495,
+          "brian2_cumulative": 165493,
+          "difference": -2,
+          "reference_ema_hz": 112.06892395019531,
+          "brian2_ema_hz": 112.09088709997752,
+          "ema_difference_hz": 0.021963149782209257
+        },
+        "LPLC2": {
+          "reference_cumulative": 246177,
+          "brian2_cumulative": 246171,
+          "difference": -6,
+          "reference_ema_hz": 115.08978271484375,
+          "brian2_ema_hz": 114.98301255509661,
+          "ema_difference_hz": -0.10677015974714266
+        },
+        "GF": {
+          "reference_cumulative": 818,
+          "brian2_cumulative": 814,
+          "difference": -4,
+          "reference_ema_hz": 22.777135848999023,
+          "brian2_ema_hz": 20.451989901717752,
+          "ema_difference_hz": -2.325145947281271
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 32.0,
+      "reference_population_spikes": 2862190,
+      "brian2_population_spikes": 2862170,
+      "difference": -20,
+      "absolute_difference": 20,
+      "relative_difference": -6.987656305136976e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 180407,
+          "brian2_cumulative": 180403,
+          "difference": -4,
+          "reference_ema_hz": 114.93699645996094,
+          "brian2_ema_hz": 114.88713788229322,
+          "ema_difference_hz": -0.04985857766772028
+        },
+        "LPLC2": {
+          "reference_cumulative": 268351,
+          "brian2_cumulative": 268344,
+          "difference": -7,
+          "reference_ema_hz": 115.14051055908203,
+          "brian2_ema_hz": 115.03320407351931,
+          "ema_difference_hz": -0.1073064855627166
+        },
+        "GF": {
+          "reference_cumulative": 862,
+          "brian2_cumulative": 859,
+          "difference": -3,
+          "reference_ema_hz": 24.694854736328125,
+          "brian2_ema_hz": 30.20511817932129,
+          "ema_difference_hz": 5.510263442993164
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 33.0,
+      "reference_population_spikes": 2976878,
+      "brian2_population_spikes": 2976870,
+      "difference": -8,
+      "absolute_difference": 8,
+      "relative_difference": -2.687379193907174e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 195318,
+          "brian2_cumulative": 195313,
+          "difference": -5,
+          "reference_ema_hz": 117.50037384033203,
+          "brian2_ema_hz": 117.47741039215572,
+          "ema_difference_hz": -0.022963448176312795
+        },
+        "LPLC2": {
+          "reference_cumulative": 290549,
+          "brian2_cumulative": 290544,
+          "difference": -5,
+          "reference_ema_hz": 117.73987579345703,
+          "brian2_ema_hz": 118.00522712501319,
+          "ema_difference_hz": 0.2653513315561611
+        },
+        "GF": {
+          "reference_cumulative": 905,
+          "brian2_cumulative": 903,
+          "difference": -2,
+          "reference_ema_hz": 17.595972061157227,
+          "brian2_ema_hz": 31.81363010406494,
+          "ema_difference_hz": 14.217658042907715
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 34.0,
+      "reference_population_spikes": 3091167,
+      "brian2_population_spikes": 3091146,
+      "difference": -21,
+      "absolute_difference": 21,
+      "relative_difference": -6.7935507851888944e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 210218,
+          "brian2_cumulative": 210212,
+          "difference": -6,
+          "reference_ema_hz": 118.17399597167969,
+          "brian2_ema_hz": 118.2244034418984,
+          "ema_difference_hz": 0.05040747021871539
+        },
+        "LPLC2": {
+          "reference_cumulative": 312735,
+          "brian2_cumulative": 312727,
+          "difference": -8,
+          "reference_ema_hz": 119.14662170410156,
+          "brian2_ema_hz": 119.02091262404983,
+          "ema_difference_hz": -0.12570908005173465
+        },
+        "GF": {
+          "reference_cumulative": 949,
+          "brian2_cumulative": 946,
+          "difference": -3,
+          "reference_ema_hz": 17.434741973876953,
+          "brian2_ema_hz": 25.094165556132793,
+          "ema_difference_hz": 7.65942358225584
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 35.0,
+      "reference_population_spikes": 3205756,
+      "brian2_population_spikes": 3205760,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 1.2477555996151921e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 225108,
+          "brian2_cumulative": 225103,
+          "difference": -5,
+          "reference_ema_hz": 117.45204162597656,
+          "brian2_ema_hz": 117.49799026004852,
+          "ema_difference_hz": 0.04594863407196215
+        },
+        "LPLC2": {
+          "reference_cumulative": 334901,
+          "brian2_cumulative": 334893,
+          "difference": -8,
+          "reference_ema_hz": 118.75335693359375,
+          "brian2_ema_hz": 118.7276163462046,
+          "ema_difference_hz": -0.025740587389151415
+        },
+        "GF": {
+          "reference_cumulative": 994,
+          "brian2_cumulative": 989,
+          "difference": -5,
+          "reference_ema_hz": 24.40376091003418,
+          "brian2_ema_hz": 25.119802662200527,
+          "ema_difference_hz": 0.7160417521663476
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 36.0,
+      "reference_population_spikes": 3320236,
+      "brian2_population_spikes": 3320219,
+      "difference": -17,
+      "absolute_difference": 17,
+      "relative_difference": -5.120117967517972e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 239995,
+          "brian2_cumulative": 239990,
+          "difference": -5,
+          "reference_ema_hz": 116.17726135253906,
+          "brian2_ema_hz": 116.31946733262804,
+          "ema_difference_hz": 0.14220598008897412
+        },
+        "LPLC2": {
+          "reference_cumulative": 357068,
+          "brian2_cumulative": 357056,
+          "difference": -12,
+          "reference_ema_hz": 117.92034149169922,
+          "brian2_ema_hz": 117.87074481861012,
+          "ema_difference_hz": -0.04959667308909843
+        },
+        "GF": {
+          "reference_cumulative": 1039,
+          "brian2_cumulative": 1033,
+          "difference": -6,
+          "reference_ema_hz": 21.69269561767578,
+          "brian2_ema_hz": 18.007022738456726,
+          "ema_difference_hz": -3.685672879219055
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 37.0,
+      "reference_population_spikes": 3434586,
+      "brian2_population_spikes": 3434566,
+      "difference": -20,
+      "absolute_difference": 20,
+      "relative_difference": -5.8231181283566634e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 254882,
+          "brian2_cumulative": 254876,
+          "difference": -6,
+          "reference_ema_hz": 115.25061798095703,
+          "brian2_ema_hz": 115.26772816975911,
+          "ema_difference_hz": 0.017110188802078596
+        },
+        "LPLC2": {
+          "reference_cumulative": 379231,
+          "brian2_cumulative": 379218,
+          "difference": -13,
+          "reference_ema_hz": 116.90047454833984,
+          "brian2_ema_hz": 116.97552527350348,
+          "ema_difference_hz": 0.07505072516363498
+        },
+        "GF": {
+          "reference_cumulative": 1083,
+          "brian2_cumulative": 1077,
+          "difference": -6,
+          "reference_ema_hz": 22.4867000579834,
+          "brian2_ema_hz": 24.462820053100586,
+          "ema_difference_hz": 1.9761199951171875
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 38.0,
+      "reference_population_spikes": 3548803,
+      "brian2_population_spikes": 3548801,
+      "difference": -2,
+      "absolute_difference": 2,
+      "relative_difference": -5.635703080728911e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 269769,
+          "brian2_cumulative": 269765,
+          "difference": -4,
+          "reference_ema_hz": 114.01569366455078,
+          "brian2_ema_hz": 114.3273808918302,
+          "ema_difference_hz": 0.3116872272794211
+        },
+        "LPLC2": {
+          "reference_cumulative": 401393,
+          "brian2_cumulative": 401382,
+          "difference": -11,
+          "reference_ema_hz": 116.16455078125,
+          "brian2_ema_hz": 116.25230110787057,
+          "ema_difference_hz": 0.08775032662056503
+        },
+        "GF": {
+          "reference_cumulative": 1127,
+          "brian2_cumulative": 1122,
+          "difference": -5,
+          "reference_ema_hz": 22.44509506225586,
+          "brian2_ema_hz": 30.435720443725586,
+          "ema_difference_hz": 7.990625381469727
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 39.0,
+      "reference_population_spikes": 3663561,
+      "brian2_population_spikes": 3663560,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -2.729584685501347e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 284655,
+          "brian2_cumulative": 284651,
+          "difference": -4,
+          "reference_ema_hz": 113.00261688232422,
+          "brian2_ema_hz": 112.97563001844618,
+          "ema_difference_hz": -0.026986863878036615
+        },
+        "LPLC2": {
+          "reference_cumulative": 423564,
+          "brian2_cumulative": 423552,
+          "difference": -12,
+          "reference_ema_hz": 115.57740783691406,
+          "brian2_ema_hz": 115.57952946843328,
+          "ema_difference_hz": 0.0021216315192162938
+        },
+        "GF": {
+          "reference_cumulative": 1171,
+          "brian2_cumulative": 1166,
+          "difference": -5,
+          "reference_ema_hz": 27.64250946044922,
+          "brian2_ema_hz": 22.128191098570824,
+          "ema_difference_hz": -5.514318361878395
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 40.0,
+      "reference_population_spikes": 3777822,
+      "brian2_population_spikes": 3777821,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -2.6470278377329584e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299542,
+          "brian2_cumulative": 299538,
+          "difference": -4,
+          "reference_ema_hz": 112.07682800292969,
+          "brian2_ema_hz": 111.98007680499364,
+          "ema_difference_hz": -0.09675119793604381
+        },
+        "LPLC2": {
+          "reference_cumulative": 445725,
+          "brian2_cumulative": 445716,
+          "difference": -9,
+          "reference_ema_hz": 114.72535705566406,
+          "brian2_ema_hz": 114.85919548240868,
+          "ema_difference_hz": 0.13383842674461732
+        },
+        "GF": {
+          "reference_cumulative": 1214,
+          "brian2_cumulative": 1210,
+          "difference": -4,
+          "reference_ema_hz": 18.686342239379883,
+          "brian2_ema_hz": 24.173661828041077,
+          "ema_difference_hz": 5.487319588661194
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 41.0,
+      "reference_population_spikes": 3852317,
+      "brian2_population_spikes": 3852309,
+      "difference": -8,
+      "absolute_difference": 8,
+      "relative_difference": -2.076672298774997e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299624,
+          "brian2_cumulative": 299620,
+          "difference": -4,
+          "reference_ema_hz": 0.5976076722145081,
+          "brian2_ema_hz": 0.5862608268949624,
+          "ema_difference_hz": -0.011346845319545662
+        },
+        "LPLC2": {
+          "reference_cumulative": 445837,
+          "brian2_cumulative": 445829,
+          "difference": -8,
+          "reference_ema_hz": 0.5266456007957458,
+          "brian2_ema_hz": 0.6046725032816515,
+          "ema_difference_hz": 0.0780269024859056
+        },
+        "GF": {
+          "reference_cumulative": 1231,
+          "brian2_cumulative": 1227,
+          "difference": -4,
+          "reference_ema_hz": 8.788414001464844,
+          "brian2_ema_hz": 13.462522507980692,
+          "ema_difference_hz": 4.674108506515848
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 42.0,
+      "reference_population_spikes": 3926917,
+      "brian2_population_spikes": 3926919,
+      "difference": 2,
+      "absolute_difference": 2,
+      "relative_difference": 5.09305391481409e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299708,
+          "brian2_cumulative": 299704,
+          "difference": -4,
+          "reference_ema_hz": 0.6419013142585754,
+          "brian2_ema_hz": 0.6396063812195311,
+          "ema_difference_hz": -0.002294933039044378
+        },
+        "LPLC2": {
+          "reference_cumulative": 445950,
+          "brian2_cumulative": 445943,
+          "difference": -7,
+          "reference_ema_hz": 0.5389223098754883,
+          "brian2_ema_hz": 0.6177968179857409,
+          "ema_difference_hz": 0.07887450811025265
+        },
+        "GF": {
+          "reference_cumulative": 1248,
+          "brian2_cumulative": 1243,
+          "difference": -5,
+          "reference_ema_hz": 9.75966739654541,
+          "brian2_ema_hz": 4.850571632385254,
+          "ema_difference_hz": -4.909095764160156
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 43.0,
+      "reference_population_spikes": 4001208,
+      "brian2_population_spikes": 4001221,
+      "difference": 13,
+      "absolute_difference": 13,
+      "relative_difference": 3.2490187963235104e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299792,
+          "brian2_cumulative": 299788,
+          "difference": -4,
+          "reference_ema_hz": 0.7134789824485779,
+          "brian2_ema_hz": 0.7140218038407583,
+          "ema_difference_hz": 0.0005428213921804259
+        },
+        "LPLC2": {
+          "reference_cumulative": 446063,
+          "brian2_cumulative": 446056,
+          "difference": -7,
+          "reference_ema_hz": 0.4501126706600189,
+          "brian2_ema_hz": 0.504856689556225,
+          "ema_difference_hz": 0.05474401889620606
+        },
+        "GF": {
+          "reference_cumulative": 1265,
+          "brian2_cumulative": 1260,
+          "difference": -5,
+          "reference_ema_hz": 11.462662696838379,
+          "brian2_ema_hz": 5.582743167877197,
+          "ema_difference_hz": -5.879919528961182
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 44.0,
+      "reference_population_spikes": 4075931,
+      "brian2_population_spikes": 4075928,
+      "difference": -3,
+      "absolute_difference": 3,
+      "relative_difference": -7.360281614188268e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299876,
+          "brian2_cumulative": 299872,
+          "difference": -4,
+          "reference_ema_hz": 0.7531476020812988,
+          "brian2_ema_hz": 0.7662515791635665,
+          "ema_difference_hz": 0.013103977082267626
+        },
+        "LPLC2": {
+          "reference_cumulative": 446178,
+          "brian2_cumulative": 446171,
+          "difference": -7,
+          "reference_ema_hz": 0.5579923391342163,
+          "brian2_ema_hz": 0.6152269621153136,
+          "ema_difference_hz": 0.05723462298109727
+        },
+        "GF": {
+          "reference_cumulative": 1282,
+          "brian2_cumulative": 1277,
+          "difference": -5,
+          "reference_ema_hz": 12.700898170471191,
+          "brian2_ema_hz": 6.011530876159668,
+          "ema_difference_hz": -6.689367294311523
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 45.0,
+      "reference_population_spikes": 4150475,
+      "brian2_population_spikes": 4150474,
+      "difference": -1,
+      "absolute_difference": 1,
+      "relative_difference": -2.4093627837777604e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 299960,
+          "brian2_cumulative": 299956,
+          "difference": -4,
+          "reference_ema_hz": 0.865103006362915,
+          "brian2_ema_hz": 0.8595850808279855,
+          "ema_difference_hz": -0.00551792553492958
+        },
+        "LPLC2": {
+          "reference_cumulative": 446292,
+          "brian2_cumulative": 446284,
+          "difference": -8,
+          "reference_ema_hz": 0.5660966634750366,
+          "brian2_ema_hz": 0.5878314018249512,
+          "ema_difference_hz": 0.021734738349914573
+        },
+        "GF": {
+          "reference_cumulative": 1299,
+          "brian2_cumulative": 1294,
+          "difference": -5,
+          "reference_ema_hz": 14.066948890686035,
+          "brian2_ema_hz": 7.141030311584473,
+          "ema_difference_hz": -6.9259185791015625
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 46.0,
+      "reference_population_spikes": 4225044,
+      "brian2_population_spikes": 4225045,
+      "difference": 1,
+      "absolute_difference": 1,
+      "relative_difference": 2.3668392565852568e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300042,
+          "brian2_cumulative": 300039,
+          "difference": -3,
+          "reference_ema_hz": 0.6165503859519958,
+          "brian2_ema_hz": 0.7649190917847648,
+          "ema_difference_hz": 0.14836870583276895
+        },
+        "LPLC2": {
+          "reference_cumulative": 446405,
+          "brian2_cumulative": 446397,
+          "difference": -8,
+          "reference_ema_hz": 0.5066351294517517,
+          "brian2_ema_hz": 0.5112139263668576,
+          "ema_difference_hz": 0.004578796915105876
+        },
+        "GF": {
+          "reference_cumulative": 1315,
+          "brian2_cumulative": 1311,
+          "difference": -4,
+          "reference_ema_hz": 5.023803234100342,
+          "brian2_ema_hz": 8.001830101013184,
+          "ema_difference_hz": 2.978026866912842
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 47.0,
+      "reference_population_spikes": 4299715,
+      "brian2_population_spikes": 4299704,
+      "difference": -11,
+      "absolute_difference": 11,
+      "relative_difference": -2.558309097230863e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300126,
+          "brian2_cumulative": 300122,
+          "difference": -4,
+          "reference_ema_hz": 0.6364796757698059,
+          "brian2_ema_hz": 0.6288143604520767,
+          "ema_difference_hz": -0.007665315317729182
+        },
+        "LPLC2": {
+          "reference_cumulative": 446519,
+          "brian2_cumulative": 446510,
+          "difference": -9,
+          "reference_ema_hz": 0.497135192155838,
+          "brian2_ema_hz": 0.46243579580977157,
+          "ema_difference_hz": -0.03469939634606645
+        },
+        "GF": {
+          "reference_cumulative": 1332,
+          "brian2_cumulative": 1328,
+          "difference": -4,
+          "reference_ema_hz": 5.053774833679199,
+          "brian2_ema_hz": 9.520527839660645,
+          "ema_difference_hz": 4.466753005981445
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 48.0,
+      "reference_population_spikes": 4374071,
+      "brian2_population_spikes": 4374075,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 9.144798975599619e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300209,
+          "brian2_cumulative": 300205,
+          "difference": -4,
+          "reference_ema_hz": 0.5495020747184753,
+          "brian2_ema_hz": 0.5412639625488765,
+          "ema_difference_hz": -0.008238112169598799
+        },
+        "LPLC2": {
+          "reference_cumulative": 446633,
+          "brian2_cumulative": 446624,
+          "difference": -9,
+          "reference_ema_hz": 0.48585811257362366,
+          "brian2_ema_hz": 0.46187621838337667,
+          "ema_difference_hz": -0.02398189419024699
+        },
+        "GF": {
+          "reference_cumulative": 1349,
+          "brian2_cumulative": 1345,
+          "difference": -4,
+          "reference_ema_hz": 5.80728006362915,
+          "brian2_ema_hz": 9.780147552490234,
+          "ema_difference_hz": 3.972867488861084
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 49.0,
+      "reference_population_spikes": 4448565,
+      "brian2_population_spikes": 4448563,
+      "difference": -2,
+      "absolute_difference": 2,
+      "relative_difference": -4.495831801940626e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300294,
+          "brian2_cumulative": 300290,
+          "difference": -4,
+          "reference_ema_hz": 0.7729911208152771,
+          "brian2_ema_hz": 0.7619639729696607,
+          "ema_difference_hz": -0.011027147845616425
+        },
+        "LPLC2": {
+          "reference_cumulative": 446748,
+          "brian2_cumulative": 446739,
+          "difference": -9,
+          "reference_ema_hz": 0.5981839299201965,
+          "brian2_ema_hz": 0.5866913486171413,
+          "ema_difference_hz": -0.011492581303055194
+        },
+        "GF": {
+          "reference_cumulative": 1366,
+          "brian2_cumulative": 1362,
+          "difference": -4,
+          "reference_ema_hz": 6.170219898223877,
+          "brian2_ema_hz": 11.289114952087402,
+          "ema_difference_hz": 5.118895053863525
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 50.0,
+      "reference_population_spikes": 4523219,
+      "brian2_population_spikes": 4523226,
+      "difference": 7,
+      "absolute_difference": 7,
+      "relative_difference": 1.5475704360102837e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300378,
+          "brian2_cumulative": 300374,
+          "difference": -4,
+          "reference_ema_hz": 0.8624312281608582,
+          "brian2_ema_hz": 0.8284420967102051,
+          "ema_difference_hz": -0.033989131450653076
+        },
+        "LPLC2": {
+          "reference_cumulative": 446863,
+          "brian2_cumulative": 446854,
+          "difference": -9,
+          "reference_ema_hz": 0.7743682265281677,
+          "brian2_ema_hz": 0.700971810882156,
+          "ema_difference_hz": -0.07339641564601174
+        },
+        "GF": {
+          "reference_cumulative": 1383,
+          "brian2_cumulative": 1379,
+          "difference": -4,
+          "reference_ema_hz": 7.05409574508667,
+          "brian2_ema_hz": 11.776643753051758,
+          "ema_difference_hz": 4.722548007965088
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 51.0,
+      "reference_population_spikes": 4597852,
+      "brian2_population_spikes": 4597864,
+      "difference": 12,
+      "absolute_difference": 12,
+      "relative_difference": 2.6099143687095627e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300461,
+          "brian2_cumulative": 300457,
+          "difference": -4,
+          "reference_ema_hz": 0.7728341817855835,
+          "brian2_ema_hz": 0.7607419831412179,
+          "ema_difference_hz": -0.012092198644365615
+        },
+        "LPLC2": {
+          "reference_cumulative": 446975,
+          "brian2_cumulative": 446967,
+          "difference": -8,
+          "reference_ema_hz": 0.5938969850540161,
+          "brian2_ema_hz": 0.5871353832451073,
+          "ema_difference_hz": -0.006761601808908835
+        },
+        "GF": {
+          "reference_cumulative": 1400,
+          "brian2_cumulative": 1396,
+          "difference": -4,
+          "reference_ema_hz": 7.892670154571533,
+          "brian2_ema_hz": 13.105862617492676,
+          "ema_difference_hz": 5.213192462921143
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 52.0,
+      "reference_population_spikes": 4672336,
+      "brian2_population_spikes": 4672346,
+      "difference": 10,
+      "absolute_difference": 10,
+      "relative_difference": 2.1402570363090324e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300544,
+          "brian2_cumulative": 300541,
+          "difference": -3,
+          "reference_ema_hz": 0.6588637232780457,
+          "brian2_ema_hz": 0.8211376818399581,
+          "ema_difference_hz": 0.1622739585619124
+        },
+        "LPLC2": {
+          "reference_cumulative": 447089,
+          "brian2_cumulative": 447081,
+          "difference": -8,
+          "reference_ema_hz": 0.5789304971694946,
+          "brian2_ema_hz": 0.5769482586834882,
+          "ema_difference_hz": -0.001982238486006427
+        },
+        "GF": {
+          "reference_cumulative": 1417,
+          "brian2_cumulative": 1412,
+          "difference": -5,
+          "reference_ema_hz": 9.148340225219727,
+          "brian2_ema_hz": 4.763530731201172,
+          "ema_difference_hz": -4.384809494018555
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 53.0,
+      "reference_population_spikes": 4746828,
+      "brian2_population_spikes": 4746847,
+      "difference": 19,
+      "absolute_difference": 19,
+      "relative_difference": 4.002672942857841e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300627,
+          "brian2_cumulative": 300623,
+          "difference": -4,
+          "reference_ema_hz": 0.545048177242279,
+          "brian2_ema_hz": 0.5577313256642175,
+          "ema_difference_hz": 0.012683148421938406
+        },
+        "LPLC2": {
+          "reference_cumulative": 447204,
+          "brian2_cumulative": 447196,
+          "difference": -8,
+          "reference_ema_hz": 0.6794300675392151,
+          "brian2_ema_hz": 0.6814339959943617,
+          "ema_difference_hz": 0.0020039284551466308
+        },
+        "GF": {
+          "reference_cumulative": 1434,
+          "brian2_cumulative": 1429,
+          "difference": -5,
+          "reference_ema_hz": 9.991048812866211,
+          "brian2_ema_hz": 5.328386306762695,
+          "ema_difference_hz": -4.662662506103516
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 54.0,
+      "reference_population_spikes": 4821460,
+      "brian2_population_spikes": 4821455,
+      "difference": -5,
+      "absolute_difference": 5,
+      "relative_difference": -1.0370302771359712e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300711,
+          "brian2_cumulative": 300707,
+          "difference": -4,
+          "reference_ema_hz": 0.6151710152626038,
+          "brian2_ema_hz": 0.6318147220308818,
+          "ema_difference_hz": 0.016643706768278088
+        },
+        "LPLC2": {
+          "reference_cumulative": 447318,
+          "brian2_cumulative": 447311,
+          "difference": -7,
+          "reference_ema_hz": 0.683508574962616,
+          "brian2_ema_hz": 0.7600513045852249,
+          "ema_difference_hz": 0.07654272962260888
+        },
+        "GF": {
+          "reference_cumulative": 1451,
+          "brian2_cumulative": 1446,
+          "difference": -5,
+          "reference_ema_hz": 10.799894332885742,
+          "brian2_ema_hz": 6.281973361968994,
+          "ema_difference_hz": -4.517920970916748
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 55.0,
+      "reference_population_spikes": 4895929,
+      "brian2_population_spikes": 4895972,
+      "difference": 43,
+      "absolute_difference": 43,
+      "relative_difference": 8.782807103616086e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300796,
+          "brian2_cumulative": 300792,
+          "difference": -4,
+          "reference_ema_hz": 0.8646153211593628,
+          "brian2_ema_hz": 0.9000936084323459,
+          "ema_difference_hz": 0.03547828727298308
+        },
+        "LPLC2": {
+          "reference_cumulative": 447432,
+          "brian2_cumulative": 447425,
+          "difference": -7,
+          "reference_ema_hz": 0.696024477481842,
+          "brian2_ema_hz": 0.7785320178882496,
+          "ema_difference_hz": 0.08250754040640751
+        },
+        "GF": {
+          "reference_cumulative": 1468,
+          "brian2_cumulative": 1463,
+          "difference": -5,
+          "reference_ema_hz": 12.924134254455566,
+          "brian2_ema_hz": 6.818741321563721,
+          "ema_difference_hz": -6.105392932891846
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 56.0,
+      "reference_population_spikes": 4970396,
+      "brian2_population_spikes": 4970407,
+      "difference": 11,
+      "absolute_difference": 11,
+      "relative_difference": 2.213103342268906e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300878,
+          "brian2_cumulative": 300875,
+          "difference": -3,
+          "reference_ema_hz": 0.60955810546875,
+          "brian2_ema_hz": 0.7789343349517338,
+          "ema_difference_hz": 0.1693762294829838
+        },
+        "LPLC2": {
+          "reference_cumulative": 447544,
+          "brian2_cumulative": 447536,
+          "difference": -8,
+          "reference_ema_hz": 0.5644484162330627,
+          "brian2_ema_hz": 0.5487246178291939,
+          "ema_difference_hz": -0.01572379840386884
+        },
+        "GF": {
+          "reference_cumulative": 1484,
+          "brian2_cumulative": 1480,
+          "difference": -4,
+          "reference_ema_hz": 4.471301078796387,
+          "brian2_ema_hz": 8.49210262298584,
+          "ema_difference_hz": 4.020801544189453
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 57.0,
+      "reference_population_spikes": 5044925,
+      "brian2_population_spikes": 5044947,
+      "difference": 22,
+      "absolute_difference": 22,
+      "relative_difference": 4.3608180498223466e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 300962,
+          "brian2_cumulative": 300958,
+          "difference": -4,
+          "reference_ema_hz": 0.6609165668487549,
+          "brian2_ema_hz": 0.677278753310915,
+          "ema_difference_hz": 0.016362186462160144
+        },
+        "LPLC2": {
+          "reference_cumulative": 447659,
+          "brian2_cumulative": 447651,
+          "difference": -8,
+          "reference_ema_hz": 0.66343754529953,
+          "brian2_ema_hz": 0.6334153974378431,
+          "ema_difference_hz": -0.030022147861686888
+        },
+        "GF": {
+          "reference_cumulative": 1501,
+          "brian2_cumulative": 1497,
+          "difference": -4,
+          "reference_ema_hz": 5.469023704528809,
+          "brian2_ema_hz": 9.02623462677002,
+          "ema_difference_hz": 3.557210922241211
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 58.0,
+      "reference_population_spikes": 5119516,
+      "brian2_population_spikes": 5119511,
+      "difference": -5,
+      "absolute_difference": 5,
+      "relative_difference": -9.766548244013692e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 301045,
+          "brian2_cumulative": 301042,
+          "difference": -3,
+          "reference_ema_hz": 0.5474939942359924,
+          "brian2_ema_hz": 0.7458493066212487,
+          "ema_difference_hz": 0.19835531238525628
+        },
+        "LPLC2": {
+          "reference_cumulative": 447773,
+          "brian2_cumulative": 447764,
+          "difference": -9,
+          "reference_ema_hz": 0.6776745319366455,
+          "brian2_ema_hz": 0.5864322030866468,
+          "ema_difference_hz": -0.09124232884999872
+        },
+        "GF": {
+          "reference_cumulative": 1518,
+          "brian2_cumulative": 1514,
+          "difference": -4,
+          "reference_ema_hz": 6.170078754425049,
+          "brian2_ema_hz": 10.781148910522461,
+          "ema_difference_hz": 4.611070156097412
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 59.0,
+      "reference_population_spikes": 5194007,
+      "brian2_population_spikes": 5194027,
+      "difference": 20,
+      "absolute_difference": 20,
+      "relative_difference": 3.850591653033968e-06,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 301129,
+          "brian2_cumulative": 301125,
+          "difference": -4,
+          "reference_ema_hz": 0.6058156490325928,
+          "brian2_ema_hz": 0.6361169058179098,
+          "ema_difference_hz": 0.030301256785317032
+        },
+        "LPLC2": {
+          "reference_cumulative": 447886,
+          "brian2_cumulative": 447878,
+          "difference": -8,
+          "reference_ema_hz": 0.5954817533493042,
+          "brian2_ema_hz": 0.6175054472845953,
+          "ema_difference_hz": 0.022023693935291133
+        },
+        "GF": {
+          "reference_cumulative": 1535,
+          "brian2_cumulative": 1531,
+          "difference": -4,
+          "reference_ema_hz": 7.373202800750732,
+          "brian2_ema_hz": 11.491185188293457,
+          "ema_difference_hz": 4.117982387542725
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 60.0,
+      "reference_population_spikes": 5268573,
+      "brian2_population_spikes": 5268577,
+      "difference": 4,
+      "absolute_difference": 4,
+      "relative_difference": 7.59218862488951e-07,
+      "groups": {
+        "LC4": {
+          "reference_cumulative": 301214,
+          "brian2_cumulative": 301209,
+          "difference": -5,
+          "reference_ema_hz": 0.8679164052009583,
+          "brian2_ema_hz": 0.741679971180265,
+          "ema_difference_hz": -0.1262364340206933
+        },
+        "LPLC2": {
+          "reference_cumulative": 448001,
+          "brian2_cumulative": 447993,
+          "difference": -8,
+          "reference_ema_hz": 0.7630840539932251,
+          "brian2_ema_hz": 0.7866002211699614,
+          "ema_difference_hz": 0.023516167176736325
+        },
+        "GF": {
+          "reference_cumulative": 1552,
+          "brian2_cumulative": 1548,
+          "difference": -4,
+          "reference_ema_hz": 7.845218181610107,
+          "brian2_ema_hz": 12.84620189666748,
+          "ema_difference_hz": 5.000983715057373
+        },
+        "DNp09": {
+          "reference_cumulative": 0,
+          "brian2_cumulative": 0,
+          "difference": 0,
+          "reference_ema_hz": 0.0,
+          "brian2_ema_hz": 0.0,
+          "ema_difference_hz": 0.0
+        }
+      }
+    }
+  ],
+  "b2_trends": {
+    "population": {
+      "absolute_mismatch_slope_spikes_per_s": 0.26510141706029455,
+      "absolute_fit_r2": 0.32409197673596435,
+      "signed_slope_spikes_per_s": 0.1657960544595721,
+      "signed_fit_r2": 0.08451866471731295,
+      "last20s_absolute_slope_spikes_per_s": 0.6819548872180441,
+      "max_absolute_mismatch": 43,
+      "final_mismatch": 4,
+      "growing_evidence": false,
+      "criterion": "GROWING if abs slope >0.2 spike/s, abs R2>0.5, signed R2>0.5, last20s abs slope>0.2, final abs>4*max(1, first10s abs mean). Otherwise inspect stable phase statistics and normalized error; NOT proof of indefinite bound."
+    },
+    "LC4": {
+      "absolute_mismatch_slope_spikes_per_s": 0.0983050847457627,
+      "absolute_fit_r2": 0.6644231848519646,
+      "signed_slope_spikes_per_s": -0.0983050847457627,
+      "signed_fit_r2": 0.6644231848519646,
+      "last20s_absolute_slope_spikes_per_s": -0.0007518796992481889,
+      "max_absolute_mismatch": 6,
+      "final_mismatch": -5,
+      "growing_evidence": false,
+      "criterion": "GROWING if abs slope >0.2 spike/s, abs R2>0.5, signed R2>0.5, last20s abs slope>0.2, final abs>4*max(1, first10s abs mean). Otherwise inspect stable phase statistics and normalized error; NOT proof of indefinite bound."
+    },
+    "LPLC2": {
+      "absolute_mismatch_slope_spikes_per_s": 0.20602945262572936,
+      "absolute_fit_r2": 0.7014379120677314,
+      "signed_slope_spikes_per_s": -0.20602945262572936,
+      "signed_fit_r2": 0.7014379120677314,
+      "last20s_absolute_slope_spikes_per_s": 0.02105263157894735,
+      "max_absolute_mismatch": 13,
+      "final_mismatch": -8,
+      "growing_evidence": false,
+      "criterion": "GROWING if abs slope >0.2 spike/s, abs R2>0.5, signed R2>0.5, last20s abs slope>0.2, final abs>4*max(1, first10s abs mean). Otherwise inspect stable phase statistics and normalized error; NOT proof of indefinite bound."
+    },
+    "GF": {
+      "absolute_mismatch_slope_spikes_per_s": 0.10980828007779937,
+      "absolute_fit_r2": 0.7263372955826767,
+      "signed_slope_spikes_per_s": -0.10980828007779937,
+      "signed_fit_r2": 0.7263372955826767,
+      "last20s_absolute_slope_spikes_per_s": -0.024060150375939785,
+      "max_absolute_mismatch": 6,
+      "final_mismatch": -4,
+      "growing_evidence": false,
+      "criterion": "GROWING if abs slope >0.2 spike/s, abs R2>0.5, signed R2>0.5, last20s abs slope>0.2, final abs>4*max(1, first10s abs mean). Otherwise inspect stable phase statistics and normalized error; NOT proof of indefinite bound."
+    }
+  },
+  "b2_phase_comparison": {
+    "baseline": {
+      "reference": {
+        "population_spikes": 1488790,
+        "population_rate_hz": 0.45081515485519796,
+        "active_fraction": 0.027930863240513075,
+        "groups": {
+          "LC4": {
+            "spike_count": 1671,
+            "mean_hz": 0.6630952380952382,
+            "active_fraction": 0.03968253968253968,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "LPLC2": {
+            "spike_count": 2273,
+            "mean_hz": 0.6143243243243244,
+            "active_fraction": 0.032432432432432434,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "GF": {
+            "spike_count": 337,
+            "mean_hz": 8.425,
+            "active_fraction": 0.5,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          }
+        }
+      },
+      "brian2": {
+        "population_spikes": 1488789,
+        "population_rate_hz": 0.45081485204878813,
+        "groups": {
+          "LC4": {
+            "spike_count": 1671,
+            "final_ema_hz": 0.9112746374947684
+          },
+          "LPLC2": {
+            "spike_count": 2273,
+            "final_ema_hz": 0.6767426310358821
+          },
+          "GF": {
+            "spike_count": 337,
+            "final_ema_hz": 4.540363788604736
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "final_ema_hz": 0.0
+          }
+        }
+      },
+      "population_rate_ratio": 0.9999993283135968
+    },
+    "stimulus": {
+      "reference": {
+        "population_spikes": 2289032,
+        "population_rate_hz": 0.6931335618512373,
+        "active_fraction": 0.030522886108453145,
+        "groups": {
+          "LC4": {
+            "spike_count": 297871,
+            "mean_hz": 118.20277777777778,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "LPLC2": {
+            "spike_count": 443452,
+            "mean_hz": 119.85189189189188,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "GF": {
+            "spike_count": 877,
+            "mean_hz": 21.925,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          }
+        }
+      },
+      "brian2": {
+        "population_spikes": 2289032,
+        "population_rate_hz": 0.6931335618512373,
+        "groups": {
+          "LC4": {
+            "spike_count": 297867,
+            "final_ema_hz": 111.98007680499364
+          },
+          "LPLC2": {
+            "spike_count": 443443,
+            "final_ema_hz": 114.85919548240868
+          },
+          "GF": {
+            "spike_count": 873,
+            "final_ema_hz": 24.173661828041077
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "final_ema_hz": 0.0
+          }
+        }
+      },
+      "population_rate_ratio": 1.0
+    },
+    "recovery": {
+      "reference": {
+        "population_spikes": 1490751,
+        "population_rate_hz": 0.45140895822482774,
+        "active_fraction": 0.027936919368709196,
+        "groups": {
+          "LC4": {
+            "spike_count": 1672,
+            "mean_hz": 0.6634920634920636,
+            "active_fraction": 0.03968253968253968,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "LPLC2": {
+            "spike_count": 2276,
+            "mean_hz": 0.6151351351351352,
+            "active_fraction": 0.032432432432432434,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "GF": {
+            "spike_count": 338,
+            "mean_hz": 8.45,
+            "active_fraction": 0.5,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": null
+          }
+        }
+      },
+      "brian2": {
+        "population_spikes": 1490756,
+        "population_rate_hz": 0.4514104722568767,
+        "groups": {
+          "LC4": {
+            "spike_count": 1671,
+            "final_ema_hz": 0.741679971180265
+          },
+          "LPLC2": {
+            "spike_count": 2277,
+            "final_ema_hz": 0.7866002211699614
+          },
+          "GF": {
+            "spike_count": 338,
+            "final_ema_hz": 12.84620189666748
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "final_ema_hz": 0.0
+          }
+        }
+      },
+      "population_rate_ratio": 1.0000033540141846
+    }
+  },
+  "b2_max_absolute_relative_population_error": 8.782807103616086e-06,
+  "stability_pass": true,
+  "preservation": {
+    "success": true,
+    "checked_files": 196,
+    "changed_files": [],
+    "tests": 13,
+    "test_output": "test_biological_direction (test_core.CoreTests.test_biological_direction) ... ok\ntest_external_current_only_selected (test_core.CoreTests.test_external_current_only_selected) ... ok\ntest_identity_selector_union (test_core.CoreTests.test_identity_selector_union) ... ok\ntest_presynaptic_sign_and_normalization (test_core.CoreTests.test_presynaptic_sign_and_normalization) ... ok\ntest_refractory_reset_and_negative_current (test_core.CoreTests.test_refractory_reset_and_negative_current) ... ok\ntest_seed_and_warmup (test_core.CoreTests.test_seed_and_warmup) ... ok\ntest_actual_known_direction_and_signs (test_real.RealDataTests.test_actual_known_direction_and_signs) ... ok\ntest_pruning_retains_low_degree_identity (test_real.RealDataTests.test_pruning_retains_low_degree_identity) ... ok\ntest_real_dataset_and_identity (test_real.RealDataTests.test_real_dataset_and_identity) ... ok\ntest_real_stimulus_delivery (test_real.RealDataTests.test_real_stimulus_delivery) ... ok\ntest_invalid_and_saturation (test_decoder.DecoderTests.test_invalid_and_saturation) ... ok\ntest_left_right_forward (test_decoder.DecoderTests.test_left_right_forward) ... ok\ntest_no_activity_no_movement (test_decoder.DecoderTests.test_no_activity_no_movement) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 1.634s\n\nOK\n",
+    "machine": {
+      "os": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+      "physical_cores": 4,
+      "logical_cores": 8,
+      "total_ram_bytes": 16957935616,
+      "versions": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "pandas": "3.0.5",
+        "pyarrow": "25.0.1",
+        "psutil": "7.2.2"
+      },
+      "gpu_compute_used": false,
+      "display_adapters": [
+        "Radeon RX 570 Series",
+        "spacedesk Graphics Adapter"
+      ]
+    }
+  },
+  "b0_noise_performance": {
+    "baseline": {
+      "windows": 200,
+      "mean_ms": 346.038405,
+      "p50_ms": 340.65250000000003,
+      "p95_ms": 375.53805,
+      "p99_ms": 390.70008,
+      "max_ms": 405.288,
+      "deadline_misses": 200,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 200,
+      "neural_seconds": 10.0,
+      "network_compute_seconds": 69.20768100000002,
+      "window_compute_seconds": 69.207681,
+      "neural_wall_ratio": 0.14449263225565956,
+      "compute_realtime": false,
+      "clean_quality": false,
+      "population_spikes": 902419,
+      "compute_timing_scope": "Sum of 200 internal 50ms compute windows; excludes per-boundary logging/stat/input maintenance. Full Network.run wall above includes it."
+    },
+    "stimulus": {
+      "windows": 200,
+      "mean_ms": 347.04292499999997,
+      "p50_ms": 344.81550000000004,
+      "p95_ms": 361.37125000000003,
+      "p99_ms": 378.90725,
+      "max_ms": 396.467,
+      "deadline_misses": 200,
+      "deadline_miss_rate": 1.0,
+      "longest_consecutive_misses": 200,
+      "neural_seconds": 10.0,
+      "network_compute_seconds": 69.40858499999999,
+      "window_compute_seconds": 69.40858499999999,
+      "neural_wall_ratio": 0.1440743965605984,
+      "compute_realtime": false,
+      "clean_quality": false,
+      "population_spikes": 1302038,
+      "compute_timing_scope": "Sum of 200 internal 50ms compute windows; excludes per-boundary logging/stat/input maintenance. Full Network.run wall above includes it."
+    }
+  },
+  "gate_a_noise_off": {
+    "baseline": {
+      "neural_seconds": 10.0,
+      "wall_seconds": 5.234802,
+      "neural_wall_ratio": 1.910291926991699,
+      "population_spikes": 745685,
+      "population_rate_hz": 0.45159639539249763
+    },
+    "LC4_LPLC2_stimulus": {
+      "neural_seconds": 10.0,
+      "wall_seconds": 7.290787,
+      "neural_wall_ratio": 1.3715940405336213,
+      "population_spikes": 1144427,
+      "population_rate_hz": 0.6930796623102917
+    }
+  },
+  "resources": {
+    "max_executable_peak_rss_bytes": 326012928,
+    "max_sampled_process_tree_peak_rss_bytes": 1755385856
+  },
+  "performance_separation": {
+    "baseline": {
+      "load_wall_seconds": 0.5852986000245437,
+      "python_model_setup_wall_seconds": 0.44523009995464236,
+      "code_generation_wall_seconds": 0.8113736000377685,
+      "compile_link_wall_seconds": 5.871754400024656,
+      "timings": {
+        "init": 0.48992,
+        "network_compute": 425.421806,
+        "windows_compute": 404.8467390000006,
+        "brian_output": 0.197805
+      },
+      "binary_launch_init_compute_output_wall_seconds": 426.39111899997806,
+      "launcher_and_unattributed_seconds": 0.2815879999780577
+    },
+    "looming": {
+      "load_wall_seconds": 0.49307189998216927,
+      "python_model_setup_wall_seconds": 0.365850500005763,
+      "code_generation_wall_seconds": 14.813690900045913,
+      "compile_link_wall_seconds": 6.291079199989326,
+      "timings": {
+        "init": 0.475994,
+        "network_compute": 136.267781,
+        "windows_compute": 135.35794600000008,
+        "brian_output": 3.824454
+      },
+      "binary_launch_init_compute_output_wall_seconds": 141.5064045000472,
+      "launcher_and_unattributed_seconds": 0.9381755000472083
+    },
+    "real_predator": {
+      "load_wall_seconds": 0.4872891999548301,
+      "python_model_setup_wall_seconds": 0.3221518999780528,
+      "code_generation_wall_seconds": 0.4946151999756694,
+      "compile_link_wall_seconds": 5.187295100011397,
+      "timings": {
+        "init": 0.460196,
+        "network_compute": 134.600273,
+        "windows_compute": 134.26463999999999,
+        "brian_output": 0.196446
+      },
+      "binary_launch_init_compute_output_wall_seconds": 135.52033300005132,
+      "launcher_and_unattributed_seconds": 0.2634180000513311
+    },
+    "compound": {
+      "load_wall_seconds": 0.47739669994916767,
+      "python_model_setup_wall_seconds": 0.3068708999780938,
+      "code_generation_wall_seconds": 0.448443999979645,
+      "compile_link_wall_seconds": 5.08774300001096,
+      "timings": {
+        "init": 0.500532,
+        "network_compute": 137.702945,
+        "windows_compute": 137.1803819999999,
+        "brian_output": 3.461332
+      },
+      "binary_launch_init_compute_output_wall_seconds": 141.94952339999145,
+      "launcher_and_unattributed_seconds": 0.28471439999145787
+    },
+    "b0-native": {
+      "load_wall_seconds": 0.5134292999864556,
+      "python_model_setup_wall_seconds": 0.3865858999779448,
+      "code_generation_wall_seconds": 0.4907552000368014,
+      "compile_link_wall_seconds": 5.745315100008156,
+      "timings": {
+        "init": 0.459754,
+        "network_compute": 13.313873,
+        "windows_compute": 13.297641000000004,
+        "brian_output": 0.14188
+      },
+      "binary_launch_init_compute_output_wall_seconds": 14.214375899988227,
+      "launcher_and_unattributed_seconds": 0.29886889998822674
+    },
+    "b0-frozen": {
+      "load_wall_seconds": 0.4909137000213377,
+      "python_model_setup_wall_seconds": 0.31495240004733205,
+      "code_generation_wall_seconds": 0.46509160002460703,
+      "compile_link_wall_seconds": 5.741905699949712,
+      "timings": {
+        "init": 0.451254,
+        "network_compute": 1.899932,
+        "windows_compute": 1.8846610000000004,
+        "brian_output": 0.146963
+      },
+      "binary_launch_init_compute_output_wall_seconds": 2.7942390000098385,
+      "launcher_and_unattributed_seconds": 0.29609000000983876
+    },
+    "b0-performance": {
+      "load_wall_seconds": 0.6354892000090331,
+      "python_model_setup_wall_seconds": 0.5063420000369661,
+      "code_generation_wall_seconds": 0.9414219999453053,
+      "compile_link_wall_seconds": 7.142123099998571,
+      "timings": {
+        "init": 0.763981,
+        "network_compute": 142.384307,
+        "windows_compute": 142.25968100000006,
+        "brian_output": 0.266693
+      },
+      "binary_launch_init_compute_output_wall_seconds": 143.8632745000068,
+      "launcher_and_unattributed_seconds": 0.44829350000679824
+    },
+    "b2": {
+      "load_wall_seconds": 0.5214401999837719,
+      "python_model_setup_wall_seconds": 0.3214861000305973,
+      "code_generation_wall_seconds": 0.5373646999942139,
+      "compile_link_wall_seconds": 5.213792099966668,
+      "timings": {
+        "init": 0.494767,
+        "network_compute": 36.106181,
+        "windows_compute": 35.55534900000004,
+        "brian_output": 0.154544
+      },
+      "binary_launch_init_compute_output_wall_seconds": 37.06425950000994,
+      "launcher_and_unattributed_seconds": 0.30876750000993525
+    }
+  },
+  "debt": [
+    "Existing ecology overhead is composite same-run remainder ~19.4%, body ~8.5%; not optimized or extrapolated.",
+    "No Godot/ecology migration or persistent IPC implementation. Native noise is seeded/reproducible but NOT PCG64-identical; bounded shared B0 tape proves exact injection semantics.",
+    "B1 baseline actual 60s/1200 windows, other workloads actual 20s/400 windows; failing p99 rejects realtime without extrapolation.",
+    "B2 one deterministic 60s schedule/seed, not proof of an indefinite mathematical bound or all-circuit equivalence."
+  ]
+}

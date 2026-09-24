@@ -1,0 +1,37 @@
+[
+  {
+    "label": "rng_bench-2",
+    "wall_seconds": 6.683331199979875,
+    "returncode": 0
+  },
+  {
+    "label": "rng_bench-4",
+    "wall_seconds": 4.027514200017322,
+    "returncode": 0
+  },
+  {
+    "label": "rng_bench-8",
+    "wall_seconds": 3.168109599966556,
+    "returncode": 0
+  },
+  {
+    "label": "full-c2-native-1t",
+    "wall_seconds": 144.97365549998358,
+    "returncode": 0
+  },
+  {
+    "label": "full-c2-native-2t",
+    "wall_seconds": 115.06102389999432,
+    "returncode": 0
+  },
+  {
+    "label": "full-c2-native-4t",
+    "wall_seconds": 74.7195329000242,
+    "returncode": 0
+  },
+  {
+    "label": "full-c2-native-8t",
+    "wall_seconds": 59.997712500044145,
+    "returncode": 0
+  }
+]

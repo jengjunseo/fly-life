@@ -1,0 +1,14 @@
+{
+  "realtime\\gate-b\\analyze.py": "018d60bfce6785dd263dbd73a5e9291e1bc4d48a857c15e2c7c439f3fce46471",
+  "realtime\\gate-b\\b0_check.py": "d51e120ad5cbed440a6e6aa1e0bc15b0bf0a8e10f7f4df11f1028df4c79a3d83",
+  "realtime\\gate-b\\candidate.py": "b95c256124b4b9569af96e9f58216d3cba52708edbe46005343432d644ba6433",
+  "realtime\\gate-b\\engine.py": "147a9d2ba991056a3ee56ad6b235d55b3c5e42afd7fc88e53a34200311154618",
+  "realtime\\gate-b\\entry.py": "e2b3a7f307d485c7a8a82949d5cc2ea4dea3ed7f7c2fe8e6d61e2ab3de4f8974",
+  "realtime\\gate-b\\env.py": "a4e933dea9d29c4f576d95fb17a948d42e028e5b3c8df733597e28ea6e330e53",
+  "realtime\\gate-b\\noise_tape.py": "54dbe2f44b2a0f1403352480d541e487ca7731d94089bfa2b7208c8851433e79",
+  "realtime\\gate-b\\prepare.py": "7f941352362f8221db2e2ea07b13ac04177f6a6fe204a202d91c4364e06fae35",
+  "realtime\\gate-b\\preserve.py": "8bf6d3dceb5e4104a1b23211a82e7baa436a0413582273c96dc89f3c6ded6d6f",
+  "realtime\\gate-b\\README.md": "f6a4a174b552e79da33ec535c33382532223504cc5ddd1e934d24ffce25aa2b1",
+  "realtime\\gate-b\\reference.py": "d60d25c804606862ae7f002d3a341cd33202c4e80ba24dd5364fd37e6d74c37d",
+  "realtime\\gate-b\\run_remaining.py": "ce8291d7d42871bab5b5736ef32e5c31c72632b8111ddbb1e6b17df719e3854c"
+}

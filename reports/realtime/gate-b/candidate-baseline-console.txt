@@ -1,0 +1,88 @@
+{
+  "name": "baseline",
+  "noise_policy": "native",
+  "noise_std": 0.1,
+  "seed": 20260913,
+  "native_rng": "Actual generated objects.h: std::mt19937 + polar Box-Muller; same numeric seed, DIFFERENT stream from NumPy PCG64. Independent standard_normal per neuron per ms, float32 cast/scaling before external current; not xi voltage diffusion.",
+  "neurons": 165122,
+  "effective_connections": 6327564,
+  "dt_ms": 1,
+  "full_connection_arrays_verified": true,
+  "initial_sha256": "102adcdd42e47778d51b024a19e8afc33bb7bf03b8caff71e49e44eb477ee3a5",
+  "inputs_sha256": "0e8a732a1fba3b2d139f74861e2814e17b0913aa1dfed99add75b0af6d4614b9",
+  "weights_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+  "load_wall_seconds": 0.5852986000245437,
+  "python_model_setup_wall_seconds": 0.44523009995464236,
+  "code_generation_wall_seconds": 0.8113736000377685,
+  "compile_link_wall_seconds": 5.871754400024656,
+  "timings": {
+    "init": 0.48992,
+    "network_compute": 425.421806,
+    "windows_compute": 404.8467390000006,
+    "brian_output": 0.197805
+  },
+  "binary_launch_init_compute_output_wall_seconds": 426.39111899997806,
+  "launcher_and_unattributed_seconds": 0.2815879999780577,
+  "statistics": {
+    "windows": 1200,
+    "mean_ms": 337.3722825,
+    "p50_ms": 335.79499999999996,
+    "p95_ms": 347.34235,
+    "p99_ms": 368.08923999999996,
+    "max_ms": 420.166,
+    "deadline_misses": 1200,
+    "deadline_miss_rate": 1.0,
+    "longest_consecutive_misses": 1200,
+    "neural_seconds": 60.0,
+    "network_compute_seconds": 425.421806,
+    "window_compute_seconds": 404.846739,
+    "neural_wall_ratio": 0.14103649402494428,
+    "compute_realtime": false,
+    "clean_quality": false
+  },
+  "finite": true,
+  "executable_sha256": "aa8281014747b07d35393c13b6897814dd6c9d5799765034a8798f97dc8af101",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "brian2_version": "2.9.0",
+  "compiler": "TDM-GCC 9.2.0, -O3 -march=native -std=c++17; no fast-math/OpenMP/GPU",
+  "timing_scope": "Per 50 real 1ms Brian steps inside one persistent Network.run. Per-window input/log/stat boundary maintenance excluded; whole Network.run including it also reported. No Python launcher in quantum timings.",
+  "resources": {
+    "sampling_interval_seconds": 0.02,
+    "samples": 13884,
+    "executable_peak_rss_bytes": 325398528,
+    "executable_representative_rss_bytes": 325292032,
+    "preparation_python_peak_rss_bytes": 651632640,
+    "whole_process_tree_sampled_peak_rss_bytes": 1587376128,
+    "minimum_available_ram_bytes": 3212111872,
+    "observed_child_names": [
+      "as.exe",
+      "cc1plus.exe",
+      "cmd.exe",
+      "collect2.exe",
+      "g++.exe",
+      "gcc.exe",
+      "ld.exe",
+      "main.exe",
+      "mingw32-make.exe"
+    ]
+  }
+}

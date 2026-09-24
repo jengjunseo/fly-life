@@ -1,0 +1,15 @@
+{
+  "selected_configuration": "d1-b1-p2-rotated",
+  "headroom": false,
+  "realtime_feasible": false,
+  "worst_side_p99_ms": 57.726220000000005,
+  "d2_allowed": false,
+  "valid_configurations": [
+    "d1-b1-p2",
+    "d1-b2-p2-clean",
+    "d1-b1-p2-rotated",
+    "d1-zero-b1-p2",
+    "d1-zero-b2-p2"
+  ],
+  "stop_reason": "No tested allocation maintains hard realtime across repeats/current workloads. D2 forbidden; stop without pipeline or 3-seed certification."
+}

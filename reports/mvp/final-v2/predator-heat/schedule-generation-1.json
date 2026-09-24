@@ -1,0 +1,18 @@
+{
+  "world_seed": 20260914,
+  "schedule": [
+    {
+      "kind": "heat",
+      "at_s": 0.5
+    },
+    {
+      "kind": "predator",
+      "at_s": 0.5,
+      "position": [
+        0.8,
+        0.3,
+        -2.5
+      ]
+    }
+  ]
+}

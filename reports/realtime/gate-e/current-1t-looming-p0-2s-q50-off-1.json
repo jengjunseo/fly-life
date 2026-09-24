@@ -1,0 +1,119 @@
+{
+  "label": "current-1t-looming-p0-2s-q50-off-1",
+  "tag": "current-1t-looming-p0-2s-q50",
+  "trial": 1,
+  "threads": 1,
+  "scenario": "looming",
+  "variant": "current",
+  "profiled": false,
+  "seconds": 2,
+  "quantum_ms": 50,
+  "warmup_windows": 10,
+  "brain_pid": 21112,
+  "brain_cpus": [
+    6
+  ],
+  "brain_affinity_mask": 64,
+  "priority_class": 128,
+  "brain_statistics": {
+    "blocks": 30,
+    "mean_ms": 47.14356666666667,
+    "p50_ms": 48.042500000000004,
+    "p95_ms": 49.2963,
+    "p99_ms": 49.92478,
+    "max_ms": 50.162,
+    "blocks_per_second": 21.211801963788623,
+    "neural_wall_ratio": 1.0605900981894312,
+    "class_name": "MARGINAL REALTIME",
+    "deadline_misses": 1,
+    "deadline_miss_rate": 0.03333333333333333
+  },
+  "producer_statistics": null,
+  "producer": null,
+  "producer_intervals": [],
+  "compute_start_qpc": 301292.6635018,
+  "compute_done_qpc": 301294.5577474,
+  "timings": {
+    "init": 1.013477,
+    "network_compute": 1.893681,
+    "windows_compute": 1.8868890000000005,
+    "brian_output": 0.133214
+  },
+  "profile": [],
+  "final_state": {
+    "v": {
+      "sha256": "56aa3a66ef0c0b097ac02e7401d0c83e5507a2168c15c1d46fa83d261b12820b",
+      "min": -0.2726023197174072,
+      "max": 0.9999797344207764
+    },
+    "syn": {
+      "sha256": "641ac6b57b0075a8f50305e9d75e117728bde72693cf52494aa8d41db13ca2d6",
+      "min": -0.9980231523513794,
+      "max": 2.0401923656463623
+    },
+    "activity": {
+      "sha256": "317981ff02d83e6afda377879831f57264103b39ce4a868ff7c4ba8da0549ed2",
+      "min": 0.0,
+      "max": 140.27798461914062
+    },
+    "noise_sample": {
+      "sha256": "76f257dfface15ca94988bccfafa8c10da722627b5344be45e48cbbbbcdb7ab2",
+      "min": -0.4841248691082001,
+      "max": 0.4299141466617584
+    },
+    "ref_steps": {
+      "sha256": "c8e83f5d1f876ef46fc7ca3fe20f4723fabc090521f38a810eb0a3b247faa43e",
+      "min": 0.0,
+      "max": 2.0
+    },
+    "eligible": {
+      "sha256": "bd0b48766d77af01981ea84c3605c2e5dc6a59d0ee8ab548276f7aae9366098f",
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "finite": true,
+  "max_spiking_fraction": 0.0017683894332675234,
+  "peak_consumer_sampled_rss": 1641439232,
+  "python_os_peak_rss": 112025600,
+  "power_counter": {
+    "error": null,
+    "samples": [
+      {
+        "qpc": 301292.6618774,
+        "processor_performance_percent": 105.97271330342869
+      },
+      {
+        "qpc": 301292.9178021,
+        "processor_performance_percent": 105.91499710728749
+      },
+      {
+        "qpc": 301293.1745304,
+        "processor_performance_percent": 105.79908788641265
+      },
+      {
+        "qpc": 301293.4297017,
+        "processor_performance_percent": 106.10359183311927
+      },
+      {
+        "qpc": 301293.6840783,
+        "processor_performance_percent": 106.16536034316258
+      },
+      {
+        "qpc": 301293.9414585,
+        "processor_performance_percent": 106.21227094029948
+      },
+      {
+        "qpc": 301294.1985924,
+        "processor_performance_percent": 106.15825604166218
+      },
+      {
+        "qpc": 301294.4581294,
+        "processor_performance_percent": 105.4881862504688
+      }
+    ],
+    "qualification": "PDH _Total Processor Performance percent, not per-core direct frequency; no OS plan modification"
+  },
+  "noise_qualification": "Exact nonperiodic shared2s input",
+  "producer_output": null
+}

@@ -1,0 +1,1045 @@
+{
+  "mode": "b0",
+  "noise_std": 0.1,
+  "rng": "NumPy default_rng PCG64, float32 standard_normal; state advanced by baseline heterogeneity draw; seed read from config",
+  "seed": 20260913,
+  "neurons": 165122,
+  "neural_seconds": 2.0,
+  "load_wall_seconds": 0.39160350000020117,
+  "core_compute_wall_seconds": 19.73069120052969,
+  "whole_probe_wall_seconds": 21.43944600003306,
+  "resources": {
+    "wall_seconds": 21.43944600003306,
+    "sampled_peak_rss_bytes": 334737408,
+    "os_process_peak_rss_bytes": 380190720,
+    "representative_rss_bytes": 334594048,
+    "minimum_available_system_ram_bytes": 5302079488,
+    "sampling_interval_seconds": 0.02
+  },
+  "phases": {
+    "warmup": {
+      "population_spikes": 42160,
+      "population_rate_hz": 0.510652729496978,
+      "active_fraction": 0.04342243916619227,
+      "groups": {
+        "LC4": {
+          "spike_count": 48,
+          "mean_hz": 0.7619047619047619,
+          "active_fraction": 0.07936507936507936,
+          "peak_mean_ema_hz": 1.2221007347106934,
+          "mean_ema_hz": 0.7051847580373287
+        },
+        "LPLC2": {
+          "spike_count": 68,
+          "mean_hz": 0.7351351351351352,
+          "active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 1.0298857688903809,
+          "mean_ema_hz": 0.6527516100406646
+        },
+        "GF": {
+          "spike_count": 8,
+          "mean_hz": 8.0,
+          "active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.381223678588867,
+          "mean_ema_hz": 7.24295531463623
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    "baseline": {
+      "population_spikes": 45181,
+      "population_rate_hz": 0.547243856057945,
+      "active_fraction": 0.04409466939596177,
+      "groups": {
+        "LC4": {
+          "spike_count": 50,
+          "mean_hz": 0.7936507936507936,
+          "active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 1.0657457113265991,
+          "mean_ema_hz": 0.7783670369386673
+        },
+        "LPLC2": {
+          "spike_count": 72,
+          "mean_hz": 0.7783783783783784,
+          "active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 1.0494922399520874,
+          "mean_ema_hz": 0.7860258504152298
+        },
+        "GF": {
+          "spike_count": 8,
+          "mean_hz": 8.0,
+          "active_fraction": 0.5,
+          "peak_mean_ema_hz": 15.223395347595215,
+          "mean_ema_hz": 8.234877225875854
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    "stimulus": {
+      "population_spikes": 65209,
+      "population_rate_hz": 0.7898281270817941,
+      "active_fraction": 0.04688048836617773,
+      "groups": {
+        "LC4": {
+          "spike_count": 7490,
+          "mean_hz": 118.88888888888889,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.96180725097656,
+          "mean_ema_hz": 106.97029323625564
+        },
+        "LPLC2": {
+          "spike_count": 11118,
+          "mean_hz": 120.19459459459459,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 123.44611358642578,
+          "mean_ema_hz": 108.19453663873672
+        },
+        "GF": {
+          "spike_count": 25,
+          "mean_hz": 25.0,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 35.17307662963867,
+          "mean_ema_hz": 23.144732628822325
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    "recovery": {
+      "population_spikes": 45148,
+      "population_rate_hz": 0.5468441515970011,
+      "active_fraction": 0.044046220370392804,
+      "groups": {
+        "LC4": {
+          "spike_count": 45,
+          "mean_hz": 0.7142857142857143,
+          "active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 118.71483612060547,
+          "mean_ema_hz": 12.647015070915222
+        },
+        "LPLC2": {
+          "spike_count": 70,
+          "mean_hz": 0.7567567567567568,
+          "active_fraction": 0.05405405405405406,
+          "peak_mean_ema_hz": 119.65547180175781,
+          "mean_ema_hz": 12.750028491020203
+        },
+        "GF": {
+          "spike_count": 8,
+          "mean_hz": 8.0,
+          "active_fraction": 0.5,
+          "peak_mean_ema_hz": 23.538171768188477,
+          "mean_ema_hz": 9.668192826271056
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "time_s": 0.05,
+      "cumulative_population_spikes": 1402,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 2,
+          "mean_ema_hz": 0.29377585649490356
+        },
+        "LPLC2": {
+          "cumulative_spikes": 4,
+          "mean_ema_hz": 0.35608717799186707
+        },
+        "GF": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.1,
+      "cumulative_population_spikes": 6076,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7,
+          "mean_ema_hz": 0.5467022657394409
+        },
+        "LPLC2": {
+          "cumulative_spikes": 10,
+          "mean_ema_hz": 0.5957378149032593
+        },
+        "GF": {
+          "cumulative_spikes": 1,
+          "mean_ema_hz": 3.8674745559692383
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.15000000000000002,
+      "cumulative_population_spikes": 10566,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 13,
+          "mean_ema_hz": 0.7682045102119446
+        },
+        "LPLC2": {
+          "cumulative_spikes": 18,
+          "mean_ema_hz": 0.7885140180587769
+        },
+        "GF": {
+          "cumulative_spikes": 2,
+          "mean_ema_hz": 5.783328533172607
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.2,
+      "cumulative_population_spikes": 15048,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 18,
+          "mean_ema_hz": 0.7036762833595276
+        },
+        "LPLC2": {
+          "cumulative_spikes": 24,
+          "mean_ema_hz": 0.7420004606246948
+        },
+        "GF": {
+          "cumulative_spikes": 3,
+          "mean_ema_hz": 6.946737766265869
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.25,
+      "cumulative_population_spikes": 19562,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 24,
+          "mean_ema_hz": 0.9261326789855957
+        },
+        "LPLC2": {
+          "cumulative_spikes": 30,
+          "mean_ema_hz": 0.6864204406738281
+        },
+        "GF": {
+          "cumulative_spikes": 4,
+          "mean_ema_hz": 8.441710472106934
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.30000000000000004,
+      "cumulative_population_spikes": 24125,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 29,
+          "mean_ema_hz": 0.7612622976303101
+        },
+        "LPLC2": {
+          "cumulative_spikes": 39,
+          "mean_ema_hz": 0.8776108026504517
+        },
+        "GF": {
+          "cumulative_spikes": 5,
+          "mean_ema_hz": 10.588292121887207
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.35000000000000003,
+      "cumulative_population_spikes": 28533,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 34,
+          "mean_ema_hz": 0.7320023775100708
+        },
+        "LPLC2": {
+          "cumulative_spikes": 44,
+          "mean_ema_hz": 0.6864926218986511
+        },
+        "GF": {
+          "cumulative_spikes": 6,
+          "mean_ema_hz": 12.502436637878418
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.4,
+      "cumulative_population_spikes": 33136,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 40,
+          "mean_ema_hz": 0.8608704209327698
+        },
+        "LPLC2": {
+          "cumulative_spikes": 52,
+          "mean_ema_hz": 0.7285309433937073
+        },
+        "GF": {
+          "cumulative_spikes": 6,
+          "mean_ema_hz": 4.599390983581543
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.45,
+      "cumulative_population_spikes": 37636,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 46,
+          "mean_ema_hz": 1.0123121738433838
+        },
+        "LPLC2": {
+          "cumulative_spikes": 60,
+          "mean_ema_hz": 0.7829976081848145
+        },
+        "GF": {
+          "cumulative_spikes": 7,
+          "mean_ema_hz": 5.717331409454346
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.5,
+      "cumulative_population_spikes": 42160,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 48,
+          "mean_ema_hz": 0.5729098916053772
+        },
+        "LPLC2": {
+          "cumulative_spikes": 68,
+          "mean_ema_hz": 0.8321287631988525
+        },
+        "GF": {
+          "cumulative_spikes": 8,
+          "mean_ema_hz": 7.646653652191162
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.55,
+      "cumulative_population_spikes": 46651,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 54,
+          "mean_ema_hz": 0.6874837279319763
+        },
+        "LPLC2": {
+          "cumulative_spikes": 75,
+          "mean_ema_hz": 0.7900680303573608
+        },
+        "GF": {
+          "cumulative_spikes": 9,
+          "mean_ema_hz": 10.919021606445312
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.6000000000000001,
+      "cumulative_population_spikes": 51127,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 60,
+          "mean_ema_hz": 0.8933853507041931
+        },
+        "LPLC2": {
+          "cumulative_spikes": 82,
+          "mean_ema_hz": 0.7581145167350769
+        },
+        "GF": {
+          "cumulative_spikes": 10,
+          "mean_ema_hz": 13.340974807739258
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.65,
+      "cumulative_population_spikes": 55693,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 65,
+          "mean_ema_hz": 0.8696660399436951
+        },
+        "LPLC2": {
+          "cumulative_spikes": 88,
+          "mean_ema_hz": 0.6349883079528809
+        },
+        "GF": {
+          "cumulative_spikes": 10,
+          "mean_ema_hz": 4.907872676849365
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.7000000000000001,
+      "cumulative_population_spikes": 60205,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 69,
+          "mean_ema_hz": 0.7531792521476746
+        },
+        "LPLC2": {
+          "cumulative_spikes": 97,
+          "mean_ema_hz": 0.8709564805030823
+        },
+        "GF": {
+          "cumulative_spikes": 11,
+          "mean_ema_hz": 5.830814838409424
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.75,
+      "cumulative_population_spikes": 64718,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 73,
+          "mean_ema_hz": 0.6671088337898254
+        },
+        "LPLC2": {
+          "cumulative_spikes": 104,
+          "mean_ema_hz": 0.7724838852882385
+        },
+        "GF": {
+          "cumulative_spikes": 12,
+          "mean_ema_hz": 7.262209415435791
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.8,
+      "cumulative_population_spikes": 69229,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 79,
+          "mean_ema_hz": 0.8383452296257019
+        },
+        "LPLC2": {
+          "cumulative_spikes": 111,
+          "mean_ema_hz": 0.7311599850654602
+        },
+        "GF": {
+          "cumulative_spikes": 13,
+          "mean_ema_hz": 8.797983169555664
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.8500000000000001,
+      "cumulative_population_spikes": 73755,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 84,
+          "mean_ema_hz": 0.8490756750106812
+        },
+        "LPLC2": {
+          "cumulative_spikes": 119,
+          "mean_ema_hz": 0.8880069255828857
+        },
+        "GF": {
+          "cumulative_spikes": 14,
+          "mean_ema_hz": 11.1820650100708
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.9,
+      "cumulative_population_spikes": 78272,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 88,
+          "mean_ema_hz": 0.7603063583374023
+        },
+        "LPLC2": {
+          "cumulative_spikes": 128,
+          "mean_ema_hz": 1.0069971084594727
+        },
+        "GF": {
+          "cumulative_spikes": 15,
+          "mean_ema_hz": 13.62610149383545
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 0.9500000000000001,
+      "cumulative_population_spikes": 82827,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 93,
+          "mean_ema_hz": 0.7488625049591064
+        },
+        "LPLC2": {
+          "cumulative_spikes": 134,
+          "mean_ema_hz": 0.8443577289581299
+        },
+        "GF": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 14.336854934692383
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.0,
+      "cumulative_population_spikes": 87341,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 98,
+          "mean_ema_hz": 0.7272865176200867
+        },
+        "LPLC2": {
+          "cumulative_spikes": 140,
+          "mean_ema_hz": 0.7548843026161194
+        },
+        "GF": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 5.274237632751465
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.05,
+      "cumulative_population_spikes": 94012,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 904,
+          "mean_ema_hz": 81.81504821777344
+        },
+        "LPLC2": {
+          "cumulative_spikes": 1313,
+          "mean_ema_hz": 80.626953125
+        },
+        "GF": {
+          "cumulative_spikes": 18,
+          "mean_ema_hz": 12.184144973754883
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.1,
+      "cumulative_population_spikes": 100379,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 1615,
+          "mean_ema_hz": 102.57059478759766
+        },
+        "LPLC2": {
+          "cumulative_spikes": 2392,
+          "mean_ema_hz": 104.24932098388672
+        },
+        "GF": {
+          "cumulative_spikes": 21,
+          "mean_ema_hz": 22.669281005859375
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.1500000000000001,
+      "cumulative_population_spikes": 106979,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 2365,
+          "mean_ema_hz": 113.12538146972656
+        },
+        "LPLC2": {
+          "cumulative_spikes": 3504,
+          "mean_ema_hz": 114.76205444335938
+        },
+        "GF": {
+          "cumulative_spikes": 24,
+          "mean_ema_hz": 28.082420349121094
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.2000000000000002,
+      "cumulative_population_spikes": 113397,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 3076,
+          "mean_ema_hz": 111.54955291748047
+        },
+        "LPLC2": {
+          "cumulative_spikes": 4565,
+          "mean_ema_hz": 113.60131072998047
+        },
+        "GF": {
+          "cumulative_spikes": 27,
+          "mean_ema_hz": 33.793922424316406
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.25,
+      "cumulative_population_spikes": 120017,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 3866,
+          "mean_ema_hz": 120.00711822509766
+        },
+        "LPLC2": {
+          "cumulative_spikes": 5731,
+          "mean_ema_hz": 121.47325897216797
+        },
+        "GF": {
+          "cumulative_spikes": 29,
+          "mean_ema_hz": 27.411537170410156
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.3,
+      "cumulative_population_spikes": 126472,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 4588,
+          "mean_ema_hz": 116.90865325927734
+        },
+        "LPLC2": {
+          "cumulative_spikes": 6805,
+          "mean_ema_hz": 118.49072265625
+        },
+        "GF": {
+          "cumulative_spikes": 31,
+          "mean_ema_hz": 24.298845291137695
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.35,
+      "cumulative_population_spikes": 133023,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 5334,
+          "mean_ema_hz": 117.29521179199219
+        },
+        "LPLC2": {
+          "cumulative_spikes": 7919,
+          "mean_ema_hz": 119.37841796875
+        },
+        "GF": {
+          "cumulative_spikes": 34,
+          "mean_ema_hz": 27.041027069091797
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.4000000000000001,
+      "cumulative_population_spikes": 139452,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 6074,
+          "mean_ema_hz": 116.89273834228516
+        },
+        "LPLC2": {
+          "cumulative_spikes": 9008,
+          "mean_ema_hz": 117.73971557617188
+        },
+        "GF": {
+          "cumulative_spikes": 36,
+          "mean_ema_hz": 23.334735870361328
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.4500000000000002,
+      "cumulative_population_spikes": 146058,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 6833,
+          "mean_ema_hz": 119.28079223632812
+        },
+        "LPLC2": {
+          "cumulative_spikes": 10148,
+          "mean_ema_hz": 121.46699523925781
+        },
+        "GF": {
+          "cumulative_spikes": 39,
+          "mean_ema_hz": 30.313411712646484
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.5,
+      "cumulative_population_spikes": 152550,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7588,
+          "mean_ema_hz": 121.11305236816406
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11258,
+          "mean_ema_hz": 121.96347045898438
+        },
+        "GF": {
+          "cumulative_spikes": 41,
+          "mean_ema_hz": 24.013673782348633
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.55,
+      "cumulative_population_spikes": 157035,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7591,
+          "mean_ema_hz": 44.87931442260742
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11263,
+          "mean_ema_hz": 45.20979690551758
+        },
+        "GF": {
+          "cumulative_spikes": 42,
+          "mean_ema_hz": 17.441362380981445
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.6,
+      "cumulative_population_spikes": 161594,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7595,
+          "mean_ema_hz": 16.82892608642578
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11270,
+          "mean_ema_hz": 17.10299301147461
+        },
+        "GF": {
+          "cumulative_spikes": 42,
+          "mean_ema_hz": 6.416321277618408
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.6500000000000001,
+      "cumulative_population_spikes": 166079,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7601,
+          "mean_ema_hz": 6.763820171356201
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11279,
+          "mean_ema_hz": 6.856044292449951
+        },
+        "GF": {
+          "cumulative_spikes": 43,
+          "mean_ema_hz": 6.720999717712402
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.7000000000000002,
+      "cumulative_population_spikes": 170598,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7606,
+          "mean_ema_hz": 2.9681949615478516
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11285,
+          "mean_ema_hz": 2.8583741188049316
+        },
+        "GF": {
+          "cumulative_spikes": 44,
+          "mean_ema_hz": 7.693062782287598
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.75,
+      "cumulative_population_spikes": 175120,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7610,
+          "mean_ema_hz": 1.44430410861969
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11292,
+          "mean_ema_hz": 1.5052266120910645
+        },
+        "GF": {
+          "cumulative_spikes": 45,
+          "mean_ema_hz": 8.835172653198242
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.8,
+      "cumulative_population_spikes": 179643,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7615,
+          "mean_ema_hz": 1.004093885421753
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11300,
+          "mean_ema_hz": 1.0888638496398926
+        },
+        "GF": {
+          "cumulative_spikes": 46,
+          "mean_ema_hz": 10.439635276794434
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.85,
+      "cumulative_population_spikes": 184147,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7620,
+          "mean_ema_hz": 0.9426356554031372
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11306,
+          "mean_ema_hz": 0.8401216268539429
+        },
+        "GF": {
+          "cumulative_spikes": 47,
+          "mean_ema_hz": 12.799015998840332
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.9000000000000001,
+      "cumulative_population_spikes": 188583,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7624,
+          "mean_ema_hz": 0.7902525067329407
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11315,
+          "mean_ema_hz": 0.9666722416877747
+        },
+        "GF": {
+          "cumulative_spikes": 47,
+          "mean_ema_hz": 4.708497524261475
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 1.9500000000000002,
+      "cumulative_population_spikes": 193156,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7629,
+          "mean_ema_hz": 0.7464624047279358
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11321,
+          "mean_ema_hz": 0.796209990978241
+        },
+        "GF": {
+          "cumulative_spikes": 48,
+          "mean_ema_hz": 5.838785171508789
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "time_s": 2.0,
+      "cumulative_population_spikes": 197698,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7633,
+          "mean_ema_hz": 0.5845365524291992
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11328,
+          "mean_ema_hz": 0.8234407901763916
+        },
+        "GF": {
+          "cumulative_spikes": 49,
+          "mean_ema_hz": 7.163812637329102
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0
+        }
+      }
+    }
+  ],
+  "finite": true,
+  "max_simultaneous_spiking_fraction": 0.0013565727159312508
+}

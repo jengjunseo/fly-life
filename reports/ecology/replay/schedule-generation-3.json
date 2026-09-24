@@ -1,0 +1,46 @@
+{
+  "world_seed": 20260914,
+  "schedule": [
+    {
+      "kind": "food",
+      "at_s": 0.0,
+      "position": [
+        0.0,
+        0.22,
+        0.0
+      ]
+    },
+    {
+      "kind": "predator",
+      "at_s": 0.15,
+      "position": [
+        0.8,
+        0.3,
+        -2.5
+      ]
+    },
+    {
+      "kind": "female",
+      "at_s": 0.2,
+      "position": [
+        0.3,
+        0.22,
+        0.0
+      ],
+      "wander": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.5,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "kind": "heat",
+      "at_s": 0.3
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+d1-b2-p2-clean baseline 0 brain 55.23419 producer 32.81588099722285
+d1-b2-p2-clean baseline 1 brain 51.18784 producer 37.13306603254752
+d1-b2-p2-clean baseline 2 brain 50.29446 producer 32.59670401457697
+d1-b2-p2-clean looming 0 brain 54.25031 producer 32.67284101515543
+d1-b2-p2-clean looming 1 brain 55.390710000000006 producer 31.96831997600384
+d1-b2-p2-clean looming 2 brain 67.40220000000001 producer 34.22126498364378

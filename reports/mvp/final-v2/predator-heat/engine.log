@@ -1,0 +1,13 @@
+Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 25.8.1.250617 - Compatibility - Using Device: ATI Technologies Inc. - Radeon RX 570 Series
+
+ERROR: Parameter "f" is null.
+   at: store_buffer (drivers/windows/file_access_windows.cpp:384)
+   GDScript backtrace (most recent call first):
+       [0] log_row (res://main.gd:287)
+       [1] _process (res://main.gd:198)
+ERROR: Parameter "f" is null.
+   at: flush (drivers/windows/file_access_windows.cpp:375)
+   GDScript backtrace (most recent call first):
+       [0] log_row (res://main.gd:288)
+       [1] _process (res://main.gd:198)

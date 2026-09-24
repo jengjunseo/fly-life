@@ -1,0 +1,236 @@
+[
+  {
+    "amp": 3,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      6.0,
+      33.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_hz": [
+      24.22210693359375,
+      52.34645462036133,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensor_hz": 119.38915252685547,
+    "population_hz": 0.9634391069412231,
+    "recovery_hz": [
+      0.0008997197146527469,
+      23.627399444580078,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finite": true
+  },
+  {
+    "amp": 6,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      21.0,
+      40.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.0,
+      0.0
+    ],
+    "peak_hz": [
+      37.91841125488281,
+      60.868045806884766,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      22.966697692871094,
+      0.0
+    ],
+    "sensor_hz": 176.89385986328125,
+    "population_hz": 1.1741015911102295,
+    "recovery_hz": [
+      0.012275895103812218,
+      24.14620590209961,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0006125867366790771,
+      0.0
+    ],
+    "finite": true
+  },
+  {
+    "amp": 10,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      31.0,
+      48.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      15.0,
+      0.0
+    ],
+    "peak_hz": [
+      50.808963775634766,
+      71.7159652709961,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      32.696990966796875,
+      0.0
+    ],
+    "sensor_hz": 249.97169494628906,
+    "population_hz": 1.4422669410705566,
+    "recovery_hz": [
+      0.011023910716176033,
+      14.91625690460205,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.005147018004208803,
+      0.0
+    ],
+    "finite": true
+  }
+]

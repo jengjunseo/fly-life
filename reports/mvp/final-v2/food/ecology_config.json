@@ -1,0 +1,113 @@
+{
+  "mode": "FOOD",
+  "world_seed": 20260914,
+  "horizon_s": 0.0,
+  "duration_s": 3.5,
+  "stop_at_death": false,
+  "initial_hp": 100.0,
+  "initial_hunger": 35.0,
+  "initial_gut": 0.0,
+  "hunger_per_s": 0.2,
+  "gut_processing_per_s": 0.1,
+  "ambient_c": 25.0,
+  "shade": {
+    "center": [
+      2.0,
+      0.0,
+      1.8
+    ],
+    "half_size": [
+      1.1,
+      0.0,
+      1.0
+    ],
+    "cooling_c": 6.0
+  },
+  "food": {
+    "interval_s": [
+      20.0,
+      30.0
+    ],
+    "lifetime_s": 2.5,
+    "radius": 0.23,
+    "odor_scale": 1.8,
+    "ingestion_enabled": false,
+    "feeding_gate_hz": 20.0,
+    "ingestion_per_s": 8.0
+  },
+  "predator": {
+    "interval_s": [
+      20.0,
+      30.0
+    ],
+    "lifetime_s": 1.8,
+    "radius": 0.45,
+    "speed": 3.0,
+    "damage": 12.0,
+    "hit_cooldown_s": 0.5
+  },
+  "female": {
+    "interval_s": [
+      20.0,
+      30.0
+    ],
+    "lifetime_s": 1.5,
+    "radius": 0.2,
+    "speed": 0.15,
+    "pheromone_scale": 0.8,
+    "wander_interval_s": [
+      0.5,
+      1.2
+    ]
+  },
+  "heat": {
+    "interval_s": [
+      20.0,
+      30.0
+    ],
+    "ramp_s": 0.4,
+    "hold_s": 0.6,
+    "recover_s": 0.4,
+    "peak_c": 34.0
+  },
+  "defecation": {
+    "level": "PHYSIOLOGY_PLACEHOLDER",
+    "threshold": 60.0,
+    "latency_s": [
+      0.3,
+      0.8
+    ],
+    "gut_drop": 45.0,
+    "lifetime_s": 15.0
+  },
+  "sensory": {
+    "enabled": true,
+    "loom_cap": 6.0,
+    "expansion_scale_deg_s": 60.0,
+    "size_scale_deg": 60.0,
+    "figure_cap": 6.0,
+    "figure_motion_scale_deg_s": 45.0,
+    "chemical_cap": 3.0,
+    "thermal_cap": 3.0,
+    "thermal_reference_c": 25.0,
+    "thermal_span_c": 9.0,
+    "thermal_rate_scale_c_s": 6.0,
+    "taste_enabled": true,
+    "female_contact_enabled": false,
+    "pain_enabled": false
+  },
+  "debug_neural_keys": false,
+  "certification": false,
+  "initial_events": [
+    {
+      "kind": "food",
+      "at_s": 0.5,
+      "position": [
+        0.0,
+        0.22,
+        0.0
+      ]
+    }
+  ],
+  "arena_half_width": 5.615432893255071
+}

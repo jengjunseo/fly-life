@@ -1,0 +1,53 @@
+{
+  "records": [
+    {
+      "threads": 1,
+      "cpus": [
+        6
+      ],
+      "tag": "current-1t-looming-p0-2s-q50",
+      "repeats": [
+        "current-1t-looming-p0-2s-q50-off-0",
+        "current-1t-looming-p0-2s-q50-off-1",
+        "current-1t-looming-p0-2s-q50-off-2"
+      ],
+      "worst_p99_ms": 63.160790000000006,
+      "profile": "current-1t-looming-p1-2s-q50-off-0"
+    },
+    {
+      "threads": 2,
+      "cpus": [
+        4,
+        6
+      ],
+      "tag": "current-2t-looming-p0-2s-q50",
+      "repeats": [
+        "current-2t-looming-p0-2s-q50-off-0",
+        "current-2t-looming-p0-2s-q50-off-1",
+        "current-2t-looming-p0-2s-q50-off-2"
+      ],
+      "worst_p99_ms": 162.71112000000008,
+      "profile": "current-2t-looming-p1-2s-q50-off-0"
+    },
+    {
+      "threads": 4,
+      "cpus": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "tag": "current-4t-looming-p0-2s-q50",
+      "repeats": [
+        "current-4t-looming-p0-2s-q50-off-0",
+        "current-4t-looming-p0-2s-q50-off-1",
+        "current-4t-looming-p0-2s-q50-off-2"
+      ],
+      "worst_p99_ms": 189.9908,
+      "profile": "current-4t-looming-p1-2s-q50-off-0"
+    }
+  ],
+  "headroom_candidate": null,
+  "eight_threads_tested": false,
+  "eight_thread_reason": "Only permissible if measured4T scaling remains good; no speculative SMT search"
+}

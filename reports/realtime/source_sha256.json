@@ -1,0 +1,12 @@
+{
+  "realtime\\.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+  "realtime\\analyze.py": "6a86d574065cae72df7d79a46342f0e2bca71e2af012a61b93e74afa37c0eba5",
+  "realtime\\baseline.py": "562c8efa611bbfc933e21c54bdb219dfd2e24a3afc69e3f03df089183c2d689e",
+  "realtime\\brian_entry.py": "d66a6205b8ad2c562644f2f7b4d185d07181b944db52246eb9e14e28b3ff5877",
+  "realtime\\candidate.py": "b1a6e689a4289fec35b1fd03f0296d531e401d91d825584af81da62d49d11440",
+  "realtime\\common.py": "8a9bf9be74d0a8dae3bf8da773a78d47727b4e1deffc52ca5b6d707cd05e6437",
+  "realtime\\prototype.py": "710b5909bc395306bbfd6712dd510b133273102e9b7a5081b3bd763fc0b6f853",
+  "realtime\\README.md": "ede16e6badb8a2104ee688efa2f8457cd00b4c12bd7f31d482fbef22ff98987a",
+  "realtime\\reference.py": "6fa6f9123da48ad21892544bbb7bf6c06285dd47ebfb3cc08397f0b6771258d3",
+  "realtime\\semantics.py": "e9b51059ee9842de41eed1416222ffd90d0653e37176dd0824c75c74a8be8735"
+}

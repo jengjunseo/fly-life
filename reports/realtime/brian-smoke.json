@@ -1,0 +1,236 @@
+{
+  "mode": "smoke",
+  "neurons": 165122,
+  "effective_connections": 6327564,
+  "anatomical_connections": 6474533,
+  "dtype": "float32",
+  "dt_ms": 1,
+  "noise_policy": "OFF ONLY; NumPy2.4 reference baseline exported; no stochastic equivalence claimed",
+  "brian2_version": "2.9.0",
+  "candidate_numpy": "1.26.4",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "compiler": "C:\\Program Files (x86)\\Embarcadero\\Dev-Cpp\\TDM-GCC-64\\bin\\g++.exe",
+  "compiler_version": "TDM-GCC 9.2.0",
+  "openmp_threads": 0,
+  "weights_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+  "initial_sha256": "1c8cbfb709a8d8763ba7404f35bdaff20610cae854d71550ad6960d772bee747",
+  "generated_cpp_sha256": {
+    "main.cpp": "54464164c0ff51b36f07fbdddf63e432132dd31d0d7f8aad700a2c43119febe3",
+    "network.cpp": "52dfa12c3ceea3ff31ad4f51e022e221702946a99e4134badd60eb19e7ac8a4b",
+    "objects.cpp": "620dd83f2291162c36875b340aac985cd0329e7a5c635fdbaba3e82d7d1cf839",
+    "run.cpp": "3f5abb97c5038e967d99ad92b6240e3ce0b65c5f523aa7a0a5e13e6ccb538038",
+    "synapses_classes.cpp": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code_objects\\after_run_neurons_spike_thresholder_codeobject.cpp": "a25438c02c456431405a8dc895f0bec1a6535dd31d5225814ad8f328821c6441",
+    "code_objects\\after_run_neurons_spike_thresholder_codeobject_1.cpp": "3a10de555d2fb9201b3bf492a5c63a49c46a4b4122c0ee42b494ce6e70c6b8fd",
+    "code_objects\\after_run_neurons_spike_thresholder_codeobject_2.cpp": "c850f0dd3cd25e28d04e6073538f26b59430331eae51019768ae64e68ab5d76d",
+    "code_objects\\before_run_connections_pre_push_spikes.cpp": "b56d4f546b6c7f3118c5d2999a81017a49001082b4ddf38b1750202f3d9d9e43",
+    "code_objects\\clear_incoming_codeobject.cpp": "812b292b32222e0491c3b9c6dc7ce31d69df90e17b4f4e9acc2b76ccbc31e40b",
+    "code_objects\\clear_incoming_codeobject_1.cpp": "36ae878da60c6d0cef927ecfaa56bcbb16676adcd23ab7b95b8d7f2901bbf566",
+    "code_objects\\clear_incoming_codeobject_2.cpp": "a5cebb7ac5b8bd303ac95f10c26ebcf84f7c7da8fa4051d03dabd6c35a01acbb",
+    "code_objects\\connections_pre_codeobject.cpp": "470a27d08e87d2adf254425dae67d481722d4c7ff7c30c1fcbaa37c863f4dacd",
+    "code_objects\\connections_pre_codeobject_1.cpp": "b3fd2902a0f1181c4b7cc8147cc5e7963de61e7be06a6aa2e5309ef28b869cbd",
+    "code_objects\\connections_pre_codeobject_2.cpp": "c2dfef6c05f0e627e5d4d16933ec2ec0fa4aa5b75cf6d21e3e297149c5802781",
+    "code_objects\\connections_pre_push_spikes.cpp": "552d87484ffd5a85fecbc2f2dffe7832fa863369e08c22e6aae97d2beb156f03",
+    "code_objects\\connections_synapses_create_array_codeobject.cpp": "aa2575daa36e5a31962bee9ece5cdc986d630cb8a7ad81873050253fff6c01ec",
+    "code_objects\\lif_update_codeobject.cpp": "dcd2028ac95b8392e6f3bbfd28fc5f230d085a791980621d325265e04e38ed01",
+    "code_objects\\lif_update_codeobject_1.cpp": "86f7a35d9361ccf677bebc1747f6627ccc943c2556c6d3c09c5942f154134427",
+    "code_objects\\lif_update_codeobject_2.cpp": "9c29fe8b4fa59ec0e89432133c94669aca7417f5a51ccc457edd260a9a629d0d",
+    "code_objects\\neurons_spike_resetter_codeobject.cpp": "d5ee5fe7eb86df7e48d26e1438505fb8ba6c204bf39a80ba5c2ad58dcd950674",
+    "code_objects\\neurons_spike_resetter_codeobject_1.cpp": "44deb65fe12f571e2b45fde93a756ce385a30cf411c4a7213b5a161fecf1da54",
+    "code_objects\\neurons_spike_resetter_codeobject_2.cpp": "ec87b4c7b8184c49110f6723926749b9314347e01cd4399d89becc1ff27d1966",
+    "code_objects\\neurons_spike_thresholder_codeobject.cpp": "2a3e1e224fe3efd5a1a9169203a9a8d074cbb49a4e5fa827ae7557c54debf41d",
+    "code_objects\\neurons_spike_thresholder_codeobject_1.cpp": "98986162d9509e6a75f3100d231a31e9f5005b3f782b9792d91ea09d268ecd42",
+    "code_objects\\neurons_spike_thresholder_codeobject_2.cpp": "9abf84a3793bd50c5ca01ae4e32ac1545ee40b2076e72dba9fad641718d88244",
+    "code_objects\\spikes_codeobject.cpp": "64a43d0d189b278b322bff6e1c6df2ce83d59c49afd62a6dc851f5bd801f0685",
+    "code_objects\\spikes_codeobject_1.cpp": "76fcf90a5909d4c30e6d60ae51b5e40b304f3e948d740f9fa5023876da20e2a6",
+    "code_objects\\spikes_codeobject_2.cpp": "e4a9a1628740cb1130a2001b145a319b48f51aae76799bb35f71985338f332eb",
+    "code_objects\\states_codeobject.cpp": "46ddc81854ac897365b0b0b3296926c8fd70fd120ae157c7f65d1c388a945001",
+    "code_objects\\states_codeobject_1.cpp": "dcbc485470d005264c6758e4e357469aa87d69bd7117c2c5c36ab46c21c2e3b9",
+    "code_objects\\states_codeobject_2.cpp": "4ab804ef7e412f86c658e9bc7f01d1390dc33e6ababddce44f33f8b6f520a883"
+  },
+  "executable_sha256": "ec457a6ca5de67d6b926b714bda3cbf3d7db60bbc8bb292a9b43aa9c93f296cb",
+  "full_export_arrays_verified": true,
+  "finite": true,
+  "python_load_wall_seconds": 0.5006705999840051,
+  "python_model_generation_wall_seconds": 0.3890984000172466,
+  "build": {
+    "build_wall_seconds": 4.8920928000006825,
+    "device_timers": {
+      "run_binary": 2.774020195007324,
+      "compile": {
+        "clean": null,
+        "make": 4.361268997192383
+      }
+    }
+  },
+  "executable_init_wall_seconds": 0.451265,
+  "simulation_run_wall_seconds": [
+    0.535933,
+    0.34803,
+    0.265096
+  ],
+  "executable_launch_init_simulation_output_wall_seconds": 2.774633899971377,
+  "remaining_launch_output_seconds": 1.1743098999713768,
+  "scheduler": "                object                  |        part of         |      Clock dt      |     when      | order | active\n----------------------------------------+------------------------+--------------------+---------------+-------+-------\nclear_incoming (CodeRunner)             | neurons (NeuronGroup)  | 1. ms (every step) | start         |     0 |  yes  \nconnections_pre (SynapticPathway)       | connections (Synapses) | 1. ms (every step) | before_groups |    -1 |  yes  \nlif_update (CodeRunner)                 | neurons (NeuronGroup)  | 1. ms (every step) | groups        |     0 |  yes  \nneurons_stateupdater (StateUpdater)     | neurons (NeuronGroup)  | 1. ms (every step) | groups        |     0 |  yes  \nneurons_spike_thresholder (Thresholder) | neurons (NeuronGroup)  | 1. ms (every step) | thresholds    |     0 |  yes  \nspikes (SpikeMonitor)                   | spikes (SpikeMonitor)  | 1. ms (every step) | thresholds    |     1 |  yes  \nneurons_spike_resetter (Resetter)       | neurons (NeuronGroup)  | 1. ms (every step) | resets        |     0 |  yes  \nstates (StateMonitor)                   | states (StateMonitor)  | 1. ms (every step) | end           |     0 |  yes  ",
+  "neural_seconds": 2.0,
+  "neural_wall_ratio": 1.740554662554316,
+  "summary": {
+    "baseline": {
+      "population_spikes": 37310,
+      "population_rate_hz": 0.4519082859945979,
+      "groups": {
+        "LC4": {
+          "neurons": 126,
+          "spike_count": 42,
+          "rate_hz": 0.6666666666666666,
+          "mean_activity_hz": 0.6629573702812195,
+          "peak_mean_activity_hz": 0.996096134185791,
+          "final_mean_activity_hz": 0.6119542121887207
+        },
+        "LPLC2": {
+          "neurons": 185,
+          "spike_count": 57,
+          "rate_hz": 0.6162162162162163,
+          "mean_activity_hz": 0.6128110289573669,
+          "peak_mean_activity_hz": 0.8498186469078064,
+          "final_mean_activity_hz": 0.6353919506072998
+        },
+        "GF": {
+          "neurons": 2,
+          "spike_count": 8,
+          "rate_hz": 8.0,
+          "mean_activity_hz": 8.330896377563477,
+          "peak_mean_activity_hz": 14.354037284851074,
+          "final_mean_activity_hz": 4.486415386199951
+        },
+        "DNp09": {
+          "neurons": 2,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "mean_activity_hz": 0.0,
+          "peak_mean_activity_hz": 0.0,
+          "final_mean_activity_hz": 0.0
+        }
+      }
+    },
+    "stimulus": {
+      "population_spikes": 57393,
+      "population_rate_hz": 0.6951587311200204,
+      "groups": {
+        "LC4": {
+          "neurons": 126,
+          "spike_count": 7503,
+          "rate_hz": 119.0952380952381,
+          "mean_activity_hz": 107.06207275390625,
+          "peak_mean_activity_hz": 123.83390808105469,
+          "final_mean_activity_hz": 122.1548843383789,
+          "rate_minus_baseline_hz": 118.42857142857143
+        },
+        "LPLC2": {
+          "neurons": 185,
+          "spike_count": 11153,
+          "rate_hz": 120.57297297297298,
+          "mean_activity_hz": 108.43048095703125,
+          "peak_mean_activity_hz": 124.33075714111328,
+          "final_mean_activity_hz": 123.28264617919922,
+          "rate_minus_baseline_hz": 119.95675675675676
+        },
+        "GF": {
+          "neurons": 2,
+          "spike_count": 22,
+          "rate_hz": 22.0,
+          "mean_activity_hz": 20.22818374633789,
+          "peak_mean_activity_hz": 33.33263397216797,
+          "final_mean_activity_hz": 22.38290786743164,
+          "rate_minus_baseline_hz": 14.0
+        },
+        "DNp09": {
+          "neurons": 2,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "mean_activity_hz": 0.0,
+          "peak_mean_activity_hz": 0.0,
+          "final_mean_activity_hz": 0.0,
+          "rate_minus_baseline_hz": 0.0
+        }
+      }
+    },
+    "recovery": {
+      "population_spikes": 37332,
+      "population_rate_hz": 0.4521747556352273,
+      "groups": {
+        "LC4": {
+          "neurons": 126,
+          "spike_count": 41,
+          "rate_hz": 0.6507936507936508,
+          "mean_activity_hz": 12.671858787536621,
+          "peak_mean_activity_hz": 119.73607635498047,
+          "final_mean_activity_hz": 0.7342004179954529
+        },
+        "LPLC2": {
+          "neurons": 185,
+          "spike_count": 55,
+          "rate_hz": 0.5945945945945946,
+          "mean_activity_hz": 12.742546081542969,
+          "peak_mean_activity_hz": 120.94844818115234,
+          "final_mean_activity_hz": 0.5802192687988281
+        },
+        "GF": {
+          "neurons": 2,
+          "spike_count": 8,
+          "rate_hz": 8.0,
+          "mean_activity_hz": 9.618269920349121,
+          "peak_mean_activity_hz": 21.939697265625,
+          "final_mean_activity_hz": 6.037320137023926
+        },
+        "DNp09": {
+          "neurons": 2,
+          "spike_count": 0,
+          "rate_hz": 0.0,
+          "mean_activity_hz": 0.0,
+          "peak_mean_activity_hz": 0.0,
+          "final_mean_activity_hz": 0.0
+        }
+      }
+    }
+  },
+  "resources": {
+    "sampling_interval_seconds": 0.02,
+    "samples": 282,
+    "executable_peak_rss_bytes": 327692288,
+    "executable_representative_rss_bytes": 322244608,
+    "preparation_python_peak_rss_bytes": 705781760,
+    "whole_process_tree_sampled_peak_rss_bytes": 899698688,
+    "minimum_available_ram_bytes": 4409044992,
+    "observed_child_names": [
+      "as.exe",
+      "cc1plus.exe",
+      "cmd.exe",
+      "collect2.exe",
+      "g++.exe",
+      "gcc.exe",
+      "ld.exe",
+      "main.exe",
+      "mingw32-make.exe"
+    ]
+  }
+}

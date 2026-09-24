@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "checked_generated_source_and_executables": 320,
+  "changed": [],
+  "cache_incident": "Initial make-n-B audit attempted included make.deps regeneration; missing compiler PATH left one generated work dependency cache empty. No compile succeeded. Cache restored by exact byte copy from normal identical1T dependency graph; corrected audit only reads old makefile.",
+  "dependency_cache_sha256": "382dfafce9c7738105043ddcf83d39b5d7f78a164a4275f7af239c9ac78b1e2e",
+  "baseline1t_and_current_E1t_dependency_graph_exact_match": true,
+  "qualification": "Generated dependency cache is not neural source, executable, result, or verified scientific data. Original pre-incident cache SHA was not captured; restored dependency graph matches two normal same-layout builds, not a claimed original pre-incident byte audit."
+}

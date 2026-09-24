@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "pause_test": true,
+    "step_test": true,
+    "fullscreen_round_trip": true,
+    "reset_generations": true,
+    "paused_edits_visible_in_state": true,
+    "temperature_and_shade": true,
+    "manual_step_exact": true,
+    "manual_step_hot_response": true,
+    "clear_objects": true,
+    "ui_preset_changed": true,
+    "heat_observed": true,
+    "final_4k": true,
+    "clean_exits": true
+  },
+  "manual_world_time_before": 2.2,
+  "manual_world_time_after": 2.25,
+  "visual_inspection": "Actual user-desktop Godot screenshots inspected: 4K layout, camera follow, interpretation tab, fullscreen/windowed round trip, paused objects and temperature, HEAT experiment. Engine captures are 3840x2160; desktop capture is DPI-scaled 2560x1440.",
+  "screenshot_refs": [
+    "final-product-test/paused-edits-desktop.png",
+    "final-product-test/heat-desktop.png",
+    "ui-qa/follow-desktop.png",
+    "ui-qa/windowed-desktop.png",
+    "ui-qa/interpretation-desktop.png"
+  ]
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "amp": 0,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      0.0,
+      17.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_hz": [
+      0.0,
+      30.50531768798828,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensory_hz": 0.7942122220993042,
+    "population_hz": 0.5467351675033569,
+    "final_recovery_hz": [
+      0.0,
+      14.32619857788086,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finite": true
+  },
+  {
+    "amp": 3,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      8.0,
+      41.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_hz": [
+      24.204919815063477,
+      52.47315979003906,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensory_hz": 119.05787658691406,
+    "population_hz": 0.7889075875282288,
+    "final_recovery_hz": [
+      0.00030673862784169614,
+      14.327191352844238,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finite": true
+  },
+  {
+    "amp": 6,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      25.0,
+      50.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_hz": [
+      37.019309997558594,
+      60.918827056884766,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensory_hz": 176.09002685546875,
+    "population_hz": 0.9096667766571045,
+    "final_recovery_hz": [
+      0.0010350649245083332,
+      14.268156051635742,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finite": true
+  },
+  {
+    "amp": 10,
+    "targets": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "somaSide": "L"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "somaSide": "R"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "somaSide": "L"
+      }
+    ],
+    "spikes": [
+      39.0,
+      60.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_hz": [
+      50.808963775634766,
+      71.7159652709961,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensory_hz": 250.0,
+    "population_hz": 1.0671806335449219,
+    "final_recovery_hz": [
+      0.0016408689552918077,
+      21.19230842590332,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finite": true
+  }
+]

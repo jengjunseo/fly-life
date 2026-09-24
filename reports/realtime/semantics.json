@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "reference_spikes_by_step": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    []
+  ],
+  "brian2_spikes_by_step": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    []
+  ],
+  "max_absolute_errors": {
+    "v": 9.5367431640625e-07,
+    "syn": 3.814697265625e-06,
+    "ref_steps": 0.0,
+    "activity": 0.0
+  },
+  "checks": {
+    "direction": true,
+    "sign": true,
+    "one_step_delay": true,
+    "refractory": true,
+    "external_only_source": true
+  },
+  "build": {
+    "build_wall_seconds": 4.453482299984898,
+    "device_timers": {
+      "run_binary": 0.44748950004577637,
+      "compile": {
+        "clean": null,
+        "make": 4.004755973815918
+      }
+    }
+  },
+  "noise_policy": "OFF; seeded NumPy baseline exported without Brian RNG",
+  "scheduler": "                object                  |        part of         |      Clock dt      |     when      | order | active\n----------------------------------------+------------------------+--------------------+---------------+-------+-------\nclear_incoming (CodeRunner)             | neurons (NeuronGroup)  | 1. ms (every step) | start         |     0 |  yes  \nconnections_pre (SynapticPathway)       | connections (Synapses) | 1. ms (every step) | before_groups |    -1 |  yes  \nlif_update (CodeRunner)                 | neurons (NeuronGroup)  | 1. ms (every step) | groups        |     0 |  yes  \nneurons_stateupdater (StateUpdater)     | neurons (NeuronGroup)  | 1. ms (every step) | groups        |     0 |  yes  \nneurons_spike_thresholder (Thresholder) | neurons (NeuronGroup)  | 1. ms (every step) | thresholds    |     0 |  yes  \nspikes (SpikeMonitor)                   | spikes (SpikeMonitor)  | 1. ms (every step) | thresholds    |     1 |  yes  \nneurons_spike_resetter (Resetter)       | neurons (NeuronGroup)  | 1. ms (every step) | resets        |     0 |  yes  \nstates (StateMonitor)                   | states (StateMonitor)  | 1. ms (every step) | end           |     0 |  yes  "
+}

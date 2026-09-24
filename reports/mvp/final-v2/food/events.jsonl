@@ -1,0 +1,5 @@
+{"generation": 1, "source_seq": 49.0, "neural_time_s": 1.0, "event": "FOOD_SPAWN", "world_time_s": 0.5, "entity": {"id": "food-1", "kind": "food", "position": [0.0, 0.22, 0.0], "radius": 0.23, "born_s": 0.5, "expires_s": 3.0, "next_hit_s": 0.5, "wander": [[0.0, 0.0]]}}
+{"generation": 1, "source_seq": 49.0, "neural_time_s": 1.0, "event": "FOOD_CONTACT", "world_time_s": 0.5, "entity_id": "food-1"}
+{"generation": 1, "source_seq": 50, "event": "food_odor ACTIVITY RISE", "world_time_s": 0.55, "activity_hz": 80.28702545166016, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 50, "event": "taste ACTIVITY RISE", "world_time_s": 0.55, "activity_hz": 76.03871154785156, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 99.0, "neural_time_s": 3.5, "event": "FOOD_DESPAWN", "world_time_s": 3.0, "entity_id": "food-1"}

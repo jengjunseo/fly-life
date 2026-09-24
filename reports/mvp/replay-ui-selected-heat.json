@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "reference": "reports/mvp/final-v2/heat",
+  "replay": "reports/mvp/final-product-test",
+  "replay_generation": 2,
+  "frames": 70,
+  "available": [
+    70,
+    106
+  ],
+  "mismatching_frames": [],
+  "scope": "Exact observable population/group counts, EMA, motor, sensory/world snapshots. Not a full internal membrane-state hash claim."
+}

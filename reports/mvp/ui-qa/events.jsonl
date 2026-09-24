@@ -1,0 +1,27 @@
+{"generation": 1, "source_seq": 38.0, "neural_time_s": 1.0, "event": "PREDATOR_SPAWN", "world_time_s": 0.5, "entity": {"id": "predator-1", "kind": "predator", "position": [0.8, 0.3, -2.5], "radius": 0.45, "born_s": 0.5, "expires_s": 2.3, "next_hit_s": 0.5, "wander": [[0.0, 0.0]]}}
+{"generation": 1, "source_seq": 40, "event": "lc4 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 70.35482025146484, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 40, "event": "lplc2 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 31.626394271850586, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 40, "event": "figure ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 51.64893341064453, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 44, "event": "GF ACTIVITY RISE", "world_time_s": 0.8, "activity_hz": 28.237464904785156, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 51.0, "neural_time_s": 1.65, "event": "PREDATOR_HIT", "world_time_s": 1.15, "entity_id": "predator-1", "distance": 0.5228984728900159}
+{"generation": 1, "source_seq": 51.0, "neural_time_s": 1.65, "event": "DAMAGE", "world_time_s": 1.15, "amount": 12.0, "hp": 88.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 61.0, "neural_time_s": 2.15, "event": "PREDATOR_HIT", "world_time_s": 1.65, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 1, "source_seq": 61.0, "neural_time_s": 2.15, "event": "DAMAGE", "world_time_s": 1.65, "amount": 12.0, "hp": 76.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 71.0, "neural_time_s": 2.65, "event": "PREDATOR_HIT", "world_time_s": 2.15, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 1, "source_seq": 71.0, "neural_time_s": 2.65, "event": "DAMAGE", "world_time_s": 2.15, "amount": 12.0, "hp": 64.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 74.0, "neural_time_s": 2.8, "event": "PREDATOR_DESPAWN", "world_time_s": 2.3, "entity_id": "predator-1"}
+{"generation": 2, "source_seq": 159.0, "neural_time_s": 1.0, "event": "PREDATOR_SPAWN", "world_time_s": 0.5, "entity": {"id": "predator-1", "kind": "predator", "position": [0.8, 0.3, -2.5], "radius": 0.45, "born_s": 0.5, "expires_s": 2.3, "next_hit_s": 0.5, "wander": [[0.0, 0.0]]}}
+{"generation": 2, "source_seq": 161, "event": "lc4 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 70.35482025146484, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 161, "event": "lplc2 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 31.626394271850586, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 161, "event": "figure ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 51.64893341064453, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 165, "event": "GF ACTIVITY RISE", "world_time_s": 0.8, "activity_hz": 28.237464904785156, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 172.0, "neural_time_s": 1.65, "event": "PREDATOR_HIT", "world_time_s": 1.15, "entity_id": "predator-1", "distance": 0.5228984728900159}
+{"generation": 2, "source_seq": 172.0, "neural_time_s": 1.65, "event": "DAMAGE", "world_time_s": 1.15, "amount": 12.0, "hp": 88.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 2, "source_seq": 182.0, "neural_time_s": 2.15, "event": "PREDATOR_HIT", "world_time_s": 1.65, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 2, "source_seq": 182.0, "neural_time_s": 2.15, "event": "DAMAGE", "world_time_s": 1.65, "amount": 12.0, "hp": 76.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 2, "source_seq": 192.0, "neural_time_s": 2.65, "event": "PREDATOR_HIT", "world_time_s": 2.15, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 2, "source_seq": 192.0, "neural_time_s": 2.65, "event": "DAMAGE", "world_time_s": 2.15, "amount": 12.0, "hp": 64.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 2, "source_seq": 195.0, "neural_time_s": 2.8, "event": "PREDATOR_DESPAWN", "world_time_s": 2.3, "entity_id": "predator-1"}
+{"generation": 2, "event": "FOOD_SPAWN", "world_time_s": 5.85, "entity": {"id": "food-2", "kind": "food", "position": [1.6467484591882973, 0.22, 1.674773140453429], "radius": 0.23, "born_s": 5.85, "expires_s": 8.35, "next_hit_s": 5.85, "wander": [[0.0, 0.0]]}}
+{"generation": 2, "event": "FEMALE_SPAWN", "world_time_s": 5.85, "entity": {"id": "female-3", "kind": "female", "position": [2.1646343483447965, 0.22, 0.20642436328060842], "radius": 0.2, "born_s": 5.85, "expires_s": 7.35, "next_hit_s": 5.85, "wander": [[0.0, -1.9411531362945385], [0.9562796525602679, -2.7554219613461766]]}}
+{"generation": 2, "event": "SHADE_CONDITION", "world_time_s": 5.85, "enabled": false}

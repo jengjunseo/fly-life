@@ -1,0 +1,33 @@
+{
+  "reason": "D1 measured insufficient headroom/jitter; now inspect actual SMT layout",
+  "physical_cores": [
+    {
+      "mask": 3,
+      "logical_cpus": [
+        0,
+        1
+      ]
+    },
+    {
+      "mask": 12,
+      "logical_cpus": [
+        2,
+        3
+      ]
+    },
+    {
+      "mask": 48,
+      "logical_cpus": [
+        4,
+        5
+      ]
+    },
+    {
+      "mask": 192,
+      "logical_cpus": [
+        6,
+        7
+      ]
+    }
+  ]
+}

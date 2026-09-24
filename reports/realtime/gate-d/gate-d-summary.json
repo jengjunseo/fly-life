@@ -1,0 +1,22 @@
+{
+  "classification": "RNG RESCUE: FAIL — CPU CONTENTION",
+  "pipeline_p99_ms": null,
+  "pipeline_deadline_miss_rate": null,
+  "producer_starvation": null,
+  "sustained_60s_neural_wall": null,
+  "selected_configuration": "d1-b1-p2-rotated",
+  "best_robust_d1_side_p99_ms": 57.726220000000005,
+  "worst_tested_d1_side_p99_ms": 163.48025000000013,
+  "worst_strong_d1_side_p99_ms": 73.88684,
+  "d1_side_margin_ms": -7.726220000000005,
+  "d1_side_equivalent_factor": 0.866157527723104,
+  "d2": "NOT RUN — D1 concurrent feasibility failed",
+  "d3": "NOT RUN — no admitted D2 pipeline",
+  "d4": "NOT RUN — no concurrent HEADROOM candidate",
+  "baseline_checked_files": 369,
+  "baseline_changed_files": [],
+  "regression_tests": 13,
+  "peak_cpp_sampled_rss_bytes": 1649324032,
+  "measured_python_os_peak_rss_bytes": 430723072,
+  "qualification": "D1 side timings are short feasibility measurements, not pipeline or 60s certification. Consumer already lacks 35ms headroom without producer; concurrent CPU/noise-memory activity further slows it. No network-level parallel-stream equivalence claim."
+}

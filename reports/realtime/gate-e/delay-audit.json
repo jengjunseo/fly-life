@@ -1,0 +1,8 @@
+{
+  "explicit_assignment": false,
+  "stored_values": 6327564,
+  "min_ms": 0.0,
+  "max_ms": 0.0,
+  "classification": "No explicit delay; all stored default delays uniformly zero",
+  "modified": false
+}

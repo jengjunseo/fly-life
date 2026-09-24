@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\PC\Documents\Codex\2026-09-13\https-wonju-station-live-tsiba5021-chatgpt\outputs\brain-core\mvp\bridge.py", line 179, in <module>
+    ConsoleRuntime(json.loads(Path(a.body_config).read_text()),json.loads(Path(a.ecology_config).read_text()),a.logdir).run()
+  File "C:\Users\PC\Documents\Codex\2026-09-13\https-wonju-station-live-tsiba5021-chatgpt\outputs\brain-core\mvp\bridge.py", line 162, in run
+    self.wait_ack()
+  File "C:\Users\PC\Documents\Codex\2026-09-13\https-wonju-station-live-tsiba5021-chatgpt\outputs\brain-core\ecology\bridge.py", line 110, in wait_ack
+    self.receive()
+  File "C:\Users\PC\Documents\Codex\2026-09-13\https-wonju-station-live-tsiba5021-chatgpt\outputs\brain-core\ecology\bridge.py", line 104, in receive
+    if time.perf_counter()-self.last_client>self.config['disconnect_seconds']:raise TimeoutError('Godot heartbeat lost')
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: Godot heartbeat lost

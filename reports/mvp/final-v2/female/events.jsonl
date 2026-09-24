@@ -1,0 +1,7 @@
+{"generation": 1, "source_seq": 53.0, "neural_time_s": 1.0, "event": "FEMALE_SPAWN", "world_time_s": 0.5, "entity": {"id": "female-1", "kind": "female", "position": [0.3, 0.22, 0.0], "radius": 0.2, "born_s": 0.5, "expires_s": 2.0, "next_hit_s": 0.5, "wander": [[0.0, 1.0], [0.5, -1.0]]}}
+{"generation": 1, "source_seq": 53.0, "neural_time_s": 1.0, "event": "FEMALE_CONTACT", "world_time_s": 0.5, "entity_id": "female-1"}
+{"generation": 1, "source_seq": 54, "event": "fly_odor ACTIVITY RISE", "world_time_s": 0.55, "activity_hz": 58.7071533203125, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 55, "event": "figure ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 23.53746223449707, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 64, "event": "lc4 ACTIVITY RISE", "world_time_s": 1.05, "activity_hz": 19.42630958557129, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 64, "event": "lplc2 ACTIVITY RISE", "world_time_s": 1.05, "activity_hz": 16.855037689208984, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 83.0, "neural_time_s": 2.5, "event": "FEMALE_DESPAWN", "world_time_s": 2.0, "entity_id": "female-1"}

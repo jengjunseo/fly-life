@@ -1,0 +1,9 @@
+{
+  "tag": "current-1t-looming-p0-20s-q50",
+  "repeats": [
+    "current-1t-looming-p0-20s-q50-off-0",
+    "current-1t-looming-p0-20s-q50-off-1",
+    "current-1t-looming-p0-20s-q50-off-2"
+  ],
+  "qualification": "20s consecutive persistent neural run with2s frozen noise replay to bound RAM; known40-window noise period, not20s independent Gaussian/pipeline certification"
+}

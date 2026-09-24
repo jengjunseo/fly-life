@@ -1,0 +1,22 @@
+[
+  {
+    "trial": 0,
+    "actual_threads": 8,
+    "samples": 165122000,
+    "wall_seconds": 1.068851,
+    "samples_per_second": 154485517.62593663,
+    "equivalent_neural_wall_ratio": 0.9355840991868839,
+    "warmup_seconds": 0.047374,
+    "checksum": 340.16214279736585
+  },
+  {
+    "trial": 1,
+    "actual_threads": 8,
+    "samples": 165122000,
+    "wall_seconds": 0.981125,
+    "samples_per_second": 168298636.76901516,
+    "equivalent_neural_wall_ratio": 1.0192381195056694,
+    "warmup_seconds": 0.047374,
+    "checksum": 807.1207436115683
+  }
+]

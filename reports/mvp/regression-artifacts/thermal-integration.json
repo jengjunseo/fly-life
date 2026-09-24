@@ -1,0 +1,17 @@
+{
+  "level": "INTEGRATION_INITIAL_CONDITIONS_NOT_BEHAVIOR",
+  "hot_c": 34.0,
+  "shade_c": 28.0,
+  "hot_current": 3.0,
+  "shade_current": 1.0,
+  "hot_bodyIds": [
+    70171,
+    339719,
+    514687,
+    514688,
+    555319,
+    360278126,
+    558712154
+  ],
+  "shade_direction_input": false
+}

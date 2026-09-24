@@ -1,0 +1,35 @@
+{
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "active_power_plan": "전원 구성표 GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (고성능)",
+  "power_plan_changed": false,
+  "priority_policy": "HIGH_PRIORITY_CLASS on owned benchmark processes only; never REALTIME",
+  "compile_flag_status": "COMPILE FLAG OPTIMIZATION: ALREADY SATISFIED",
+  "flags": "-O3 -march=native -std=c++17; no unsafe math flags",
+  "generated_makefile_sha256": "b54274720e4ba7db372698baad7e93d271fdc7cbb54b1d21ee6787122b86fb49",
+  "actual_build_commands_sha256": "b54274720e4ba7db372698baad7e93d271fdc7cbb54b1d21ee6787122b86fb49",
+  "build_command_source": "Actual generated makefile OPTIMISATIONS/CXXFLAGS and compile rule, not assumed library defaults; new E build consoles record executed commands",
+  "noise_path": "Full 2s tape preloaded into C++ vector before Network.run; each 1ms step reads next row in C++ memory; no per-step Python callback/IPC/file read",
+  "roundtrip_status": "NO PER-STEP PYTHON ROUNDTRIP",
+  "delay_status": "No explicit delay assignment; Brian2 default zero delay, existing previous-spike scheduling preserved",
+  "monitors": "SpikeMonitor(record=False), cumulative count-only all neurons; no StateMonitor or PopulationRateMonitor. Certification custom boundary scans v/syn and spike counts each50ms; small circuit activity sampled each1ms.",
+  "no_redundant_flag_or_timedarray_redesign": true
+}

@@ -1,0 +1,2281 @@
+{
+  "total_wall_s": 44.35646679997444,
+  "brain_exit_code": 0,
+  "godot_exit_code": 0,
+  "real_brain_terminated_for_failure_test": false,
+  "remaining_owned_pids": [],
+  "process_tree_rss": true,
+  "samples": [
+    {
+      "wall_s": 8.400005754083395e-06,
+      "python_rss": 10698752,
+      "godot_rss": 12517376,
+      "available_ram": 5875662848
+    },
+    {
+      "wall_s": 0.11754170001950115,
+      "python_rss": 37900288,
+      "godot_rss": 57503744,
+      "available_ram": 5820432384
+    },
+    {
+      "wall_s": 0.23406699998304248,
+      "python_rss": 49655808,
+      "godot_rss": 95432704,
+      "available_ram": 5760266240
+    },
+    {
+      "wall_s": 0.35217219998594373,
+      "python_rss": 62902272,
+      "godot_rss": 115204096,
+      "available_ram": 5741215744
+    },
+    {
+      "wall_s": 0.4690754999755882,
+      "python_rss": 75350016,
+      "godot_rss": 159989760,
+      "available_ram": 5689499648
+    },
+    {
+      "wall_s": 0.5842514999676496,
+      "python_rss": 85983232,
+      "godot_rss": 211050496,
+      "available_ram": 5618544640
+    },
+    {
+      "wall_s": 0.7000432999921031,
+      "python_rss": 98635776,
+      "godot_rss": 211443712,
+      "available_ram": 5603880960
+    },
+    {
+      "wall_s": 0.8156837999704294,
+      "python_rss": 106668032,
+      "godot_rss": 211906560,
+      "available_ram": 5589209088
+    },
+    {
+      "wall_s": 0.9306672000093386,
+      "python_rss": 112316416,
+      "godot_rss": 212430848,
+      "available_ram": 5586079744
+    },
+    {
+      "wall_s": 1.0461698999861255,
+      "python_rss": 120758272,
+      "godot_rss": 212942848,
+      "available_ram": 5567262720
+    },
+    {
+      "wall_s": 1.1644090000190772,
+      "python_rss": 265994240,
+      "godot_rss": 213409792,
+      "available_ram": 5429161984
+    },
+    {
+      "wall_s": 1.2802561999997124,
+      "python_rss": 296796160,
+      "godot_rss": 213934080,
+      "available_ram": 5405573120
+    },
+    {
+      "wall_s": 1.3958939000149257,
+      "python_rss": 320811008,
+      "godot_rss": 214495232,
+      "available_ram": 5380808704
+    },
+    {
+      "wall_s": 1.5120132999727502,
+      "python_rss": 337494016,
+      "godot_rss": 214786048,
+      "available_ram": 5367287808
+    },
+    {
+      "wall_s": 1.627829400007613,
+      "python_rss": 342466560,
+      "godot_rss": 214802432,
+      "available_ram": 5355773952
+    },
+    {
+      "wall_s": 1.7452775000128895,
+      "python_rss": 342556672,
+      "godot_rss": 214802432,
+      "available_ram": 5376167936
+    },
+    {
+      "wall_s": 1.862241399998311,
+      "python_rss": 342556672,
+      "godot_rss": 214802432,
+      "available_ram": 5375889408
+    },
+    {
+      "wall_s": 1.9789876000140794,
+      "python_rss": 342556672,
+      "godot_rss": 214802432,
+      "available_ram": 5376823296
+    },
+    {
+      "wall_s": 2.100144599971827,
+      "python_rss": 332521472,
+      "godot_rss": 214802432,
+      "available_ram": 5386182656
+    },
+    {
+      "wall_s": 2.2172449000063352,
+      "python_rss": 332537856,
+      "godot_rss": 214806528,
+      "available_ram": 5387427840
+    },
+    {
+      "wall_s": 2.3344715000130236,
+      "python_rss": 332541952,
+      "godot_rss": 214806528,
+      "available_ram": 5383319552
+    },
+    {
+      "wall_s": 2.451360700011719,
+      "python_rss": 332554240,
+      "godot_rss": 214806528,
+      "available_ram": 5384015872
+    },
+    {
+      "wall_s": 2.5680037999991328,
+      "python_rss": 332554240,
+      "godot_rss": 214806528,
+      "available_ram": 5385392128
+    },
+    {
+      "wall_s": 2.6836092000012286,
+      "python_rss": 332558336,
+      "godot_rss": 214806528,
+      "available_ram": 5386104832
+    },
+    {
+      "wall_s": 2.8005202999920584,
+      "python_rss": 332558336,
+      "godot_rss": 214806528,
+      "available_ram": 5386899456
+    },
+    {
+      "wall_s": 2.9174772999831475,
+      "python_rss": 332562432,
+      "godot_rss": 214806528,
+      "available_ram": 5384642560
+    },
+    {
+      "wall_s": 3.0339161999872886,
+      "python_rss": 332562432,
+      "godot_rss": 214806528,
+      "available_ram": 5385519104
+    },
+    {
+      "wall_s": 3.1509969999897294,
+      "python_rss": 332455936,
+      "godot_rss": 215855104,
+      "available_ram": 5382946816
+    },
+    {
+      "wall_s": 3.2682666999753565,
+      "python_rss": 332468224,
+      "godot_rss": 215855104,
+      "available_ram": 5383675904
+    },
+    {
+      "wall_s": 3.3851511999964714,
+      "python_rss": 332472320,
+      "godot_rss": 215855104,
+      "available_ram": 5385375744
+    },
+    {
+      "wall_s": 3.5029919000226073,
+      "python_rss": 332484608,
+      "godot_rss": 215855104,
+      "available_ram": 5382389760
+    },
+    {
+      "wall_s": 3.620156400022097,
+      "python_rss": 332492800,
+      "godot_rss": 215855104,
+      "available_ram": 5383127040
+    },
+    {
+      "wall_s": 3.7373247999930754,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5383888896
+    },
+    {
+      "wall_s": 3.8546607000171207,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5383282688
+    },
+    {
+      "wall_s": 3.9713873000000603,
+      "python_rss": 332500992,
+      "godot_rss": 215855104,
+      "available_ram": 5384011776
+    },
+    {
+      "wall_s": 4.088048800011165,
+      "python_rss": 332500992,
+      "godot_rss": 215855104,
+      "available_ram": 5385134080
+    },
+    {
+      "wall_s": 4.204825000022538,
+      "python_rss": 332476416,
+      "godot_rss": 215855104,
+      "available_ram": 5383282688
+    },
+    {
+      "wall_s": 4.321106899995357,
+      "python_rss": 332476416,
+      "godot_rss": 215855104,
+      "available_ram": 5384040448
+    },
+    {
+      "wall_s": 4.4381888000061736,
+      "python_rss": 332484608,
+      "godot_rss": 215855104,
+      "available_ram": 5384785920
+    },
+    {
+      "wall_s": 4.554689200012945,
+      "python_rss": 332484608,
+      "godot_rss": 215855104,
+      "available_ram": 5385494528
+    },
+    {
+      "wall_s": 4.671534499968402,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5382279168
+    },
+    {
+      "wall_s": 4.7885080999694765,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5383217152
+    },
+    {
+      "wall_s": 4.905307799985167,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5382975488
+    },
+    {
+      "wall_s": 5.021437700022943,
+      "python_rss": 332500992,
+      "godot_rss": 215855104,
+      "available_ram": 5383700480
+    },
+    {
+      "wall_s": 5.137977099977434,
+      "python_rss": 332468224,
+      "godot_rss": 215855104,
+      "available_ram": 5382983680
+    },
+    {
+      "wall_s": 5.254452699969988,
+      "python_rss": 332472320,
+      "godot_rss": 215855104,
+      "available_ram": 5383720960
+    },
+    {
+      "wall_s": 5.371441299968865,
+      "python_rss": 332472320,
+      "godot_rss": 215855104,
+      "available_ram": 5384486912
+    },
+    {
+      "wall_s": 5.487555300001986,
+      "python_rss": 332488704,
+      "godot_rss": 215855104,
+      "available_ram": 5385302016
+    },
+    {
+      "wall_s": 5.605080200009979,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5386067968
+    },
+    {
+      "wall_s": 5.7217946000164375,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5383073792
+    },
+    {
+      "wall_s": 5.839099499979056,
+      "python_rss": 332496896,
+      "godot_rss": 215855104,
+      "available_ram": 5408776192
+    },
+    {
+      "wall_s": 5.956822499982081,
+      "python_rss": 332500992,
+      "godot_rss": 215855104,
+      "available_ram": 5467717632
+    },
+    {
+      "wall_s": 6.074850699980743,
+      "python_rss": 332505088,
+      "godot_rss": 215855104,
+      "available_ram": 5469958144
+    },
+    {
+      "wall_s": 6.1911582999746315,
+      "python_rss": 333131776,
+      "godot_rss": 215855104,
+      "available_ram": 5470384128
+    },
+    {
+      "wall_s": 6.308599999989383,
+      "python_rss": 333135872,
+      "godot_rss": 215855104,
+      "available_ram": 5471117312
+    },
+    {
+      "wall_s": 6.4248125000158325,
+      "python_rss": 333135872,
+      "godot_rss": 215855104,
+      "available_ram": 5472698368
+    },
+    {
+      "wall_s": 6.542031000019051,
+      "python_rss": 333148160,
+      "godot_rss": 215855104,
+      "available_ram": 5466992640
+    },
+    {
+      "wall_s": 6.658606000011787,
+      "python_rss": 306503680,
+      "godot_rss": 250933248,
+      "available_ram": 5457240064
+    },
+    {
+      "wall_s": 6.777525599987712,
+      "python_rss": 310284288,
+      "godot_rss": 250933248,
+      "available_ram": 5455818752
+    },
+    {
+      "wall_s": 6.89816250000149,
+      "python_rss": 310951936,
+      "godot_rss": 250933248,
+      "available_ram": 5455024128
+    },
+    {
+      "wall_s": 7.014037900022231,
+      "python_rss": 310951936,
+      "godot_rss": 250933248,
+      "available_ram": 5455949824
+    },
+    {
+      "wall_s": 7.132331300002988,
+      "python_rss": 310956032,
+      "godot_rss": 250933248,
+      "available_ram": 5456711680
+    },
+    {
+      "wall_s": 7.249108899966814,
+      "python_rss": 308383744,
+      "godot_rss": 250933248,
+      "available_ram": 5457186816
+    },
+    {
+      "wall_s": 7.364888000010978,
+      "python_rss": 308506624,
+      "godot_rss": 251346944,
+      "available_ram": 5457727488
+    },
+    {
+      "wall_s": 7.484820400015451,
+      "python_rss": 308523008,
+      "godot_rss": 251346944,
+      "available_ram": 5458558976
+    },
+    {
+      "wall_s": 7.602145900018513,
+      "python_rss": 308523008,
+      "godot_rss": 251346944,
+      "available_ram": 5459365888
+    },
+    {
+      "wall_s": 7.718829300021753,
+      "python_rss": 308523008,
+      "godot_rss": 251346944,
+      "available_ram": 5456371712
+    },
+    {
+      "wall_s": 7.837249299976975,
+      "python_rss": 308523008,
+      "godot_rss": 251346944,
+      "available_ram": 5457313792
+    },
+    {
+      "wall_s": 7.954775199992582,
+      "python_rss": 308551680,
+      "godot_rss": 251494400,
+      "available_ram": 5457977344
+    },
+    {
+      "wall_s": 8.070964400016237,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5457620992
+    },
+    {
+      "wall_s": 8.188177799980622,
+      "python_rss": 307920896,
+      "godot_rss": 251494400,
+      "available_ram": 5457113088
+    },
+    {
+      "wall_s": 8.305008299998008,
+      "python_rss": 307937280,
+      "godot_rss": 251494400,
+      "available_ram": 5458042880
+    },
+    {
+      "wall_s": 8.421314899984282,
+      "python_rss": 307937280,
+      "godot_rss": 251494400,
+      "available_ram": 5458485248
+    },
+    {
+      "wall_s": 8.538059899990913,
+      "python_rss": 307937280,
+      "godot_rss": 251494400,
+      "available_ram": 5459120128
+    },
+    {
+      "wall_s": 8.654921400011517,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5459775488
+    },
+    {
+      "wall_s": 8.776352800021414,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5456707584
+    },
+    {
+      "wall_s": 8.893465099972673,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5456891904
+    },
+    {
+      "wall_s": 9.010695900011342,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5457629184
+    },
+    {
+      "wall_s": 9.126789900008589,
+      "python_rss": 308146176,
+      "godot_rss": 251494400,
+      "available_ram": 5458337792
+    },
+    {
+      "wall_s": 9.243363999994472,
+      "python_rss": 308015104,
+      "godot_rss": 251809792,
+      "available_ram": 5456809984
+    },
+    {
+      "wall_s": 9.363545499974862,
+      "python_rss": 308092928,
+      "godot_rss": 251809792,
+      "available_ram": 5457588224
+    },
+    {
+      "wall_s": 9.480060399975628,
+      "python_rss": 308092928,
+      "godot_rss": 251809792,
+      "available_ram": 5459304448
+    },
+    {
+      "wall_s": 9.596488100010902,
+      "python_rss": 308105216,
+      "godot_rss": 251809792,
+      "available_ram": 5451956224
+    },
+    {
+      "wall_s": 9.714018200000282,
+      "python_rss": 308117504,
+      "godot_rss": 251809792,
+      "available_ram": 5452709888
+    },
+    {
+      "wall_s": 9.830165299994405,
+      "python_rss": 308142080,
+      "godot_rss": 252268544,
+      "available_ram": 5452275712
+    },
+    {
+      "wall_s": 9.949818499968387,
+      "python_rss": 308215808,
+      "godot_rss": 252268544,
+      "available_ram": 5453152256
+    },
+    {
+      "wall_s": 10.067003900010604,
+      "python_rss": 308224000,
+      "godot_rss": 252268544,
+      "available_ram": 5450305536
+    },
+    {
+      "wall_s": 10.183903299970552,
+      "python_rss": 307912704,
+      "godot_rss": 252268544,
+      "available_ram": 5452476416
+    },
+    {
+      "wall_s": 10.299714299966581,
+      "python_rss": 307929088,
+      "godot_rss": 252268544,
+      "available_ram": 5451407360
+    },
+    {
+      "wall_s": 10.415939899976365,
+      "python_rss": 307957760,
+      "godot_rss": 252268544,
+      "available_ram": 5452169216
+    },
+    {
+      "wall_s": 10.53129600000102,
+      "python_rss": 308072448,
+      "godot_rss": 252268544,
+      "available_ram": 5457260544
+    },
+    {
+      "wall_s": 10.648663299973123,
+      "python_rss": 308084736,
+      "godot_rss": 252268544,
+      "available_ram": 5457940480
+    },
+    {
+      "wall_s": 10.765102099976502,
+      "python_rss": 308097024,
+      "godot_rss": 252268544,
+      "available_ram": 5458763776
+    },
+    {
+      "wall_s": 10.882006399973761,
+      "python_rss": 308109312,
+      "godot_rss": 252268544,
+      "available_ram": 5455089664
+    },
+    {
+      "wall_s": 10.998346699983813,
+      "python_rss": 308113408,
+      "godot_rss": 252268544,
+      "available_ram": 5455822848
+    },
+    {
+      "wall_s": 11.114457899995614,
+      "python_rss": 308183040,
+      "godot_rss": 252268544,
+      "available_ram": 5456498688
+    },
+    {
+      "wall_s": 11.235103200015146,
+      "python_rss": 308551680,
+      "godot_rss": 252268544,
+      "available_ram": 5454454784
+    },
+    {
+      "wall_s": 11.35104490001686,
+      "python_rss": 308568064,
+      "godot_rss": 252268544,
+      "available_ram": 5453852672
+    },
+    {
+      "wall_s": 11.46976760000689,
+      "python_rss": 308568064,
+      "godot_rss": 252268544,
+      "available_ram": 5454647296
+    },
+    {
+      "wall_s": 11.586920799978543,
+      "python_rss": 308576256,
+      "godot_rss": 252268544,
+      "available_ram": 5455413248
+    },
+    {
+      "wall_s": 11.703501100011636,
+      "python_rss": 307249152,
+      "godot_rss": 252268544,
+      "available_ram": 5451325440
+    },
+    {
+      "wall_s": 11.822588299983181,
+      "python_rss": 308764672,
+      "godot_rss": 252268544,
+      "available_ram": 5450903552
+    },
+    {
+      "wall_s": 11.938992900017183,
+      "python_rss": 308772864,
+      "godot_rss": 252268544,
+      "available_ram": 5452828672
+    },
+    {
+      "wall_s": 12.055977499985602,
+      "python_rss": 308785152,
+      "godot_rss": 252268544,
+      "available_ram": 5453565952
+    },
+    {
+      "wall_s": 12.174621900019702,
+      "python_rss": 308764672,
+      "godot_rss": 252268544,
+      "available_ram": 5452828672
+    },
+    {
+      "wall_s": 12.29191729996819,
+      "python_rss": 307929088,
+      "godot_rss": 252268544,
+      "available_ram": 5452562432
+    },
+    {
+      "wall_s": 12.407349899993278,
+      "python_rss": 308088832,
+      "godot_rss": 252268544,
+      "available_ram": 5454778368
+    },
+    {
+      "wall_s": 12.52443819999462,
+      "python_rss": 308097024,
+      "godot_rss": 252268544,
+      "available_ram": 5456318464
+    },
+    {
+      "wall_s": 12.643525000021327,
+      "python_rss": 308105216,
+      "godot_rss": 252268544,
+      "available_ram": 5457424384
+    },
+    {
+      "wall_s": 12.76142679998884,
+      "python_rss": 308117504,
+      "godot_rss": 252268544,
+      "available_ram": 5454565376
+    },
+    {
+      "wall_s": 12.878151300013997,
+      "python_rss": 308117504,
+      "godot_rss": 252268544,
+      "available_ram": 5455482880
+    },
+    {
+      "wall_s": 12.995882200018968,
+      "python_rss": 308109312,
+      "godot_rss": 252268544,
+      "available_ram": 5455081472
+    },
+    {
+      "wall_s": 13.116693899966776,
+      "python_rss": 308113408,
+      "godot_rss": 252272640,
+      "available_ram": 5455794176
+    },
+    {
+      "wall_s": 13.233373399998527,
+      "python_rss": 308523008,
+      "godot_rss": 252272640,
+      "available_ram": 5454594048
+    },
+    {
+      "wall_s": 13.34922530001495,
+      "python_rss": 308531200,
+      "godot_rss": 252272640,
+      "available_ram": 5453635584
+    },
+    {
+      "wall_s": 13.468444900005125,
+      "python_rss": 308547584,
+      "godot_rss": 252272640,
+      "available_ram": 5454315520
+    },
+    {
+      "wall_s": 13.584779799974058,
+      "python_rss": 308649984,
+      "godot_rss": 252354560,
+      "available_ram": 5455052800
+    },
+    {
+      "wall_s": 13.704857199976686,
+      "python_rss": 308736000,
+      "godot_rss": 252354560,
+      "available_ram": 5453451264
+    },
+    {
+      "wall_s": 13.822061099985149,
+      "python_rss": 308744192,
+      "godot_rss": 252354560,
+      "available_ram": 5454319616
+    },
+    {
+      "wall_s": 13.940379899984691,
+      "python_rss": 308748288,
+      "godot_rss": 252354560,
+      "available_ram": 5454970880
+    },
+    {
+      "wall_s": 14.057457000017166,
+      "python_rss": 308748288,
+      "godot_rss": 252354560,
+      "available_ram": 5455695872
+    },
+    {
+      "wall_s": 14.17466429999331,
+      "python_rss": 307453952,
+      "godot_rss": 252403712,
+      "available_ram": 5453897728
+    },
+    {
+      "wall_s": 14.294361700012814,
+      "python_rss": 308006912,
+      "godot_rss": 252403712,
+      "available_ram": 5454413824
+    },
+    {
+      "wall_s": 14.411834799975622,
+      "python_rss": 308015104,
+      "godot_rss": 252403712,
+      "available_ram": 5455273984
+    },
+    {
+      "wall_s": 14.528297999990173,
+      "python_rss": 308019200,
+      "godot_rss": 252403712,
+      "available_ram": 5456011264
+    },
+    {
+      "wall_s": 14.644587500020862,
+      "python_rss": 308023296,
+      "godot_rss": 252403712,
+      "available_ram": 5456797696
+    },
+    {
+      "wall_s": 14.764583799988031,
+      "python_rss": 308039680,
+      "godot_rss": 252403712,
+      "available_ram": 5457559552
+    },
+    {
+      "wall_s": 14.879582799971104,
+      "python_rss": 308117504,
+      "godot_rss": 252403712,
+      "available_ram": 5454675968
+    },
+    {
+      "wall_s": 14.996194300008938,
+      "python_rss": 308125696,
+      "godot_rss": 252403712,
+      "available_ram": 5455388672
+    },
+    {
+      "wall_s": 15.112995799980126,
+      "python_rss": 308129792,
+      "godot_rss": 252403712,
+      "available_ram": 5456101376
+    },
+    {
+      "wall_s": 15.230212099966593,
+      "python_rss": 307929088,
+      "godot_rss": 252403712,
+      "available_ram": 5454086144
+    },
+    {
+      "wall_s": 15.34708600002341,
+      "python_rss": 307941376,
+      "godot_rss": 252403712,
+      "available_ram": 5455024128
+    },
+    {
+      "wall_s": 15.463075299980119,
+      "python_rss": 308051968,
+      "godot_rss": 252403712,
+      "available_ram": 5453959168
+    },
+    {
+      "wall_s": 15.583043799968436,
+      "python_rss": 308228096,
+      "godot_rss": 252403712,
+      "available_ram": 5455314944
+    },
+    {
+      "wall_s": 15.699925199965946,
+      "python_rss": 308236288,
+      "godot_rss": 252403712,
+      "available_ram": 5456371712
+    },
+    {
+      "wall_s": 15.817180200014263,
+      "python_rss": 308236288,
+      "godot_rss": 252403712,
+      "available_ram": 5453664256
+    },
+    {
+      "wall_s": 15.933894300018437,
+      "python_rss": 308236288,
+      "godot_rss": 252403712,
+      "available_ram": 5454524416
+    },
+    {
+      "wall_s": 16.050801999983378,
+      "python_rss": 308297728,
+      "godot_rss": 252403712,
+      "available_ram": 5455204352
+    },
+    {
+      "wall_s": 16.170311599969864,
+      "python_rss": 308322304,
+      "godot_rss": 252403712,
+      "available_ram": 5455638528
+    },
+    {
+      "wall_s": 16.287650100013707,
+      "python_rss": 307941376,
+      "godot_rss": 252403712,
+      "available_ram": 5453520896
+    },
+    {
+      "wall_s": 16.40422700002091,
+      "python_rss": 307949568,
+      "godot_rss": 252403712,
+      "available_ram": 5454512128
+    },
+    {
+      "wall_s": 16.521274700004142,
+      "python_rss": 307957760,
+      "godot_rss": 252403712,
+      "available_ram": 5447892992
+    },
+    {
+      "wall_s": 16.637317100015935,
+      "python_rss": 308031488,
+      "godot_rss": 252649472,
+      "available_ram": 5443985408
+    },
+    {
+      "wall_s": 16.753449900017586,
+      "python_rss": 308215808,
+      "godot_rss": 252649472,
+      "available_ram": 5441568768
+    },
+    {
+      "wall_s": 16.87028759997338,
+      "python_rss": 308224000,
+      "godot_rss": 252649472,
+      "available_ram": 5441384448
+    },
+    {
+      "wall_s": 16.986810399976093,
+      "python_rss": 308232192,
+      "godot_rss": 252649472,
+      "available_ram": 5441830912
+    },
+    {
+      "wall_s": 17.10459489998175,
+      "python_rss": 308236288,
+      "godot_rss": 252649472,
+      "available_ram": 5442306048
+    },
+    {
+      "wall_s": 17.22257709997939,
+      "python_rss": 308240384,
+      "godot_rss": 252649472,
+      "available_ram": 5442818048
+    },
+    {
+      "wall_s": 17.33963090000907,
+      "python_rss": 305577984,
+      "godot_rss": 252649472,
+      "available_ram": 5443915776
+    },
+    {
+      "wall_s": 17.45870429999195,
+      "python_rss": 308064256,
+      "godot_rss": 252649472,
+      "available_ram": 5442564096
+    },
+    {
+      "wall_s": 17.57643899996765,
+      "python_rss": 308076544,
+      "godot_rss": 252649472,
+      "available_ram": 5443592192
+    },
+    {
+      "wall_s": 17.692809799977113,
+      "python_rss": 308088832,
+      "godot_rss": 252649472,
+      "available_ram": 5441699840
+    },
+    {
+      "wall_s": 17.809994200011715,
+      "python_rss": 308092928,
+      "godot_rss": 252649472,
+      "available_ram": 5441495040
+    },
+    {
+      "wall_s": 17.92688879999332,
+      "python_rss": 308109312,
+      "godot_rss": 252743680,
+      "available_ram": 5441314816
+    },
+    {
+      "wall_s": 18.047345699975267,
+      "python_rss": 308318208,
+      "godot_rss": 252743680,
+      "available_ram": 5442621440
+    },
+    {
+      "wall_s": 18.164594599977136,
+      "python_rss": 308318208,
+      "godot_rss": 252743680,
+      "available_ram": 5443227648
+    },
+    {
+      "wall_s": 18.2811464999686,
+      "python_rss": 307920896,
+      "godot_rss": 252743680,
+      "available_ram": 5441003520
+    },
+    {
+      "wall_s": 18.397615999972913,
+      "python_rss": 307924992,
+      "godot_rss": 252743680,
+      "available_ram": 5443530752
+    },
+    {
+      "wall_s": 18.513407099992037,
+      "python_rss": 308060160,
+      "godot_rss": 252743680,
+      "available_ram": 5444108288
+    },
+    {
+      "wall_s": 18.633280600013677,
+      "python_rss": 308240384,
+      "godot_rss": 252743680,
+      "available_ram": 5440045056
+    },
+    {
+      "wall_s": 18.75096500001382,
+      "python_rss": 308252672,
+      "godot_rss": 252743680,
+      "available_ram": 5441077248
+    },
+    {
+      "wall_s": 18.867524200002663,
+      "python_rss": 308260864,
+      "godot_rss": 252743680,
+      "available_ram": 5440561152
+    },
+    {
+      "wall_s": 18.984533199982252,
+      "python_rss": 308260864,
+      "godot_rss": 252743680,
+      "available_ram": 5440937984
+    },
+    {
+      "wall_s": 19.101302199997008,
+      "python_rss": 308326400,
+      "godot_rss": 252776448,
+      "available_ram": 5442793472
+    },
+    {
+      "wall_s": 19.21627079998143,
+      "python_rss": 308387840,
+      "godot_rss": 255995904,
+      "available_ram": 5436665856
+    },
+    {
+      "wall_s": 19.336115000012796,
+      "python_rss": 307933184,
+      "godot_rss": 255995904,
+      "available_ram": 5436776448
+    },
+    {
+      "wall_s": 19.453240900009405,
+      "python_rss": 307941376,
+      "godot_rss": 255995904,
+      "available_ram": 5440348160
+    },
+    {
+      "wall_s": 19.569443300017156,
+      "python_rss": 307945472,
+      "godot_rss": 255995904,
+      "available_ram": 5442494464
+    },
+    {
+      "wall_s": 19.687519799976144,
+      "python_rss": 307961856,
+      "godot_rss": 255995904,
+      "available_ram": 5443145728
+    },
+    {
+      "wall_s": 19.804201300023124,
+      "python_rss": 308105216,
+      "godot_rss": 255995904,
+      "available_ram": 5437034496
+    },
+    {
+      "wall_s": 19.924649699998554,
+      "python_rss": 308277248,
+      "godot_rss": 255995904,
+      "available_ram": 5437820928
+    },
+    {
+      "wall_s": 20.043648799997754,
+      "python_rss": 308281344,
+      "godot_rss": 255995904,
+      "available_ram": 5438648320
+    },
+    {
+      "wall_s": 20.160735699988436,
+      "python_rss": 308289536,
+      "godot_rss": 255995904,
+      "available_ram": 5439344640
+    },
+    {
+      "wall_s": 20.277053400001023,
+      "python_rss": 308293632,
+      "godot_rss": 255995904,
+      "available_ram": 5440110592
+    },
+    {
+      "wall_s": 20.393395300023258,
+      "python_rss": 307466240,
+      "godot_rss": 255995904,
+      "available_ram": 5437734912
+    },
+    {
+      "wall_s": 20.513139599992428,
+      "python_rss": 308178944,
+      "godot_rss": 255995904,
+      "available_ram": 5438492672
+    },
+    {
+      "wall_s": 20.630150699988008,
+      "python_rss": 308187136,
+      "godot_rss": 255995904,
+      "available_ram": 5439303680
+    },
+    {
+      "wall_s": 20.74691400001757,
+      "python_rss": 308199424,
+      "godot_rss": 255995904,
+      "available_ram": 5439987712
+    },
+    {
+      "wall_s": 20.862840900023002,
+      "python_rss": 308203520,
+      "godot_rss": 255995904,
+      "available_ram": 5437644800
+    },
+    {
+      "wall_s": 20.982680200017057,
+      "python_rss": 308252672,
+      "godot_rss": 255995904,
+      "available_ram": 5438402560
+    },
+    {
+      "wall_s": 21.102122900018003,
+      "python_rss": 308355072,
+      "godot_rss": 255995904,
+      "available_ram": 5439094784
+    },
+    {
+      "wall_s": 21.21896490000654,
+      "python_rss": 308359168,
+      "godot_rss": 255995904,
+      "available_ram": 5439832064
+    },
+    {
+      "wall_s": 21.337040600017644,
+      "python_rss": 307929088,
+      "godot_rss": 255995904,
+      "available_ram": 5437190144
+    },
+    {
+      "wall_s": 21.452881400007755,
+      "python_rss": 307945472,
+      "godot_rss": 255995904,
+      "available_ram": 5438164992
+    },
+    {
+      "wall_s": 21.570235799998045,
+      "python_rss": 307970048,
+      "godot_rss": 255995904,
+      "available_ram": 5438902272
+    },
+    {
+      "wall_s": 21.685812500014435,
+      "python_rss": 308060160,
+      "godot_rss": 255995904,
+      "available_ram": 5438259200
+    },
+    {
+      "wall_s": 21.8046077999752,
+      "python_rss": 308236288,
+      "godot_rss": 255995904,
+      "available_ram": 5436424192
+    },
+    {
+      "wall_s": 21.923051099991426,
+      "python_rss": 308236288,
+      "godot_rss": 255995904,
+      "available_ram": 5437190144
+    },
+    {
+      "wall_s": 22.039435099984985,
+      "python_rss": 308244480,
+      "godot_rss": 255995904,
+      "available_ram": 5437964288
+    },
+    {
+      "wall_s": 22.156019199988805,
+      "python_rss": 308252672,
+      "godot_rss": 255995904,
+      "available_ram": 5438701568
+    },
+    {
+      "wall_s": 22.272809299989603,
+      "python_rss": 308346880,
+      "godot_rss": 255995904,
+      "available_ram": 5439442944
+    },
+    {
+      "wall_s": 22.392315900011454,
+      "python_rss": 307970048,
+      "godot_rss": 255995904,
+      "available_ram": 5437042688
+    },
+    {
+      "wall_s": 22.50958900002297,
+      "python_rss": 307982336,
+      "godot_rss": 255995904,
+      "available_ram": 5437911040
+    },
+    {
+      "wall_s": 22.626209800015204,
+      "python_rss": 307982336,
+      "godot_rss": 255995904,
+      "available_ram": 5438390272
+    },
+    {
+      "wall_s": 22.74292809999315,
+      "python_rss": 307986432,
+      "godot_rss": 255995904,
+      "available_ram": 5438812160
+    },
+    {
+      "wall_s": 22.861218700010795,
+      "python_rss": 303906816,
+      "godot_rss": 255995904,
+      "available_ram": 5436784640
+    },
+    {
+      "wall_s": 22.979060999990907,
+      "python_rss": 308072448,
+      "godot_rss": 255995904,
+      "available_ram": 5435609088
+    },
+    {
+      "wall_s": 23.097150399989914,
+      "python_rss": 308244480,
+      "godot_rss": 255995904,
+      "available_ram": 5436067840
+    },
+    {
+      "wall_s": 23.214901299972553,
+      "python_rss": 308256768,
+      "godot_rss": 255995904,
+      "available_ram": 5436608512
+    },
+    {
+      "wall_s": 23.332367199996952,
+      "python_rss": 304783360,
+      "godot_rss": 255995904,
+      "available_ram": 5434765312
+    },
+    {
+      "wall_s": 23.44900919997599,
+      "python_rss": 307945472,
+      "godot_rss": 255995904,
+      "available_ram": 5436424192
+    },
+    {
+      "wall_s": 23.56566219998058,
+      "python_rss": 308064256,
+      "godot_rss": 255995904,
+      "available_ram": 5436735488
+    },
+    {
+      "wall_s": 23.68558300001314,
+      "python_rss": 308236288,
+      "godot_rss": 255995904,
+      "available_ram": 5438808064
+    },
+    {
+      "wall_s": 23.80135419999715,
+      "python_rss": 308240384,
+      "godot_rss": 255995904,
+      "available_ram": 5436387328
+    },
+    {
+      "wall_s": 23.91759839997394,
+      "python_rss": 308244480,
+      "godot_rss": 255995904,
+      "available_ram": 5437448192
+    },
+    {
+      "wall_s": 24.033973500016145,
+      "python_rss": 308252672,
+      "godot_rss": 255995904,
+      "available_ram": 5438144512
+    },
+    {
+      "wall_s": 24.149553499999456,
+      "python_rss": 308305920,
+      "godot_rss": 255995904,
+      "available_ram": 5439361024
+    },
+    {
+      "wall_s": 24.264936199993826,
+      "python_rss": 308322304,
+      "godot_rss": 255995904,
+      "available_ram": 5436669952
+    },
+    {
+      "wall_s": 24.380887800012715,
+      "python_rss": 307892224,
+      "godot_rss": 255995904,
+      "available_ram": 5436252160
+    },
+    {
+      "wall_s": 24.497710899973754,
+      "python_rss": 307912704,
+      "godot_rss": 255995904,
+      "available_ram": 5438001152
+    },
+    {
+      "wall_s": 24.61399139999412,
+      "python_rss": 307916800,
+      "godot_rss": 255995904,
+      "available_ram": 5438697472
+    },
+    {
+      "wall_s": 24.73112760001095,
+      "python_rss": 307920896,
+      "godot_rss": 255995904,
+      "available_ram": 5437988864
+    },
+    {
+      "wall_s": 24.850696599984076,
+      "python_rss": 308117504,
+      "godot_rss": 255995904,
+      "available_ram": 5438443520
+    },
+    {
+      "wall_s": 24.971683499985375,
+      "python_rss": 308285440,
+      "godot_rss": 255995904,
+      "available_ram": 5440655360
+    },
+    {
+      "wall_s": 25.088682700006757,
+      "python_rss": 308285440,
+      "godot_rss": 255995904,
+      "available_ram": 5441409024
+    },
+    {
+      "wall_s": 25.204716000007465,
+      "python_rss": 308293632,
+      "godot_rss": 255995904,
+      "available_ram": 5442134016
+    },
+    {
+      "wall_s": 25.321328499994706,
+      "python_rss": 308301824,
+      "godot_rss": 255995904,
+      "available_ram": 5436284928
+    },
+    {
+      "wall_s": 25.439949200022966,
+      "python_rss": 307978240,
+      "godot_rss": 255995904,
+      "available_ram": 5437808640
+    },
+    {
+      "wall_s": 25.560448999982327,
+      "python_rss": 308326400,
+      "godot_rss": 255995904,
+      "available_ram": 5438349312
+    },
+    {
+      "wall_s": 25.676541000022553,
+      "python_rss": 308330496,
+      "godot_rss": 255995904,
+      "available_ram": 5439508480
+    },
+    {
+      "wall_s": 25.795309200009797,
+      "python_rss": 308334592,
+      "godot_rss": 255995904,
+      "available_ram": 5440221184
+    },
+    {
+      "wall_s": 25.911885000008624,
+      "python_rss": 308338688,
+      "godot_rss": 255995904,
+      "available_ram": 5437902848
+    },
+    {
+      "wall_s": 26.0328554000007,
+      "python_rss": 308404224,
+      "godot_rss": 255995904,
+      "available_ram": 5438251008
+    },
+    {
+      "wall_s": 26.152577699976973,
+      "python_rss": 308506624,
+      "godot_rss": 255995904,
+      "available_ram": 5439021056
+    },
+    {
+      "wall_s": 26.269201799994335,
+      "python_rss": 308514816,
+      "godot_rss": 253194240,
+      "available_ram": 5440184320
+    },
+    {
+      "wall_s": 26.386300000012852,
+      "python_rss": 307945472,
+      "godot_rss": 253194240,
+      "available_ram": 5439836160
+    },
+    {
+      "wall_s": 26.50241289997939,
+      "python_rss": 307957760,
+      "godot_rss": 253194240,
+      "available_ram": 5441425408
+    },
+    {
+      "wall_s": 26.619767499971204,
+      "python_rss": 307961856,
+      "godot_rss": 253194240,
+      "available_ram": 5441847296
+    },
+    {
+      "wall_s": 26.73659519996727,
+      "python_rss": 308162560,
+      "godot_rss": 253194240,
+      "available_ram": 5440299008
+    },
+    {
+      "wall_s": 26.854165399970952,
+      "python_rss": 308301824,
+      "godot_rss": 253194240,
+      "available_ram": 5439901696
+    },
+    {
+      "wall_s": 26.970998300006613,
+      "python_rss": 308318208,
+      "godot_rss": 253194240,
+      "available_ram": 5458391040
+    },
+    {
+      "wall_s": 27.08763219998218,
+      "python_rss": 308322304,
+      "godot_rss": 253194240,
+      "available_ram": 5454540800
+    },
+    {
+      "wall_s": 27.204473799967673,
+      "python_rss": 308322304,
+      "godot_rss": 253194240,
+      "available_ram": 5454409728
+    },
+    {
+      "wall_s": 27.321616999979597,
+      "python_rss": 308363264,
+      "godot_rss": 253194240,
+      "available_ram": 5455187968
+    },
+    {
+      "wall_s": 27.44091639999533,
+      "python_rss": 307924992,
+      "godot_rss": 253194240,
+      "available_ram": 5455425536
+    },
+    {
+      "wall_s": 27.55820319999475,
+      "python_rss": 307941376,
+      "godot_rss": 253194240,
+      "available_ram": 5456814080
+    },
+    {
+      "wall_s": 27.675164600019343,
+      "python_rss": 307949568,
+      "godot_rss": 253194240,
+      "available_ram": 5457502208
+    },
+    {
+      "wall_s": 27.791304200014565,
+      "python_rss": 307953664,
+      "godot_rss": 253194240,
+      "available_ram": 5455118336
+    },
+    {
+      "wall_s": 27.91054070001701,
+      "python_rss": 307654656,
+      "godot_rss": 253194240,
+      "available_ram": 5456646144
+    },
+    {
+      "wall_s": 28.03286570002092,
+      "python_rss": 308285440,
+      "godot_rss": 253194240,
+      "available_ram": 5457301504
+    },
+    {
+      "wall_s": 28.150025799986906,
+      "python_rss": 308285440,
+      "godot_rss": 253194240,
+      "available_ram": 5458042880
+    },
+    {
+      "wall_s": 28.266576599969994,
+      "python_rss": 308285440,
+      "godot_rss": 253194240,
+      "available_ram": 5458214912
+    },
+    {
+      "wall_s": 28.382593500020448,
+      "python_rss": 308285440,
+      "godot_rss": 253194240,
+      "available_ram": 5454860288
+    },
+    {
+      "wall_s": 28.500953099981416,
+      "python_rss": 308146176,
+      "godot_rss": 253255680,
+      "available_ram": 5456195584
+    },
+    {
+      "wall_s": 28.617104100005236,
+      "python_rss": 308273152,
+      "godot_rss": 253255680,
+      "available_ram": 5456887808
+    },
+    {
+      "wall_s": 28.733731199987233,
+      "python_rss": 308273152,
+      "godot_rss": 253255680,
+      "available_ram": 5457661952
+    },
+    {
+      "wall_s": 28.851582999981474,
+      "python_rss": 308273152,
+      "godot_rss": 253255680,
+      "available_ram": 5459673088
+    },
+    {
+      "wall_s": 28.969114699983038,
+      "python_rss": 308273152,
+      "godot_rss": 253255680,
+      "available_ram": 5462085632
+    },
+    {
+      "wall_s": 29.08642810001038,
+      "python_rss": 308273152,
+      "godot_rss": 253255680,
+      "available_ram": 5462790144
+    },
+    {
+      "wall_s": 29.202462400018703,
+      "python_rss": 308338688,
+      "godot_rss": 253255680,
+      "available_ram": 5458092032
+    },
+    {
+      "wall_s": 29.321648799988907,
+      "python_rss": 308338688,
+      "godot_rss": 253259776,
+      "available_ram": 5458796544
+    },
+    {
+      "wall_s": 29.4392358000041,
+      "python_rss": 307933184,
+      "godot_rss": 253259776,
+      "available_ram": 5458305024
+    },
+    {
+      "wall_s": 29.556173000019044,
+      "python_rss": 307937280,
+      "godot_rss": 253259776,
+      "available_ram": 5459529728
+    },
+    {
+      "wall_s": 29.673247499973513,
+      "python_rss": 307937280,
+      "godot_rss": 253259776,
+      "available_ram": 5460910080
+    },
+    {
+      "wall_s": 29.78941109997686,
+      "python_rss": 308117504,
+      "godot_rss": 253259776,
+      "available_ram": 5461766144
+    },
+    {
+      "wall_s": 29.910081600013655,
+      "python_rss": 308322304,
+      "godot_rss": 253259776,
+      "available_ram": 5458595840
+    },
+    {
+      "wall_s": 30.02632549998816,
+      "python_rss": 308244480,
+      "godot_rss": 253263872,
+      "available_ram": 5459632128
+    },
+    {
+      "wall_s": 30.14421100000618,
+      "python_rss": 308244480,
+      "godot_rss": 253263872,
+      "available_ram": 5460393984
+    },
+    {
+      "wall_s": 30.260510299995076,
+      "python_rss": 308244480,
+      "godot_rss": 253263872,
+      "available_ram": 5461299200
+    },
+    {
+      "wall_s": 30.37728600000264,
+      "python_rss": 307818496,
+      "godot_rss": 253263872,
+      "available_ram": 5459820544
+    },
+    {
+      "wall_s": 30.497243899968453,
+      "python_rss": 308088832,
+      "godot_rss": 253263872,
+      "available_ram": 5459832832
+    },
+    {
+      "wall_s": 30.613935799978208,
+      "python_rss": 308088832,
+      "godot_rss": 253263872,
+      "available_ram": 5460754432
+    },
+    {
+      "wall_s": 30.730460399994627,
+      "python_rss": 308092928,
+      "godot_rss": 253263872,
+      "available_ram": 5461827584
+    },
+    {
+      "wall_s": 30.846759299980476,
+      "python_rss": 308092928,
+      "godot_rss": 253263872,
+      "available_ram": 5460156416
+    },
+    {
+      "wall_s": 30.965617800015025,
+      "python_rss": 308162560,
+      "godot_rss": 253263872,
+      "available_ram": 5461606400
+    },
+    {
+      "wall_s": 31.080732000002172,
+      "python_rss": 308310016,
+      "godot_rss": 253263872,
+      "available_ram": 5462294528
+    },
+    {
+      "wall_s": 31.197013599972706,
+      "python_rss": 308310016,
+      "godot_rss": 253263872,
+      "available_ram": 5459447808
+    },
+    {
+      "wall_s": 31.31392230000347,
+      "python_rss": 308310016,
+      "godot_rss": 253263872,
+      "available_ram": 5460197376
+    },
+    {
+      "wall_s": 31.43009019998135,
+      "python_rss": 308310016,
+      "godot_rss": 253263872,
+      "available_ram": 5461741568
+    },
+    {
+      "wall_s": 31.547762500005774,
+      "python_rss": 308158464,
+      "godot_rss": 253263872,
+      "available_ram": 5460017152
+    },
+    {
+      "wall_s": 31.66428209998412,
+      "python_rss": 308248576,
+      "godot_rss": 253263872,
+      "available_ram": 5460705280
+    },
+    {
+      "wall_s": 31.784259099978954,
+      "python_rss": 308248576,
+      "godot_rss": 253263872,
+      "available_ram": 5462085632
+    },
+    {
+      "wall_s": 31.900097600009758,
+      "python_rss": 308248576,
+      "godot_rss": 253263872,
+      "available_ram": 5461000192
+    },
+    {
+      "wall_s": 32.01684729999397,
+      "python_rss": 308248576,
+      "godot_rss": 253263872,
+      "available_ram": 5461884928
+    },
+    {
+      "wall_s": 32.1336557000177,
+      "python_rss": 308248576,
+      "godot_rss": 253263872,
+      "available_ram": 5462622208
+    },
+    {
+      "wall_s": 32.25037779996637,
+      "python_rss": 308350976,
+      "godot_rss": 253263872,
+      "available_ram": 5462724608
+    },
+    {
+      "wall_s": 32.37009390001185,
+      "python_rss": 308363264,
+      "godot_rss": 253263872,
+      "available_ram": 5459890176
+    },
+    {
+      "wall_s": 32.487926799978595,
+      "python_rss": 308113408,
+      "godot_rss": 253263872,
+      "available_ram": 5461512192
+    },
+    {
+      "wall_s": 32.60653759998968,
+      "python_rss": 308117504,
+      "godot_rss": 253263872,
+      "available_ram": 5462671360
+    },
+    {
+      "wall_s": 32.72221919998992,
+      "python_rss": 308117504,
+      "godot_rss": 253263872,
+      "available_ram": 5460729856
+    },
+    {
+      "wall_s": 32.83898230001796,
+      "python_rss": 306835456,
+      "godot_rss": 253263872,
+      "available_ram": 5461028864
+    },
+    {
+      "wall_s": 32.95837289997144,
+      "python_rss": 308322304,
+      "godot_rss": 253263872,
+      "available_ram": 5462568960
+    },
+    {
+      "wall_s": 33.07471700001042,
+      "python_rss": 308322304,
+      "godot_rss": 253263872,
+      "available_ram": 5463318528
+    },
+    {
+      "wall_s": 33.19082109996816,
+      "python_rss": 308322304,
+      "godot_rss": 253263872,
+      "available_ram": 5464055808
+    },
+    {
+      "wall_s": 33.30799840000691,
+      "python_rss": 308322304,
+      "godot_rss": 253263872,
+      "available_ram": 5461004288
+    },
+    {
+      "wall_s": 33.42491679999512,
+      "python_rss": 308363264,
+      "godot_rss": 253263872,
+      "available_ram": 5461688320
+    },
+    {
+      "wall_s": 33.54053739999654,
+      "python_rss": 308178944,
+      "godot_rss": 253263872,
+      "available_ram": 5460598784
+    },
+    {
+      "wall_s": 33.656456500000786,
+      "python_rss": 308178944,
+      "godot_rss": 253263872,
+      "available_ram": 5461532672
+    },
+    {
+      "wall_s": 33.77391799999168,
+      "python_rss": 308178944,
+      "godot_rss": 253263872,
+      "available_ram": 5462208512
+    },
+    {
+      "wall_s": 33.89052040001843,
+      "python_rss": 308178944,
+      "godot_rss": 253263872,
+      "available_ram": 5461143552
+    },
+    {
+      "wall_s": 34.006771599990316,
+      "python_rss": 308178944,
+      "godot_rss": 253263872,
+      "available_ram": 5462511616
+    },
+    {
+      "wall_s": 34.122934599989094,
+      "python_rss": 308293632,
+      "godot_rss": 253263872,
+      "available_ram": 5460893696
+    },
+    {
+      "wall_s": 34.242202699999325,
+      "python_rss": 308469760,
+      "godot_rss": 253263872,
+      "available_ram": 5461536768
+    },
+    {
+      "wall_s": 34.359272499976214,
+      "python_rss": 308473856,
+      "godot_rss": 253263872,
+      "available_ram": 5462286336
+    },
+    {
+      "wall_s": 34.4763563000015,
+      "python_rss": 308047872,
+      "godot_rss": 253263872,
+      "available_ram": 5460226048
+    },
+    {
+      "wall_s": 34.593572499987204,
+      "python_rss": 308047872,
+      "godot_rss": 253263872,
+      "available_ram": 5461237760
+    },
+    {
+      "wall_s": 34.710227100003976,
+      "python_rss": 308203520,
+      "godot_rss": 253263872,
+      "available_ram": 5461966848
+    },
+    {
+      "wall_s": 34.830163899983745,
+      "python_rss": 308477952,
+      "godot_rss": 253263872,
+      "available_ram": 5460062208
+    },
+    {
+      "wall_s": 34.94651340000564,
+      "python_rss": 308477952,
+      "godot_rss": 253263872,
+      "available_ram": 5460746240
+    },
+    {
+      "wall_s": 35.06256539997412,
+      "python_rss": 308477952,
+      "godot_rss": 253263872,
+      "available_ram": 5461561344
+    },
+    {
+      "wall_s": 35.178529599972535,
+      "python_rss": 308477952,
+      "godot_rss": 253263872,
+      "available_ram": 5462532096
+    },
+    {
+      "wall_s": 35.295759800006635,
+      "python_rss": 306630656,
+      "godot_rss": 253263872,
+      "available_ram": 5461200896
+    },
+    {
+      "wall_s": 35.41418530000374,
+      "python_rss": 308490240,
+      "godot_rss": 253263872,
+      "available_ram": 5460971520
+    },
+    {
+      "wall_s": 35.5331783000147,
+      "python_rss": 307957760,
+      "godot_rss": 253263872,
+      "available_ram": 5460393984
+    },
+    {
+      "wall_s": 35.64934419997735,
+      "python_rss": 307961856,
+      "godot_rss": 253263872,
+      "available_ram": 5461782528
+    },
+    {
+      "wall_s": 35.76678519998677,
+      "python_rss": 307961856,
+      "godot_rss": 253263872,
+      "available_ram": 5461499904
+    },
+    {
+      "wall_s": 35.88291879999451,
+      "python_rss": 307965952,
+      "godot_rss": 253263872,
+      "available_ram": 5459709952
+    },
+    {
+      "wall_s": 35.99958489998244,
+      "python_rss": 308252672,
+      "godot_rss": 253263872,
+      "available_ram": 5460033536
+    },
+    {
+      "wall_s": 36.116053899982944,
+      "python_rss": 308523008,
+      "godot_rss": 253263872,
+      "available_ram": 5460738048
+    },
+    {
+      "wall_s": 36.232429199968465,
+      "python_rss": 308523008,
+      "godot_rss": 253263872,
+      "available_ram": 5461475328
+    },
+    {
+      "wall_s": 36.34828819998074,
+      "python_rss": 308523008,
+      "godot_rss": 253263872,
+      "available_ram": 5458751488
+    },
+    {
+      "wall_s": 36.464983300014865,
+      "python_rss": 308523008,
+      "godot_rss": 253263872,
+      "available_ram": 5459484672
+    },
+    {
+      "wall_s": 36.58370299998205,
+      "python_rss": 308113408,
+      "godot_rss": 253263872,
+      "available_ram": 5459558400
+    },
+    {
+      "wall_s": 36.70525349996751,
+      "python_rss": 308441088,
+      "godot_rss": 253263872,
+      "available_ram": 5460463616
+    },
+    {
+      "wall_s": 36.821920400019735,
+      "python_rss": 308441088,
+      "godot_rss": 253263872,
+      "available_ram": 5459922944
+    },
+    {
+      "wall_s": 36.93809780001175,
+      "python_rss": 308441088,
+      "godot_rss": 253263872,
+      "available_ram": 5460623360
+    },
+    {
+      "wall_s": 37.05492610001238,
+      "python_rss": 308441088,
+      "godot_rss": 253263872,
+      "available_ram": 5462183936
+    },
+    {
+      "wall_s": 37.17081350000808,
+      "python_rss": 308502528,
+      "godot_rss": 253263872,
+      "available_ram": 5459382272
+    },
+    {
+      "wall_s": 37.290308199997526,
+      "python_rss": 308568064,
+      "godot_rss": 253263872,
+      "available_ram": 5460066304
+    },
+    {
+      "wall_s": 37.40688540000701,
+      "python_rss": 308568064,
+      "godot_rss": 253263872,
+      "available_ram": 5460783104
+    },
+    {
+      "wall_s": 37.52297639998142,
+      "python_rss": 308072448,
+      "godot_rss": 253263872,
+      "available_ram": 5460152320
+    },
+    {
+      "wall_s": 37.63999250001507,
+      "python_rss": 308072448,
+      "godot_rss": 253263872,
+      "available_ram": 5461495808
+    },
+    {
+      "wall_s": 37.75619019998703,
+      "python_rss": 308199424,
+      "godot_rss": 253263872,
+      "available_ram": 5462245376
+    },
+    {
+      "wall_s": 37.87167899997439,
+      "python_rss": 308142080,
+      "godot_rss": 253263872,
+      "available_ram": 5406564352
+    },
+    {
+      "wall_s": 37.99667760002194,
+      "python_rss": 308420608,
+      "godot_rss": 253263872,
+      "available_ram": 5414334464
+    },
+    {
+      "wall_s": 38.113856700016186,
+      "python_rss": 308420608,
+      "godot_rss": 253263872,
+      "available_ram": 5414981632
+    },
+    {
+      "wall_s": 38.23035600001458,
+      "python_rss": 308420608,
+      "godot_rss": 253263872,
+      "available_ram": 5415665664
+    },
+    {
+      "wall_s": 38.346832300012466,
+      "python_rss": 308420608,
+      "godot_rss": 253263872,
+      "available_ram": 5416423424
+    },
+    {
+      "wall_s": 38.46317260002252,
+      "python_rss": 308539392,
+      "godot_rss": 253263872,
+      "available_ram": 5411696640
+    },
+    {
+      "wall_s": 38.58264390000841,
+      "python_rss": 308031488,
+      "godot_rss": 253263872,
+      "available_ram": 5415485440
+    },
+    {
+      "wall_s": 38.69834359997185,
+      "python_rss": 308031488,
+      "godot_rss": 253263872,
+      "available_ram": 5413355520
+    },
+    {
+      "wall_s": 38.814276699966285,
+      "python_rss": 308035584,
+      "godot_rss": 253263872,
+      "available_ram": 5413347328
+    },
+    {
+      "wall_s": 38.93056439998327,
+      "python_rss": 308039680,
+      "godot_rss": 253263872,
+      "available_ram": 5414379520
+    },
+    {
+      "wall_s": 39.047781999979634,
+      "python_rss": 308125696,
+      "godot_rss": 253263872,
+      "available_ram": 5414985728
+    },
+    {
+      "wall_s": 39.16304840001976,
+      "python_rss": 308408320,
+      "godot_rss": 253263872,
+      "available_ram": 5413613568
+    },
+    {
+      "wall_s": 39.27978310000617,
+      "python_rss": 308408320,
+      "godot_rss": 253263872,
+      "available_ram": 5414309888
+    },
+    {
+      "wall_s": 39.396123500016984,
+      "python_rss": 308408320,
+      "godot_rss": 253263872,
+      "available_ram": 5415030784
+    },
+    {
+      "wall_s": 39.51246790000005,
+      "python_rss": 308412416,
+      "godot_rss": 253263872,
+      "available_ram": 5415919616
+    },
+    {
+      "wall_s": 39.630125499970745,
+      "python_rss": 308080640,
+      "godot_rss": 253263872,
+      "available_ram": 5413867520
+    },
+    {
+      "wall_s": 39.746413599990774,
+      "python_rss": 308297728,
+      "godot_rss": 253263872,
+      "available_ram": 5415251968
+    },
+    {
+      "wall_s": 39.86711130000185,
+      "python_rss": 308465664,
+      "godot_rss": 253263872,
+      "available_ram": 5413908480
+    },
+    {
+      "wall_s": 39.98307499999646,
+      "python_rss": 308469760,
+      "godot_rss": 253263872,
+      "available_ram": 5415002112
+    },
+    {
+      "wall_s": 40.09910779999336,
+      "python_rss": 308469760,
+      "godot_rss": 253263872,
+      "available_ram": 5416304640
+    },
+    {
+      "wall_s": 40.216162899974734,
+      "python_rss": 308469760,
+      "godot_rss": 253263872,
+      "available_ram": 5417021440
+    },
+    {
+      "wall_s": 40.33605569996871,
+      "python_rss": 308490240,
+      "godot_rss": 253263872,
+      "available_ram": 5413761024
+    },
+    {
+      "wall_s": 40.45572779997019,
+      "python_rss": 308510720,
+      "godot_rss": 253263872,
+      "available_ram": 5414477824
+    },
+    {
+      "wall_s": 40.57258159999037,
+      "python_rss": 307970048,
+      "godot_rss": 253263872,
+      "available_ram": 5413597184
+    },
+    {
+      "wall_s": 40.68967519997386,
+      "python_rss": 307974144,
+      "godot_rss": 253263872,
+      "available_ram": 5414608896
+    },
+    {
+      "wall_s": 40.80598599999212,
+      "python_rss": 307974144,
+      "godot_rss": 253263872,
+      "available_ram": 5413163008
+    },
+    {
+      "wall_s": 40.92285119998269,
+      "python_rss": 308129792,
+      "godot_rss": 253263872,
+      "available_ram": 5413777408
+    },
+    {
+      "wall_s": 41.04206810001051,
+      "python_rss": 308453376,
+      "godot_rss": 253263872,
+      "available_ram": 5414387712
+    },
+    {
+      "wall_s": 41.159315299999435,
+      "python_rss": 308453376,
+      "godot_rss": 253263872,
+      "available_ram": 5415321600
+    },
+    {
+      "wall_s": 41.27635790000204,
+      "python_rss": 308453376,
+      "godot_rss": 253263872,
+      "available_ram": 5416927232
+    },
+    {
+      "wall_s": 41.39309530000901,
+      "python_rss": 308453376,
+      "godot_rss": 253263872,
+      "available_ram": 5414010880
+    },
+    {
+      "wall_s": 41.51028340001358,
+      "python_rss": 308477952,
+      "godot_rss": 253263872,
+      "available_ram": 5414715392
+    },
+    {
+      "wall_s": 41.62596370000392,
+      "python_rss": 308027392,
+      "godot_rss": 253263872,
+      "available_ram": 5415694336
+    },
+    {
+      "wall_s": 41.74262929998804,
+      "python_rss": 308027392,
+      "godot_rss": 253263872,
+      "available_ram": 5414248448
+    },
+    {
+      "wall_s": 41.85921089997282,
+      "python_rss": 308027392,
+      "godot_rss": 253263872,
+      "available_ram": 5415137280
+    },
+    {
+      "wall_s": 41.97586100001354,
+      "python_rss": 308027392,
+      "godot_rss": 253263872,
+      "available_ram": 5415854080
+    },
+    {
+      "wall_s": 42.09252559999004,
+      "python_rss": 308027392,
+      "godot_rss": 253263872,
+      "available_ram": 5416550400
+    },
+    {
+      "wall_s": 42.20891909999773,
+      "python_rss": 308125696,
+      "godot_rss": 253263872,
+      "available_ram": 5417246720
+    },
+    {
+      "wall_s": 42.328883500013035,
+      "python_rss": 308396032,
+      "godot_rss": 253263872,
+      "available_ram": 5417783296
+    },
+    {
+      "wall_s": 42.446847999992315,
+      "python_rss": 308400128,
+      "godot_rss": 253263872,
+      "available_ram": 5414494208
+    },
+    {
+      "wall_s": 42.56369869998889,
+      "python_rss": 308400128,
+      "godot_rss": 253263872,
+      "available_ram": 5416255488
+    },
+    {
+      "wall_s": 42.680426299979445,
+      "python_rss": 307965952,
+      "godot_rss": 253263872,
+      "available_ram": 5413847040
+    },
+    {
+      "wall_s": 42.79655630001798,
+      "python_rss": 308125696,
+      "godot_rss": 253263872,
+      "available_ram": 5414334464
+    },
+    {
+      "wall_s": 42.91633420001017,
+      "python_rss": 308506624,
+      "godot_rss": 253263872,
+      "available_ram": 5414060032
+    },
+    {
+      "wall_s": 43.03262620000169,
+      "python_rss": 308506624,
+      "godot_rss": 253263872,
+      "available_ram": 5414752256
+    },
+    {
+      "wall_s": 43.14956679998431,
+      "python_rss": 308506624,
+      "godot_rss": 253263872,
+      "available_ram": 5416378368
+    },
+    {
+      "wall_s": 43.265866499976255,
+      "python_rss": 308506624,
+      "godot_rss": 253263872,
+      "available_ram": 5417123840
+    },
+    {
+      "wall_s": 43.38254429999506,
+      "python_rss": 308568064,
+      "godot_rss": 253263872,
+      "available_ram": 5412831232
+    },
+    {
+      "wall_s": 43.502990400011186,
+      "python_rss": 308715520,
+      "godot_rss": 253263872,
+      "available_ram": 5413732352
+    },
+    {
+      "wall_s": 43.61911610001698,
+      "python_rss": 308146176,
+      "godot_rss": 253263872,
+      "available_ram": 5411835904
+    },
+    {
+      "wall_s": 43.73660399997607,
+      "python_rss": 308146176,
+      "godot_rss": 253263872,
+      "available_ram": 5413801984
+    },
+    {
+      "wall_s": 43.853436500008684,
+      "python_rss": 308146176,
+      "godot_rss": 253263872,
+      "available_ram": 5412605952
+    },
+    {
+      "wall_s": 43.970418600016274,
+      "python_rss": 308228096,
+      "godot_rss": 253263872,
+      "available_ram": 5459816448
+    },
+    {
+      "wall_s": 44.086303299991414,
+      "python_rss": 308150272,
+      "godot_rss": 227287040,
+      "available_ram": 5479735296
+    },
+    {
+      "wall_s": 44.216948300017975,
+      "python_rss": 239550464,
+      "godot_rss": 75964416,
+      "available_ram": 5660012544
+    }
+  ],
+  "peak_python_rss": 342556672,
+  "peak_godot_rss": 255995904,
+  "peak_combined_rss": 564502528
+}

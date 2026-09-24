@@ -1,0 +1,391 @@
+{
+  "label": "current-1t-looming-p0-20s-q100-off-2",
+  "tag": "current-1t-looming-p0-20s-q100",
+  "trial": 2,
+  "threads": 1,
+  "scenario": "looming",
+  "variant": "current",
+  "profiled": false,
+  "seconds": 20,
+  "quantum_ms": 100,
+  "warmup_windows": 5,
+  "brain_pid": 10192,
+  "brain_cpus": [
+    6
+  ],
+  "brain_affinity_mask": 64,
+  "priority_class": 128,
+  "brain_statistics": {
+    "blocks": 195,
+    "mean_ms": 95.27888205128204,
+    "p50_ms": 94.117,
+    "p95_ms": 112.04849999999996,
+    "p99_ms": 131.06398,
+    "max_ms": 163.48,
+    "blocks_per_second": 10.495505178805194,
+    "neural_wall_ratio": 1.0495505178805196,
+    "class_name": "FAIL",
+    "deadline_misses": 39,
+    "deadline_miss_rate": 0.2
+  },
+  "producer_statistics": null,
+  "producer": null,
+  "producer_intervals": [],
+  "compute_start_qpc": 301662.0051932,
+  "compute_done_qpc": 301681.1169014,
+  "timings": {
+    "init": 1.055914,
+    "network_compute": 19.110796,
+    "windows_compute": 19.04332099999999,
+    "brian_output": 0.208614
+  },
+  "profile": [],
+  "final_state": {
+    "v": {
+      "sha256": "88ffeafeaf7fb3a91ae5fc2e449af5ab6fb508a120ed76074055963de0d00b80",
+      "min": -0.2726023197174072,
+      "max": 0.9999876618385315
+    },
+    "syn": {
+      "sha256": "086275535bdd6b9fa6b91bc7e71c3d2ac5c4d12fbb74fb01d8b2bdb9a017109d",
+      "min": -0.9980231523513794,
+      "max": 2.0610811710357666
+    },
+    "activity": {
+      "sha256": "8c0f0a591a9d5f5c907877f8e20438ba08e8ed4fe2814bd9abbd7e65dafbd538",
+      "min": 0.0,
+      "max": 139.6116180419922
+    },
+    "noise_sample": {
+      "sha256": "76f257dfface15ca94988bccfafa8c10da722627b5344be45e48cbbbbcdb7ab2",
+      "min": -0.4841248691082001,
+      "max": 0.4299141466617584
+    },
+    "ref_steps": {
+      "sha256": "79a6d190ef1ea8264fb7ac3f7c0563fbceeaaf5b6b96b26543953dce98c3bd12",
+      "min": 0.0,
+      "max": 2.0
+    },
+    "eligible": {
+      "sha256": "8182e635226d5ca9d02ae5a47e3f0efd8cab00ba57311dbb7770e232bfea011b",
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "finite": true,
+  "max_spiking_fraction": 0.0017683894332675234,
+  "peak_consumer_sampled_rss": 1641938944,
+  "python_os_peak_rss": 113745920,
+  "power_counter": {
+    "error": null,
+    "samples": [
+      {
+        "qpc": 301662.0098178,
+        "processor_performance_percent": 106.20861553745594
+      },
+      {
+        "qpc": 301662.2623963,
+        "processor_performance_percent": 105.90193942500747
+      },
+      {
+        "qpc": 301662.5148937,
+        "processor_performance_percent": 105.77225677242542
+      },
+      {
+        "qpc": 301662.7674559,
+        "processor_performance_percent": 105.7965729445278
+      },
+      {
+        "qpc": 301663.0203908,
+        "processor_performance_percent": 105.84349861928203
+      },
+      {
+        "qpc": 301663.2737091,
+        "processor_performance_percent": 105.57986111111111
+      },
+      {
+        "qpc": 301663.5267675,
+        "processor_performance_percent": 105.54270647121916
+      },
+      {
+        "qpc": 301663.779539,
+        "processor_performance_percent": 105.25738486422065
+      },
+      {
+        "qpc": 301664.0327108,
+        "processor_performance_percent": 105.77573839986484
+      },
+      {
+        "qpc": 301664.2859661,
+        "processor_performance_percent": 105.7954303599374
+      },
+      {
+        "qpc": 301664.5394267,
+        "processor_performance_percent": 105.77970394813283
+      },
+      {
+        "qpc": 301664.792139,
+        "processor_performance_percent": 105.05851950650217
+      },
+      {
+        "qpc": 301665.0449983,
+        "processor_performance_percent": 105.61933754999902
+      },
+      {
+        "qpc": 301665.2986603,
+        "processor_performance_percent": 105.81343607663331
+      },
+      {
+        "qpc": 301665.5518607,
+        "processor_performance_percent": 105.75552489590775
+      },
+      {
+        "qpc": 301665.8045342,
+        "processor_performance_percent": 105.82132217914712
+      },
+      {
+        "qpc": 301666.0574055,
+        "processor_performance_percent": 104.10275284588441
+      },
+      {
+        "qpc": 301666.310291,
+        "processor_performance_percent": 104.34203873186024
+      },
+      {
+        "qpc": 301666.5637811,
+        "processor_performance_percent": 104.94096845348552
+      },
+      {
+        "qpc": 301666.8170918,
+        "processor_performance_percent": 105.28703155088135
+      },
+      {
+        "qpc": 301667.070056,
+        "processor_performance_percent": 105.08641253263707
+      },
+      {
+        "qpc": 301667.3231143,
+        "processor_performance_percent": 105.30741158950693
+      },
+      {
+        "qpc": 301667.576162,
+        "processor_performance_percent": 105.67861731499958
+      },
+      {
+        "qpc": 301667.8289975,
+        "processor_performance_percent": 105.260624949405
+      },
+      {
+        "qpc": 301668.0816238,
+        "processor_performance_percent": 105.02324691069188
+      },
+      {
+        "qpc": 301668.3343135,
+        "processor_performance_percent": 105.74855173580278
+      },
+      {
+        "qpc": 301668.5875481,
+        "processor_performance_percent": 105.71548270797169
+      },
+      {
+        "qpc": 301668.8402491,
+        "processor_performance_percent": 105.84842588951214
+      },
+      {
+        "qpc": 301669.0932984,
+        "processor_performance_percent": 105.37276278499758
+      },
+      {
+        "qpc": 301669.3463168,
+        "processor_performance_percent": 104.8814775850952
+      },
+      {
+        "qpc": 301669.5993093,
+        "processor_performance_percent": 105.04127087482765
+      },
+      {
+        "qpc": 301669.8520254,
+        "processor_performance_percent": 105.14416803388148
+      },
+      {
+        "qpc": 301670.1050595,
+        "processor_performance_percent": 105.35300360857568
+      },
+      {
+        "qpc": 301670.3582015,
+        "processor_performance_percent": 105.33239215686274
+      },
+      {
+        "qpc": 301670.6110576,
+        "processor_performance_percent": 104.81380032929202
+      },
+      {
+        "qpc": 301670.8637244,
+        "processor_performance_percent": 105.1540280857354
+      },
+      {
+        "qpc": 301671.1162797,
+        "processor_performance_percent": 105.68238587424634
+      },
+      {
+        "qpc": 301671.3689914,
+        "processor_performance_percent": 105.72964910730069
+      },
+      {
+        "qpc": 301671.6215463,
+        "processor_performance_percent": 105.80266666666667
+      },
+      {
+        "qpc": 301671.8757645,
+        "processor_performance_percent": 104.04554590617771
+      },
+      {
+        "qpc": 301672.1288365,
+        "processor_performance_percent": 103.73920102542192
+      },
+      {
+        "qpc": 301672.3828799,
+        "processor_performance_percent": 104.11520673227388
+      },
+      {
+        "qpc": 301672.6360014,
+        "processor_performance_percent": 103.57468614941347
+      },
+      {
+        "qpc": 301672.8900501,
+        "processor_performance_percent": 103.74232591471912
+      },
+      {
+        "qpc": 301673.1429769,
+        "processor_performance_percent": 103.7804054054054
+      },
+      {
+        "qpc": 301673.3962462,
+        "processor_performance_percent": 104.95697738554881
+      },
+      {
+        "qpc": 301673.6488447,
+        "processor_performance_percent": 104.86108829568788
+      },
+      {
+        "qpc": 301673.9015273,
+        "processor_performance_percent": 104.98870961120006
+      },
+      {
+        "qpc": 301674.1543679,
+        "processor_performance_percent": 105.42546030812463
+      },
+      {
+        "qpc": 301674.4076018,
+        "processor_performance_percent": 105.57618140542233
+      },
+      {
+        "qpc": 301674.665439,
+        "processor_performance_percent": 105.39739007229225
+      },
+      {
+        "qpc": 301674.9170032,
+        "processor_performance_percent": 105.43438316129834
+      },
+      {
+        "qpc": 301675.1700197,
+        "processor_performance_percent": 105.57359029013335
+      },
+      {
+        "qpc": 301675.4233003,
+        "processor_performance_percent": 105.75259932050604
+      },
+      {
+        "qpc": 301675.6760675,
+        "processor_performance_percent": 105.74548508113767
+      },
+      {
+        "qpc": 301675.9289396,
+        "processor_performance_percent": 105.27508154313351
+      },
+      {
+        "qpc": 301676.1817393,
+        "processor_performance_percent": 104.03448713608667
+      },
+      {
+        "qpc": 301676.4351941,
+        "processor_performance_percent": 104.0236296079823
+      },
+      {
+        "qpc": 301676.6882825,
+        "processor_performance_percent": 103.52501103132897
+      },
+      {
+        "qpc": 301676.9419794,
+        "processor_performance_percent": 103.78352697095436
+      },
+      {
+        "qpc": 301677.1948026,
+        "processor_performance_percent": 104.23957056511264
+      },
+      {
+        "qpc": 301677.4480245,
+        "processor_performance_percent": 104.56494512154063
+      },
+      {
+        "qpc": 301677.7012467,
+        "processor_performance_percent": 103.71334236958259
+      },
+      {
+        "qpc": 301677.9557099,
+        "processor_performance_percent": 104.1074251056791
+      },
+      {
+        "qpc": 301678.2097449,
+        "processor_performance_percent": 104.15676923076923
+      },
+      {
+        "qpc": 301678.462748,
+        "processor_performance_percent": 104.43436402569593
+      },
+      {
+        "qpc": 301678.7155306,
+        "processor_performance_percent": 105.11932244577065
+      },
+      {
+        "qpc": 301678.9682292,
+        "processor_performance_percent": 104.95148646333105
+      },
+      {
+        "qpc": 301679.2209859,
+        "processor_performance_percent": 104.56635412910205
+      },
+      {
+        "qpc": 301679.4736616,
+        "processor_performance_percent": 104.76170549413945
+      },
+      {
+        "qpc": 301679.7267735,
+        "processor_performance_percent": 105.07775194491639
+      },
+      {
+        "qpc": 301679.9796366,
+        "processor_performance_percent": 105.44026646675981
+      },
+      {
+        "qpc": 301680.2323531,
+        "processor_performance_percent": 105.56514849270121
+      },
+      {
+        "qpc": 301680.484798,
+        "processor_performance_percent": 105.60529859807926
+      },
+      {
+        "qpc": 301680.7375517,
+        "processor_performance_percent": 105.80047898976704
+      },
+      {
+        "qpc": 301680.9908245,
+        "processor_performance_percent": 105.51932639565284
+      }
+    ],
+    "qualification": "PDH _Total Processor Performance percent, not per-core direct frequency; no OS plan modification"
+  },
+  "noise_qualification": "Long timeline diagnostic repeats frozen2s noise; known 40-window input period, not independent20s Gaussian certification",
+  "producer_output": null
+}

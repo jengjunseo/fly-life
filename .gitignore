@@ -2,5 +2,12 @@
 __pycache__/
 data/raw/*.feather
 data/raw/*.partial
-data/runtime/*.npz
-data/runtime/*.parquet
+work/
+**/.godot/
+*.import
+body/tools/
+body/logs/
+ecology/logs/
+mvp/logs/
+mvp/cache/
+*.pyc

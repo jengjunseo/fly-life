@@ -1,0 +1,40 @@
+{
+  "fly_sphere_boundary_collision": true,
+  "fly_sphere_inside_clear": true,
+  "note": "Separate geometry fixture uses unchanged production build_world; no focal fly motion controller added.",
+  "passed": true,
+  "wall_rays": [
+    {
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "inner_face_distance": 5.51543283462524,
+      "passed": true
+    },
+    {
+      "direction": [
+        -1.0,
+        0.0
+      ],
+      "inner_face_distance": 5.51543283462524,
+      "passed": true
+    },
+    {
+      "direction": [
+        0.0,
+        -1.0
+      ],
+      "inner_face_distance": 5.51543283462524,
+      "passed": true
+    },
+    {
+      "direction": [
+        0.0,
+        1.0
+      ],
+      "inner_face_distance": 5.51543283462524,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "before": "전원 구성표 GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (고성능)",
+  "after": "전원 구성표 GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (고성능)",
+  "changed": false,
+  "processor_performance_percent_min": 102.20604718554362,
+  "processor_performance_percent_max": 107.01938302768569,
+  "qualification": "No severe aggregate PDH clock-down signal; _Total not per-core direct frequency, cannot rule out per-core scheduling/thermal events."
+}

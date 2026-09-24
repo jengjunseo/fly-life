@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "tests_run": 13,
+  "skipped": 0,
+  "baseline_commit": "f289a74",
+  "preexisting_files_checked": 73,
+  "changed_baseline_files": [],
+  "inherited_eol_only_differences": [
+    {
+      "path": "body/reports/clean-exit/godot_console.txt",
+      "working_tree_bytes": 205,
+      "git_object_bytes": 202,
+      "note": "Inherited CRLF working-tree console logs vs LF Git objects; not rewritten by ecology"
+    },
+    {
+      "path": "body/reports/integration/godot_console.txt",
+      "working_tree_bytes": 205,
+      "git_object_bytes": 202,
+      "note": "Inherited CRLF working-tree console logs vs LF Git objects; not rewritten by ecology"
+    }
+  ],
+  "output": "test_biological_direction (test_core.CoreTests.test_biological_direction) ... ok\ntest_external_current_only_selected (test_core.CoreTests.test_external_current_only_selected) ... ok\ntest_identity_selector_union (test_core.CoreTests.test_identity_selector_union) ... ok\ntest_presynaptic_sign_and_normalization (test_core.CoreTests.test_presynaptic_sign_and_normalization) ... ok\ntest_refractory_reset_and_negative_current (test_core.CoreTests.test_refractory_reset_and_negative_current) ... ok\ntest_seed_and_warmup (test_core.CoreTests.test_seed_and_warmup) ... ok\ntest_actual_known_direction_and_signs (test_real.RealDataTests.test_actual_known_direction_and_signs) ... ok\ntest_pruning_retains_low_degree_identity (test_real.RealDataTests.test_pruning_retains_low_degree_identity) ... ok\ntest_real_dataset_and_identity (test_real.RealDataTests.test_real_dataset_and_identity) ... ok\ntest_real_stimulus_delivery (test_real.RealDataTests.test_real_stimulus_delivery) ... ok\ntest_invalid_and_saturation (test_decoder.DecoderTests.test_invalid_and_saturation) ... ok\ntest_left_right_forward (test_decoder.DecoderTests.test_left_right_forward) ... ok\ntest_no_activity_no_movement (test_decoder.DecoderTests.test_no_activity_no_movement) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 1.666s\n\nOK\n"
+}

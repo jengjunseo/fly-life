@@ -1,0 +1,140 @@
+b2: completed 5.0s
+b2: completed 10.0s
+b2: completed 15.0s
+b2: completed 20.0s
+b2: completed 25.0s
+b2: completed 30.0s
+b2: completed 35.0s
+b2: completed 40.0s
+b2: completed 45.0s
+b2: completed 50.0s
+b2: completed 55.0s
+b2: completed 60.0s
+{
+  "mode": "b2",
+  "noise_std": 0.0,
+  "rng": "NumPy default_rng PCG64, float32 standard_normal; state advanced by baseline heterogeneity draw; seed read from config",
+  "seed": 20260913,
+  "neurons": 165122,
+  "neural_seconds": 60.0,
+  "load_wall_seconds": 0.3973757000057958,
+  "core_compute_wall_seconds": 494.56158069492085,
+  "whole_probe_wall_seconds": 527.7887503000093,
+  "resources": {
+    "wall_seconds": 527.7887503000093,
+    "sampled_peak_rss_bytes": 361480192,
+    "os_process_peak_rss_bytes": 366460928,
+    "representative_rss_bytes": 321925120,
+    "minimum_available_system_ram_bytes": 5842894848,
+    "sampling_interval_seconds": 0.02
+  },
+  "phases": {
+    "baseline": {
+      "population_spikes": 1488790,
+      "population_rate_hz": 0.45081515485519796,
+      "active_fraction": 0.027930863240513075,
+      "groups": {
+        "LC4": {
+          "spike_count": 1671,
+          "mean_hz": 0.6630952380952382,
+          "active_fraction": 0.03968253968253968,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "LPLC2": {
+          "spike_count": 2273,
+          "mean_hz": 0.6143243243243244,
+          "active_fraction": 0.032432432432432434,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "GF": {
+          "spike_count": 337,
+          "mean_hz": 8.425,
+          "active_fraction": 0.5,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        }
+      }
+    },
+    "stimulus": {
+      "population_spikes": 2289032,
+      "population_rate_hz": 0.6931335618512373,
+      "active_fraction": 0.030522886108453145,
+      "groups": {
+        "LC4": {
+          "spike_count": 297871,
+          "mean_hz": 118.20277777777778,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "LPLC2": {
+          "spike_count": 443452,
+          "mean_hz": 119.85189189189188,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "GF": {
+          "spike_count": 877,
+          "mean_hz": 21.925,
+          "active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        }
+      }
+    },
+    "recovery": {
+      "population_spikes": 1490751,
+      "population_rate_hz": 0.45140895822482774,
+      "active_fraction": 0.027936919368709196,
+      "groups": {
+        "LC4": {
+          "spike_count": 1672,
+          "mean_hz": 0.6634920634920636,
+          "active_fraction": 0.03968253968253968,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "LPLC2": {
+          "spike_count": 2276,
+          "mean_hz": 0.6151351351351352,
+          "active_fraction": 0.032432432432432434,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "GF": {
+          "spike_count": 338,
+          "mean_hz": 8.45,
+          "active_fraction": 0.5,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "mean_ema_hz": null
+        }
+      }
+    }
+  },
+  "finite": true,
+  "max_simultaneous_spiking_fraction": 0.0045784329162679716
+}

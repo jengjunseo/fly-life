@@ -1,0 +1,556 @@
+{
+  "success": true,
+  "checks": {
+    "BASELINE": true,
+    "WORLD": true,
+    "SENSORYMAPPING": true,
+    "NOSHORTCUT": true,
+    "PREDATORCLOSEDLOOP": true,
+    "FOOD": true,
+    "THERMAL": true,
+    "FEMALE": true,
+    "DAMAGE": true,
+    "DEFECATION": true,
+    "TIME": true,
+    "DETERMINISM": true,
+    "FAILURE_FREEZE": true,
+    "RESOURCE": true,
+    "CLEAN_EXIT": true
+  },
+  "levels": {
+    "BASELINE": "13 UNIT/INTEGRATION + original certificates preserved",
+    "WORLD": "LIVE_EXPERIMENTAL_WORLD",
+    "SENSORYMAPPING": "INTEGRATION_VERIFIED_IDENTITIES_EXPERIMENTAL_ENCODING",
+    "NOSHORTCUT": "STATIC_AND_LIVE",
+    "PREDATORCLOSEDLOOP": "LIVE_EXPERIMENTAL_LC9_FIGURE_PATH_PLUS_LC4_LPLC2",
+    "FOOD": "LIVE_ORN_AND_EXPERIMENTAL_CNS_TASTE_BYPASS; INGESTION_DISABLED",
+    "THERMAL": "LIVE_HEAT_AND_REAL_MAPPING_INTEGRATION_SHADE_NOT_BEHAVIOR",
+    "FEMALE": "LIVE_NON_SEX_SPECIFIC_ORN; CONTACT_DISABLED",
+    "DAMAGE": "LIVE_HP; PAIN_DISABLED; DEATH_UNIT",
+    "DEFECATION": "LIVE_PHYSIOLOGY_PLACEHOLDER",
+    "TIME": "LIVE_50MS_LOCKSTEP",
+    "DETERMINISM": "LIVE_3_GENERATION_EXACT_REPLAY",
+    "RESOURCE": "LIVE_PROCESS_TREES"
+  },
+  "measurements": {
+    "world_s": 3.0,
+    "neural_s": 3.5,
+    "body_distance_units": 0.0323102623224258,
+    "peak_forward": 0.09269662857055665,
+    "peak_forward_group_hz": 9.269662857055664,
+    "peak_left_hz": 0.0,
+    "peak_right_hz": 0.0,
+    "post_warmup_neural_wall_ratio": 0.08049257526929947,
+    "motor_packet_hz": 1.6098515053859892,
+    "godot_fps_median": 60.0,
+    "peak_python_rss": 342556672,
+    "peak_godot_rss": 255995904,
+    "peak_combined_rss": 564502528,
+    "final_hp": 64.0,
+    "damage_events": 3,
+    "final_hunger": 35.59999999999988,
+    "final_gut": 29.700000000000113,
+    "max_temperature_c": 34.0,
+    "max_Fdg_hz": 0.0,
+    "max_pC1_family_hz": 1.1625066995620728,
+    "sensory_off_peak_motor": 0.0,
+    "without_predator_peak_motor": 0.0
+  },
+  "closed_loop_feedback_examples": [
+    {
+      "source_seq": 34,
+      "next_seq": 35,
+      "world_time_s": 0.65,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        0.0
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.00625012535601854
+      ],
+      "predator_position": [
+        0.2968769028912545,
+        0.3,
+        -0.9285781925103737
+      ],
+      "actual_angular_size_deg": 49.67458614636264,
+      "frozen_body_counterfactual_size_deg": 49.40942935300492,
+      "difference_deg": 0.26515679335772546,
+      "next_sensor_source_seq": 34.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 49.67458614636264,
+          "positive_expansion_deg_s": 123.34358032622148,
+          "bearing_radians": 0.3114053636027009,
+          "angular_motion_deg_s": 63.622618705403795,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 57.29409069239198,
+          "positive_expansion_deg_s": 0.0,
+          "bearing_radians": 1.6989024403299058,
+          "angular_motion_deg_s": 30.073884849763147,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 4.967458614636264,
+        "figure": 6.0,
+        "food_odor": 2.9896011887085985,
+        "taste": 3.0,
+        "fly_odor": 1.8983295741785868,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 35,
+      "next_seq": 36,
+      "world_time_s": 0.7,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.00625012535601854
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.00854941923171282
+      ],
+      "predator_position": [
+        0.2508133561090925,
+        0.3,
+        -0.7858261359302754
+      ],
+      "actual_angular_size_deg": 57.47595400505505,
+      "frozen_body_counterfactual_size_deg": 57.34799516753662,
+      "difference_deg": 0.12795883751843462,
+      "next_sensor_source_seq": 35.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 57.47595400505505,
+          "positive_expansion_deg_s": 156.02735717384817,
+          "bearing_radians": 0.31213409641212164,
+          "angular_motion_deg_s": 78.8487448743745,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 56.371463788246274,
+          "positive_expansion_deg_s": 0.0,
+          "bearing_radians": 1.713621418827081,
+          "angular_motion_deg_s": 16.866706932639108,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 5.747595400505505,
+        "figure": 6.0,
+        "food_odor": 2.9857847535880895,
+        "taste": 3.0,
+        "fly_odor": 1.881530108580915,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 36,
+      "next_seq": 37,
+      "world_time_s": 0.75,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.00854941923171282
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.00939528271555901
+      ],
+      "predator_position": [
+        0.2047043659967087,
+        0.3,
+        -0.6430887510907874
+      ],
+      "actual_angular_size_deg": 67.71661254066996,
+      "frozen_body_counterfactual_size_deg": 67.65349065045007,
+      "difference_deg": 0.06312189021988956,
+      "next_sensor_source_seq": 36.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 67.71661254066996,
+          "positive_expansion_deg_s": 204.8131707122981,
+          "bearing_radians": 0.31245245025114315,
+          "angular_motion_deg_s": 102.77139198350345,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 57.083245192759016,
+          "positive_expansion_deg_s": 14.235628090254835,
+          "bearing_radians": 1.729249755469842,
+          "angular_motion_deg_s": 25.026568653924578,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.984381990824578,
+        "taste": 3.0,
+        "fly_odor": 1.8945212476613762,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 37,
+      "next_seq": 38,
+      "world_time_s": 0.8,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.00939528271555901
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.0186649449169636
+      ],
+      "predator_position": [
+        0.15797686707469494,
+        0.3,
+        -0.5005526474380875
+      ],
+      "actual_angular_size_deg": 82.47051489641002,
+      "frozen_body_counterfactual_size_deg": 81.51595628287681,
+      "difference_deg": 0.9545586135332087,
+      "next_sensor_source_seq": 37.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 82.47051489641002,
+          "positive_expansion_deg_s": 295.07804711480134,
+          "bearing_radians": 0.31678869505079865,
+          "angular_motion_deg_s": 152.5079940765169,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 57.59153947999422,
+          "positive_expansion_deg_s": 10.165885744704042,
+          "bearing_radians": 1.768150280932369,
+          "angular_motion_deg_s": 49.659661469231835,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.9690524895448136,
+        "taste": 3.0,
+        "fly_odor": 1.9036715867585772,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 38,
+      "next_seq": 39,
+      "world_time_s": 0.85,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.0186649449169636
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.0220750644803047
+      ],
+      "predator_position": [
+        0.11094897055327838,
+        0.3,
+        -0.35811537370409974
+      ],
+      "actual_angular_size_deg": 102.24503847589298,
+      "frozen_body_counterfactual_size_deg": 101.75891691225394,
+      "difference_deg": 0.48612156363904546,
+      "next_sensor_source_seq": 38.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 102.24503847589298,
+          "positive_expansion_deg_s": 395.4904715896592,
+          "bearing_radians": 0.31889694453636364,
+          "angular_motion_deg_s": 200.1611117484996,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 58.21223355289637,
+          "positive_expansion_deg_s": 12.413881458043079,
+          "bearing_radians": 1.7919666929701452,
+          "angular_motion_deg_s": 33.49853858720441,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.9634329121901457,
+        "taste": 3.0,
+        "fly_odor": 1.9147053736548207,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 39,
+      "next_seq": 40,
+      "world_time_s": 0.9,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.0220750644803047
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.0233295783400536
+      ],
+      "predator_position": [
+        0.06376226009275887,
+        0.3,
+        -0.2157306331034472
+      ],
+      "actual_angular_size_deg": 128.32380512406775,
+      "frozen_body_counterfactual_size_deg": 128.09537473597095,
+      "difference_deg": 0.22843038809679683,
+      "next_sensor_source_seq": 39.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 128.32380512406775,
+          "positive_expansion_deg_s": 521.5753329634953,
+          "bearing_radians": 0.3200121246464066,
+          "angular_motion_deg_s": 262.0655687557956,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 58.88798673077054,
+          "positive_expansion_deg_s": 13.515063557483415,
+          "bearing_radians": 1.81048837653572,
+          "angular_motion_deg_s": 27.981817734426812,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.9613682608326606,
+        "taste": 3.0,
+        "fly_odor": 1.9265468987220022,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 40,
+      "next_seq": 41,
+      "world_time_s": 0.95,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.0233295783400536
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.0290116332471371
+      ],
+      "predator_position": [
+        0.015287582296820694,
+        0.3,
+        -0.07377921320008737
+      ],
+      "actual_angular_size_deg": 156.66117383979824,
+      "frozen_body_counterfactual_size_deg": 155.96199528152079,
+      "difference_deg": 0.6991785582774526,
+      "next_sensor_source_seq": 40.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 156.66117383979824,
+          "positive_expansion_deg_s": 566.7473743146098,
+          "bearing_radians": 0.3290715318227117,
+          "angular_motion_deg_s": 293.75500307916116,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 59.39709993576886,
+          "positive_expansion_deg_s": 10.18226409996629,
+          "bearing_radians": 1.8417327063308147,
+          "angular_motion_deg_s": 40.89449666945853,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.952034857137506,
+        "taste": 3.0,
+        "fly_odor": 1.9353532258992188,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    },
+    {
+      "source_seq": 41,
+      "next_seq": 42,
+      "world_time_s": 1.0,
+      "prior_position": [
+        0.0,
+        0.219999998807907,
+        -0.0290116332471371
+      ],
+      "actual_body_position": [
+        0.0,
+        0.219999998807907,
+        -0.0311019457876682
+      ],
+      "predator_position": [
+        0.0,
+        0.3,
+        -0.0311019457876682
+      ],
+      "actual_angular_size_deg": 159.83880373065156,
+      "frozen_body_counterfactual_size_deg": 159.8320638762234,
+      "difference_deg": 0.006739854428161607,
+      "next_sensor_source_seq": 41.0,
+      "next_figures": [
+        {
+          "angular_size_deg": 159.83880373065156,
+          "positive_expansion_deg_s": 63.5525978170665,
+          "bearing_radians": 3.141592653589793,
+          "angular_motion_deg_s": 3254.6881002816062,
+          "contrast": 1.0
+        },
+        {
+          "angular_size_deg": 60.01511420788418,
+          "positive_expansion_deg_s": 12.360285442306491,
+          "bearing_radians": 1.8637022638370833,
+          "angular_motion_deg_s": 31.355401178736226,
+          "contrast": 0.35
+        }
+      ],
+      "next_sensory_currents": {
+        "lc4": 6.0,
+        "lplc2": 6.0,
+        "figure": 6.0,
+        "food_odor": 2.9486086938525897,
+        "taste": 3.0,
+        "fly_odor": 1.9459133450579156,
+        "hot": 3.0,
+        "cold": 0.0
+      }
+    }
+  ],
+  "all_run_resources": {
+    "live": {
+      "total_wall_s": 44.35646679997444,
+      "brain_exit_code": 0,
+      "godot_exit_code": 0,
+      "real_brain_terminated_for_failure_test": false,
+      "remaining_owned_pids": [],
+      "process_tree_rss": true,
+      "peak_python_rss": 342556672,
+      "peak_godot_rss": 255995904,
+      "peak_combined_rss": 564502528
+    },
+    "replay": {
+      "total_wall_s": 141.16040270001395,
+      "brain_exit_code": 1,
+      "godot_exit_code": 1,
+      "real_brain_terminated_for_failure_test": true,
+      "remaining_owned_pids": [],
+      "process_tree_rss": true,
+      "peak_python_rss": 392306688,
+      "peak_godot_rss": 255959040,
+      "peak_combined_rss": 644886528
+    },
+    "sensory-off": {
+      "total_wall_s": 45.555970199988224,
+      "brain_exit_code": 0,
+      "godot_exit_code": 0,
+      "real_brain_terminated_for_failure_test": false,
+      "remaining_owned_pids": [],
+      "process_tree_rss": true,
+      "peak_python_rss": 344072192,
+      "peak_godot_rss": 259215360,
+      "peak_combined_rss": 568176640
+    },
+    "without-predator": {
+      "total_wall_s": 59.714699500007555,
+      "brain_exit_code": 0,
+      "godot_exit_code": 0,
+      "real_brain_terminated_for_failure_test": false,
+      "remaining_owned_pids": [],
+      "process_tree_rss": true,
+      "peak_python_rss": 351764480,
+      "peak_godot_rss": 258670592,
+      "peak_combined_rss": 567574528
+    }
+  },
+  "limitations": [
+    "LC4/LPLC2 alone did not recruit original locomotor readouts in bounded scouts; GF activity is not body escape.",
+    "Motion in life run uses experimental LC9 figure-motion encoding through real LC9->DNp09 contacts; not calibrated escape.",
+    "Food finding, escape, shade seeking and courtship behavior are not claimed.",
+    "Sugar-SEL PN bypass is not a reconstructed peripheral sweet-GRN transducer.",
+    "Fdg observed but no certified functional feeding gate: ingestion disabled.",
+    "Defecation is non-neural physiology placeholder with initial gut load, not evidence of adult defecation connectomics.",
+    "Local temperature encoding is experimental; shade comparison relocates only test initial conditions.",
+    "No physical OS keyboard injection was needed or claimed."
+  ],
+  "evidence_files": {
+    "tests.json": "4b68508a2028ca8fff2b3946f3bb69b1098900ed54bfb30d4461c2f2fcb63f5d",
+    "baseline.json": "75c2c109bd7e8c283c96326aa78ef4978bb3d742ea4b2d22b2ec16c8368be439",
+    "thermal-integration.json": "1ecf8639975520001fc29bb97feee387251ae18ae6515aa3c91b8a0950ea4aee",
+    "topology.json": "098a3dc74615dead76c2c2fbcc067829ff0a22d3fb4ce63fc950b167ebfa9255",
+    "live\\brain.jsonl": "9ec52d3875aea7d41c87af648fdbff497223fdf2d83d86410029d4db920c9f6f",
+    "live\\godot.jsonl": "e695dcb07bad6ea7879c6194fceeb6dade2be08f8b8ee37a8b9321e7053b780d",
+    "live\\world.jsonl": "00086402ca9607f15688a5c9324a1ac8f9438a61bae97015e09ede75b2fac0f6",
+    "live\\events.jsonl": "ad188e806cfe4ab791e41a67deb90bff8d854e20a1908f8a1679a3b802c195dc",
+    "live\\resources.json": "a5e6a8494f636fb045032824fc64aa54c5fb880409baa1f05bb6a5407c332c06",
+    "live\\ecology_config.json": "76207c6e4ff090727f84e85c5f0e0a1e3ebbc23d024f753925cf227e5f7579b3",
+    "live\\body_runtime_config.json": "69355c3dc455614be3ce2112367453b0989091ca4a6a862a408bcb6bccdfc52a",
+    "replay\\brain.jsonl": "8746c4fc264b1f1692183f46e31c655c03ee1da560445e5678fca452bf1e0701",
+    "replay\\godot.jsonl": "b1ce7e95805bbf727e2e1fa484810b3ebf7fcdf830d6a1bd8a34b807b0db61bb",
+    "replay\\world.jsonl": "0f2af907df8f38c02e350c6b5c6e339ec7db3761ab61765f0e7d826e2bec7c05",
+    "replay\\events.jsonl": "6e2007ed80a2cd17e7e9498971d18d7a04a79db39b5aae39d85ff3b8dc743d38",
+    "replay\\resources.json": "0ca8e575f66d1a4633e035e4ac0a4158affa3d224443861ad7699455aefcab62",
+    "replay\\ecology_config.json": "76207c6e4ff090727f84e85c5f0e0a1e3ebbc23d024f753925cf227e5f7579b3",
+    "replay\\body_runtime_config.json": "69355c3dc455614be3ce2112367453b0989091ca4a6a862a408bcb6bccdfc52a",
+    "sensory-off\\brain.jsonl": "c9e04bef83dc8592a84938adc385590cbeeb80ef6ebbe319115213b9bb35e98d",
+    "sensory-off\\godot.jsonl": "16a8497106378774c2291024790390556d71acde1c9cd194bde1ac1579aea903",
+    "sensory-off\\world.jsonl": "67317b54e885e94dfa9819eff69de1deeb5a4acb5765517670197a38d14060e7",
+    "sensory-off\\events.jsonl": "dce408a62ebd96dd25456dd8dda8dc1e85e6f6bebb35b3b251d5e699b75de228",
+    "sensory-off\\resources.json": "4fc9dae5fb3b4f99f17d042b56817da96da3e1ef77873e9ca7140e56334f7105",
+    "sensory-off\\ecology_config.json": "f2cfb2da82a5d87e7e53aaf498fa4812757b7387058e53df024bc8d0a5807fb1",
+    "sensory-off\\body_runtime_config.json": "69355c3dc455614be3ce2112367453b0989091ca4a6a862a408bcb6bccdfc52a",
+    "without-predator\\brain.jsonl": "45a5af2299eae8330f62b75e1f248f6b6df9da8cb5334daed2b3ca563936465f",
+    "without-predator\\godot.jsonl": "1df6c7291df1e6a13428147e7d339b960dae9e60b4a3a79b0804e24c46da5ccd",
+    "without-predator\\world.jsonl": "08859ad61e55b8da2f1a02f43d1a1af4a4862d548112dd899cd882fcdaf98261",
+    "without-predator\\events.jsonl": "b861b5eb74e5d386bdd1ccc7005c67d7fbc3e5f5e035df514907a8b4d182cef6",
+    "without-predator\\resources.json": "19f169507ebe319c1ee700ae2ca88dc8efde1c8b855eba49050aef789890925c",
+    "without-predator\\ecology_config.json": "3ffcf99c2040545f39c7dc251970fc00ffef4c8a5bbb876dac797c6760c002a5",
+    "without-predator\\body_runtime_config.json": "69355c3dc455614be3ce2112367453b0989091ca4a6a862a408bcb6bccdfc52a",
+    "live\\sensory_mapping.json": "39da00fa4bceca6a3e8d2bd6d43aca88e48169744c550f4eda775d451eac5bb5",
+    "live\\baseline_mapping.json": "2809a18550cdf12334eca80f87c94b86664d71c245d9d85a1c701447acde6713",
+    "replay\\schedule-generation-1.json": "379e023fbd793a58a6e1cfd5df27a0c7975de3c8975fe11f67ace8aa56d0b5e2",
+    "replay\\schedule-generation-2.json": "379e023fbd793a58a6e1cfd5df27a0c7975de3c8975fe11f67ace8aa56d0b5e2",
+    "replay\\schedule-generation-3.json": "379e023fbd793a58a6e1cfd5df27a0c7975de3c8975fe11f67ace8aa56d0b5e2"
+  }
+}

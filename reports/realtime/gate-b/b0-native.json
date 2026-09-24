@@ -1,0 +1,1968 @@
+{
+  "name": "b0-native",
+  "noise_policy": "native",
+  "noise_std": 0.1,
+  "seed": 20260913,
+  "native_rng": "Actual generated objects.h: std::mt19937 + polar Box-Muller. Same numeric seed; native stream differs from NumPy PCG64. Shared B0 tape uses exact PCG64 float32 stream.",
+  "neurons": 165122,
+  "effective_connections": 6327564,
+  "dt_ms": 1,
+  "full_connection_arrays_verified": true,
+  "initial_sha256": "102adcdd42e47778d51b024a19e8afc33bb7bf03b8caff71e49e44eb477ee3a5",
+  "inputs_sha256": "0e8a732a1fba3b2d139f74861e2814e17b0913aa1dfed99add75b0af6d4614b9",
+  "weights_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+  "load_wall_seconds": 0.5134292999864556,
+  "python_model_setup_wall_seconds": 0.3865858999779448,
+  "code_generation_wall_seconds": 0.4907552000368014,
+  "compile_link_wall_seconds": 5.745315100008156,
+  "timings": {
+    "init": 0.459754,
+    "network_compute": 13.313873,
+    "windows_compute": 13.297641000000004,
+    "brian_output": 0.14188
+  },
+  "binary_launch_init_compute_output_wall_seconds": 14.214375899988227,
+  "launcher_and_unattributed_seconds": 0.29886889998822674,
+  "statistics": {
+    "windows": 40,
+    "mean_ms": 332.44102499999997,
+    "p50_ms": 330.92,
+    "p95_ms": 341.74125,
+    "p99_ms": 344.07924,
+    "max_ms": 345.243,
+    "deadline_misses": 40,
+    "deadline_miss_rate": 1.0,
+    "longest_consecutive_misses": 40,
+    "neural_seconds": 2.0,
+    "network_compute_seconds": 13.313873,
+    "window_compute_seconds": 13.297641,
+    "neural_wall_ratio": 0.15021924874903045,
+    "compute_realtime": false,
+    "clean_quality": false
+  },
+  "windows": [
+    {
+      "window_index": 0,
+      "neural_start_s": 0.0,
+      "neural_end_s": 0.05,
+      "wall_compute_ms": 327.46,
+      "realtime_factor": 0.1526904049349539,
+      "slack_ms": -277.46,
+      "population_spikes": 1357,
+      "cumulative_population_spikes": 1357,
+      "cumulative_active_fraction": 0.008206053705744842,
+      "max_simultaneous_spiking_fraction": 0.0006116689478082873,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 1,
+          "mean_ema_hz": 0.1450708025977725,
+          "cumulative_active_fraction": 0.007936507936507936,
+          "peak_mean_ema_hz": 0.15715332636757504,
+          "window_mean_ema_hz": 0.015105166056799511
+        },
+        "LPLC2": {
+          "cumulative_spikes": 3,
+          "mean_ema_hz": 0.2656515843159444,
+          "cumulative_active_fraction": 0.016216216216216217,
+          "peak_mean_ema_hz": 0.2656515843159444,
+          "window_mean_ema_hz": 0.061320277342925195
+        },
+        "GF": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 1,
+      "neural_start_s": 0.05,
+      "neural_end_s": 0.1,
+      "wall_compute_ms": 330.342,
+      "realtime_factor": 0.15135828928807116,
+      "slack_ms": -280.342,
+      "population_spikes": 4671,
+      "cumulative_population_spikes": 6028,
+      "cumulative_active_fraction": 0.028857450854519687,
+      "max_simultaneous_spiking_fraction": 0.000702510870750112,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 6,
+          "mean_ema_hz": 0.4703980476137192,
+          "cumulative_active_fraction": 0.03968253968253968,
+          "peak_mean_ema_hz": 0.6131078704955086,
+          "window_mean_ema_hz": 0.4715657888139998
+        },
+        "LPLC2": {
+          "cumulative_spikes": 9,
+          "mean_ema_hz": 0.5328228460775839,
+          "cumulative_active_fraction": 0.032432432432432434,
+          "peak_mean_ema_hz": 0.5545677545908335,
+          "window_mean_ema_hz": 0.38414005867210593
+        },
+        "GF": {
+          "cumulative_spikes": 1,
+          "mean_ema_hz": 3.7158288955688477,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 9.900659561157227,
+          "window_mean_ema_hz": 6.321203618049622
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 2,
+      "neural_start_s": 0.1,
+      "neural_end_s": 0.15,
+      "wall_compute_ms": 331.22,
+      "realtime_factor": 0.15095706780991486,
+      "slack_ms": -281.22,
+      "population_spikes": 4476,
+      "cumulative_population_spikes": 10504,
+      "cumulative_active_fraction": 0.03496808420440644,
+      "max_simultaneous_spiking_fraction": 0.000702510870750112,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 11,
+          "mean_ema_hz": 0.7013602389229668,
+          "cumulative_active_fraction": 0.047619047619047616,
+          "peak_mean_ema_hz": 0.7597744767628019,
+          "window_mean_ema_hz": 0.5649904670034135
+        },
+        "LPLC2": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 0.6254579879142143,
+          "cumulative_active_fraction": 0.043243243243243246,
+          "peak_mean_ema_hz": 0.8883160101400839,
+          "window_mean_ema_hz": 0.6650447969178898
+        },
+        "GF": {
+          "cumulative_spikes": 2,
+          "mean_ema_hz": 5.55656099319458,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.131046295166016,
+          "window_mean_ema_hz": 8.177610383033752
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 3,
+      "neural_start_s": 0.15,
+      "neural_end_s": 0.2,
+      "wall_compute_ms": 331.311,
+      "realtime_factor": 0.15091560497538567,
+      "slack_ms": -281.311,
+      "population_spikes": 4513,
+      "cumulative_population_spikes": 15017,
+      "cumulative_active_fraction": 0.03772967866183791,
+      "max_simultaneous_spiking_fraction": 0.000702510870750112,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 0.8093559363531688,
+          "cumulative_active_fraction": 0.047619047619047616,
+          "peak_mean_ema_hz": 0.8594036821335082,
+          "window_mean_ema_hz": 0.6867314933595204
+        },
+        "LPLC2": {
+          "cumulative_spikes": 24,
+          "mean_ema_hz": 0.7146987412426923,
+          "cumulative_active_fraction": 0.04864864864864865,
+          "peak_mean_ema_hz": 0.8950419219764503,
+          "window_mean_ema_hz": 0.7765135567897073
+        },
+        "GF": {
+          "cumulative_spikes": 3,
+          "mean_ema_hz": 7.370151996612549,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.700578689575195,
+          "window_mean_ema_hz": 8.204484887123108
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 4,
+      "neural_start_s": 0.2,
+      "neural_end_s": 0.25,
+      "wall_compute_ms": 329.491,
+      "realtime_factor": 0.15174921318032966,
+      "slack_ms": -279.491,
+      "population_spikes": 4529,
+      "cumulative_population_spikes": 19546,
+      "cumulative_active_fraction": 0.03938300165937913,
+      "max_simultaneous_spiking_fraction": 0.000702510870750112,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 18,
+          "mean_ema_hz": 0.4759827511651175,
+          "cumulative_active_fraction": 0.047619047619047616,
+          "peak_mean_ema_hz": 0.7933296135493687,
+          "window_mean_ema_hz": 0.6475110892265561
+        },
+        "LPLC2": {
+          "cumulative_spikes": 31,
+          "mean_ema_hz": 0.7380808069899275,
+          "cumulative_active_fraction": 0.04864864864864865,
+          "peak_mean_ema_hz": 0.8749107541264715,
+          "window_mean_ema_hz": 0.7336077682392017
+        },
+        "GF": {
+          "cumulative_spikes": 4,
+          "mean_ema_hz": 8.961456298828125,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.19560432434082,
+          "window_mean_ema_hz": 8.424558038711547
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 5,
+      "neural_start_s": 0.25,
+      "neural_end_s": 0.3,
+      "wall_compute_ms": 332.833,
+      "realtime_factor": 0.1502254884581757,
+      "slack_ms": -282.833,
+      "population_spikes": 4579,
+      "cumulative_population_spikes": 24125,
+      "cumulative_active_fraction": 0.04068506922154528,
+      "max_simultaneous_spiking_fraction": 0.0007146231271423553,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 25,
+          "mean_ema_hz": 0.8267209416344052,
+          "cumulative_active_fraction": 0.047619047619047616,
+          "peak_mean_ema_hz": 0.9346833304753379,
+          "window_mean_ema_hz": 0.7638685975755967
+        },
+        "LPLC2": {
+          "cumulative_spikes": 39,
+          "mean_ema_hz": 0.7906212922689076,
+          "cumulative_active_fraction": 0.04864864864864865,
+          "peak_mean_ema_hz": 0.9995987763275971,
+          "window_mean_ema_hz": 0.8128480933936869
+        },
+        "GF": {
+          "cumulative_spikes": 5,
+          "mean_ema_hz": 10.77949333190918,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.26266860961914,
+          "window_mean_ema_hz": 8.200079412460328
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 6,
+      "neural_start_s": 0.3,
+      "neural_end_s": 0.35000000000000003,
+      "wall_compute_ms": 330.489,
+      "realtime_factor": 0.15129096581126755,
+      "slack_ms": -280.489,
+      "population_spikes": 4443,
+      "cumulative_population_spikes": 28568,
+      "cumulative_active_fraction": 0.04144814137425661,
+      "max_simultaneous_spiking_fraction": 0.0007146231271423553,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 30,
+          "mean_ema_hz": 0.8334344171342396,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9586777535695878,
+          "window_mean_ema_hz": 0.787004177570343
+        },
+        "LPLC2": {
+          "cumulative_spikes": 46,
+          "mean_ema_hz": 0.778898574210502,
+          "cumulative_active_fraction": 0.04864864864864865,
+          "peak_mean_ema_hz": 0.8629881188676164,
+          "window_mean_ema_hz": 0.7683626124923292
+        },
+        "GF": {
+          "cumulative_spikes": 6,
+          "mean_ema_hz": 11.753689765930176,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.941866874694824,
+          "window_mean_ema_hz": 9.035510196685792
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 7,
+      "neural_start_s": 0.35000000000000003,
+      "neural_end_s": 0.4,
+      "wall_compute_ms": 328.795,
+      "realtime_factor": 0.15207043902735745,
+      "slack_ms": -278.795,
+      "population_spikes": 4523,
+      "cumulative_population_spikes": 33091,
+      "cumulative_active_fraction": 0.042126427732222235,
+      "max_simultaneous_spiking_fraction": 0.0007267353835345987,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 35,
+          "mean_ema_hz": 0.8659217206258623,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 1.1008021831512451,
+          "window_mean_ema_hz": 0.7614873244270446
+        },
+        "LPLC2": {
+          "cumulative_spikes": 53,
+          "mean_ema_hz": 0.7688712996405525,
+          "cumulative_active_fraction": 0.05405405405405406,
+          "peak_mean_ema_hz": 0.977426916844136,
+          "window_mean_ema_hz": 0.7666841232969951
+        },
+        "GF": {
+          "cumulative_spikes": 6,
+          "mean_ema_hz": 4.323942184448242,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 11.520951271057129,
+          "window_mean_ema_hz": 7.355699825286865
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 8,
+      "neural_start_s": 0.4,
+      "neural_end_s": 0.45,
+      "wall_compute_ms": 332.866,
+      "realtime_factor": 0.15021059525454689,
+      "slack_ms": -282.866,
+      "population_spikes": 4482,
+      "cumulative_population_spikes": 37573,
+      "cumulative_active_fraction": 0.042744152808226646,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 40,
+          "mean_ema_hz": 0.9205118767798893,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9406717353396945,
+          "window_mean_ema_hz": 0.7396046814464386
+        },
+        "LPLC2": {
+          "cumulative_spikes": 60,
+          "mean_ema_hz": 0.7818973560591002,
+          "cumulative_active_fraction": 0.05405405405405406,
+          "peak_mean_ema_hz": 0.9298452019691468,
+          "window_mean_ema_hz": 0.7438605043372591
+        },
+        "GF": {
+          "cumulative_spikes": 7,
+          "mean_ema_hz": 5.381584644317627,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.055057525634766,
+          "window_mean_ema_hz": 8.952900085449219
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 9,
+      "neural_start_s": 0.45,
+      "neural_end_s": 0.5,
+      "wall_compute_ms": 332.059,
+      "realtime_factor": 0.15057565071267454,
+      "slack_ms": -282.059,
+      "population_spikes": 4564,
+      "cumulative_population_spikes": 42137,
+      "cumulative_active_fraction": 0.04324681144850474,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 43,
+          "mean_ema_hz": 0.6240793050281586,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9125814239184061,
+          "window_mean_ema_hz": 0.7696686906710507
+        },
+        "LPLC2": {
+          "cumulative_spikes": 68,
+          "mean_ema_hz": 0.8482854239843988,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.9375003489288124,
+          "window_mean_ema_hz": 0.7991384394378279
+        },
+        "GF": {
+          "cumulative_spikes": 8,
+          "mean_ema_hz": 7.200317859649658,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.655263900756836,
+          "window_mean_ema_hz": 8.199390678405761
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 10,
+      "neural_start_s": 0.5,
+      "neural_end_s": 0.55,
+      "wall_compute_ms": 329.164,
+      "realtime_factor": 0.1518999647592082,
+      "slack_ms": -279.164,
+      "population_spikes": 4515,
+      "cumulative_population_spikes": 46652,
+      "cumulative_active_fraction": 0.04371313331960611,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 48,
+          "mean_ema_hz": 0.6665708559846121,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9944066436044754,
+          "window_mean_ema_hz": 0.7515828311892728
+        },
+        "LPLC2": {
+          "cumulative_spikes": 76,
+          "mean_ema_hz": 0.8596492216796489,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 1.1149048484660484,
+          "window_mean_ema_hz": 0.8536143967597871
+        },
+        "GF": {
+          "cumulative_spikes": 9,
+          "mean_ema_hz": 9.41952896118164,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.774030685424805,
+          "window_mean_ema_hz": 7.802904438972473
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 11,
+      "neural_start_s": 0.55,
+      "neural_end_s": 0.6,
+      "wall_compute_ms": 329.074,
+      "realtime_factor": 0.15194150859685054,
+      "slack_ms": -279.074,
+      "population_spikes": 4487,
+      "cumulative_population_spikes": 51139,
+      "cumulative_active_fraction": 0.044064388754981164,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 54,
+          "mean_ema_hz": 0.8815017764175695,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.993890426579922,
+          "window_mean_ema_hz": 0.7395920935734397
+        },
+        "LPLC2": {
+          "cumulative_spikes": 81,
+          "mean_ema_hz": 0.65853295374561,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.894688041488061,
+          "window_mean_ema_hz": 0.7396524529726927
+        },
+        "GF": {
+          "cumulative_spikes": 10,
+          "mean_ema_hz": 10.372708320617676,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.86750602722168,
+          "window_mean_ema_hz": 9.056318464279174
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 12,
+      "neural_start_s": 0.6,
+      "neural_end_s": 0.65,
+      "wall_compute_ms": 331.311,
+      "realtime_factor": 0.15091560497538567,
+      "slack_ms": -281.311,
+      "population_spikes": 4518,
+      "cumulative_population_spikes": 55657,
+      "cumulative_active_fraction": 0.04442775644674846,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 58,
+          "mean_ema_hz": 0.7779210344962184,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.8640468841389058,
+          "window_mean_ema_hz": 0.7374690842935965
+        },
+        "LPLC2": {
+          "cumulative_spikes": 89,
+          "mean_ema_hz": 0.7382786796101042,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.9385360677751737,
+          "window_mean_ema_hz": 0.7859139189789625
+        },
+        "GF": {
+          "cumulative_spikes": 11,
+          "mean_ema_hz": 12.955368995666504,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.034383773803711,
+          "window_mean_ema_hz": 7.44307918548584
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 13,
+      "neural_start_s": 0.65,
+      "neural_end_s": 0.7000000000000001,
+      "wall_compute_ms": 328.8,
+      "realtime_factor": 0.15206812652068127,
+      "slack_ms": -278.8,
+      "population_spikes": 4610,
+      "cumulative_population_spikes": 60267,
+      "cumulative_active_fraction": 0.04473661898475067,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 62,
+          "mean_ema_hz": 0.712378954086157,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.8528723796046088,
+          "window_mean_ema_hz": 0.6998095008581581
+        },
+        "LPLC2": {
+          "cumulative_spikes": 96,
+          "mean_ema_hz": 0.7960573538382714,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.8975520877066899,
+          "window_mean_ema_hz": 0.6995539578486334
+        },
+        "GF": {
+          "cumulative_spikes": 11,
+          "mean_ema_hz": 4.766015529632568,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 12.698835372924805,
+          "window_mean_ema_hz": 8.107736349105835
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 14,
+      "neural_start_s": 0.7000000000000001,
+      "neural_end_s": 0.75,
+      "wall_compute_ms": 329.623,
+      "realtime_factor": 0.1516884440709538,
+      "slack_ms": -279.623,
+      "population_spikes": 4455,
+      "cumulative_population_spikes": 64722,
+      "cumulative_active_fraction": 0.04491830283063432,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 67,
+          "mean_ema_hz": 0.7323885257411304,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9797772914614706,
+          "window_mean_ema_hz": 0.773840596857111
+        },
+        "LPLC2": {
+          "cumulative_spikes": 103,
+          "mean_ema_hz": 0.7940231773228309,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.8768719559724166,
+          "window_mean_ema_hz": 0.7587706917867416
+        },
+        "GF": {
+          "cumulative_spikes": 12,
+          "mean_ema_hz": 6.870491027832031,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.29296875,
+          "window_mean_ema_hz": 7.916499934196472
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 15,
+      "neural_start_s": 0.75,
+      "neural_end_s": 0.8,
+      "wall_compute_ms": 330.331,
+      "realtime_factor": 0.15136332950888653,
+      "slack_ms": -280.331,
+      "population_spikes": 4531,
+      "cumulative_population_spikes": 69253,
+      "cumulative_active_fraction": 0.04521505311224428,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 71,
+          "mean_ema_hz": 0.7222614458647542,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.7982223387724454,
+          "window_mean_ema_hz": 0.6449466805778894
+        },
+        "LPLC2": {
+          "cumulative_spikes": 111,
+          "mean_ema_hz": 0.8526978076303479,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 1.0208645105450036,
+          "window_mean_ema_hz": 0.8067750332314911
+        },
+        "GF": {
+          "cumulative_spikes": 13,
+          "mean_ema_hz": 9.1641263961792,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.671266555786133,
+          "window_mean_ema_hz": 7.729225649833679
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 16,
+      "neural_start_s": 0.8,
+      "neural_end_s": 0.85,
+      "wall_compute_ms": 329.416,
+      "realtime_factor": 0.15178376278019282,
+      "slack_ms": -279.416,
+      "population_spikes": 4556,
+      "cumulative_population_spikes": 73809,
+      "cumulative_active_fraction": 0.04551785952205036,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 77,
+          "mean_ema_hz": 0.821542845831977,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 1.088492756798154,
+          "window_mean_ema_hz": 0.8540891277208824
+        },
+        "LPLC2": {
+          "cumulative_spikes": 116,
+          "mean_ema_hz": 0.6422440869496928,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.9237577205895119,
+          "window_mean_ema_hz": 0.7488967846777241
+        },
+        "GF": {
+          "cumulative_spikes": 14,
+          "mean_ema_hz": 10.70588493347168,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.451431274414062,
+          "window_mean_ema_hz": 8.473607063293457
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 17,
+      "neural_start_s": 0.85,
+      "neural_end_s": 0.9,
+      "wall_compute_ms": 329.879,
+      "realtime_factor": 0.1515707274485493,
+      "slack_ms": -279.879,
+      "population_spikes": 4473,
+      "cumulative_population_spikes": 78282,
+      "cumulative_active_fraction": 0.04576010464989523,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 82,
+          "mean_ema_hz": 0.8110644609209091,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 0.9464830368284195,
+          "window_mean_ema_hz": 0.8040247650751994
+        },
+        "LPLC2": {
+          "cumulative_spikes": 126,
+          "mean_ema_hz": 0.9768354613195894,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.9768354613195894,
+          "window_mean_ema_hz": 0.7498243327110226
+        },
+        "GF": {
+          "cumulative_spikes": 15,
+          "mean_ema_hz": 12.20820140838623,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.615870475769043,
+          "window_mean_ema_hz": 8.51265383720398
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 18,
+      "neural_start_s": 0.9,
+      "neural_end_s": 0.9500000000000001,
+      "wall_compute_ms": 332.665,
+      "realtime_factor": 0.15030135421520147,
+      "slack_ms": -282.665,
+      "population_spikes": 4523,
+      "cumulative_population_spikes": 82805,
+      "cumulative_active_fraction": 0.04597812526495561,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 86,
+          "mean_ema_hz": 0.6471950676706102,
+          "cumulative_active_fraction": 0.05555555555555555,
+          "peak_mean_ema_hz": 1.010972577428061,
+          "window_mean_ema_hz": 0.7971568511024355
+        },
+        "LPLC2": {
+          "cumulative_spikes": 131,
+          "mean_ema_hz": 0.7288903220562674,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.9574928272519075,
+          "window_mean_ema_hz": 0.7860146639718469
+        },
+        "GF": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 13.815238952636719,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 14.669525146484375,
+          "window_mean_ema_hz": 8.408979663848877
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 19,
+      "neural_start_s": 0.9500000000000001,
+      "neural_end_s": 1.0,
+      "wall_compute_ms": 329.142,
+      "realtime_factor": 0.1519101178214874,
+      "slack_ms": -279.142,
+      "population_spikes": 4549,
+      "cumulative_population_spikes": 87354,
+      "cumulative_active_fraction": 0.046268819418369446,
+      "max_simultaneous_spiking_fraction": 0.0007388476399268419,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 93,
+          "mean_ema_hz": 1.0129001895113596,
+          "cumulative_active_fraction": 0.06349206349206349,
+          "peak_mean_ema_hz": 1.0129001895113596,
+          "window_mean_ema_hz": 0.7490506332686974
+        },
+        "LPLC2": {
+          "cumulative_spikes": 137,
+          "mean_ema_hz": 0.6523301865302651,
+          "cumulative_active_fraction": 0.05945945945945946,
+          "peak_mean_ema_hz": 0.8523068968259149,
+          "window_mean_ema_hz": 0.7244459224440952
+        },
+        "GF": {
+          "cumulative_spikes": 16,
+          "mean_ema_hz": 5.0823445320129395,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 13.541679382324219,
+          "window_mean_ema_hz": 8.64586072921753
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 20,
+      "neural_start_s": 1.0,
+      "neural_end_s": 1.05,
+      "wall_compute_ms": 336.064,
+      "realtime_factor": 0.14878118453627878,
+      "slack_ms": -286.064,
+      "population_spikes": 6663,
+      "cumulative_population_spikes": 94017,
+      "cumulative_active_fraction": 0.048642821671249135,
+      "max_simultaneous_spiking_fraction": 0.0011809449982437229,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 892,
+          "mean_ema_hz": 81.02116512116932,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 81.02116512116932,
+          "window_mean_ema_hz": 47.61451181108989
+        },
+        "LPLC2": {
+          "cumulative_spikes": 1312,
+          "mean_ema_hz": 80.73198011243666,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 80.73198011243666,
+          "window_mean_ema_hz": 47.74546927065463
+        },
+        "GF": {
+          "cumulative_spikes": 18,
+          "mean_ema_hz": 12.242365837097168,
+          "cumulative_active_fraction": 0.5,
+          "peak_mean_ema_hz": 18.632404327392578,
+          "window_mean_ema_hz": 12.911341094970703
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 21,
+      "neural_start_s": 1.05,
+      "neural_end_s": 1.1,
+      "wall_compute_ms": 336.384,
+      "realtime_factor": 0.1486396499238965,
+      "slack_ms": -286.384,
+      "population_spikes": 6437,
+      "cumulative_population_spikes": 100454,
+      "cumulative_active_fraction": 0.04900013323482032,
+      "max_simultaneous_spiking_fraction": 0.0011809449982437229,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 1607,
+          "mean_ema_hz": 102.3866087292868,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 104.30429652380565,
+          "window_mean_ema_hz": 92.3395664856926
+        },
+        "LPLC2": {
+          "cumulative_spikes": 2389,
+          "mean_ema_hz": 104.12426931020376,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 105.6261022619299,
+          "window_mean_ema_hz": 93.27329351353
+        },
+        "GF": {
+          "cumulative_spikes": 21,
+          "mean_ema_hz": 22.255234241485596,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 28.863481521606445,
+          "window_mean_ema_hz": 20.086919832229615
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 22,
+      "neural_start_s": 1.1,
+      "neural_end_s": 1.1500000000000001,
+      "wall_compute_ms": 335.729,
+      "realtime_factor": 0.1489296426582154,
+      "slack_ms": -285.729,
+      "population_spikes": 6495,
+      "cumulative_population_spikes": 106949,
+      "cumulative_active_fraction": 0.04925449061905742,
+      "max_simultaneous_spiking_fraction": 0.0011809449982437229,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 2360,
+          "mean_ema_hz": 113.3339491950141,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 114.73320122370644,
+          "window_mean_ema_hz": 108.68557272048223
+        },
+        "LPLC2": {
+          "cumulative_spikes": 3502,
+          "mean_ema_hz": 114.66911687077703,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 115.89362190865181,
+          "window_mean_ema_hz": 109.88457476806643
+        },
+        "GF": {
+          "cumulative_spikes": 23,
+          "mean_ema_hz": 18.104506969451904,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 31.283254623413086,
+          "window_mean_ema_hz": 24.109364309310912
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 23,
+      "neural_start_s": 1.1500000000000001,
+      "neural_end_s": 1.2,
+      "wall_compute_ms": 334.586,
+      "realtime_factor": 0.1494384104535157,
+      "slack_ms": -284.586,
+      "population_spikes": 6417,
+      "cumulative_population_spikes": 113366,
+      "cumulative_active_fraction": 0.0493877254393721,
+      "max_simultaneous_spiking_fraction": 0.0011809449982437229,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 3074,
+          "mean_ema_hz": 112.06962282695467,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 119.66794065445188,
+          "window_mean_ema_hz": 114.58507409595306
+        },
+        "LPLC2": {
+          "cumulative_spikes": 4561,
+          "mean_ema_hz": 113.24618662241343,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 120.76610792005384,
+          "window_mean_ema_hz": 115.89524487717087
+        },
+        "GF": {
+          "cumulative_spikes": 27,
+          "mean_ema_hz": 34.34859752655029,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 34.34859752655029,
+          "window_mean_ema_hz": 23.917802336215974
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 24,
+      "neural_start_s": 1.2,
+      "neural_end_s": 1.25,
+      "wall_compute_ms": 336.761,
+      "realtime_factor": 0.14847324957462413,
+      "slack_ms": -286.761,
+      "population_spikes": 6638,
+      "cumulative_population_spikes": 120004,
+      "cumulative_active_fraction": 0.04958757766984412,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 3857,
+          "mean_ema_hz": 119.32375953311012,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 120.46833704388331,
+          "window_mean_ema_hz": 117.10387520078632
+        },
+        "LPLC2": {
+          "cumulative_spikes": 5733,
+          "mean_ema_hz": 121.67120394320101,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.67120394320101,
+          "window_mean_ema_hz": 118.36165242045635
+        },
+        "GF": {
+          "cumulative_spikes": 29,
+          "mean_ema_hz": 28.345820665359497,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 33.668450355529785,
+          "window_mean_ema_hz": 25.942957973480226
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 25,
+      "neural_start_s": 1.25,
+      "neural_end_s": 1.3,
+      "wall_compute_ms": 342.259,
+      "realtime_factor": 0.14608819636591003,
+      "slack_ms": -292.259,
+      "population_spikes": 6518,
+      "cumulative_population_spikes": 126522,
+      "cumulative_active_fraction": 0.04979954215670837,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 4585,
+          "mean_ema_hz": 117.27184870886424,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.35603701879107,
+          "window_mean_ema_hz": 117.58702300419884
+        },
+        "LPLC2": {
+          "cumulative_spikes": 6809,
+          "mean_ema_hz": 118.91084021490974,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 122.60283310348923,
+          "window_mean_ema_hz": 119.05717988875107
+        },
+        "GF": {
+          "cumulative_spikes": 32,
+          "mean_ema_hz": 30.861258506774902,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 34.88140678405762,
+          "window_mean_ema_hz": 27.509627890586852
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 26,
+      "neural_start_s": 1.3,
+      "neural_end_s": 1.35,
+      "wall_compute_ms": 341.714,
+      "realtime_factor": 0.14632119257624798,
+      "slack_ms": -291.714,
+      "population_spikes": 6504,
+      "cumulative_population_spikes": 133026,
+      "cumulative_active_fraction": 0.0499751698743959,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 5330,
+          "mean_ema_hz": 117.44391087123326,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.76488010467045,
+          "window_mean_ema_hz": 118.08361185104128
+        },
+        "LPLC2": {
+          "cumulative_spikes": 7917,
+          "mean_ema_hz": 119.22007928796717,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 123.48922671756229,
+          "window_mean_ema_hz": 119.4776170654297
+        },
+        "GF": {
+          "cumulative_spikes": 34,
+          "mean_ema_hz": 26.44690728187561,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 30.25016498565674,
+          "window_mean_ema_hz": 24.370350666046143
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 27,
+      "neural_start_s": 1.35,
+      "neural_end_s": 1.4000000000000001,
+      "wall_compute_ms": 345.243,
+      "realtime_factor": 0.14482552868559248,
+      "slack_ms": -295.243,
+      "population_spikes": 6473,
+      "cumulative_population_spikes": 139499,
+      "cumulative_active_fraction": 0.05012657307929894,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 6074,
+          "mean_ema_hz": 117.59863723270477,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.44822293236142,
+          "window_mean_ema_hz": 117.9420568544902
+        },
+        "LPLC2": {
+          "cumulative_spikes": 9006,
+          "mean_ema_hz": 117.6258056640625,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 122.27063371812974,
+          "window_mean_ema_hz": 119.30812074073589
+        },
+        "GF": {
+          "cumulative_spikes": 37,
+          "mean_ema_hz": 31.294765949249268,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 33.90121650695801,
+          "window_mean_ema_hz": 25.20045867443085
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 28,
+      "neural_start_s": 1.4000000000000001,
+      "neural_end_s": 1.45,
+      "wall_compute_ms": 338.782,
+      "realtime_factor": 0.14758753416651416,
+      "slack_ms": -288.782,
+      "population_spikes": 6518,
+      "cumulative_population_spikes": 146017,
+      "cumulative_active_fraction": 0.0502537517714175,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 6825,
+          "mean_ema_hz": 118.61145843021454,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 121.5675068204365,
+          "window_mean_ema_hz": 118.20362270173578
+        },
+        "LPLC2": {
+          "cumulative_spikes": 10147,
+          "mean_ema_hz": 121.39069758234797,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 123.44969090642155,
+          "window_mean_ema_hz": 119.62397495414115
+        },
+        "GF": {
+          "cumulative_spikes": 39,
+          "mean_ema_hz": 25.83716869354248,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 30.67508840560913,
+          "window_mean_ema_hz": 25.403207001686095
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 29,
+      "neural_start_s": 1.45,
+      "neural_end_s": 1.5,
+      "wall_compute_ms": 338.643,
+      "realtime_factor": 0.14764811320476137,
+      "slack_ms": -288.643,
+      "population_spikes": 6554,
+      "cumulative_population_spikes": 152571,
+      "cumulative_active_fraction": 0.05038698659173217,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7581,
+          "mean_ema_hz": 120.46486367119684,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 120.98258039686415,
+          "window_mean_ema_hz": 118.16505160740442
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11258,
+          "mean_ema_hz": 121.90644588985958,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 123.29243242418444,
+          "window_mean_ema_hz": 119.59748619038348
+        },
+        "GF": {
+          "cumulative_spikes": 41,
+          "mean_ema_hz": 23.612070441246033,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 27.569704294204712,
+          "window_mean_ema_hz": 22.202921986579895
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 30,
+      "neural_start_s": 1.5,
+      "neural_end_s": 1.55,
+      "wall_compute_ms": 329.07,
+      "realtime_factor": 0.15194335551706326,
+      "slack_ms": -279.07,
+      "population_spikes": 4517,
+      "cumulative_population_spikes": 157088,
+      "cumulative_active_fraction": 0.050453604001889515,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7583,
+          "mean_ema_hz": 44.5967225271558,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 118.07950113690089,
+          "window_mean_ema_hz": 75.42947823115757
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11262,
+          "mean_ema_hz": 45.12410373172244,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 119.49253820470861,
+          "window_mean_ema_hz": 76.44954037558064
+        },
+        "GF": {
+          "cumulative_spikes": 41,
+          "mean_ema_hz": 8.68639788031578,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 23.144520044326782,
+          "window_mean_ema_hz": 14.776917778849601
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 31,
+      "neural_start_s": 1.55,
+      "neural_end_s": 1.6,
+      "wall_compute_ms": 328.182,
+      "realtime_factor": 0.15235448623020154,
+      "slack_ms": -278.182,
+      "population_spikes": 4491,
+      "cumulative_population_spikes": 161579,
+      "cumulative_active_fraction": 0.05059895107859643,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7587,
+          "mean_ema_hz": 16.73709107959081,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 43.87080204676068,
+          "window_mean_ema_hz": 28.216895870027088
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11270,
+          "mean_ema_hz": 17.15560579042177,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 44.230587005615234,
+          "window_mean_ema_hz": 28.554619515187042
+        },
+        "GF": {
+          "cumulative_spikes": 42,
+          "mean_ema_hz": 7.302176579833031,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 17.604803651571274,
+          "window_mean_ema_hz": 11.370429593622685
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 32,
+      "neural_start_s": 1.6,
+      "neural_end_s": 1.6500000000000001,
+      "wall_compute_ms": 330.62,
+      "realtime_factor": 0.15123102050692638,
+      "slack_ms": -280.62,
+      "population_spikes": 4505,
+      "cumulative_population_spikes": 166084,
+      "cumulative_active_fraction": 0.05065951236055765,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7593,
+          "mean_ema_hz": 6.698404966838776,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 16.405674449981205,
+          "window_mean_ema_hz": 10.891019269246904
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11278,
+          "mean_ema_hz": 6.897095548784411,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 16.815902003726443,
+          "window_mean_ema_hz": 11.021136671994181
+        },
+        "GF": {
+          "cumulative_spikes": 43,
+          "mean_ema_hz": 6.7929480485618114,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 16.37710949778557,
+          "window_mean_ema_hz": 10.504154728725553
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 33,
+      "neural_start_s": 1.6500000000000001,
+      "neural_end_s": 1.7,
+      "wall_compute_ms": 329.074,
+      "realtime_factor": 0.15194150859685054,
+      "slack_ms": -279.074,
+      "population_spikes": 4538,
+      "cumulative_population_spikes": 170622,
+      "cumulative_active_fraction": 0.05073218589891111,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7598,
+          "mean_ema_hz": 2.9265203277269998,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 6.565767685572307,
+          "window_mean_ema_hz": 4.527944011972064
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11285,
+          "mean_ema_hz": 3.0197149199408453,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 6.7605239404214394,
+          "window_mean_ema_hz": 4.595494795219318
+        },
+        "GF": {
+          "cumulative_spikes": 44,
+          "mean_ema_hz": 7.719530278816819,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 14.639938697218895,
+          "window_mean_ema_hz": 9.082651053965092
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 34,
+      "neural_start_s": 1.7,
+      "neural_end_s": 1.75,
+      "wall_compute_ms": 329.68,
+      "realtime_factor": 0.1516622179082747,
+      "slack_ms": -279.68,
+      "population_spikes": 4475,
+      "cumulative_population_spikes": 175097,
+      "cumulative_active_fraction": 0.0508411962064413,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7603,
+          "mean_ema_hz": 1.5330787343638284,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 2.8685713826663912,
+          "window_mean_ema_hz": 2.1732052504827113
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11293,
+          "mean_ema_hz": 1.7156662841100951,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 2.9599205964320414,
+          "window_mean_ema_hz": 2.1559173385259265
+        },
+        "GF": {
+          "cumulative_spikes": 45,
+          "mean_ema_hz": 9.88685561157763,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 13.890511843375862,
+          "window_mean_ema_hz": 7.854277439434082
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 35,
+      "neural_start_s": 1.75,
+      "neural_end_s": 1.8,
+      "wall_compute_ms": 331.223,
+      "realtime_factor": 0.1509557005401195,
+      "slack_ms": -281.223,
+      "population_spikes": 4528,
+      "cumulative_population_spikes": 179625,
+      "cumulative_active_fraction": 0.050944150385775364,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7608,
+          "mean_ema_hz": 1.0687494363103593,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.502721758588912,
+          "window_mean_ema_hz": 1.2533524984310547
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11300,
+          "mean_ema_hz": 1.0928512432285258,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.788727998089146,
+          "window_mean_ema_hz": 1.3733646746857746
+        },
+        "GF": {
+          "cumulative_spikes": 46,
+          "mean_ema_hz": 12.244392749387771,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 14.084402806125581,
+          "window_mean_ema_hz": 7.665958787575364
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 36,
+      "neural_start_s": 1.8,
+      "neural_end_s": 1.85,
+      "wall_compute_ms": 337.495,
+      "realtime_factor": 0.14815034296804397,
+      "slack_ms": -287.495,
+      "population_spikes": 4499,
+      "cumulative_population_spikes": 184124,
+      "cumulative_active_fraction": 0.05103499230871719,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7614,
+          "mean_ema_hz": 1.0311879410393654,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.1939730003239617,
+          "window_mean_ema_hz": 0.9895681173614566
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11306,
+          "mean_ema_hz": 0.8423287187073681,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.0712113466617224,
+          "window_mean_ema_hz": 0.8966743761735992
+        },
+        "GF": {
+          "cumulative_spikes": 47,
+          "mean_ema_hz": 14.016911666782107,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 14.588952225982212,
+          "window_mean_ema_hz": 8.245146997774718
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 37,
+      "neural_start_s": 1.85,
+      "neural_end_s": 1.9000000000000001,
+      "wall_compute_ms": 329.486,
+      "realtime_factor": 0.15175151599764483,
+      "slack_ms": -279.486,
+      "population_spikes": 4466,
+      "cumulative_population_spikes": 188590,
+      "cumulative_active_fraction": 0.051119778103462896,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7619,
+          "mean_ema_hz": 0.9525301412694038,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.0720674877483694,
+          "window_mean_ema_hz": 0.8715246890591726
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11313,
+          "mean_ema_hz": 0.7755781074029369,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.9435464855786916,
+          "window_mean_ema_hz": 0.8228421282518557
+        },
+        "GF": {
+          "cumulative_spikes": 47,
+          "mean_ema_hz": 5.156538089562673,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 13.739358672406524,
+          "window_mean_ema_hz": 8.772072762689204
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 38,
+      "neural_start_s": 1.9000000000000001,
+      "neural_end_s": 1.95,
+      "wall_compute_ms": 332.133,
+      "realtime_factor": 0.15054210210969704,
+      "slack_ms": -282.133,
+      "population_spikes": 4568,
+      "cumulative_population_spikes": 193158,
+      "cumulative_active_fraction": 0.05121062002640472,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7622,
+          "mean_ema_hz": 0.5684351332056972,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.0780261658013812,
+          "window_mean_ema_hz": 0.8564575087839356
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11320,
+          "mean_ema_hz": 0.8143897034781608,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.9152111905249389,
+          "window_mean_ema_hz": 0.7183319489253133
+        },
+        "GF": {
+          "cumulative_spikes": 48,
+          "mean_ema_hz": 6.257552291281172,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 14.207762894511689,
+          "window_mean_ema_hz": 8.909962616640842
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    },
+    {
+      "window_index": 39,
+      "neural_start_s": 1.95,
+      "neural_end_s": 2.0,
+      "wall_compute_ms": 328.242,
+      "realtime_factor": 0.1523266370543684,
+      "slack_ms": -278.242,
+      "population_spikes": 4483,
+      "cumulative_population_spikes": 197641,
+      "cumulative_active_fraction": 0.0512893496929543,
+      "max_simultaneous_spiking_fraction": 0.0012899553057739127,
+      "finite": true,
+      "groups": {
+        "LC4": {
+          "cumulative_spikes": 7628,
+          "mean_ema_hz": 0.6884582986027771,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 1.1350757454684566,
+          "window_mean_ema_hz": 0.8335538388668958
+        },
+        "LPLC2": {
+          "cumulative_spikes": 11326,
+          "mean_ema_hz": 0.7204255039476463,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 0.9321703283569297,
+          "window_mean_ema_hz": 0.7416763103539877
+        },
+        "GF": {
+          "cumulative_spikes": 49,
+          "mean_ema_hz": 7.2185476300583105,
+          "cumulative_active_fraction": 1.0,
+          "peak_mean_ema_hz": 14.536369581757754,
+          "window_mean_ema_hz": 9.048580671265809
+        },
+        "DNp09": {
+          "cumulative_spikes": 0,
+          "mean_ema_hz": 0.0,
+          "cumulative_active_fraction": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "window_mean_ema_hz": 0.0
+        }
+      }
+    }
+  ],
+  "finite": true,
+  "executable_sha256": "ee39556533d7a12cd2f7a37a5264f576f40562522b6e218efc9b5ec218129e22",
+  "generated_source_sha256": {
+    "gate_hooks.h": "e83ccc3a410174f0f799683bd756a801bd54c92b09aefb0a92cd79d6ce4ccaa9",
+    "main.cpp": "53756a1879140c5a1137fa374ce1a85aff41f4a9ee3a2d3e66a3cadf7d0a4374",
+    "network.cpp": "52dfa12c3ceea3ff31ad4f51e022e221702946a99e4134badd60eb19e7ac8a4b",
+    "network.h": "1f01b608452f4c17efe650b8cb8083dbd63810b9611b830ed0a9aa08b60f8d78",
+    "objects.cpp": "5a871580de9e939321f6b934afa271ccde3fc5b54d44ab34506b757a71e977a0",
+    "objects.h": "1676503023c5ad20ffed3bf387811d6d7bbbc63f545dc53b60f02f1718566a87",
+    "run.cpp": "db2e7dcfa25fc109ca0175cc9e544c07ad8c53ef5f7bcb2a9a0b66ee302410f1",
+    "run.h": "d6138c54fd412a4f13d9dd1cf049fb480b5215c4c7c59c62a69fd2c27ecdda23",
+    "synapses_classes.cpp": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "synapses_classes.h": "934f086a75b174ae093e47248c9ddd08b4518c348e41fec48f9e5f7682e4bb7a",
+    "brianlib\\clocks.h": "a6f6edb9f66eb29fcc221e07f6967fe792f51ddf40cd615d997292b4ef9397d2",
+    "brianlib\\common_math.h": "b524f72ce126d42049df9c3d8eb142f1e1aa49679c7dc6d723d831ef199be93a",
+    "brianlib\\dynamic_array.h": "0fa14f19b72c686a85e50d4ee075db7475bb8981f1ef48551e790fb31484b127",
+    "brianlib\\spikequeue.h": "0bf20993dcf399a7e766e5405e413ce9254a64c08812071ffd1b24a85dea5fc4",
+    "brianlib\\stdint_compat.h": "e7e99d8259b1d37ba9b4ba61270405858e9bfd0e2f284b6dbf668003451e5e29",
+    "code_objects\\after_run_neurons_spike_thresholder_codeobject.cpp": "d978e3a2b5e41cc5f02cea34c1799e331eaab7174a9fb5dd651a411f819d8e10",
+    "code_objects\\after_run_neurons_spike_thresholder_codeobject.h": "37ad724ea69881f5cfba4c43ba40228bb8f44dd99a17e81203f22a6bb236442d",
+    "code_objects\\before_run_connections_pre_push_spikes.cpp": "eb13bfd033efac28a43156a21495967467d004f1ece3c2fff3c5d0fa7f435928",
+    "code_objects\\before_run_connections_pre_push_spikes.h": "d163fdc591bfc797b691bd50e3ab37663312208553481dae5a8c16e6c7d46671",
+    "code_objects\\clear_incoming_codeobject.cpp": "75a5bc4c3d023a2707bb6f4fc243a311f21997c65668b7ef1992fb82b32c01dc",
+    "code_objects\\clear_incoming_codeobject.h": "cdbc997b5400369f99611ec19605aa0ac523ddc9c8e164c3b54eec69d69d67b5",
+    "code_objects\\connections_pre_codeobject.cpp": "de231ef1f31a175b6ffa1b4009a8a3f43ab279167625864870d3a2390da656d2",
+    "code_objects\\connections_pre_codeobject.h": "8f660f64ebefb9751d1b55e01f803983ae892001718cf413088067fdeb9b1c07",
+    "code_objects\\connections_pre_push_spikes.cpp": "9ad59a7810c3121f8bfdeec8043b38330d9084bb654c5c0e723851c3394574a5",
+    "code_objects\\connections_pre_push_spikes.h": "86235c3ff890feb72dcdb0a8eb5eb23bb4e5be344a57a7f93ca84fcd09b619a0",
+    "code_objects\\connections_synapses_create_array_codeobject.cpp": "aa2575daa36e5a31962bee9ece5cdc986d630cb8a7ad81873050253fff6c01ec",
+    "code_objects\\connections_synapses_create_array_codeobject.h": "ee5cfa0e06fe634e5ff76ede857915dcbf281b7b99edee16fcabc31741b81433",
+    "code_objects\\lif_update_codeobject.cpp": "3f2aa22b08242720ca80073a7917bc6f034be75473b060a517f9a09e08eea053",
+    "code_objects\\lif_update_codeobject.h": "e7d219e04b73dd899d36944b1b67e5f87503d4b3a57641d734bc78f645da36f6",
+    "code_objects\\neurons_spike_resetter_codeobject.cpp": "962d2dcd548f23d8ae192c11e4e764f9608f4407241c238413aedff50f717f6e",
+    "code_objects\\neurons_spike_resetter_codeobject.h": "9f20c7b4981ef1c8e54dfba56d726112cf93235772f20c6cff8b3bfe6fb3bedd",
+    "code_objects\\neurons_spike_thresholder_codeobject.cpp": "22aacc9d678bc0237c2a41da6d1d718c027277008a702aecd59f97df955fc594",
+    "code_objects\\neurons_spike_thresholder_codeobject.h": "8474f2962a71a40bf4986ceb1370aedc0e60376bdaf847b3d2abbb948e06657c",
+    "code_objects\\quantum_boundary_codeobject.cpp": "4b620f6420c254a62820fbf87711090eccc672d9b1cfc9799688772532fa712c",
+    "code_objects\\quantum_boundary_codeobject.h": "9cc3f971c82d3a0fcbfeaccee82c33ffaec210b85ffad6aabfe62f33f8054db2",
+    "code_objects\\spikes_codeobject.cpp": "db588ee44c770a64dd2551582c241b8141cf2244038dbefeaf75455be35859d3",
+    "code_objects\\spikes_codeobject.h": "9118aa86d7bf09781715bb7b88c36de512ef566b5e48576c7f758827b05399e4"
+  },
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "brian2_version": "2.9.0",
+  "compiler": "TDM-GCC 9.2.0, -O3 -march=native -std=c++17; no fast-math/OpenMP/GPU",
+  "timing_scope": "Per 50 real 1ms Brian steps inside one persistent Network.run. Per-window input/log/stat boundary maintenance excluded; whole Network.run including it also reported. No Python launcher in quantum timings.",
+  "phases": {
+    "baseline": {
+      "population_spikes": 45217,
+      "population_rate_hz": 0.5476798972880658,
+      "active_fraction": 0.044058332626785046,
+      "groups": {
+        "LC4": {
+          "spike_count": 50,
+          "mean_hz": 0.7936507936507936,
+          "active_fraction": 0.06349206349206349,
+          "mean_ema_hz": 0.7551562164516683,
+          "peak_mean_ema_hz": 1.088492756798154,
+          "final_ema_hz": 1.0129001895113596
+        },
+        "LPLC2": {
+          "spike_count": 69,
+          "mean_hz": 0.745945945945946,
+          "active_fraction": 0.04864864864864865,
+          "mean_ema_hz": 0.7653462155382997,
+          "peak_mean_ema_hz": 1.1149048484660484,
+          "final_ema_hz": 0.6523301865302651
+        },
+        "GF": {
+          "spike_count": 8,
+          "mean_hz": 8.0,
+          "active_fraction": 0.5,
+          "mean_ema_hz": 8.209686531543733,
+          "peak_mean_ema_hz": 14.86750602722168,
+          "final_ema_hz": 5.0823445320129395
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "mean_ema_hz": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "final_ema_hz": 0.0
+        }
+      }
+    },
+    "stimulus": {
+      "population_spikes": 65217,
+      "population_rate_hz": 0.7899250251329321,
+      "active_fraction": 0.04686837610978549,
+      "groups": {
+        "LC4": {
+          "spike_count": 7488,
+          "mean_hz": 118.85714285714286,
+          "active_fraction": 1.0,
+          "mean_ema_hz": 107.03099663328746,
+          "peak_mean_ema_hz": 121.76488010467045,
+          "final_ema_hz": 120.46486367119684
+        },
+        "LPLC2": {
+          "spike_count": 11121,
+          "mean_hz": 120.22702702702702,
+          "active_fraction": 1.0,
+          "mean_ema_hz": 108.22246136893196,
+          "peak_mean_ema_hz": 123.48922671756229,
+          "final_ema_hz": 121.90644588985958
+        },
+        "GF": {
+          "spike_count": 25,
+          "mean_hz": 25.0,
+          "active_fraction": 1.0,
+          "mean_ema_hz": 23.165495176553726,
+          "peak_mean_ema_hz": 34.88140678405762,
+          "final_ema_hz": 23.612070441246033
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "mean_ema_hz": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "final_ema_hz": 0.0
+        }
+      }
+    },
+    "recovery": {
+      "population_spikes": 45070,
+      "population_rate_hz": 0.5458993955984061,
+      "active_fraction": 0.044058332626785046,
+      "groups": {
+        "LC4": {
+          "spike_count": 47,
+          "mean_hz": 0.746031746031746,
+          "active_fraction": 0.05555555555555555,
+          "mean_ema_hz": 12.604299928538884,
+          "peak_mean_ema_hz": 118.07950113690089,
+          "final_ema_hz": 0.6884582986027771
+        },
+        "LPLC2": {
+          "spike_count": 68,
+          "mean_hz": 0.7351351351351352,
+          "active_fraction": 0.05945945945945946,
+          "mean_ema_hz": 12.732959813489762,
+          "peak_mean_ema_hz": 119.49253820470861,
+          "final_ema_hz": 0.7204255039476463
+        },
+        "GF": {
+          "spike_count": 8,
+          "mean_hz": 8.0,
+          "active_fraction": 0.5,
+          "mean_ema_hz": 9.623015243054294,
+          "peak_mean_ema_hz": 23.144520044326782,
+          "final_ema_hz": 7.2185476300583105
+        },
+        "DNp09": {
+          "spike_count": 0,
+          "mean_hz": 0.0,
+          "active_fraction": 0.0,
+          "mean_ema_hz": 0.0,
+          "peak_mean_ema_hz": 0.0,
+          "final_ema_hz": 0.0
+        }
+      }
+    }
+  },
+  "resources": {
+    "sampling_interval_seconds": 0.02,
+    "samples": 622,
+    "executable_peak_rss_bytes": 325849088,
+    "executable_representative_rss_bytes": 323792896,
+    "preparation_python_peak_rss_bytes": 652304384,
+    "whole_process_tree_sampled_peak_rss_bytes": 1755385856,
+    "minimum_available_ram_bytes": 4173045760,
+    "observed_child_names": [
+      "as.exe",
+      "cc1plus.exe",
+      "cmd.exe",
+      "collect2.exe",
+      "g++.exe",
+      "gcc.exe",
+      "ld.exe",
+      "main.exe",
+      "mingw32-make.exe"
+    ]
+  }
+}

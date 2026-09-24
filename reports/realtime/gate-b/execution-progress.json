@@ -1,0 +1,38 @@
+[
+  {
+    "script": "candidate",
+    "name": "baseline",
+    "wall_seconds": 436.9240130999824,
+    "exit_code": 0
+  },
+  {
+    "script": "candidate",
+    "name": "looming",
+    "wall_seconds": 166.04861170001095,
+    "exit_code": 0
+  },
+  {
+    "script": "candidate",
+    "name": "real_predator",
+    "wall_seconds": 144.53224769997178,
+    "exit_code": 0
+  },
+  {
+    "script": "candidate",
+    "name": "compound",
+    "wall_seconds": 150.7434554999927,
+    "exit_code": 0
+  },
+  {
+    "script": "reference",
+    "name": "b2",
+    "wall_seconds": 528.8057803999982,
+    "exit_code": 0
+  },
+  {
+    "script": "candidate",
+    "name": "b2",
+    "wall_seconds": 46.1820652000024,
+    "exit_code": 0
+  }
+]

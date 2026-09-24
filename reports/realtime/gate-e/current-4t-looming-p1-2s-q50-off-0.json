@@ -1,0 +1,177 @@
+{
+  "label": "current-4t-looming-p1-2s-q50-off-0",
+  "tag": "current-4t-looming-p1-2s-q50",
+  "trial": 0,
+  "threads": 4,
+  "scenario": "looming",
+  "variant": "current",
+  "profiled": true,
+  "seconds": 2,
+  "quantum_ms": 50,
+  "warmup_windows": 10,
+  "brain_pid": 16216,
+  "brain_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "brain_affinity_mask": 85,
+  "priority_class": 128,
+  "brain_statistics": {
+    "blocks": 30,
+    "mean_ms": 50.526666666666664,
+    "p50_ms": 50.3845,
+    "p95_ms": 52.76275,
+    "p99_ms": 54.56791,
+    "max_ms": 55.183,
+    "blocks_per_second": 19.79152922549149,
+    "neural_wall_ratio": 0.9895764612745745,
+    "class_name": "FAIL",
+    "deadline_misses": 22,
+    "deadline_miss_rate": 0.7333333333333333
+  },
+  "producer_statistics": null,
+  "producer": null,
+  "producer_intervals": [],
+  "compute_start_qpc": 301382.5912589,
+  "compute_done_qpc": 301384.6146846,
+  "timings": {
+    "init": 0.954981,
+    "network_compute": 2.022708,
+    "windows_compute": 2.0052419999999995,
+    "brian_output": 0.14724
+  },
+  "profile": [
+    {
+      "codeobject": "lif_update_codeobject",
+      "seconds": 0.551998,
+      "calls": 2000,
+      "percent": 27.435287724944573
+    },
+    {
+      "codeobject": "connections_pre_codeobject",
+      "seconds": 0.502,
+      "calls": 2000,
+      "percent": 24.95029771470581
+    },
+    {
+      "codeobject": "neurons_spike_thresholder_codeobject",
+      "seconds": 0.369005,
+      "calls": 2000,
+      "percent": 18.34020838289844
+    },
+    {
+      "codeobject": "shared_noise_reader_codeobject",
+      "seconds": 0.234,
+      "calls": 2000,
+      "percent": 11.630218456655696
+    },
+    {
+      "codeobject": "connections_pre_push_spikes",
+      "seconds": 0.139999,
+      "calls": 2000,
+      "percent": 6.958200656894619
+    },
+    {
+      "codeobject": "clear_incoming_codeobject",
+      "seconds": 0.0959992,
+      "calls": 2000,
+      "percent": 4.771331913094793
+    },
+    {
+      "codeobject": "quantum_boundary_codeobject",
+      "seconds": 0.0680013,
+      "calls": 2000,
+      "percent": 3.379786215113594
+    },
+    {
+      "codeobject": "neurons_spike_resetter_codeobject",
+      "seconds": 0.0449975,
+      "calls": 2000,
+      "percent": 2.236456217963097
+    },
+    {
+      "codeobject": "spikes_codeobject",
+      "seconds": 0.00600004,
+      "calls": 2000,
+      "percent": 0.2982127177293694
+    }
+  ],
+  "final_state": {
+    "v": {
+      "sha256": "56aa3a66ef0c0b097ac02e7401d0c83e5507a2168c15c1d46fa83d261b12820b",
+      "min": -0.2726023197174072,
+      "max": 0.9999797344207764
+    },
+    "syn": {
+      "sha256": "641ac6b57b0075a8f50305e9d75e117728bde72693cf52494aa8d41db13ca2d6",
+      "min": -0.9980231523513794,
+      "max": 2.0401923656463623
+    },
+    "activity": {
+      "sha256": "317981ff02d83e6afda377879831f57264103b39ce4a868ff7c4ba8da0549ed2",
+      "min": 0.0,
+      "max": 140.27798461914062
+    },
+    "noise_sample": {
+      "sha256": "76f257dfface15ca94988bccfafa8c10da722627b5344be45e48cbbbbcdb7ab2",
+      "min": -0.4841248691082001,
+      "max": 0.4299141466617584
+    },
+    "ref_steps": {
+      "sha256": "c8e83f5d1f876ef46fc7ca3fe20f4723fabc090521f38a810eb0a3b247faa43e",
+      "min": 0.0,
+      "max": 2.0
+    },
+    "eligible": {
+      "sha256": "bd0b48766d77af01981ea84c3605c2e5dc6a59d0ee8ab548276f7aae9366098f",
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "finite": true,
+  "max_spiking_fraction": 0.0017683894332675234,
+  "peak_consumer_sampled_rss": 1661554688,
+  "python_os_peak_rss": 474673152,
+  "power_counter": {
+    "error": null,
+    "samples": [
+      {
+        "qpc": 301382.5933114,
+        "processor_performance_percent": 105.40155968164603
+      },
+      {
+        "qpc": 301382.8513888,
+        "processor_performance_percent": 105.73701850604573
+      },
+      {
+        "qpc": 301383.1096878,
+        "processor_performance_percent": 105.75022780681982
+      },
+      {
+        "qpc": 301383.3666677,
+        "processor_performance_percent": 105.7609666314462
+      },
+      {
+        "qpc": 301383.6251361,
+        "processor_performance_percent": 105.69660022409624
+      },
+      {
+        "qpc": 301383.8843166,
+        "processor_performance_percent": 105.75127079482439
+      },
+      {
+        "qpc": 301384.1415339,
+        "processor_performance_percent": 105.79292797067775
+      },
+      {
+        "qpc": 301384.3996366,
+        "processor_performance_percent": 105.75487601222548
+      }
+    ],
+    "qualification": "PDH _Total Processor Performance percent, not per-core direct frequency; no OS plan modification"
+  },
+  "noise_qualification": "Exact nonperiodic shared2s input",
+  "producer_output": null
+}

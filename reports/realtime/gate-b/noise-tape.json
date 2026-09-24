@@ -1,0 +1,19 @@
+{
+  "seed": 20260913,
+  "rng": "NumPy2.4 default_rng PCG64 float32 standard_normal",
+  "initial_baseline_matches": true,
+  "shape": [
+    2000,
+    165122
+  ],
+  "dtype": "little endian float32",
+  "index_rule": "[neural_step, runtime_index], C order; step0 is first update after initial state",
+  "noise_std": 0.1,
+  "tape_stores": "UNSCALED standard normals; amplitude applied float32 in model, before external current, even during refractory",
+  "sha256": "17b3194eac1301c7e15976f0ceedba26f435503230af0f263565181b4b6d38d0",
+  "bytes": 1320976000,
+  "standard_normal_mean": 8.865175528556853e-05,
+  "standard_normal_variance": 0.9998763464184991,
+  "generation_wall_seconds": 7.52683089999482,
+  "scope": "B0 2s shared noise injection verification ONLY; NOT B0 performance/B1 input; those generate Gaussian noise in C++ and include its cost"
+}

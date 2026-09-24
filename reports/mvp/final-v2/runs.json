@@ -1,0 +1,26 @@
+[
+  {
+    "preset": "CONTROL",
+    "returncode": 0
+  },
+  {
+    "preset": "PREDATOR",
+    "returncode": 0
+  },
+  {
+    "preset": "FOOD",
+    "returncode": 0
+  },
+  {
+    "preset": "FEMALE",
+    "returncode": 0
+  },
+  {
+    "preset": "HEAT",
+    "returncode": 0
+  },
+  {
+    "preset": "PREDATOR + HEAT",
+    "returncode": 0
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "excluded_configuration": "d1-b2-p2",
+  "reason": "Controller was launched before all builds completed; possible compiler contention. Retain raw records but exclude this entire exploratory run, repeat fixed same allocation with no compiler."
+}

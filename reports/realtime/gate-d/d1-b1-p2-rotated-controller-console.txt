@@ -1,0 +1,6 @@
+d1-b1-p2-rotated baseline 0 brain 50.99938 producer 34.923684026580304
+d1-b1-p2-rotated baseline 1 brain 56.92709 producer 36.396115983370684
+d1-b1-p2-rotated baseline 2 brain 40.58032 producer 32.319699979852885
+d1-b1-p2-rotated looming 0 brain 52.60766 producer 31.73307098739315
+d1-b1-p2-rotated looming 1 brain 57.726220000000005 producer 34.036880009807646
+d1-b1-p2-rotated looming 2 brain 49.708259999999996 producer 31.97869801078923

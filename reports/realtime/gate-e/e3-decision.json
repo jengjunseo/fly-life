@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "variant": "clear-fused",
+      "tag": "clear-fused-1t-looming-p0-2s-q50",
+      "repeats": [
+        "clear-fused-1t-looming-p0-2s-q50-off-0",
+        "clear-fused-1t-looming-p0-2s-q50-off-1",
+        "clear-fused-1t-looming-p0-2s-q50-off-2"
+      ],
+      "worst_p99_ms": 81.52911
+    },
+    {
+      "variant": "zero",
+      "tag": "zero-1t-looming-p0-2s-q50",
+      "repeats": [
+        "zero-1t-looming-p0-2s-q50-off-0",
+        "zero-1t-looming-p0-2s-q50-off-1",
+        "zero-1t-looming-p0-2s-q50-off-2"
+      ],
+      "worst_p99_ms": 80.95681
+    }
+  ],
+  "headroom_candidate": null,
+  "monitor_trial": "NOT RUN: SpikeMonitor already record=False and <1% profile; boundary instrumentation also small",
+  "fusion_qualification": "Incoming is scratch storage: zeroed after lif use rather than next start. Final incoming scratch differs; all full neural dynamics states and circuit observations must match exactly."
+}

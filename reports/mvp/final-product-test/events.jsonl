@@ -1,0 +1,15 @@
+{"generation": 1, "event": "FOOD_SPAWN", "world_time_s": 2.2, "entity": {"id": "food-1", "kind": "food", "position": [1.6467484591882973, 0.22, 1.674773140453429], "radius": 0.23, "born_s": 2.2, "expires_s": 4.7, "next_hit_s": 2.2, "wander": [[0.0, 0.0]]}}
+{"generation": 1, "event": "PREDATOR_SPAWN", "world_time_s": 2.2, "entity": {"id": "predator-2", "kind": "predator", "position": [2.573898932812963, 0.3, 2.3717175809240634], "radius": 0.45, "born_s": 2.2, "expires_s": 4.0, "next_hit_s": 2.2, "wander": [[0.0, 0.0]]}}
+{"generation": 1, "event": "FEMALE_SPAWN", "world_time_s": 2.2, "entity": {"id": "female-3", "kind": "female", "position": [0.20642436328060842, 0.22, -2.100819995189358], "radius": 0.2, "born_s": 2.2, "expires_s": 3.7, "next_hit_s": 2.2, "wander": [[0.0, 0.9539639305983236], [0.5430226821834534, 1.395069567138945], [1.1571268893222992, -1.7208047843395193]]}}
+{"generation": 1, "event": "TEMPERATURE_SET", "world_time_s": 2.2, "celsius": 34.0}
+{"generation": 1, "event": "SHADE_CONDITION", "world_time_s": 2.2, "enabled": false}
+{"generation": 1, "source_seq": 151, "event": "food_odor ACTIVITY RISE", "world_time_s": 2.25, "activity_hz": 32.15802764892578, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 151, "event": "hot ACTIVITY RISE", "world_time_s": 2.25, "activity_hz": 79.09882354736328, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "event": "FOOD_DESPAWN", "world_time_s": 2.25, "entity_id": "food-1"}
+{"generation": 1, "event": "PREDATOR_DESPAWN", "world_time_s": 2.25, "entity_id": "predator-2"}
+{"generation": 1, "event": "FEMALE_DESPAWN", "world_time_s": 2.25, "entity_id": "female-3"}
+{"generation": 1, "event": "EXPERIMENT_CLEARED", "world_time_s": 2.25}
+{"generation": 2, "source_seq": 362.0, "neural_time_s": 1.0, "event": "HEAT_START", "world_time_s": 0.5}
+{"generation": 2, "source_seq": 364, "event": "hot ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 78.98702239990234, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 384, "event": "cold ACTIVITY RISE", "world_time_s": 1.6, "activity_hz": 75.93885803222656, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 2, "source_seq": 391.0, "neural_time_s": 2.45, "event": "HEAT_END", "world_time_s": 1.95}

@@ -1,0 +1,9 @@
+clear_incoming_codeobject	0.118001
+connections_pre_codeobject	0.512002
+connections_pre_push_spikes	0.0969994
+lif_update_codeobject	0.566994
+neurons_spike_resetter_codeobject	0.095001
+neurons_spike_thresholder_codeobject	0.442004
+quantum_boundary_codeobject	0.0709999
+shared_noise_reader_codeobject	0.222998
+spikes_codeobject	0.000999928

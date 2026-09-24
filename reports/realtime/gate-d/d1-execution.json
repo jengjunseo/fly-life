@@ -1,0 +1,51 @@
+[
+  {
+    "label": "d1-b2-p2-clean",
+    "wall_seconds": 46.77993389999028,
+    "decision": {
+      "headroom": false,
+      "realtime_feasible": false,
+      "trials": [
+        "d1-b2-p2-clean-baseline-0.json",
+        "d1-b2-p2-clean-baseline-1.json",
+        "d1-b2-p2-clean-baseline-2.json",
+        "d1-b2-p2-clean-looming-0.json",
+        "d1-b2-p2-clean-looming-1.json",
+        "d1-b2-p2-clean-looming-2.json"
+      ],
+      "brain_cpus": [
+        0,
+        2
+      ],
+      "worker_cpus": [
+        4,
+        6
+      ],
+      "threads": 2
+    }
+  },
+  {
+    "label": "d1-b1-p2-rotated",
+    "wall_seconds": 24.945439699979033,
+    "decision": {
+      "headroom": false,
+      "realtime_feasible": false,
+      "trials": [
+        "d1-b1-p2-rotated-baseline-0.json",
+        "d1-b1-p2-rotated-baseline-1.json",
+        "d1-b1-p2-rotated-baseline-2.json",
+        "d1-b1-p2-rotated-looming-0.json",
+        "d1-b1-p2-rotated-looming-1.json",
+        "d1-b1-p2-rotated-looming-2.json"
+      ],
+      "brain_cpus": [
+        6
+      ],
+      "worker_cpus": [
+        2,
+        4
+      ],
+      "threads": 1
+    }
+  }
+]

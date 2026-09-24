@@ -1,0 +1,14 @@
+[
+  {
+    "preset": "CONTROL",
+    "returncode": 0
+  },
+  {
+    "preset": "PREDATOR",
+    "returncode": 0
+  },
+  {
+    "preset": "FOOD",
+    "returncode": 1
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "blocks": [
+    {
+      "neural_ms": 50,
+      "bytes": 33024400,
+      "samples": 8256100,
+      "chosen_method": "reuse_out",
+      "methods": {
+        "allocate": {
+          "wall_ms": [
+            62.65709997387603,
+            62.14560003718361,
+            62.02869996195659,
+            62.561400001868606,
+            62.70030001178384
+          ],
+          "mean_ms": 62.418619997333735,
+          "p50_ms": 62.561400001868606,
+          "p95_ms": 62.69166000420228,
+          "max_ms": 62.70030001178384,
+          "warmup_seconds": 0.12634580000303686,
+          "samples_per_second": 132269825.90055124,
+          "neural_wall_ratio": 0.8010430221324308,
+          "sanity_mean": -2.623342879815027e-05,
+          "sanity_variance": 1.0015654563903809
+        },
+        "reuse_out": {
+          "wall_ms": [
+            59.75050001870841,
+            59.854699997231364,
+            59.515299974009395,
+            59.564299997873604,
+            59.712300018873066
+          ],
+          "mean_ms": 59.67942000133917,
+          "p50_ms": 59.712300018873066,
+          "p95_ms": 59.83386000152677,
+          "max_ms": 59.854699997231364,
+          "warmup_seconds": 0.12294860003748909,
+          "samples_per_second": 138340821.673782,
+          "neural_wall_ratio": 0.837809750813229,
+          "sanity_mean": -0.0004901236388832331,
+          "sanity_variance": 0.9992601275444031
+        }
+      },
+      "mean_ms": 59.67942000133917,
+      "p50_ms": 59.712300018873066,
+      "p95_ms": 59.83386000152677,
+      "max_ms": 59.854699997231364,
+      "samples_per_second": 138340821.673782,
+      "neural_wall_ratio": 0.837809750813229
+    },
+    {
+      "neural_ms": 100,
+      "bytes": 66048800,
+      "samples": 16512200,
+      "chosen_method": "reuse_out",
+      "methods": {
+        "allocate": {
+          "wall_ms": [
+            125.18199998885393,
+            125.42519997805357,
+            125.68949995329604,
+            125.40499999886379,
+            125.39510003989562
+          ],
+          "mean_ms": 125.41935999179259,
+          "p50_ms": 125.40499999886379,
+          "p95_ms": 125.63663995824754,
+          "max_ms": 125.68949995329604,
+          "warmup_seconds": 0.2537194999749772,
+          "samples_per_second": 131655910.2285369,
+          "neural_wall_ratio": 0.7973250701211039,
+          "sanity_mean": 0.00015251321019604802,
+          "sanity_variance": 1.0010535717010498
+        },
+        "reuse_out": {
+          "wall_ms": [
+            121.22799997450784,
+            119.85369998728856,
+            119.39330003224313,
+            119.59720001323149,
+            119.42030000500381
+          ],
+          "mean_ms": 119.89850000245497,
+          "p50_ms": 119.59720001323149,
+          "p95_ms": 120.95313997706398,
+          "max_ms": 121.22799997450784,
+          "warmup_seconds": 0.24386649997904897,
+          "samples_per_second": 137718153.26848882,
+          "neural_wall_ratio": 0.8340387911270989,
+          "sanity_mean": -0.0017270518001168966,
+          "sanity_variance": 0.9999292492866516
+        }
+      },
+      "mean_ms": 119.89850000245497,
+      "p50_ms": 119.59720001323149,
+      "p95_ms": 120.95313997706398,
+      "max_ms": 121.22799997450784,
+      "samples_per_second": 137718153.26848882,
+      "neural_wall_ratio": 0.8340387911270989
+    },
+    {
+      "neural_ms": 500,
+      "bytes": 330244000,
+      "samples": 82561000,
+      "chosen_method": "reuse_out",
+      "methods": {
+        "allocate": {
+          "wall_ms": [
+            624.4045000057667,
+            626.9282999564894,
+            627.6554999640211,
+            630.3303000167944,
+            628.0804999987595
+          ],
+          "mean_ms": 627.4798199883662,
+          "p50_ms": 627.6554999640211,
+          "p95_ms": 629.8803400131874,
+          "max_ms": 630.3303000167944,
+          "warmup_seconds": 1.2675026999786496,
+          "samples_per_second": 131575546.1291659,
+          "neural_wall_ratio": 0.7968383748329472,
+          "sanity_mean": 0.0018928744830191135,
+          "sanity_variance": 0.9985291361808777
+        },
+        "reuse_out": {
+          "wall_ms": [
+            600.5337000242434,
+            616.6372000006959,
+            604.0312999975868,
+            597.2971000010148,
+            597.2507999977097
+          ],
+          "mean_ms": 603.1500200042501,
+          "p50_ms": 600.5337000242434,
+          "p95_ms": 614.1160200000741,
+          "max_ms": 616.6372000006959,
+          "warmup_seconds": 1.2270845000166446,
+          "samples_per_second": 136883026.2152992,
+          "neural_wall_ratio": 0.8289811546329332,
+          "sanity_mean": 0.0005809161812067032,
+          "sanity_variance": 1.0000133514404297
+        }
+      },
+      "mean_ms": 603.1500200042501,
+      "p50_ms": 600.5337000242434,
+      "p95_ms": 614.1160200000741,
+      "max_ms": 616.6372000006959,
+      "samples_per_second": 136883026.2152992,
+      "neural_wall_ratio": 0.8289811546329332
+    },
+    {
+      "neural_ms": 1000,
+      "bytes": 660488000,
+      "samples": 165122000,
+      "chosen_method": "reuse_out",
+      "methods": {
+        "allocate": {
+          "wall_ms": [
+            1258.2036000094377,
+            1258.3619999932125,
+            1257.1697999956086,
+            1253.4725000150502,
+            1254.88950003637
+          ],
+          "mean_ms": 1256.4194800099358,
+          "p50_ms": 1257.1697999956086,
+          "p95_ms": 1258.3303199964575,
+          "max_ms": 1258.3619999932125,
+          "warmup_seconds": 2.6159320999868214,
+          "samples_per_second": 131422667.8487142,
+          "neural_wall_ratio": 0.795912524368129,
+          "sanity_mean": -0.0008732305723242462,
+          "sanity_variance": 0.9982925653457642
+        },
+        "reuse_out": {
+          "wall_ms": [
+            1195.1047999900766,
+            1196.0075999959372,
+            1218.7660000054166,
+            1232.5368000310846,
+            1212.7451000269502
+          ],
+          "mean_ms": 1211.032060009893,
+          "p50_ms": 1212.7451000269502,
+          "p95_ms": 1229.782640025951,
+          "max_ms": 1232.5368000310846,
+          "warmup_seconds": 2.450478699989617,
+          "samples_per_second": 136348165.71136117,
+          "neural_wall_ratio": 0.8257419708540424,
+          "sanity_mean": 5.049865649198182e-06,
+          "sanity_variance": 0.9984528422355652
+        }
+      },
+      "mean_ms": 1211.032060009893,
+      "p50_ms": 1212.7451000269502,
+      "p95_ms": 1229.782640025951,
+      "max_ms": 1232.5368000310846,
+      "samples_per_second": 136348165.71136117,
+      "neural_wall_ratio": 0.8257419708540424
+    }
+  ],
+  "realtime_feasible": false,
+  "best_block_neural_ms": 50,
+  "best_mean_neural_wall_ratio": 0.837809750813229,
+  "seed": 20260913,
+  "neurons": 165122,
+  "rng": "NumPy2.4 default_rng PCG64 float32 standard_normal; state after actual baseline draw",
+  "block_matches_reference_per_ms_sequence": true,
+  "criterion": "At least one measured block strategy mean generation throughput >=165122000 samples/s. Allocation included for allocate, existing output buffer for reuse_out. No disk write/statistics in generation timing; two warmups then five trials per method.",
+  "memory": "50ms=33024400 bytes; 1s=660488000 bytes. Reuse_out preallocated and touched by warmup. Allocate includes allocation + fill; page faults belong to generation. At most one block retained between trials.",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "resources": {
+    "wall_seconds": 28.969530100002885,
+    "sampled_peak_rss_bytes": 1417613312,
+    "os_process_peak_rss_bytes": 1420840960,
+    "representative_rss_bytes": 103997440,
+    "minimum_available_system_ram_bytes": 4873670656,
+    "sampling_interval_seconds": 0.02
+  },
+  "c4_allowed_by_generation": false
+}

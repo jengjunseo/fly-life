@@ -1,0 +1,104 @@
+WARNING    OpenMP code is not yet well tested, and may be inaccurate. [brian2.devices.cpp_standalone.device.openmp]
+{
+  "name": "c2-native-4t",
+  "threads": 4,
+  "noise_policy": "native",
+  "seed": 20260913,
+  "neurons": 165122,
+  "effective_connections": 6327564,
+  "dt_ms": 1.0,
+  "noise_std": 0.1,
+  "full_connection_arrays_verified": true,
+  "model_parameters": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 2.0,
+    "baseline_current": 0.65,
+    "baseline_heterogeneity": 0.18,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "weights_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+  "inputs_sha256": "0e8a732a1fba3b2d139f74861e2814e17b0913aa1dfed99add75b0af6d4614b9",
+  "translation_source_sha256": "147a9d2ba991056a3ee56ad6b235d55b3c5e42afd7fc88e53a34200311154618",
+  "load_wall_seconds": 0.5087370999972336,
+  "python_model_setup_wall_seconds": 0.34220049995929,
+  "code_generation_wall_seconds": 0.4803847000002861,
+  "compile_link_wall_seconds": 5.835965499980375,
+  "timings": {
+    "init": 0.400084,
+    "network_compute": 64.065651,
+    "windows_compute": 63.80246800000006,
+    "brian_output": 0.208313
+  },
+  "binary_wall_seconds": 65.01182010001503,
+  "launcher_and_unattributed_seconds": 0.337772100015016,
+  "statistics": {
+    "windows": 400,
+    "neural_seconds": 20.0,
+    "mean_ms": 159.50617,
+    "p50_ms": 154.2895,
+    "p95_ms": 186.68459999999996,
+    "p99_ms": 193.6922999999999,
+    "max_ms": 289.761,
+    "deadline_misses": 400,
+    "deadline_miss_rate": 1.0,
+    "longest_consecutive_misses": 400,
+    "window_compute_seconds": 63.80246799999999,
+    "network_compute_seconds": 64.065651,
+    "neural_wall_ratio": 0.3121797669706033,
+    "compute_realtime": false,
+    "clean_quality": false
+  },
+  "finite": true,
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "brian2_version": "2.9.0",
+  "compiler": "TDM-GCC9.2, O3 march=native C++17; fopenmp only when >1T; no fastmath",
+  "native_rng": "Actual generated std::mt19937 polar Box-Muller; per-thread generator selected with omp_get_thread_num, seeded per thread. Same seed integer does not mean PCG64 identity.",
+  "timing_scope": "Independent nonoverlapping 50ms windows inside persistent C++ Network.run, boundary input/stat/log maintenance excluded per window, whole Network.run includes it; no Python startup in window.",
+  "executable_sha256": "52911680d092392ddfc128c25c870aed5f3e71909adb8b11d6ad8ade842ff455",
+  "resources": {
+    "sampling_interval_seconds": 0.02,
+    "samples": 2246,
+    "executable_peak_rss_bytes": 340602880,
+    "executable_representative_rss_bytes": 340566016,
+    "preparation_python_peak_rss_bytes": 698535936,
+    "whole_process_tree_sampled_peak_rss_bytes": 1593884672,
+    "minimum_available_ram_bytes": 4807495680,
+    "observed_child_names": [
+      "as.exe",
+      "cc1plus.exe",
+      "cmd.exe",
+      "collect2.exe",
+      "g++.exe",
+      "gcc.exe",
+      "ld.exe",
+      "main.exe",
+      "mingw32-make.exe"
+    ]
+  }
+}

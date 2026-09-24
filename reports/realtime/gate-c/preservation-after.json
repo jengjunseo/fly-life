@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "checked_files": 275,
+  "changed_files": [],
+  "tests": 13,
+  "test_output": "test_biological_direction (test_core.CoreTests.test_biological_direction) ... ok\ntest_external_current_only_selected (test_core.CoreTests.test_external_current_only_selected) ... ok\ntest_identity_selector_union (test_core.CoreTests.test_identity_selector_union) ... ok\ntest_presynaptic_sign_and_normalization (test_core.CoreTests.test_presynaptic_sign_and_normalization) ... ok\ntest_refractory_reset_and_negative_current (test_core.CoreTests.test_refractory_reset_and_negative_current) ... ok\ntest_seed_and_warmup (test_core.CoreTests.test_seed_and_warmup) ... ok\ntest_actual_known_direction_and_signs (test_real.RealDataTests.test_actual_known_direction_and_signs) ... ok\ntest_pruning_retains_low_degree_identity (test_real.RealDataTests.test_pruning_retains_low_degree_identity) ... ok\ntest_real_dataset_and_identity (test_real.RealDataTests.test_real_dataset_and_identity) ... ok\ntest_real_stimulus_delivery (test_real.RealDataTests.test_real_stimulus_delivery) ... ok\ntest_invalid_and_saturation (test_decoder.DecoderTests.test_invalid_and_saturation) ... ok\ntest_left_right_forward (test_decoder.DecoderTests.test_left_right_forward) ... ok\ntest_no_activity_no_movement (test_decoder.DecoderTests.test_no_activity_no_movement) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 1.638s\n\nOK\n",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Item Details:\n\n## sidebar\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, radix-ui, class-variance-authority, lucide-react\n\n---\n\n## resizable\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, react-resizable-panels@^4\n\n---\n\n## card\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn\n\n---\n\n## tabs\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, radix-ui\n\n---\n\n## badge\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, radix-ui\n\n---\n\n## scroll-area\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, radix-ui\n\n---\n\n## chart\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, recharts@3.8.0, lucide-react\n\n---\n\n## tooltip\n**Type:** registry:ui\n**Files:** 1 file(s)\n**Dependencies:** cn, radix-ui"
+    }
+  ]
+}

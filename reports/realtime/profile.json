@@ -1,0 +1,14 @@
+{
+  "neural_seconds": 0.5,
+  "wall_seconds": 5.240596399991773,
+  "seconds": {
+    "propagation": 3.895292900095228,
+    "neuron_noise_refractory_reset": 1.2218703987891786,
+    "misc": 0.11747980077052489,
+    "readout": 0.0016951001016423106
+  },
+  "unassigned_loop_seconds": 0.004258200235199183,
+  "copy_matches_reference_bit_exact": true,
+  "noise_std": 0.1,
+  "timing_scope": "syn decay + sparse matvec + gain; neuron includes noise; misc includes external validation/activity/finiteness; readout every 50 steps"
+}

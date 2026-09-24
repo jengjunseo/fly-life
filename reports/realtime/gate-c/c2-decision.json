@@ -1,0 +1,6 @@
+{
+  "candidate": null,
+  "c3_allowed": true,
+  "c4_implemented": false,
+  "stop_reason": "Native OpenMP unsuccessful; proceed C3 feasibility only"
+}

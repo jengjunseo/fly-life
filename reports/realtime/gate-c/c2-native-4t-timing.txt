@@ -1,0 +1,4 @@
+init 0.400084
+network_compute 64.065651000000003
+windows_compute 63.802468000000061
+brian_output 0.208313

@@ -1,0 +1,21 @@
+{
+  "headroom": false,
+  "realtime_feasible": false,
+  "trials": [
+    "d1-b2-p2-baseline-0.json",
+    "d1-b2-p2-baseline-1.json",
+    "d1-b2-p2-baseline-2.json",
+    "d1-b2-p2-looming-0.json",
+    "d1-b2-p2-looming-1.json",
+    "d1-b2-p2-looming-2.json"
+  ],
+  "brain_cpus": [
+    0,
+    2
+  ],
+  "worker_cpus": [
+    4,
+    6
+  ],
+  "threads": 2
+}

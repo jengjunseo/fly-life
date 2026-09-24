@@ -1,0 +1,12 @@
+{"generation": 1, "source_seq": 31.0, "neural_time_s": 1.0, "event": "PREDATOR_SPAWN", "world_time_s": 0.5, "entity": {"id": "predator-1", "kind": "predator", "position": [0.8, 0.3, -2.5], "radius": 0.45, "born_s": 0.5, "expires_s": 2.3, "next_hit_s": 0.5, "wander": [[0.0, 0.0]]}}
+{"generation": 1, "source_seq": 33, "event": "lc4 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 70.35482025146484, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 33, "event": "lplc2 ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 31.626394271850586, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 33, "event": "figure ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 51.64893341064453, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 37, "event": "GF ACTIVITY RISE", "world_time_s": 0.8, "activity_hz": 28.237464904785156, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 44.0, "neural_time_s": 1.65, "event": "PREDATOR_HIT", "world_time_s": 1.15, "entity_id": "predator-1", "distance": 0.5228984728900159}
+{"generation": 1, "source_seq": 44.0, "neural_time_s": 1.65, "event": "DAMAGE", "world_time_s": 1.15, "amount": 12.0, "hp": 88.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 54.0, "neural_time_s": 2.15, "event": "PREDATOR_HIT", "world_time_s": 1.65, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 1, "source_seq": 54.0, "neural_time_s": 2.15, "event": "DAMAGE", "world_time_s": 1.65, "amount": 12.0, "hp": 76.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 64.0, "neural_time_s": 2.65, "event": "PREDATOR_HIT", "world_time_s": 2.15, "entity_id": "predator-1", "distance": 0.080000001192093}
+{"generation": 1, "source_seq": 64.0, "neural_time_s": 2.65, "event": "DAMAGE", "world_time_s": 2.15, "amount": 12.0, "hp": 64.0, "pain_level": "DISABLED_UNRESOLVED"}
+{"generation": 1, "source_seq": 67.0, "neural_time_s": 2.8, "event": "PREDATOR_DESPAWN", "world_time_s": 2.3, "entity_id": "predator-1"}

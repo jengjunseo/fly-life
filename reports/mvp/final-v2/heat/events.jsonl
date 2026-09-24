@@ -1,0 +1,4 @@
+{"generation": 1, "source_seq": 33.0, "neural_time_s": 1.0, "event": "HEAT_START", "world_time_s": 0.5}
+{"generation": 1, "source_seq": 35, "event": "hot ACTIVITY RISE", "world_time_s": 0.6000000000000001, "activity_hz": 78.98702239990234, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 55, "event": "cold ACTIVITY RISE", "world_time_s": 1.6, "activity_hz": 75.93885803222656, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "source_seq": 62.0, "neural_time_s": 2.45, "event": "HEAT_END", "world_time_s": 1.95}

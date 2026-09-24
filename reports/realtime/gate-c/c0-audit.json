@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "checks": {
+    "duration_2s": true,
+    "neurons": true,
+    "synapses": true,
+    "full_graph_verified": true,
+    "runtime_weights_sha_match": true,
+    "same_initial": true,
+    "same_inputs": true,
+    "tape_sha_match": true,
+    "model_dt_1ms": true
+  },
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "neural_seconds": 2.0,
+  "neurons": 165122,
+  "effective_connections": 6327564,
+  "retained_anatomical_connections": 6474533,
+  "model_parameters": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 2.0,
+    "baseline_current": 0.65,
+    "baseline_heterogeneity": 0.18,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "sign_policy": {
+    "field": "consensus_nt",
+    "signs": {
+      "acetylcholine": 1,
+      "gaba": -1,
+      "glutamate": -1,
+      "histamine": -1,
+      "dopamine": 0,
+      "octopamine": 0,
+      "serotonin": 0,
+      "unclear": 0
+    },
+    "unknown_sign": 0,
+    "normalization": "incoming absolute effective synapse count, minimum denominator 1"
+  },
+  "weights_sha256": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+  "baseline_sha256": "102adcdd42e47778d51b024a19e8afc33bb7bf03b8caff71e49e44eb477ee3a5",
+  "baseline_policy": "NumPy2.4 PCG64 seed 20260913, 0.65+0.18*N(0,1) float32, baseline drawn before noise",
+  "initial_state": "v/syn/incoming/spikes/activity=0; refractory=0",
+  "stimulus": "0-.5 warmup; .5-1 baseline; 1-1.5 LC4/LPLC2 current3; 1.5-2 recovery",
+  "noise_tape": {
+    "seed": 20260913,
+    "rng": "NumPy2.4 default_rng PCG64 float32 standard_normal",
+    "initial_baseline_matches": true,
+    "shape": [
+      2000,
+      165122
+    ],
+    "dtype": "little endian float32",
+    "index_rule": "[neural_step, runtime_index], C order; step0 is first update after initial state",
+    "noise_std": 0.1,
+    "tape_stores": "UNSCALED standard normals; amplitude applied float32 in model, before external current, even during refractory",
+    "sha256": "17b3194eac1301c7e15976f0ceedba26f435503230af0f263565181b4b6d38d0",
+    "bytes": 1320976000,
+    "standard_normal_mean": 8.865175528556853e-05,
+    "standard_normal_variance": 0.9998763464184991,
+    "generation_wall_seconds": 7.52683089999482,
+    "scope": "B0 2s shared noise injection verification ONLY; NOT B0 performance/B1 input; those generate Gaussian noise in C++ and include its cost"
+  },
+  "noise_policy": "unscaled standard normals [2000,165122] little-endian float32 C-order; read one N row each ms, scale .1f before external current, even refractory",
+  "propagation": "CSR target/source signed weights; previous step spikes before groups; zero Brian path delay implements reference one-step delay",
+  "frozen_compute_seconds": 1.899932,
+  "frozen_equivalent_ratio": 1.052669253425912,
+  "qualification": "Identical full Gate B model. Frozen 2s evidence includes file consumption but excludes noise pre-generation; not sustained realtime certification. C3 will remeasure if C2 fails.",
+  "native_rng": "Actual generated std::mt19937, stored-pair polar Box-Muller, double log/sqrt, float32 cast; one state per OpenMP thread, no locking in randn()",
+  "rng_class_source_sha256": "fba65d459643d1700eab16e4605c224224025f677569b13cb8c05ace2531fccc",
+  "extracted_header_sha256": "d1e6a56789ffa21d0b3dbc85225d70ac9dc5dbae1d925ebb543f09cbf3433267",
+  "source_sha256": {
+    "realtime\\gate-b\\analyze.py": "018d60bfce6785dd263dbd73a5e9291e1bc4d48a857c15e2c7c439f3fce46471",
+    "realtime\\gate-b\\b0_check.py": "d51e120ad5cbed440a6e6aa1e0bc15b0bf0a8e10f7f4df11f1028df4c79a3d83",
+    "realtime\\gate-b\\candidate.py": "b95c256124b4b9569af96e9f58216d3cba52708edbe46005343432d644ba6433",
+    "realtime\\gate-b\\engine.py": "147a9d2ba991056a3ee56ad6b235d55b3c5e42afd7fc88e53a34200311154618",
+    "realtime\\gate-b\\entry.py": "e2b3a7f307d485c7a8a82949d5cc2ea4dea3ed7f7c2fe8e6d61e2ab3de4f8974",
+    "realtime\\gate-b\\env.py": "a4e933dea9d29c4f576d95fb17a948d42e028e5b3c8df733597e28ea6e330e53",
+    "realtime\\gate-b\\noise_tape.py": "54dbe2f44b2a0f1403352480d541e487ca7731d94089bfa2b7208c8851433e79",
+    "realtime\\gate-b\\prepare.py": "7f941352362f8221db2e2ea07b13ac04177f6a6fe204a202d91c4364e06fae35",
+    "realtime\\gate-b\\preserve.py": "8bf6d3dceb5e4104a1b23211a82e7baa436a0413582273c96dc89f3c6ded6d6f",
+    "realtime\\gate-b\\reference.py": "d60d25c804606862ae7f002d3a341cd33202c4e80ba24dd5364fd37e6d74c37d",
+    "realtime\\gate-b\\run_remaining.py": "ce8291d7d42871bab5b5736ef32e5c31c72632b8111ddbb1e6b17df719e3854c"
+  }
+}

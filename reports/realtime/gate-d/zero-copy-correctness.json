@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "checks": {
+    "baseline_all_observations_except_wall": true,
+    "baseline_v": true,
+    "baseline_syn": true,
+    "baseline_ref_steps": true,
+    "baseline_noise_sample": true,
+    "looming_all_observations_except_wall": true,
+    "looming_v": true,
+    "looming_syn": true,
+    "looming_ref_steps": true,
+    "looming_noise_sample": true
+  },
+  "qualification": "Exact same shared input, 1T copy versus row-pointer supply. All quantum counts/EMA/activity plus full final v/syn/refractory/noise_sample identical. Original allocation pointer restored before serialization/deallocation."
+}

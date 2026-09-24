@@ -1,0 +1,520 @@
+{
+  "success": true,
+  "checks": {
+    "b0-native": {
+      "baseline_population_90_110": true,
+      "baseline_not_dead": true,
+      "stimulus_population_90_110": true,
+      "stimulus_not_dead": true,
+      "recovery_population_90_110": true,
+      "recovery_not_dead": true,
+      "input_response": true,
+      "gf_downstream_response": true,
+      "gf_recovery": true,
+      "population_recovery": true,
+      "no_sustained_runaway": true,
+      "no_simultaneous_runaway": true,
+      "finite": true,
+      "same_full_connectivity": true,
+      "dnp09_no_new_activity": true
+    },
+    "b0-frozen": {
+      "baseline_population_90_110": true,
+      "baseline_not_dead": true,
+      "stimulus_population_90_110": true,
+      "stimulus_not_dead": true,
+      "recovery_population_90_110": true,
+      "recovery_not_dead": true,
+      "input_response": true,
+      "gf_downstream_response": true,
+      "gf_recovery": true,
+      "population_recovery": true,
+      "no_sustained_runaway": true,
+      "no_simultaneous_runaway": true,
+      "finite": true,
+      "same_full_connectivity": true,
+      "dnp09_no_new_activity": true
+    }
+  },
+  "comparison": {
+    "b0-native": [
+      {
+        "phase": "baseline",
+        "reference": {
+          "population_spikes": 45181,
+          "population_rate_hz": 0.547243856057945,
+          "active_fraction": 0.04409466939596177,
+          "groups": {
+            "LC4": {
+              "spike_count": 50,
+              "mean_hz": 0.7936507936507936,
+              "active_fraction": 0.05555555555555555,
+              "peak_mean_ema_hz": 1.0657457113265991,
+              "mean_ema_hz": 0.7783670369386673
+            },
+            "LPLC2": {
+              "spike_count": 72,
+              "mean_hz": 0.7783783783783784,
+              "active_fraction": 0.05945945945945946,
+              "peak_mean_ema_hz": 1.0494922399520874,
+              "mean_ema_hz": 0.7860258504152298
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "peak_mean_ema_hz": 15.223395347595215,
+              "mean_ema_hz": 8.234877225875854
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 45217,
+          "population_rate_hz": 0.5476798972880658,
+          "active_fraction": 0.044058332626785046,
+          "groups": {
+            "LC4": {
+              "spike_count": 50,
+              "mean_hz": 0.7936507936507936,
+              "active_fraction": 0.06349206349206349,
+              "mean_ema_hz": 0.7551562164516683,
+              "peak_mean_ema_hz": 1.088492756798154,
+              "final_ema_hz": 1.0129001895113596
+            },
+            "LPLC2": {
+              "spike_count": 69,
+              "mean_hz": 0.745945945945946,
+              "active_fraction": 0.04864864864864865,
+              "mean_ema_hz": 0.7653462155382997,
+              "peak_mean_ema_hz": 1.1149048484660484,
+              "final_ema_hz": 0.6523301865302651
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "mean_ema_hz": 8.209686531543733,
+              "peak_mean_ema_hz": 14.86750602722168,
+              "final_ema_hz": 5.0823445320129395
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 1.00079679511299,
+        "active_fraction_ratio": 0.9991759373712403
+      },
+      {
+        "phase": "stimulus",
+        "reference": {
+          "population_spikes": 65209,
+          "population_rate_hz": 0.7898281270817941,
+          "active_fraction": 0.04688048836617773,
+          "groups": {
+            "LC4": {
+              "spike_count": 7490,
+              "mean_hz": 118.88888888888889,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 121.96180725097656,
+              "mean_ema_hz": 106.97029323625564
+            },
+            "LPLC2": {
+              "spike_count": 11118,
+              "mean_hz": 120.19459459459459,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 123.44611358642578,
+              "mean_ema_hz": 108.19453663873672
+            },
+            "GF": {
+              "spike_count": 25,
+              "mean_hz": 25.0,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 35.17307662963867,
+              "mean_ema_hz": 23.144732628822325
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 65217,
+          "population_rate_hz": 0.7899250251329321,
+          "active_fraction": 0.04686837610978549,
+          "groups": {
+            "LC4": {
+              "spike_count": 7488,
+              "mean_hz": 118.85714285714286,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 107.03099663328746,
+              "peak_mean_ema_hz": 121.76488010467045,
+              "final_ema_hz": 120.46486367119684
+            },
+            "LPLC2": {
+              "spike_count": 11121,
+              "mean_hz": 120.22702702702702,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 108.22246136893196,
+              "peak_mean_ema_hz": 123.48922671756229,
+              "final_ema_hz": 121.90644588985958
+            },
+            "GF": {
+              "spike_count": 25,
+              "mean_hz": 25.0,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 23.165495176553726,
+              "peak_mean_ema_hz": 34.88140678405762,
+              "final_ema_hz": 23.612070441246033
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 1.0001226824518088,
+        "active_fraction_ratio": 0.9997416354476166
+      },
+      {
+        "phase": "recovery",
+        "reference": {
+          "population_spikes": 45148,
+          "population_rate_hz": 0.5468441515970011,
+          "active_fraction": 0.044046220370392804,
+          "groups": {
+            "LC4": {
+              "spike_count": 45,
+              "mean_hz": 0.7142857142857143,
+              "active_fraction": 0.05555555555555555,
+              "peak_mean_ema_hz": 118.71483612060547,
+              "mean_ema_hz": 12.647015070915222
+            },
+            "LPLC2": {
+              "spike_count": 70,
+              "mean_hz": 0.7567567567567568,
+              "active_fraction": 0.05405405405405406,
+              "peak_mean_ema_hz": 119.65547180175781,
+              "mean_ema_hz": 12.750028491020203
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "peak_mean_ema_hz": 23.538171768188477,
+              "mean_ema_hz": 9.668192826271056
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 45070,
+          "population_rate_hz": 0.5458993955984061,
+          "active_fraction": 0.044058332626785046,
+          "groups": {
+            "LC4": {
+              "spike_count": 47,
+              "mean_hz": 0.746031746031746,
+              "active_fraction": 0.05555555555555555,
+              "mean_ema_hz": 12.604299928538884,
+              "peak_mean_ema_hz": 118.07950113690089,
+              "final_ema_hz": 0.6884582986027771
+            },
+            "LPLC2": {
+              "spike_count": 68,
+              "mean_hz": 0.7351351351351352,
+              "active_fraction": 0.05945945945945946,
+              "mean_ema_hz": 12.732959813489762,
+              "peak_mean_ema_hz": 119.49253820470861,
+              "final_ema_hz": 0.7204255039476463
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "mean_ema_hz": 9.623015243054294,
+              "peak_mean_ema_hz": 23.144520044326782,
+              "final_ema_hz": 7.2185476300583105
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 0.998272348719766,
+        "active_fraction_ratio": 1.0002749896878866
+      }
+    ],
+    "b0-frozen": [
+      {
+        "phase": "baseline",
+        "reference": {
+          "population_spikes": 45181,
+          "population_rate_hz": 0.547243856057945,
+          "active_fraction": 0.04409466939596177,
+          "groups": {
+            "LC4": {
+              "spike_count": 50,
+              "mean_hz": 0.7936507936507936,
+              "active_fraction": 0.05555555555555555,
+              "peak_mean_ema_hz": 1.0657457113265991,
+              "mean_ema_hz": 0.7783670369386673
+            },
+            "LPLC2": {
+              "spike_count": 72,
+              "mean_hz": 0.7783783783783784,
+              "active_fraction": 0.05945945945945946,
+              "peak_mean_ema_hz": 1.0494922399520874,
+              "mean_ema_hz": 0.7860258504152298
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "peak_mean_ema_hz": 15.223395347595215,
+              "mean_ema_hz": 8.234877225875854
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 45181,
+          "population_rate_hz": 0.547243856057945,
+          "active_fraction": 0.04409466939596177,
+          "groups": {
+            "LC4": {
+              "spike_count": 50,
+              "mean_hz": 0.7936507936507936,
+              "active_fraction": 0.05555555555555555,
+              "mean_ema_hz": 0.7783670394082198,
+              "peak_mean_ema_hz": 1.0657456216734043,
+              "final_ema_hz": 0.7272865121025793
+            },
+            "LPLC2": {
+              "spike_count": 72,
+              "mean_hz": 0.7783783783783784,
+              "active_fraction": 0.05945945945945946,
+              "mean_ema_hz": 0.7860258492280778,
+              "peak_mean_ema_hz": 1.0494922498996193,
+              "final_ema_hz": 0.7548842975013965
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "mean_ema_hz": 8.234877225875856,
+              "peak_mean_ema_hz": 15.223395347595215,
+              "final_ema_hz": 5.274237632751465
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 1.0,
+        "active_fraction_ratio": 1.0
+      },
+      {
+        "phase": "stimulus",
+        "reference": {
+          "population_spikes": 65209,
+          "population_rate_hz": 0.7898281270817941,
+          "active_fraction": 0.04688048836617773,
+          "groups": {
+            "LC4": {
+              "spike_count": 7490,
+              "mean_hz": 118.88888888888889,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 121.96180725097656,
+              "mean_ema_hz": 106.97029323625564
+            },
+            "LPLC2": {
+              "spike_count": 11118,
+              "mean_hz": 120.19459459459459,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 123.44611358642578,
+              "mean_ema_hz": 108.19453663873672
+            },
+            "GF": {
+              "spike_count": 25,
+              "mean_hz": 25.0,
+              "active_fraction": 1.0,
+              "peak_mean_ema_hz": 35.17307662963867,
+              "mean_ema_hz": 23.144732628822325
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 65209,
+          "population_rate_hz": 0.7898281270817941,
+          "active_fraction": 0.04688048836617773,
+          "groups": {
+            "LC4": {
+              "spike_count": 7490,
+              "mean_hz": 118.88888888888889,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 106.97029353402154,
+              "peak_mean_ema_hz": 121.96181578863235,
+              "final_ema_hz": 121.1130491589743
+            },
+            "LPLC2": {
+              "spike_count": 11118,
+              "mean_hz": 120.19459459459459,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 108.19453659664876,
+              "peak_mean_ema_hz": 123.44611036970808,
+              "final_ema_hz": 121.96347190238335
+            },
+            "GF": {
+              "spike_count": 25,
+              "mean_hz": 25.0,
+              "active_fraction": 1.0,
+              "mean_ema_hz": 23.144732660055162,
+              "peak_mean_ema_hz": 35.17307662963867,
+              "final_ema_hz": 24.013673067092896
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 1.0,
+        "active_fraction_ratio": 1.0
+      },
+      {
+        "phase": "recovery",
+        "reference": {
+          "population_spikes": 45148,
+          "population_rate_hz": 0.5468441515970011,
+          "active_fraction": 0.044046220370392804,
+          "groups": {
+            "LC4": {
+              "spike_count": 45,
+              "mean_hz": 0.7142857142857143,
+              "active_fraction": 0.05555555555555555,
+              "peak_mean_ema_hz": 118.71483612060547,
+              "mean_ema_hz": 12.647015070915222
+            },
+            "LPLC2": {
+              "spike_count": 70,
+              "mean_hz": 0.7567567567567568,
+              "active_fraction": 0.05405405405405406,
+              "peak_mean_ema_hz": 119.65547180175781,
+              "mean_ema_hz": 12.750028491020203
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "peak_mean_ema_hz": 23.538171768188477,
+              "mean_ema_hz": 9.668192826271056
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "mean_ema_hz": 0.0
+            }
+          }
+        },
+        "brian2": {
+          "population_spikes": 45148,
+          "population_rate_hz": 0.5468441515970011,
+          "active_fraction": 0.044046220370392804,
+          "groups": {
+            "LC4": {
+              "spike_count": 45,
+              "mean_hz": 0.7142857142857143,
+              "active_fraction": 0.05555555555555555,
+              "mean_ema_hz": 12.647015019845144,
+              "peak_mean_ema_hz": 118.71485143994528,
+              "final_ema_hz": 0.5845366429301009
+            },
+            "LPLC2": {
+              "spike_count": 70,
+              "mean_hz": 0.7567567567567568,
+              "active_fraction": 0.05405405405405406,
+              "mean_ema_hz": 12.750028440532235,
+              "peak_mean_ema_hz": 119.65546940983953,
+              "final_ema_hz": 0.8234407899725075
+            },
+            "GF": {
+              "spike_count": 8,
+              "mean_hz": 8.0,
+              "active_fraction": 0.5,
+              "mean_ema_hz": 9.668192829213135,
+              "peak_mean_ema_hz": 23.53817105293274,
+              "final_ema_hz": 7.163812579208752
+            },
+            "DNp09": {
+              "spike_count": 0,
+              "mean_hz": 0.0,
+              "active_fraction": 0.0,
+              "mean_ema_hz": 0.0,
+              "peak_mean_ema_hz": 0.0,
+              "final_ema_hz": 0.0
+            }
+          }
+        },
+        "population_ratio": 1.0,
+        "active_fraction_ratio": 1.0
+      }
+    ]
+  },
+  "noise_policy": "Exact same PCG64 float32 tape for B0 injection correctness PLUS native C++ MT19937 statistical equivalence; native noise cost measured separately. Stream identity not claimed for native Brian2 seed."
+}

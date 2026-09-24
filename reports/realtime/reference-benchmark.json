@@ -1,0 +1,18 @@
+{
+  "neural_seconds": 10.0,
+  "wall_seconds": 85.43756700004451,
+  "neural_wall_ratio": 0.11704453147635618,
+  "population_spikes": 745696,
+  "noise_policy": "OFF",
+  "warmup_seconds": 0.5,
+  "condition": "baseline",
+  "includes_scalar_spike_count_readout": true,
+  "resources": {
+    "wall_seconds": 119.35017280001193,
+    "sampled_peak_rss_bytes": 434999296,
+    "os_process_peak_rss_bytes": 434999296,
+    "representative_rss_bytes": 286130176,
+    "minimum_available_system_ram_bytes": 4584292352,
+    "sampling_interval_seconds": 0.02
+  }
+}

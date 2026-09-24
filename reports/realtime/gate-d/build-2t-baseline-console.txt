@@ -1,0 +1,2 @@
+WARNING    OpenMP code is not yet well tested, and may be inaccurate. [brian2.devices.cpp_standalone.device.openmp]
+BUILT 2 baseline

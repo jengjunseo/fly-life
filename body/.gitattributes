@@ -4,4 +4,5 @@
 *.uid text eol=lf
 project.godot text eol=lf
 *.jsonl -text
+* -text whitespace=cr-at-eol
 reports/**/*.txt -text -whitespace

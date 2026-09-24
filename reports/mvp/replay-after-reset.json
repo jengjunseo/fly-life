@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "reference": "reports/mvp/final-v2/predator",
+  "replay": "reports/mvp/ui-qa",
+  "replay_generation": 2,
+  "frames": 70,
+  "available": [
+    70,
+    117
+  ],
+  "mismatching_frames": [],
+  "scope": "Exact observable population/group counts, EMA, motor, sensory/world snapshots. Not a full internal membrane-state hash claim."
+}

@@ -1,0 +1,498 @@
+{
+  "label": "d1-b1-p2",
+  "scenario": "looming",
+  "trial": 2,
+  "threads": 1,
+  "brain_pid": 12856,
+  "brain_cpus": [
+    0
+  ],
+  "brain_affinity_mask": 1,
+  "producer": {
+    "root_seed": 20260913,
+    "worker_count": 2,
+    "dtype": "float32",
+    "shape": [
+      50,
+      165122
+    ],
+    "layout": "worker-major: contiguous [50,width] per fixed runtime-index slice; no per-block allocation/cast",
+    "workers": [
+      {
+        "worker_id": 0,
+        "spawn_key": [
+          0
+        ],
+        "entropy": 20260913,
+        "runtime_start": 0,
+        "runtime_end": 82561,
+        "element_offset": 0,
+        "local_shape": [
+          50,
+          82561
+        ],
+        "contiguous": true,
+        "affinity": {
+          "thread_id": 24356,
+          "logical_cpus": [
+            2
+          ],
+          "affinity_mask": 4,
+          "processor_group": 0,
+          "explicitly_pinned": true
+        }
+      },
+      {
+        "worker_id": 1,
+        "spawn_key": [
+          1
+        ],
+        "entropy": 20260913,
+        "runtime_start": 82561,
+        "runtime_end": 165122,
+        "element_offset": 4128050,
+        "local_shape": [
+          50,
+          82561
+        ],
+        "contiguous": true,
+        "affinity": {
+          "thread_id": 23404,
+          "logical_cpus": [
+            4
+          ],
+          "affinity_mask": 16,
+          "processor_group": 0,
+          "explicitly_pinned": true
+        }
+      }
+    ],
+    "stream_identity": "Independent deterministic PCG64 child streams implementing Gaussian current noise; NOT the single reference PCG64 sequence. Stable mapping for a fixed worker count."
+  },
+  "brain_statistics": {
+    "blocks": 30,
+    "mean_ms": 54.64906666666666,
+    "p50_ms": 52.054,
+    "p95_ms": 69.80149999999999,
+    "p99_ms": 73.88684,
+    "max_ms": 74.903,
+    "blocks_per_second": 18.298574175100278,
+    "neural_wall_ratio": 0.9149287087550139,
+    "class_name": "FAIL"
+  },
+  "producer_statistics": {
+    "blocks": 66,
+    "mean_ms": 32.07386212218835,
+    "p50_ms": 31.21235000435263,
+    "p95_ms": 34.7484250087291,
+    "p99_ms": 44.72077003156298,
+    "max_ms": 48.18929999601096,
+    "blocks_per_second": 31.178035129988626,
+    "neural_wall_ratio": 1.5589017564994314,
+    "class_name": "MARGINAL REALTIME"
+  },
+  "brain_all_window_ms": [
+    47.195,
+    51.859,
+    52.342,
+    51.881,
+    50.955,
+    56.212,
+    53.199,
+    50.966,
+    49.0,
+    46.852,
+    46.508,
+    46.152,
+    46.548,
+    47.087,
+    67.849,
+    63.026,
+    64.237,
+    52.424,
+    48.764,
+    52.332,
+    56.987,
+    60.503,
+    71.399,
+    74.903,
+    59.331,
+    56.711,
+    56.371,
+    53.094,
+    49.794,
+    46.25,
+    47.598,
+    46.261,
+    47.664,
+    51.776,
+    51.4,
+    66.386,
+    63.41,
+    50.193,
+    48.446,
+    46.068
+  ],
+  "producer_intervals": [
+    {
+      "start": 288899.5471169,
+      "end": 288899.5794718,
+      "generation_ms": 32.348499982617795
+    },
+    {
+      "start": 288899.5798198,
+      "end": 288899.6108691,
+      "generation_ms": 31.046500022057444
+    },
+    {
+      "start": 288899.6113331,
+      "end": 288899.6424476,
+      "generation_ms": 31.108499970287085
+    },
+    {
+      "start": 288899.6428901,
+      "end": 288899.6744546,
+      "generation_ms": 31.560499977786094
+    },
+    {
+      "start": 288899.6747754,
+      "end": 288899.7061093,
+      "generation_ms": 31.32710000500083
+    },
+    {
+      "start": 288899.7064835,
+      "end": 288899.7375442,
+      "generation_ms": 31.05599997797981
+    },
+    {
+      "start": 288899.7379255,
+      "end": 288899.7690026,
+      "generation_ms": 31.070300028659403
+    },
+    {
+      "start": 288899.7694897,
+      "end": 288899.8009183,
+      "generation_ms": 31.42190002836287
+    },
+    {
+      "start": 288899.8013098,
+      "end": 288899.8323577,
+      "generation_ms": 31.044700008351356
+    },
+    {
+      "start": 288899.8327348,
+      "end": 288899.864515,
+      "generation_ms": 31.774899980518967
+    },
+    {
+      "start": 288899.8650207,
+      "end": 288899.8994149,
+      "generation_ms": 34.38860003370792
+    },
+    {
+      "start": 288899.8997252,
+      "end": 288899.9309219,
+      "generation_ms": 31.19240002706647
+    },
+    {
+      "start": 288899.9314143,
+      "end": 288899.9624835,
+      "generation_ms": 31.06609999667853
+    },
+    {
+      "start": 288899.9629141,
+      "end": 288899.9943392,
+      "generation_ms": 31.42180002760142
+    },
+    {
+      "start": 288899.9946819,
+      "end": 288900.0263168,
+      "generation_ms": 31.628799973987043
+    },
+    {
+      "start": 288900.0267706,
+      "end": 288900.0575384,
+      "generation_ms": 30.764999974053353
+    },
+    {
+      "start": 288900.0578398,
+      "end": 288900.0894895,
+      "generation_ms": 31.645199982449412
+    },
+    {
+      "start": 288900.0898672,
+      "end": 288900.1205589,
+      "generation_ms": 30.687599966768175
+    },
+    {
+      "start": 288900.1208565,
+      "end": 288900.151645,
+      "generation_ms": 30.784800008405
+    },
+    {
+      "start": 288900.1519952,
+      "end": 288900.1827144,
+      "generation_ms": 30.715399945620447
+    },
+    {
+      "start": 288900.1830155,
+      "end": 288900.2137832,
+      "generation_ms": 30.76369996415451
+    },
+    {
+      "start": 288900.214273,
+      "end": 288900.2455225,
+      "generation_ms": 31.245799968019128
+    },
+    {
+      "start": 288900.2458241,
+      "end": 288900.2766575,
+      "generation_ms": 30.82929999800399
+    },
+    {
+      "start": 288900.2769518,
+      "end": 288900.3076374,
+      "generation_ms": 30.681700038257986
+    },
+    {
+      "start": 288900.3078874,
+      "end": 288900.3390794,
+      "generation_ms": 31.186800042632967
+    },
+    {
+      "start": 288900.3394475,
+      "end": 288900.3703216,
+      "generation_ms": 30.869699956383556
+    },
+    {
+      "start": 288900.3705869,
+      "end": 288900.4017425,
+      "generation_ms": 31.152600015047938
+    },
+    {
+      "start": 288900.4019565,
+      "end": 288900.4326167,
+      "generation_ms": 30.6546000065282
+    },
+    {
+      "start": 288900.4328933,
+      "end": 288900.4651515,
+      "generation_ms": 32.25489996839315
+    },
+    {
+      "start": 288900.4654591,
+      "end": 288900.4964732,
+      "generation_ms": 31.00560000166297
+    },
+    {
+      "start": 288900.496709,
+      "end": 288900.5275923,
+      "generation_ms": 30.87990003405139
+    },
+    {
+      "start": 288900.5278391,
+      "end": 288900.5590752,
+      "generation_ms": 31.23229998163879
+    },
+    {
+      "start": 288900.5593335,
+      "end": 288900.5901238,
+      "generation_ms": 30.785600014496595
+    },
+    {
+      "start": 288900.590356,
+      "end": 288900.6224089,
+      "generation_ms": 32.049099972937256
+    },
+    {
+      "start": 288900.6227797,
+      "end": 288900.6553589,
+      "generation_ms": 32.57330000633374
+    },
+    {
+      "start": 288900.655592,
+      "end": 288900.6866997,
+      "generation_ms": 31.102499982807785
+    },
+    {
+      "start": 288900.6870517,
+      "end": 288900.7181787,
+      "generation_ms": 31.12379997037351
+    },
+    {
+      "start": 288900.7185194,
+      "end": 288900.7508082,
+      "generation_ms": 32.283600012306124
+    },
+    {
+      "start": 288900.7513124,
+      "end": 288900.7850527,
+      "generation_ms": 33.73490000376478
+    },
+    {
+      "start": 288900.7853898,
+      "end": 288900.8223305,
+      "generation_ms": 36.93609999027103
+    },
+    {
+      "start": 288900.8227949,
+      "end": 288900.8576141,
+      "generation_ms": 34.814200014807284
+    },
+    {
+      "start": 288900.8579708,
+      "end": 288900.9061637,
+      "generation_ms": 48.18929999601096
+    },
+    {
+      "start": 288900.9066474,
+      "end": 288900.9390397,
+      "generation_ms": 32.38789999159053
+    },
+    {
+      "start": 288900.9392587,
+      "end": 288900.970611,
+      "generation_ms": 31.348099990282208
+    },
+    {
+      "start": 288900.970884,
+      "end": 288901.0041699,
+      "generation_ms": 33.28109998255968
+    },
+    {
+      "start": 288901.0044087,
+      "end": 288901.0378041,
+      "generation_ms": 33.38889998849481
+    },
+    {
+      "start": 288901.038184,
+      "end": 288901.0709317,
+      "generation_ms": 32.74200001033023
+    },
+    {
+      "start": 288901.0714309,
+      "end": 288901.1035448,
+      "generation_ms": 32.10929996566847
+    },
+    {
+      "start": 288901.1038914,
+      "end": 288901.1347406,
+      "generation_ms": 30.841900035738945
+    },
+    {
+      "start": 288901.1352632,
+      "end": 288901.1666804,
+      "generation_ms": 31.411100004334003
+    },
+    {
+      "start": 288901.1669863,
+      "end": 288901.1978315,
+      "generation_ms": 30.840800027363002
+    },
+    {
+      "start": 288901.1983396,
+      "end": 288901.2291826,
+      "generation_ms": 30.839100014418364
+    },
+    {
+      "start": 288901.2297036,
+      "end": 288901.2606388,
+      "generation_ms": 30.929200001992285
+    },
+    {
+      "start": 288901.2610123,
+      "end": 288901.2918539,
+      "generation_ms": 30.83530004369095
+    },
+    {
+      "start": 288901.2922469,
+      "end": 288901.3234021,
+      "generation_ms": 31.148700043559074
+    },
+    {
+      "start": 288901.3237951,
+      "end": 288901.3547617,
+      "generation_ms": 30.963300028815866
+    },
+    {
+      "start": 288901.3551711,
+      "end": 288901.3864145,
+      "generation_ms": 31.239899981301278
+    },
+    {
+      "start": 288901.3868353,
+      "end": 288901.4177816,
+      "generation_ms": 30.9403000283055
+    },
+    {
+      "start": 288901.4181332,
+      "end": 288901.4507835,
+      "generation_ms": 32.64440002385527
+    },
+    {
+      "start": 288901.4511693,
+      "end": 288901.483673,
+      "generation_ms": 32.49939996749163
+    },
+    {
+      "start": 288901.4840824,
+      "end": 288901.5163531,
+      "generation_ms": 32.26670000003651
+    },
+    {
+      "start": 288901.5165771,
+      "end": 288901.5479457,
+      "generation_ms": 31.36409999569878
+    },
+    {
+      "start": 288901.5483979,
+      "end": 288901.5912562,
+      "generation_ms": 42.853100050706416
+    },
+    {
+      "start": 288901.5915077,
+      "end": 288901.6260643,
+      "generation_ms": 34.55109999049455
+    },
+    {
+      "start": 288901.6264125,
+      "end": 288901.6583182,
+      "generation_ms": 31.902500020805746
+    },
+    {
+      "start": 288901.6587183,
+      "end": 288901.6894327,
+      "generation_ms": 30.709700018633157
+    },
+    {
+      "start": 288901.6898308,
+      "end": 288901.7206168,
+      "generation_ms": 30.78159998403862
+    },
+    {
+      "start": 288901.7210111,
+      "end": 288901.7521478,
+      "generation_ms": 31.13279998069629
+    }
+  ],
+  "overlap_start_qpc": 288899.5622827,
+  "overlap_end_qpc": 288901.7287322,
+  "contained_producer_blocks": 66,
+  "warmup_brain_windows": 10,
+  "neural_seconds": 2,
+  "timings": {
+    "init": 0.984207,
+    "network_compute": 2.165891,
+    "windows_compute": 2.1499330000000003,
+    "brian_output": 0.145997
+  },
+  "peak_consumer_rss": 1641435136,
+  "finite": true,
+  "max_simultaneous_spiking_fraction": 0.0017683894332675234,
+  "graph_verified": {
+    "source": true,
+    "target": true,
+    "weight": true
+  },
+  "qualification": "D1 concurrency feasibility only, exact nonperiodic preloaded noise, 0.5s brain warmup then30 windows; producer output deliberately discarded, no producer/consumer queue. QPC/perf_counter same system clock for strict-contained producer intervals. Not pipeline certification."
+}

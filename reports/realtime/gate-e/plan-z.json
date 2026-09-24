@@ -1,0 +1,37 @@
+{
+  "classification": "100MS QUANTUM: NO MATERIAL BENEFIT",
+  "rule": "Predeclared conservative material benefit: median pair ratio>=1.10 and every pair>=1.05; sequential timing variance qualified",
+  "dt_ms": 1,
+  "production_adopted": false,
+  "final_state_exact": [
+    true,
+    true,
+    true
+  ],
+  "q50_repeats": [
+    "current-1t-looming-p0-20s-q50-off-0",
+    "current-1t-looming-p0-20s-q50-off-1",
+    "current-1t-looming-p0-20s-q50-off-2"
+  ],
+  "q100_repeats": [
+    "current-1t-looming-p0-20s-q100-off-0",
+    "current-1t-looming-p0-20s-q100-off-1",
+    "current-1t-looming-p0-20s-q100-off-2"
+  ],
+  "q50_network_ms_per_neural_ms": [
+    0.8933417499999999,
+    1.2308759500000002,
+    1.0227062999999998
+  ],
+  "q100_network_ms_per_neural_ms": [
+    0.8816394000000001,
+    0.88324175,
+    0.9555397999999999
+  ],
+  "pair_speedups": [
+    1.0132733972642327,
+    1.3935889579495082,
+    1.0702916822512258
+  ],
+  "qualification": "Same20s frozen replay and constant strongest input; only control boundary cadence differs. Network timer includes boundary maintenance, no producer/IPC/world. Not production50/100ms pipeline certification."
+}

@@ -1,0 +1,52 @@
+{
+  "threads": 1,
+  "trials": [
+    {
+      "trial": 0,
+      "actual_threads": 1,
+      "samples": 165122000,
+      "wall_seconds": 5.420759,
+      "samples_per_second": 30461047.982395083,
+      "equivalent_neural_wall_ratio": 0.18447601156959753,
+      "warmup_seconds": 0.269638,
+      "checksum": 480.878561343402
+    },
+    {
+      "trial": 1,
+      "actual_threads": 1,
+      "samples": 165122000,
+      "wall_seconds": 5.391695,
+      "samples_per_second": 30625248.646297682,
+      "equivalent_neural_wall_ratio": 0.18547043184007997,
+      "warmup_seconds": 0.269638,
+      "checksum": -112.91839547398331
+    }
+  ],
+  "mean_samples_per_second": 30543148.31434638,
+  "mean_equivalent_neural_wall_ratio": 0.18497322170483876,
+  "compile_seconds": null,
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "mechanism": "Unmodified actual Brian2 generated RandomGenerator class; N=165122 float32 stores per step, 50 warmup steps, 1000 measured steps per trial, no neural computation; per-thread states and omp static loop",
+  "source_sha256": "30b1ddc057048a055b60a53cb3b4f79d134a21e00dfaa921cd99edbc95e1837c",
+  "rng_header_sha256": "d1e6a56789ffa21d0b3dbc85225d70ac9dc5dbae1d925ebb543f09cbf3433267",
+  "executable_sha256": "0cd805df0586801932ff7ae5a1962691aac7326d396a7a9ab9ceb080eb216edc"
+}

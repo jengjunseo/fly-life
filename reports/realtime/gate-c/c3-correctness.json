@@ -1,0 +1,257 @@
+{
+  "success": true,
+  "checks": {
+    "baseline_population": true,
+    "baseline_active_fraction": true,
+    "baseline_LC4_counts": true,
+    "baseline_LC4_active": true,
+    "baseline_LPLC2_counts": true,
+    "baseline_LPLC2_active": true,
+    "baseline_GF_counts": true,
+    "baseline_GF_active": true,
+    "baseline_DNp09_counts": true,
+    "baseline_DNp09_active": true,
+    "stimulus_population": true,
+    "stimulus_active_fraction": true,
+    "stimulus_LC4_counts": true,
+    "stimulus_LC4_active": true,
+    "stimulus_LPLC2_counts": true,
+    "stimulus_LPLC2_active": true,
+    "stimulus_GF_counts": true,
+    "stimulus_GF_active": true,
+    "stimulus_DNp09_counts": true,
+    "stimulus_DNp09_active": true,
+    "recovery_population": true,
+    "recovery_active_fraction": true,
+    "recovery_LC4_counts": true,
+    "recovery_LC4_active": true,
+    "recovery_LPLC2_counts": true,
+    "recovery_LPLC2_active": true,
+    "recovery_GF_counts": true,
+    "recovery_GF_active": true,
+    "recovery_DNp09_counts": true,
+    "recovery_DNp09_active": true,
+    "finite": true,
+    "full_graph": true,
+    "no_synchronous_runaway": true
+  },
+  "comparisons": {
+    "baseline": {
+      "reference": {
+        "population_spikes": 45181,
+        "population_rate_hz": 0.547243856057945,
+        "active_fraction": 0.04409466939596177,
+        "groups": {
+          "LC4": {
+            "spike_count": 50,
+            "mean_hz": 0.7936507936507936,
+            "active_fraction": 0.05555555555555555,
+            "peak_mean_ema_hz": 1.0657457113265991,
+            "mean_ema_hz": 0.7783670369386673
+          },
+          "LPLC2": {
+            "spike_count": 72,
+            "mean_hz": 0.7783783783783784,
+            "active_fraction": 0.05945945945945946,
+            "peak_mean_ema_hz": 1.0494922399520874,
+            "mean_ema_hz": 0.7860258504152298
+          },
+          "GF": {
+            "spike_count": 8,
+            "mean_hz": 8.0,
+            "active_fraction": 0.5,
+            "peak_mean_ema_hz": 15.223395347595215,
+            "mean_ema_hz": 8.234877225875854
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": 0.0
+          }
+        }
+      },
+      "candidate": {
+        "population_spikes": 45181,
+        "population_rate_hz": 0.547243856057945,
+        "active_fraction": 0.04409466939596177,
+        "groups": {
+          "LC4": {
+            "spike_count": 50,
+            "mean_hz": 0.7936507936507936,
+            "active_fraction": 0.05555555555555555,
+            "mean_ema_hz": 0.7783670394082198,
+            "peak_mean_ema_hz": 1.0657456216734043
+          },
+          "LPLC2": {
+            "spike_count": 72,
+            "mean_hz": 0.7783783783783784,
+            "active_fraction": 0.05945945945945946,
+            "mean_ema_hz": 0.7860258492280778,
+            "peak_mean_ema_hz": 1.0494922498996193
+          },
+          "GF": {
+            "spike_count": 8,
+            "mean_hz": 8.0,
+            "active_fraction": 0.5,
+            "mean_ema_hz": 8.234877225875856,
+            "peak_mean_ema_hz": 15.223395347595215
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "mean_ema_hz": 0.0,
+            "peak_mean_ema_hz": 0.0
+          }
+        }
+      }
+    },
+    "stimulus": {
+      "reference": {
+        "population_spikes": 65209,
+        "population_rate_hz": 0.7898281270817941,
+        "active_fraction": 0.04688048836617773,
+        "groups": {
+          "LC4": {
+            "spike_count": 7490,
+            "mean_hz": 118.88888888888889,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 121.96180725097656,
+            "mean_ema_hz": 106.97029323625564
+          },
+          "LPLC2": {
+            "spike_count": 11118,
+            "mean_hz": 120.19459459459459,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 123.44611358642578,
+            "mean_ema_hz": 108.19453663873672
+          },
+          "GF": {
+            "spike_count": 25,
+            "mean_hz": 25.0,
+            "active_fraction": 1.0,
+            "peak_mean_ema_hz": 35.17307662963867,
+            "mean_ema_hz": 23.144732628822325
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": 0.0
+          }
+        }
+      },
+      "candidate": {
+        "population_spikes": 65209,
+        "population_rate_hz": 0.7898281270817941,
+        "active_fraction": 0.04688048836617773,
+        "groups": {
+          "LC4": {
+            "spike_count": 7490,
+            "mean_hz": 118.88888888888889,
+            "active_fraction": 1.0,
+            "mean_ema_hz": 106.97029353402154,
+            "peak_mean_ema_hz": 121.96181578863235
+          },
+          "LPLC2": {
+            "spike_count": 11118,
+            "mean_hz": 120.19459459459459,
+            "active_fraction": 1.0,
+            "mean_ema_hz": 108.19453659664876,
+            "peak_mean_ema_hz": 123.44611036970808
+          },
+          "GF": {
+            "spike_count": 25,
+            "mean_hz": 25.0,
+            "active_fraction": 1.0,
+            "mean_ema_hz": 23.144732660055162,
+            "peak_mean_ema_hz": 35.17307662963867
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "mean_ema_hz": 0.0,
+            "peak_mean_ema_hz": 0.0
+          }
+        }
+      }
+    },
+    "recovery": {
+      "reference": {
+        "population_spikes": 45148,
+        "population_rate_hz": 0.5468441515970011,
+        "active_fraction": 0.044046220370392804,
+        "groups": {
+          "LC4": {
+            "spike_count": 45,
+            "mean_hz": 0.7142857142857143,
+            "active_fraction": 0.05555555555555555,
+            "peak_mean_ema_hz": 118.71483612060547,
+            "mean_ema_hz": 12.647015070915222
+          },
+          "LPLC2": {
+            "spike_count": 70,
+            "mean_hz": 0.7567567567567568,
+            "active_fraction": 0.05405405405405406,
+            "peak_mean_ema_hz": 119.65547180175781,
+            "mean_ema_hz": 12.750028491020203
+          },
+          "GF": {
+            "spike_count": 8,
+            "mean_hz": 8.0,
+            "active_fraction": 0.5,
+            "peak_mean_ema_hz": 23.538171768188477,
+            "mean_ema_hz": 9.668192826271056
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "peak_mean_ema_hz": 0.0,
+            "mean_ema_hz": 0.0
+          }
+        }
+      },
+      "candidate": {
+        "population_spikes": 45148,
+        "population_rate_hz": 0.5468441515970011,
+        "active_fraction": 0.044046220370392804,
+        "groups": {
+          "LC4": {
+            "spike_count": 45,
+            "mean_hz": 0.7142857142857143,
+            "active_fraction": 0.05555555555555555,
+            "mean_ema_hz": 12.647015019845144,
+            "peak_mean_ema_hz": 118.71485143994528
+          },
+          "LPLC2": {
+            "spike_count": 70,
+            "mean_hz": 0.7567567567567568,
+            "active_fraction": 0.05405405405405406,
+            "mean_ema_hz": 12.750028440532235,
+            "peak_mean_ema_hz": 119.65546940983953
+          },
+          "GF": {
+            "spike_count": 8,
+            "mean_hz": 8.0,
+            "active_fraction": 0.5,
+            "mean_ema_hz": 9.668192829213135,
+            "peak_mean_ema_hz": 23.53817105293274
+          },
+          "DNp09": {
+            "spike_count": 0,
+            "mean_hz": 0.0,
+            "active_fraction": 0.0,
+            "mean_ema_hz": 0.0,
+            "peak_mean_ema_hz": 0.0
+          }
+        }
+      }
+    }
+  },
+  "qualification": "Exact shared 2s input; population/group counts and phase-active fractions agree, not exact spike train or native multi-seed evidence."
+}

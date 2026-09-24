@@ -1,0 +1,24 @@
+{
+  "classification": "CONSUMER HEADROOM: FAIL",
+  "best_short_consumer_tag": "current-1t-looming-p0-2s-q50",
+  "best_robust_short_consumer_p99_ms": 63.160790000000006,
+  "headroom_ms": -13.160790000000006,
+  "equivalent_side_factor": 0.7916303770108004,
+  "strong_20s_repeat_p99_ms": [
+    61.447030000000055,
+    90.62480000000001,
+    81.74066000000003
+  ],
+  "e5": "NOT RUN: no sufficiently improved/HEADROOM consumer candidate after cheap trials; stop rule4",
+  "concurrent_consumer_p99_ms": null,
+  "concurrent_producer_p99_ms": null,
+  "concurrent_contention_percent": null,
+  "pipeline_certified": false,
+  "production_adopted": false,
+  "baseline_checked_files": 592,
+  "baseline_changed_files": [],
+  "regression_tests": 13,
+  "peak_cpp_sampled_rss_bytes": 1661554688,
+  "peak_controller_os_rss_bytes": 474673152,
+  "plan_z": "100MS QUANTUM: NO MATERIAL BENEFIT"
+}
