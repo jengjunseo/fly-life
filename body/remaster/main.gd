@@ -32,6 +32,14 @@ func shutdown() -> void:
 	super.shutdown()
 	log_file=null
 
+func capture_frame() -> void:
+	if DisplayServer.get_name()=="headless":return
+	await super.capture_frame()
+
+func capture_ecology() -> void:
+	if DisplayServer.get_name()=="headless":return
+	await super.capture_ecology()
+
 func send_command(kind: String, extra: Dictionary = {}) -> void:
 	if peer.get_status()==StreamPeerTCP.STATUS_CONNECTED and not low_latency_ready:
 		peer.set_no_delay(true)
