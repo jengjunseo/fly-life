@@ -204,6 +204,7 @@ func update_hud() -> void:
 	var budget := "목표 시간 충족" if total<=frame_ms and total>0 else "실시간 목표 미달 · 완료 결과에 맞춰 진행"
 	var backend := "동일 결과 JIT + 희소 스파이크 전달" if console_state.get("backend")=="fast" else "원본 SciPy 대조 계산"
 	health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n계산 %.1f · 통신/몸체 %.1f밀리초\n중앙값 %.1f · 95백분위 %.1f밀리초\n화면 %d프레임/초 · 처리율 약 %.2f배\n%s\n%s" % [frame_ms,int(frame_ms),compute,maxf(0.,total-compute),perf.get("p50_ms",0),perf.get("p95_ms",0),int(Engine.get_frames_per_second()),frame_ms/maxf(total,.001),budget,backend]
+	if perf.is_empty():health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n첫 완료 프레임의 실제 처리 시간 측정 대기\n화면 %d프레임/초\n%s" % [frame_ms,int(frame_ms),int(Engine.get_frames_per_second()),backend]
 	var lines := ""
 	for e in console_state.events:
 		lines+="[%.2f초] %s" % [float(e.world_time_s),event_name(str(e.event))]
@@ -218,7 +219,8 @@ func update_hud() -> void:
 		measured_speed=fly.position.distance_to(last_motion_position)/(world_time-last_motion_world)
 		last_motion_world=world_time;last_motion_position=fly.position
 	var forward := float(state.get("forward",0));var turn := float(state.get("turn",0))
-	if connection=="paused":diagnosis_label.text="정지됨 · 진행 버튼을 누르면 완료된 신경 결과로 몸체가 갱신됩니다."
+	if not ready:diagnosis_label.text="신경망 준비 또는 연결 확인 중 · 준비가 끝나면 실제 운동 출력을 표시합니다."
+	elif connection=="paused":diagnosis_label.text="정지됨 · 진행 버튼을 누르면 완료된 신경 결과로 몸체가 갱신됩니다."
 	elif forward<.0001 and absf(turn)<.0001:diagnosis_label.text="운동 출력 0 · 현재 운동 뉴런이 보행 신호를 내지 않습니다.\n왼쪽 ‘전진 뉴런 자극’으로 신경→몸체 경로를 검사할 수 있습니다."
 	else:diagnosis_label.text="운동 신호 전달 중 · 전진 %.3f / 회전 %+.3f · 실제 이동 속도 %.3f 단위/뇌초" % [forward,turn,measured_speed]
 	if not last_ecology.is_empty():
@@ -228,7 +230,9 @@ func update_hud() -> void:
 		var currents := "현재 뇌 프레임의 감각 입력: "
 		for term in last_ecology.sensory_terms:
 			if float(term.amplitude)>.001:currents+="%s %.2f  " % [K_MODALITIES.get(term.modality,"감각"),term.amplitude]
-		stimulus_label.text=currents+"\n실제 몸체 응답 #%s로 계산 · 화면 감각 상태는 최대 한 뇌 프레임 전 입력" % str(last_ecology.get("sensor_source_body_seq","—"))
+		var source: Variant=last_ecology.get("sensor_source_body_seq")
+		var source_text: String="초기 상태" if source==null else "몸체 응답 #%d" % int(source)
+		stimulus_label.text=currents+"\n감각 기준: %s · 화면 감각 상태는 최대 한 뇌 프레임 전 입력" % source_text
 	if camera_follow:
 		world_camera.position=fly.position+Vector3(3,5,4);world_camera.look_at(fly.position);world_camera.size=6
 	ui_updates+=1;var elapsed := Time.get_ticks_usec()-started;ui_total_us+=elapsed;ui_max_us=maxi(ui_max_us,elapsed)
