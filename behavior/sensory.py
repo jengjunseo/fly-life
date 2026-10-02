@@ -8,6 +8,7 @@ class BilateralEncoder(Encoder):
     def __init__(self,brain,params):
         super().__init__(brain,params)
         self.indices['food_odor']=brain.resolve(dict(types=['ORN_DM1','ORN_VA2']))
+        self.selectors['food_odor']=dict(types=['ORN_DM1','ORN_VA2'])
         self.sides={};self.members={}
         for name,idx in self.indices.items():
             rows=brain.neurons.iloc[idx]

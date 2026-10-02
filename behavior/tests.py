@@ -12,6 +12,8 @@ from behavior.sensory import BilateralEncoder
 from behavior.readout import EscapeReadout
 from behavior.presets import configure
 from behavior.run_assays import rows
+from behavior.sensorimotor import SensorimotorWorld,SensorimotorEncoder,SteeringReadout
+from behavior.model import load_connectivity
 
 ROOT=Path(__file__).resolve().parents[1]
 CFG=json.loads((ROOT/'config.json').read_text())
@@ -134,5 +136,100 @@ class BehaviorTests(unittest.TestCase):
             shutil.copyfile(str(source)+'.gz',str(target)+'.gz')
             self.assertFalse(target.exists())
             self.assertEqual(rows(target),expected)
+
+class SensorimotorTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):cls.brain=Brain.load(ROOT/'data/runtime',CFG)
+
+    def world(self):return SensorimotorWorld(configure('CONTROL',42,8))
+
+    def test_food_has_primitive_visual_features_without_identity(self):
+        w=self.world();w.spawn(dict(kind='food',position=[-1.,.22,-1.]))
+        raw=w.sense(.02);self.assertEqual(len(raw['figures']),1)
+        for forbidden in ['kind','id','bodyId','position','target','desired_turn']:self.assertNotIn(forbidden,raw['figures'][0])
+        self.assertGreater(raw['figures'][0]['angular_size_deg'],0)
+
+    def test_self_motion_removed_from_looming_but_not_retinal_object_motion(self):
+        w=self.world();w.spawn(dict(kind='food',position=[0.,.22,-2.]))
+        w.sense(.02);w.fly=[0.,.22,-.2]
+        f=w.sense(.02)['figures'][0]
+        self.assertGreater(f['positive_expansion_deg_s'],0)
+        self.assertEqual(f['compensated_expansion_deg_s'],0)
+        self.assertGreater(f['angular_motion_deg_s'],0)
+
+    def test_real_approach_is_not_removed_by_compensation(self):
+        w=self.world();w.spawn(dict(kind='predator',position=[0.,.3,-2.]))
+        w.sense(.02);next(iter(w.entities.values()))['position'][2]= -1.8
+        self.assertGreater(w.sense(.02)['figures'][0]['compensated_expansion_deg_s'],0)
+
+    def test_modality_ablation_preserves_other_inputs_and_never_drives_motor(self):
+        w=self.world();w.spawn(dict(kind='food',position=[-1.,.22,-1.]));raw=w.sense(.02)
+        raw['figures'][0]['angular_motion_deg_s']=30.
+        e=SensorimotorEncoder(self.brain,w.cfg['sensory']);all_current,_=e.encode(raw)
+        self.assertGreater(float(all_current[e.indices['small_object']].sum()),0)
+        self.assertGreater(float(all_current[e.indices['food_odor']].sum()),0)
+        e.params['vision_enabled']=False;chemical,_=e.encode(raw)
+        np.testing.assert_array_equal(chemical[e.indices['small_object']],0.)
+        np.testing.assert_array_equal(chemical[e.indices['food_odor']],all_current[e.indices['food_odor']])
+        e.params['vision_enabled']=True;e.params['chemical_enabled']=False;visual,_=e.encode(raw)
+        np.testing.assert_array_equal(visual[e.indices['food_odor']],0.)
+        np.testing.assert_array_equal(visual[e.indices['small_object']],all_current[e.indices['small_object']])
+        motor=self.brain.resolve(dict(types=['DNa02','DNp09','DNp01','DNp06']))
+        np.testing.assert_array_equal(all_current[motor],0.)
+
+    def test_signed_cooling_and_global_disable(self):
+        w=self.world();raw=w.sense(.02);e=SensorimotorEncoder(self.brain,w.cfg['sensory'])
+        for side,rate in [('L',1.),('R',-1.)]:raw['bilateral'][side]['temperature_change_c_s']=rate
+        current,_=e.encode(raw)
+        self.assertLess(float(current[e.sides['cold']['L']].mean()),0.)
+        self.assertGreater(float(current[e.sides['cold']['R']].mean()),0.)
+        e.params['thermal_enabled']=False;current,_=e.encode(raw)
+        for name in ['hot','cold']:np.testing.assert_array_equal(current[e.indices[name]],0.)
+        e.params['enabled']=False;current,terms=e.encode(raw)
+        np.testing.assert_array_equal(current,0.)
+        self.assertTrue(all(t['amplitude']==0 for t in terms))
+
+    def test_steering_uses_spikes_only_and_zero_warmup_bias(self):
+        b=self.brain;old=b.activity.copy();step=b.step_count
+        try:
+            r=SteeringReadout(b);b.activity[:]=0.;b.step_count=300
+            b.activity[r.sides['R']]=20.;r.observe(b,True)
+            for _ in range(300):r.observe(b,False)
+            self.assertEqual(r.decode(6.)['turn'],0.)
+            b.activity[r.sides['R']]=40.
+            for _ in range(300):r.observe(b,False)
+            self.assertGreater(r.decode(6.)['turn'],0.)
+            b.activity[r.sides['R']]=0.
+            for _ in range(1000):r.observe(b,False)
+            self.assertLess(r.decode(6.)['turn'],0.)
+        finally:b.activity[:]=old;b.step_count=step
+
+    def test_psi_override_adds_only_annotated_psi_output(self):
+        base,neurons,old=load_connectivity(CFG)
+        new,_,evidence=load_connectivity(CFG,psi_literature=True)
+        psi=np.flatnonzero(neurons.type.eq('PSI').to_numpy())
+        self.assertEqual(old['literature_sign_overrides'],[])
+        self.assertEqual(set(evidence['literature_sign_overrides'][0]['bodyIds']),{802401,903327})
+        changed=(new-base).tocoo()
+        self.assertGreater(changed.nnz,0);self.assertTrue(np.isin(changed.col,psi).all())
+        self.assertTrue(neurons.iloc[psi].consensus_nt.eq('unclear').all())
+
+    def test_steering_calibration_excludes_initial_transient(self):
+        b=self.brain;old=b.activity.copy();step=b.step_count
+        try:
+            r=SteeringReadout(b,warmup_ms=2000.)
+            b.activity[:]=0.;b.activity[r.sides['R']]=100.;b.step_count=500
+            r.observe(b,True);self.assertEqual(r.count,0)
+            b.activity[r.sides['R']]=10.;b.step_count=1500
+            r.observe(b,True);self.assertEqual(r.bias,10.)
+            b.activity[r.sides['R']]=20.;b.step_count=2000
+            r.observe(b,True);self.assertEqual(r.bias,15.)
+        finally:b.activity[:]=old;b.step_count=step
+
+    def test_evidence_can_repeat_without_mutating_shared_mapping(self):
+        w=self.world();e=SensorimotorEncoder(self.brain,w.cfg['sensory'])
+        self.assertEqual(e.evidence(),e.evidence())
+        old=BilateralEncoder(self.brain,w.cfg['sensory']).evidence()
+        self.assertNotIn('small_object',old)
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,5362 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10624821/",
+  "limitation": "Candidate groups selected by explicit type/hemibrainType annotations. Connection counts do not establish motor direction or effective neural dynamics.",
+  "groups": {
+    "warm_TRN": [
+      {
+        "bodyId": 70171,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 339719,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 514687,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 514688,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 555319,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 360278126,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 558712154,
+        "type": "TRN_VP2",
+        "hemibrainType": "TRN_VP2",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "cool_TRN": [
+      {
+        "bodyId": 17406,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 35634,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37147,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 108362,
+        "type": "TRN_VP3b",
+        "hemibrainType": "TRN_VP3b",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 121384,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 436612,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "L",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 133348431,
+        "type": "TRN_VP3a",
+        "hemibrainType": "TRN_VP3a",
+        "somaSide": null,
+        "rootSide": "R",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "warm_PN": [
+      {
+        "bodyId": 10736,
+        "type": "VP2_adPN",
+        "hemibrainType": "VP2_adPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 14419,
+        "type": "VP2_l2PN",
+        "hemibrainType": "VP2_l2PN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 16085,
+        "type": "VP2+VC5_l2PN",
+        "hemibrainType": "VP2+VC5_l2PN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18351,
+        "type": "VP2+Z_lvPN",
+        "hemibrainType": "VP2+Z_lvPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18814,
+        "type": "VP2+Z_lvPN",
+        "hemibrainType": "MZ_lvPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18959,
+        "type": "VP2+VC5_l2PN",
+        "hemibrainType": "VP2+VC5_l2PN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23162,
+        "type": "VP2+Z_lvPN",
+        "hemibrainType": "VP2+Z_lvPN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24407,
+        "type": "VP2+Z_lvPN",
+        "hemibrainType": "MZ_lvPN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37635,
+        "type": "VP2_l2PN",
+        "hemibrainType": "VP2_l2PN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 75897,
+        "type": "VP2+_adPN",
+        "hemibrainType": "VP2+_adPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 519843,
+        "type": "VP2+_adPN",
+        "hemibrainType": "VP2+_adPN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "cool_PN": [
+      {
+        "bodyId": 13571,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 14437,
+        "type": "VP3+VP1l_ivPN",
+        "hemibrainType": "VP3+VP1l_ivPN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 14666,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 17225,
+        "type": "VP3+_vPN",
+        "hemibrainType": "VP3+_vPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 17319,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 17722,
+        "type": "VP3+_vPN",
+        "hemibrainType": "VP3+_vPN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 19845,
+        "type": "VP3+VP1l_ivPN",
+        "hemibrainType": "VP3+VP1l_ivPN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 524990,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 555966,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 555967,
+        "type": "VP3+_l2PN",
+        "hemibrainType": "VP3+_l2PN",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "TLHON_I": [
+      {
+        "bodyId": 13936,
+        "type": "LHPV2g1",
+        "hemibrainType": "LHPV2g1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 16084,
+        "type": "LHPV2g1",
+        "hemibrainType": "LHPV2g1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 16264,
+        "type": "LHPV2g1",
+        "hemibrainType": "LHPV2g1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 47019,
+        "type": "LHPV2g1",
+        "hemibrainType": "LHPV2g1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "LHPV2a": [
+      {
+        "bodyId": 16706,
+        "type": "LHPV2a1_e",
+        "hemibrainType": "LHPV2a1_e",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 17105,
+        "type": "LHPV2a1_e",
+        "hemibrainType": "LHPV2a1_e",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 18044,
+        "type": "LHPV2a1_e",
+        "hemibrainType": "LHPV2a1_e",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 18937,
+        "type": "LHPV2a1_d",
+        "hemibrainType": "LHPV2a1_d",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 21263,
+        "type": "LHPV2a1_d",
+        "hemibrainType": "LHPV2a1_d",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 21822,
+        "type": "LHPV2a1_d",
+        "hemibrainType": "LHPV2a1_d",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 22338,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 22852,
+        "type": "LHPV2a1_d",
+        "hemibrainType": "LHPV2a1_d",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 22899,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 24064,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 24866,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 26338,
+        "type": "LHPV2a3",
+        "hemibrainType": "LHPV2a3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 32958,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 34677,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 35109,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 35477,
+        "type": "LHPV2a3",
+        "hemibrainType": "LHPV2a3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 38821,
+        "type": "LHPV2a3",
+        "hemibrainType": "LHPV2a3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 38998,
+        "type": "LHPV2a3",
+        "hemibrainType": "LHPV2a3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 40261,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 40435,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 42307,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 47595,
+        "type": "LHPV2a3",
+        "hemibrainType": "LHPV2a3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 49255,
+        "type": "LHPV2a2",
+        "hemibrainType": "LHPV2a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 52724,
+        "type": "LHPV2a5",
+        "hemibrainType": "LHPV2a5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 58161,
+        "type": "LHPV2a5",
+        "hemibrainType": "LHPV2a5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 59111,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 59502,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 59601,
+        "type": "LHPV2a5",
+        "hemibrainType": "LHPV2a5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 60784,
+        "type": "LHPV2a5",
+        "hemibrainType": "LHPV2a5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 67497,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 67799,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 68997,
+        "type": "LHPV2a1_c",
+        "hemibrainType": "LHPV2a1_c",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 69369,
+        "type": "LHPV2a5",
+        "hemibrainType": "LHPV2a5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 69837,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 73426,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 79193,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 137731,
+        "type": "LHPV2a2",
+        "hemibrainType": "LHPV2a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 514579,
+        "type": "LHPV2a1_a",
+        "hemibrainType": "LHPV2a1_a",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 514696,
+        "type": "LHPV2a1_d",
+        "hemibrainType": "LHPV2a1_d",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 542947,
+        "type": "LHPV2a4",
+        "hemibrainType": "LHPV2a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      }
+    ],
+    "LHAD1": [
+      {
+        "bodyId": 10147,
+        "type": "LHAD1g1",
+        "hemibrainType": "LHAD1g1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 10297,
+        "type": "LHAD1g1",
+        "hemibrainType": "LHAD1g1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 13435,
+        "type": "LHAD1f2",
+        "hemibrainType": "LHAD1f2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 13556,
+        "type": "LHAD1f2",
+        "hemibrainType": "LHAD1f2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 15795,
+        "type": "LHAD1h1",
+        "hemibrainType": "LHAD1h1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 16054,
+        "type": "LHAD1c2b",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 16526,
+        "type": "LHAD1h1",
+        "hemibrainType": "LHAD1h1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "gaba"
+      },
+      {
+        "bodyId": 18062,
+        "type": "LHAD1k1",
+        "hemibrainType": "LHAD1k1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18374,
+        "type": "LHAD1k1",
+        "hemibrainType": "LHAD1k1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21247,
+        "type": "LHAD1j1",
+        "hemibrainType": "LHAD1j1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25686,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25719,
+        "type": "LHAD1b2_d",
+        "hemibrainType": "LHAD1b2_d",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26039,
+        "type": "LHAD1b2_d",
+        "hemibrainType": "LHAD1b2_d",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27935,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28488,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 29075,
+        "type": "LHAD1a4_a",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29294,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31551,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 31639,
+        "type": "LHAD1f3_a",
+        "hemibrainType": "LHAD1f3_a",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 32115,
+        "type": "LHAD1f3_b",
+        "hemibrainType": "LHAD1f3_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 33560,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 33699,
+        "type": "LHAD1a4_a",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34414,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 34724,
+        "type": "LHAD1a4_a",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 35373,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36031,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36262,
+        "type": "SLP046",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36706,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36825,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37034,
+        "type": "LHAD1f3_b",
+        "hemibrainType": "LHAD1f3_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 37264,
+        "type": "LHAD1a3",
+        "hemibrainType": "LHAD1a3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37354,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37745,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37961,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 39085,
+        "type": "LHAD1f3_a",
+        "hemibrainType": "LHAD1f3_a",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 39196,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 39400,
+        "type": "LHAD1f3_b",
+        "hemibrainType": "LHAD1f3_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 39674,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 40740,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 41526,
+        "type": "CB1419",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 41729,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 42230,
+        "type": "LHAD1b3",
+        "hemibrainType": "LHAD1b3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 42701,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 42995,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 43500,
+        "type": "LHAD1b3",
+        "hemibrainType": "LHAD1b3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44154,
+        "type": "LHAD1a3",
+        "hemibrainType": "LHAD1a3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44493,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44899,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44918,
+        "type": "LHAD1f3_a",
+        "hemibrainType": "LHAD1f3_a",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 45197,
+        "type": "CB1419",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 45811,
+        "type": "LHAD1f5",
+        "hemibrainType": "LHAD1f5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 46596,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 46693,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48298,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48452,
+        "type": "LHAD1b3",
+        "hemibrainType": "LHAD1b3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48657,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49038,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49551,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 50232,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 50320,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 51129,
+        "type": "LHAD1j1",
+        "hemibrainType": "LHAD1j1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 52533,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 53108,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 53719,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 53996,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 55613,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 55842,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 55874,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 56464,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 56497,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 56889,
+        "type": "SLP046",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 57863,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 57892,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 58346,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 59212,
+        "type": "LHAD1a4_b",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 59733,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 62306,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 63166,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 63592,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 64703,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 64727,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 65396,
+        "type": "LHAD1d2",
+        "hemibrainType": "LHAD1d2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 66261,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 66756,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 67173,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 67181,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 67945,
+        "type": "LHAD1a4_b",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 68341,
+        "type": "LHAD1d2",
+        "hemibrainType": "LHAD1d2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 68479,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 69762,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 69780,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 70867,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 71197,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 71756,
+        "type": "LHAD1c2b",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 73953,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 74219,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 74901,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 75165,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 75233,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 75333,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 75464,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 76228,
+        "type": "LHAD1a4_a",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 77313,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 77513,
+        "type": "LHAD1c3",
+        "hemibrainType": "LHAD1c3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 77767,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 77956,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 78369,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 78539,
+        "type": "LHAD1a4_b",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 78592,
+        "type": "LHAD1d2",
+        "hemibrainType": "LHAD1d2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 79670,
+        "type": "LHAD1b4",
+        "hemibrainType": "LHAD1b4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 79723,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 80338,
+        "type": "LHAD1a4_b",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 84407,
+        "type": "LHAD1b2_d",
+        "hemibrainType": "LHAD1b2_d",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 84557,
+        "type": "LHAD1c3",
+        "hemibrainType": "LHAD1c3",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 92073,
+        "type": "LHAD1b4",
+        "hemibrainType": "LHAD1b4",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 102701,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 103817,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 103824,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 105232,
+        "type": "LHAD1b4",
+        "hemibrainType": "LHAD1b4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 105616,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 105827,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 106252,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 108894,
+        "type": "CB1419",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 110199,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 110422,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 116780,
+        "type": "LHAD1c3",
+        "hemibrainType": "LHAD1c3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 117086,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 124509,
+        "type": "LHAD1f5",
+        "hemibrainType": "LHAD1f5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 125027,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 126350,
+        "type": "CB1419",
+        "hemibrainType": "LHAD1i2_a,SLP046",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 127148,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 128461,
+        "type": "LHAD1b5",
+        "hemibrainType": "LHAD1b5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 128809,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 131136,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 134843,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 137652,
+        "type": "LHAD1c3",
+        "hemibrainType": "LHAD1c3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 142590,
+        "type": "LHAD1d2",
+        "hemibrainType": "LHAD1d2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 150566,
+        "type": "LHAD1b4",
+        "hemibrainType": "LHAD1b4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 160916,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 168147,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 177696,
+        "type": "LHAD1f4",
+        "hemibrainType": "LHAD1f4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 198119,
+        "type": "LHAD1a4_b",
+        "hemibrainType": "LHAD1a4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 312460,
+        "type": "LHAD1b4",
+        "hemibrainType": "LHAD1b4",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 513841,
+        "type": "LHAD1f3_b",
+        "hemibrainType": "LHAD1f3_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 516095,
+        "type": "LHAD1a1",
+        "hemibrainType": "LHAD1a1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 516824,
+        "type": "LHAD1f3_b",
+        "hemibrainType": "LHAD1f3_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 517163,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 517804,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 519269,
+        "type": "LHAD1b3",
+        "hemibrainType": "LHAD1b3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 519699,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 521363,
+        "type": "LHAD1a2",
+        "hemibrainType": "LHAD1a2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 521546,
+        "type": "LHAD1b2_d",
+        "hemibrainType": "LHAD1b2_d",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 529666,
+        "type": "LHAD1i2_b",
+        "hemibrainType": "LHAD1i2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 529668,
+        "type": "LHAD1f5",
+        "hemibrainType": "LHAD1f5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 532969,
+        "type": "LHAD1f3_a",
+        "hemibrainType": "LHAD1f3_a",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 533735,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 533736,
+        "type": "LHAD1c2",
+        "hemibrainType": "LHAD1c2",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 535316,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 535926,
+        "type": "LHAD1f1",
+        "hemibrainType": "LHAD1f1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 537583,
+        "type": "LHAD1c3",
+        "hemibrainType": "LHAD1c3",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 537821,
+        "type": "LHAD1f5",
+        "hemibrainType": "LHAD1f5",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 539786,
+        "type": "LHAD1b2_d",
+        "hemibrainType": "LHAD1b2_d",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 539787,
+        "type": "LHAD1b2",
+        "hemibrainType": "LHAD1b2",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 543073,
+        "type": "LHAD1b2_b",
+        "hemibrainType": "LHAD1b2_b",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 545550,
+        "type": "LHAD1d1",
+        "hemibrainType": "LHAD1d1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 557287,
+        "type": "LHAD1i1",
+        "hemibrainType": "LHAD1i1",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 943522,
+        "type": "LHAD1b1_b",
+        "hemibrainType": "LHAD1b1_b",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "PVLP076": [
+      {
+        "bodyId": 10867,
+        "type": "PVLP076",
+        "hemibrainType": "PVLP076",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 555383,
+        "type": "PVLP076",
+        "hemibrainType": "PVLP076",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "AVLP053": [
+      {
+        "bodyId": 12063,
+        "type": "AVLP053",
+        "hemibrainType": "AVLP053",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 558793,
+        "type": "AVLP053",
+        "hemibrainType": "AVLP053",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "DNp06": [
+      {
+        "bodyId": 10228,
+        "type": "DNp06",
+        "hemibrainType": "DNp06",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 10584,
+        "type": "DNp06",
+        "hemibrainType": "DNp06",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "GF": [
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "hemibrainType": "Giant Fiber",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "hemibrainType": "Giant Fiber",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "LC10a": [
+      {
+        "bodyId": 10573,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 12130,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 12424,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 12458,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 13697,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 13974,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 14980,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 15340,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 15471,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 15508,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 16775,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18078,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18518,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 18917,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19120,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19350,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19537,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19540,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19659,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19667,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 19703,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 20112,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 20378,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 20933,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21065,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21173,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21199,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21238,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21426,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21632,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21744,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21835,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21983,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 21984,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22070,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22148,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22184,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22248,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22259,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22339,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22392,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22397,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22505,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22510,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22750,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22783,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22831,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22959,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22989,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 22997,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23001,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23002,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23128,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23148,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23154,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23210,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23328,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23377,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23421,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23463,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23499,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23599,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23677,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23686,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23719,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23741,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23830,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23852,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23867,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23868,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23890,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23930,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 23989,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24035,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24071,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24164,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24208,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24211,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24283,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24482,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24492,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24505,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24545,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24592,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24719,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24742,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24769,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24784,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24854,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 24909,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25003,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25067,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25088,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25167,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25198,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25202,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25296,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25304,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25369,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25394,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25400,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25412,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25446,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25450,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25472,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25641,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25711,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25817,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 25952,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26142,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26373,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26380,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26450,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26560,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26740,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26788,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26811,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26963,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 26976,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27067,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27300,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27334,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27468,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27579,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27689,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27704,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27709,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27915,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 27967,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28082,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28143,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28204,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28259,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28390,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28533,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28543,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28599,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28654,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28823,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 28904,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29092,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29186,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29359,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29686,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29744,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29803,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 29979,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 30025,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 30499,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 30707,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 30993,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31033,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31250,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31623,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31634,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31801,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31878,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31941,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 31976,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32090,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32111,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32153,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32238,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32286,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32336,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32493,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32614,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32657,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32767,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 32946,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 33048,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 33177,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 33219,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34351,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34643,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34756,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34774,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 34838,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 35250,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36152,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36286,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36421,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36779,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 36783,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37042,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37316,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37871,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37896,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 37958,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 38020,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 38301,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 38374,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 38810,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 39108,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 40220,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 40815,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 41089,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 41240,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 42379,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 42452,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 43865,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 43910,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44299,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44656,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44666,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 44856,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 45300,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 45579,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 46034,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 47206,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 47400,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48198,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48716,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 48790,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49244,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49360,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49424,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49773,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 49807,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 50564,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 51397,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 51462,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 51720,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 52329,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 52430,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 52783,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 53572,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 53585,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 54421,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 54562,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 54638,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 56376,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 57264,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 57894,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 58449,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 60028,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 60207,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 61545,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 62280,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 64964,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 66361,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 68463,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 68728,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 69463,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 69870,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 70408,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 73715,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 74072,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 76174,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 76185,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 82439,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 84104,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 84470,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 85707,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 86507,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 87750,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 89301,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 100368,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 140676,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 144957,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 183483,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 512978,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 514646,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 518681,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 519168,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 524616,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 525482,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 527684,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 528991,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 529578,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 532298,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 532653,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 536318,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 557990,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 575597,
+        "type": "LC10a",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "DNa02": [
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "hemibrainType": "DNa02",
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "hemibrainType": "DNa02",
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "PSI": [
+      {
+        "bodyId": 802401,
+        "type": "PSI",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 903327,
+        "type": "PSI",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      }
+    ],
+    "DLM": [
+      {
+        "bodyId": 800718,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 800890,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 801295,
+        "type": "DLMn a, b",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 801895,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 801970,
+        "type": "DLMn a, b",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 801998,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 802544,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 803013,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 803048,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      },
+      {
+        "bodyId": 1050014552,
+        "type": "DLMn c-f",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "unclear"
+      }
+    ],
+    "TTM": [
+      {
+        "bodyId": 800146,
+        "type": "TTMn",
+        "hemibrainType": null,
+        "somaSide": "R",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      },
+      {
+        "bodyId": 804642,
+        "type": "TTMn",
+        "hemibrainType": null,
+        "somaSide": "L",
+        "rootSide": null,
+        "consensus_nt": "glutamate"
+      }
+    ]
+  },
+  "graphs": {
+    "pruned": {
+      "connections": 6474533,
+      "edges": [
+        {
+          "source": "warm_TRN",
+          "target": "warm_TRN",
+          "synapses": 125,
+          "positive_synapses": 125.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_TRN",
+          "target": "warm_PN",
+          "synapses": 2866,
+          "positive_synapses": 2866.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_TRN",
+          "target": "cool_PN",
+          "synapses": 16,
+          "positive_synapses": 16.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_TRN",
+          "target": "cool_TRN",
+          "synapses": 1399,
+          "positive_synapses": 1399.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_TRN",
+          "target": "cool_PN",
+          "synapses": 9114,
+          "positive_synapses": 9114.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "warm_TRN",
+          "synapses": 9,
+          "positive_synapses": 9.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "warm_PN",
+          "synapses": 499,
+          "positive_synapses": 499.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "cool_PN",
+          "synapses": 19,
+          "positive_synapses": 19.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "TLHON_I",
+          "synapses": 109,
+          "positive_synapses": 109.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "LHPV2a",
+          "synapses": 246,
+          "positive_synapses": 246.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "LHAD1",
+          "synapses": 21,
+          "positive_synapses": 21.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "cool_TRN",
+          "synapses": 32,
+          "positive_synapses": 32.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "warm_PN",
+          "synapses": 183,
+          "positive_synapses": 55.0,
+          "negative_synapses": 128.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "cool_PN",
+          "synapses": 1205,
+          "positive_synapses": 1205.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "LHPV2a",
+          "synapses": 73,
+          "positive_synapses": 73.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "LHAD1",
+          "synapses": 5,
+          "positive_synapses": 5.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "TLHON_I",
+          "synapses": 200,
+          "positive_synapses": 200.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "LHPV2a",
+          "synapses": 213,
+          "positive_synapses": 213.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "LHAD1",
+          "synapses": 303,
+          "positive_synapses": 303.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "PVLP076",
+          "synapses": 299,
+          "positive_synapses": 299.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "AVLP053",
+          "synapses": 229,
+          "positive_synapses": 229.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "warm_PN",
+          "synapses": 171,
+          "positive_synapses": 0.0,
+          "negative_synapses": 171.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "cool_PN",
+          "synapses": 76,
+          "positive_synapses": 0.0,
+          "negative_synapses": 76.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "TLHON_I",
+          "synapses": 389,
+          "positive_synapses": 0.0,
+          "negative_synapses": 389.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "LHPV2a",
+          "synapses": 338,
+          "positive_synapses": 0.0,
+          "negative_synapses": 338.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "LHAD1",
+          "synapses": 260,
+          "positive_synapses": 0.0,
+          "negative_synapses": 260.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "TLHON_I",
+          "synapses": 10,
+          "positive_synapses": 10.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "LHAD1",
+          "synapses": 1642,
+          "positive_synapses": 1154.0,
+          "negative_synapses": 488.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "PVLP076",
+          "synapses": 6,
+          "positive_synapses": 0.0,
+          "negative_synapses": 6.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "DNp06",
+          "synapses": 902,
+          "positive_synapses": 0.0,
+          "negative_synapses": 902.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "GF",
+          "synapses": 349,
+          "positive_synapses": 0.0,
+          "negative_synapses": 349.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "LHAD1",
+          "synapses": 11,
+          "positive_synapses": 11.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "DNp06",
+          "synapses": 560,
+          "positive_synapses": 560.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "GF",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "LHPV2a",
+          "synapses": 16,
+          "positive_synapses": 16.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "LHAD1",
+          "synapses": 366,
+          "positive_synapses": 366.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "GF",
+          "synapses": 9,
+          "positive_synapses": 9.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "PSI",
+          "synapses": 75,
+          "positive_synapses": 75.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "TTM",
+          "synapses": 53,
+          "positive_synapses": 53.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "warm_PN",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "LHAD1",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "DNp06",
+          "synapses": 12,
+          "positive_synapses": 12.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "GF",
+          "synapses": 2,
+          "positive_synapses": 2.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "PSI",
+          "synapses": 16,
+          "positive_synapses": 16.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "TTM",
+          "synapses": 90,
+          "positive_synapses": 90.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LC10a",
+          "target": "LC10a",
+          "synapses": 16722,
+          "positive_synapses": 16722.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PSI",
+          "target": "GF",
+          "synapses": 95,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 95.0
+        },
+        {
+          "source": "PSI",
+          "target": "PSI",
+          "synapses": 22,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 22.0
+        },
+        {
+          "source": "PSI",
+          "target": "DLM",
+          "synapses": 449,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 449.0
+        },
+        {
+          "source": "DLM",
+          "target": "PSI",
+          "synapses": 12,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 12.0
+        },
+        {
+          "source": "DLM",
+          "target": "DLM",
+          "synapses": 65,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 65.0
+        },
+        {
+          "source": "TTM",
+          "target": "GF",
+          "synapses": 3,
+          "positive_synapses": 0.0,
+          "negative_synapses": 3.0,
+          "zero_sign_synapses": 0.0
+        }
+      ]
+    },
+    "restored": {
+      "connections": 25563197,
+      "edges": [
+        {
+          "source": "warm_TRN",
+          "target": "warm_TRN",
+          "synapses": 133,
+          "positive_synapses": 133.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_TRN",
+          "target": "cool_TRN",
+          "synapses": 1,
+          "positive_synapses": 1.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_TRN",
+          "target": "warm_PN",
+          "synapses": 2872,
+          "positive_synapses": 2872.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_TRN",
+          "target": "cool_PN",
+          "synapses": 19,
+          "positive_synapses": 19.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_TRN",
+          "target": "cool_TRN",
+          "synapses": 1399,
+          "positive_synapses": 1399.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_TRN",
+          "target": "cool_PN",
+          "synapses": 9124,
+          "positive_synapses": 9124.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "warm_TRN",
+          "synapses": 29,
+          "positive_synapses": 29.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "warm_PN",
+          "synapses": 553,
+          "positive_synapses": 553.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "cool_PN",
+          "synapses": 37,
+          "positive_synapses": 37.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "TLHON_I",
+          "synapses": 109,
+          "positive_synapses": 109.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "LHPV2a",
+          "synapses": 323,
+          "positive_synapses": 323.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "LHAD1",
+          "synapses": 34,
+          "positive_synapses": 34.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "warm_PN",
+          "target": "PVLP076",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "cool_TRN",
+          "synapses": 59,
+          "positive_synapses": 58.0,
+          "negative_synapses": 1.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "warm_PN",
+          "synapses": 201,
+          "positive_synapses": 73.0,
+          "negative_synapses": 128.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "cool_PN",
+          "synapses": 1247,
+          "positive_synapses": 1242.0,
+          "negative_synapses": 5.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "LHPV2a",
+          "synapses": 137,
+          "positive_synapses": 137.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "LHAD1",
+          "synapses": 24,
+          "positive_synapses": 24.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "cool_PN",
+          "target": "PVLP076",
+          "synapses": 2,
+          "positive_synapses": 2.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "warm_PN",
+          "synapses": 2,
+          "positive_synapses": 2.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "TLHON_I",
+          "synapses": 200,
+          "positive_synapses": 200.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "LHPV2a",
+          "synapses": 247,
+          "positive_synapses": 247.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "LHAD1",
+          "synapses": 314,
+          "positive_synapses": 314.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "PVLP076",
+          "synapses": 299,
+          "positive_synapses": 299.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "TLHON_I",
+          "target": "AVLP053",
+          "synapses": 229,
+          "positive_synapses": 229.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "warm_PN",
+          "synapses": 224,
+          "positive_synapses": 0.0,
+          "negative_synapses": 224.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "cool_PN",
+          "synapses": 115,
+          "positive_synapses": 0.0,
+          "negative_synapses": 115.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "TLHON_I",
+          "synapses": 424,
+          "positive_synapses": 0.0,
+          "negative_synapses": 424.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "LHPV2a",
+          "synapses": 705,
+          "positive_synapses": 0.0,
+          "negative_synapses": 705.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "LHAD1",
+          "synapses": 720,
+          "positive_synapses": 0.0,
+          "negative_synapses": 720.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHPV2a",
+          "target": "PVLP076",
+          "synapses": 4,
+          "positive_synapses": 0.0,
+          "negative_synapses": 4.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "warm_PN",
+          "synapses": 5,
+          "positive_synapses": 3.0,
+          "negative_synapses": 2.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "TLHON_I",
+          "synapses": 31,
+          "positive_synapses": 25.0,
+          "negative_synapses": 6.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "LHPV2a",
+          "synapses": 74,
+          "positive_synapses": 50.0,
+          "negative_synapses": 24.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "LHAD1",
+          "synapses": 3978,
+          "positive_synapses": 2980.0,
+          "negative_synapses": 998.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "PVLP076",
+          "synapses": 8,
+          "positive_synapses": 0.0,
+          "negative_synapses": 8.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "AVLP053",
+          "synapses": 2,
+          "positive_synapses": 0.0,
+          "negative_synapses": 2.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "DNp06",
+          "synapses": 902,
+          "positive_synapses": 0.0,
+          "negative_synapses": 902.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LHAD1",
+          "target": "GF",
+          "synapses": 349,
+          "positive_synapses": 0.0,
+          "negative_synapses": 349.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "cool_PN",
+          "synapses": 1,
+          "positive_synapses": 1.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "TLHON_I",
+          "synapses": 8,
+          "positive_synapses": 8.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "LHAD1",
+          "synapses": 13,
+          "positive_synapses": 13.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "DNp06",
+          "synapses": 560,
+          "positive_synapses": 560.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PVLP076",
+          "target": "GF",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "TLHON_I",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "LHPV2a",
+          "synapses": 22,
+          "positive_synapses": 22.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "LHAD1",
+          "synapses": 372,
+          "positive_synapses": 372.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "AVLP053",
+          "target": "PVLP076",
+          "synapses": 2,
+          "positive_synapses": 2.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "LHAD1",
+          "synapses": 4,
+          "positive_synapses": 4.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "PVLP076",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "AVLP053",
+          "synapses": 4,
+          "positive_synapses": 4.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "GF",
+          "synapses": 9,
+          "positive_synapses": 9.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "PSI",
+          "synapses": 83,
+          "positive_synapses": 83.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "DNp06",
+          "target": "TTM",
+          "synapses": 53,
+          "positive_synapses": 53.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "warm_PN",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "LHAD1",
+          "synapses": 3,
+          "positive_synapses": 3.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "DNp06",
+          "synapses": 12,
+          "positive_synapses": 12.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "GF",
+          "synapses": 2,
+          "positive_synapses": 2.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "PSI",
+          "synapses": 16,
+          "positive_synapses": 16.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "GF",
+          "target": "TTM",
+          "synapses": 90,
+          "positive_synapses": 90.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "LC10a",
+          "target": "LC10a",
+          "synapses": 25244,
+          "positive_synapses": 25244.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 0.0
+        },
+        {
+          "source": "PSI",
+          "target": "GF",
+          "synapses": 95,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 95.0
+        },
+        {
+          "source": "PSI",
+          "target": "PSI",
+          "synapses": 22,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 22.0
+        },
+        {
+          "source": "PSI",
+          "target": "DLM",
+          "synapses": 449,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 449.0
+        },
+        {
+          "source": "DLM",
+          "target": "PSI",
+          "synapses": 28,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 28.0
+        },
+        {
+          "source": "DLM",
+          "target": "DLM",
+          "synapses": 135,
+          "positive_synapses": 0.0,
+          "negative_synapses": 0.0,
+          "zero_sign_synapses": 135.0
+        },
+        {
+          "source": "TTM",
+          "target": "GF",
+          "synapses": 3,
+          "positive_synapses": 0.0,
+          "negative_synapses": 3.0,
+          "zero_sign_synapses": 0.0
+        }
+      ]
+    }
+  }
+}

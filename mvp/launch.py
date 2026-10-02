@@ -20,11 +20,13 @@ def main():
     p.add_argument('--preset',choices=REMASTER_PRESETS);p.add_argument('--world-seed',type=int,default=20260914)
     p.add_argument('--legacy',action='store_true',help='Original English v0.1 console and reference backend')
     p.add_argument('--backend',choices=['fast','reference'],default='fast')
-    p.add_argument('--model',choices=['counts','frozen'],default='counts',help='Explicit behavioral LIF hypothesis, or preserved v0.1 equations')
-    p.add_argument('--tonic-current',type=float,default=1.5,help='Uniform assumed arousal current in count model (0..2)')
+    p.add_argument('--model',choices=['counts','sensorimotor','frozen'],default='sensorimotor',help='Explicit behavioral LIF hypotheses, or preserved v0.1 equations')
+    p.add_argument('--tonic-current',type=float,default=1.5,help='Assumed arousal current (0..2); sensorimotor KCs capped at 0.85')
     p.add_argument('--restore-weak',action='store_true',help='Use separately restored threshold-1 connectivity; prepare with behavior.prepare')
     p.add_argument('--no-sensory',action='store_true');p.add_argument('--no-gf',action='store_true')
+    p.add_argument('--no-vision',action='store_true');p.add_argument('--no-chemical',action='store_true');p.add_argument('--no-thermal',action='store_true')
     p.add_argument('--brain-frame-ms',type=int,choices=[10,20,50],default=20)
+    p.add_argument('--warmup-ms',type=int,choices=[500,2000],help='Sensorimotor unstimulated initialization; 500 reproduces the early calibration')
     p.add_argument('--brain-seed',type=int,default=20260913);p.add_argument('--duration',type=float,default=0)
     p.add_argument('--windowed',action='store_true');p.add_argument('--headless',action='store_true');p.add_argument('--qa-controls',action='store_true')
     p.add_argument('--qa-neural',action='store_true',help='Exercise explicit neural-test controls and reset')
@@ -33,13 +35,15 @@ def main():
     a=p.parse_args()
     a.preset=a.preset or 'CONTROL'
     if not 0<=a.tonic_current<=2:p.error('Tonic current must be 0..2')
-    if not a.legacy and a.model=='counts' and a.backend=='reference':p.error('Count hypothesis uses JIT; reference backend requires --model frozen')
+    if not a.legacy and a.model!='frozen' and a.backend=='reference':p.error('Count hypothesis uses JIT; reference backend requires --model frozen')
+    if (a.no_vision or a.no_chemical or a.no_thermal) and (a.legacy or a.model!='sensorimotor'):p.error('Individual modality ablations require --model sensorimotor')
+    if a.warmup_ms is not None and (a.legacy or a.model!='sensorimotor'):p.error('Warmup override requires sensorimotor')
     if a.restore_weak and not (ROOT/'data/behavior/counts.npz').exists():p.error('Restored connectivity missing: python -m behavior.prepare')
     if not Path(a.godot).exists():p.error('Godot missing: run mvp/setup_godot.py or provide --godot')
     if not 0<=a.brain_seed<=2147483647 or not 0<=a.world_seed<=2147483647:p.error('Seeds must be 0..2147483647')
     folder=Path(a.logdir).resolve() if a.logdir else ROOT/'mvp/logs'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
     folder.mkdir(parents=True,exist_ok=False)
-    eco=configure(a.preset,a.world_seed,a.duration) if a.legacy else configure_remaster(a.preset,a.world_seed,a.duration,behavior=a.model=='counts')
+    eco=configure(a.preset,a.world_seed,a.duration) if a.legacy else configure_remaster(a.preset,a.world_seed,a.duration,behavior=a.model!='frozen')
     with socket.socket() as reservation:
         reservation.bind(('127.0.0.1',0))
         port=reservation.getsockname()[1]
@@ -47,7 +51,10 @@ def main():
     body['debug']['enabled']=False;body['arena']['half_width']=NEW_HALF
     body['backend']='reference' if a.legacy else a.backend
     body.update(scientific_model='frozen' if a.legacy else a.model,tonic_current=a.tonic_current,restore_weak=a.restore_weak)
+    body['sensorimotor_warmup_ms']=a.warmup_ms if a.warmup_ms is not None else 2000
+    if not a.legacy and a.model=='sensorimotor':body['warmup_ms']=body['sensorimotor_warmup_ms']
     body['gf_ablated']=a.no_gf;eco['sensory']['enabled']=not a.no_sensory
+    eco['sensory'].update(vision_enabled=not a.no_vision,chemical_enabled=not a.no_chemical,thermal_enabled=not a.no_thermal)
     if not a.legacy:body['packet_neural_ms']=a.brain_frame_ms
     for name,value in [('ecology_runtime_config.json',eco),('body_runtime_config.json',body),('world-area.json',area_evidence())]:
         (folder/name).write_text(json.dumps(value,indent=2))

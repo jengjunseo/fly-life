@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PARAMETERS = dict(recurrent_gain=.002, baseline_current=1.5,
                   baseline_heterogeneity=0., noise_std=.1)
 
-def load_connectivity(coreconfig, unpruned=False):
+def load_connectivity(coreconfig, unpruned=False, psi_literature=False):
     # Use Brain.load for verified identity alignment and source artifact integrity.
     reference = FastBrain.load(ROOT/'data/runtime', coreconfig)
     directory = ROOT/('data/behavior' if unpruned else 'data/runtime')
@@ -36,12 +36,22 @@ def load_connectivity(coreconfig, unpruned=False):
     if counts.shape!=(reference.n,reference.n) or not np.isfinite(counts.data).all() or np.any(counts.data<=0):
         raise ValueError('Count artifact has invalid dimensions or synapse counts')
     signs=reference.neurons.consensus_nt.map(coreconfig['sign_policy']['signs']).fillna(0).to_numpy(np.float32)
+    overrides=[]
+    if psi_literature:
+        idx=reference.resolve(dict(types=['PSI']))
+        if len(idx)!=2 or not reference.neurons.iloc[idx].consensus_nt.eq('unclear').all():
+            raise ValueError('PSI literature override requires the two original unclear identities')
+        signs[idx]=1.
+        overrides=[dict(type='PSI',bodyIds=reference.neurons.iloc[idx].bodyId.tolist(),
+            dataset_consensus='unclear',assumed_transmitter='acetylcholine',
+            source='https://pubmed.ncbi.nlm.nih.gov/21304452/',
+            limitation='Literature-supported assignment; dataset annotations remain untouched')]
     weights=counts.astype(np.float32).multiply(signs[None,:]).tocsr()
     weights.eliminate_zeros();weights.sort_indices()
     return weights, reference.neurons, dict(counts_sha256=h.hexdigest(),
         neurons_sha256=metadata['artifact_sha256']['neurons.parquet'],
         restored_weak_connections=unpruned, retained_connections=int(counts.nnz),
-        effective_connections=int(weights.nnz), synapses=int(counts.sum()))
+        effective_connections=int(weights.nnz), synapses=int(counts.sum()),literature_sign_overrides=overrides)
 
 class CountBrain(FastBrain):
     def __init__(self,*args,**kwargs):

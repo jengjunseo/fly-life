@@ -1,0 +1,67 @@
+{
+  "scientific_model": "sensorimotor",
+  "parameters": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 0.002,
+    "baseline_current": 1.5,
+    "baseline_heterogeneity": 0.0,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "evidence": {
+    "counts_sha256": "dc575c76b4114c00664eb5643509532538221c0ab1acd71326a0c1166b182751",
+    "neurons_sha256": "f470a0b2934a1f3491d674f59c8a88e9a00fe6ca93643f67a8449d5f9a4c2084",
+    "restored_weak_connections": false,
+    "retained_connections": 6474533,
+    "effective_connections": 6327607,
+    "synapses": 90177929,
+    "literature_sign_overrides": [
+      {
+        "type": "PSI",
+        "bodyIds": [
+          802401,
+          903327
+        ],
+        "dataset_consensus": "unclear",
+        "assumed_transmitter": "acetylcholine",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/21304452/",
+        "limitation": "Literature-supported assignment; dataset annotations remain untouched"
+      }
+    ],
+    "excitability_profile": {
+      "kenyon_cell_tonic": 0.85,
+      "other_cells_tonic": 1.5,
+      "limitation": "Sparse KC baseline hypothesis; cell dynamics are not experimentally fitted"
+    }
+  },
+  "assumptions": [
+    "No world stimulus label, target position or desired action enters the motor decoder",
+    "Tonic drive is an assumed arousal condition, not natural spontaneous activity",
+    "Count-weighted spike-reset LIF is not equivalent to v0.1 or an exact Shiu replication",
+    "Hemispheric vision and local air cooling are explicit experimental approximations",
+    "GF readout drives a primitive jump, not a complete flight controller",
+    "KC tonic capped at 0.85; other cells use the selected tonic setting",
+    "LC10a input is generic object motion, not food identity or reconstructed retinotopy",
+    "Looming uses geometric self-motion compensation; LC10a retains retinal motion",
+    "Signed thermal current approximates response polarity; ionic scales are assumed",
+    "DNa02-only readout: 0.3 rad/s/Hz, 150 ms filter, unstimulated warmup bias",
+    "GF takeoff: 4.2 vertical and 3 forward units/s, 9.8 gravity, 0.8/s drag; actuator assumptions",
+    "PSI acetylcholine assignment is literature-supported, not changed dataset annotation"
+  ],
+  "source_sha256": {
+    "remaster/runtime.py": "d66ddeb05b2967d25fcfb54a6afae1fffabf767fd380ea74e097f8660f9d35c2",
+    "behavior/model.py": "3c26254ca83a862b634a991deecdb9ff22b9d7cff6ec80a680d6fae94e6795c8",
+    "behavior/sensorimotor.py": "3a6548335c1e434cba5ccc4b69923665feec531c96a450aa49cab719ddf91c02",
+    "behavior/sensory.py": "84adbad1a3e569104ef6a4c200f1082947a0f5a20f4195d46a1b0484149d37b4",
+    "behavior/readout.py": "4dee7a43303138e164d72ce97769da477ed14fa5fbf4a39adee507c8b91b5c87",
+    "body/remaster/main.gd": "33eefc3699ef8855a68e1349c00ea8859435deba38abbf0c1fbb53e40d7e6979",
+    "config.json": "5c19f8803ea63d6975697d3eeb16c54446e96a398614e3ced0541319d78c0186",
+    "body/body_config.json": "954952a414f34fb16127660e0f236b83d901c0ae7d8559a6f6b29308e72c0131"
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "dataset": "male-cns:v1.0",
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "cpu": "AMD Ryzen 3 4100 4-Core Processor",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "total_ram_bytes": 16957935616,
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.5",
+      "pyarrow": "25.0.1",
+      "psutil": "7.2.2"
+    },
+    "gpu_compute_used": false,
+    "display_adapters": [
+      "Radeon RX 570 Series",
+      "spacedesk Graphics Adapter"
+    ]
+  },
+  "runtime_pid": 10068,
+  "parent_pid": 11236,
+  "brain_config": {
+    "dataset": "male-cns:v1.0",
+    "preprocessing": {
+      "statuses": [
+        "Traced"
+      ],
+      "weight_threshold": 5,
+      "protected_groups": [
+        "looming",
+        "escape",
+        "steering",
+        "courtship",
+        "giant_fiber"
+      ]
+    },
+    "groups": {
+      "looming": {
+        "types": [
+          "LC4",
+          "LPLC2"
+        ]
+      },
+      "LC4": {
+        "types": [
+          "LC4"
+        ]
+      },
+      "LPLC2": {
+        "types": [
+          "LPLC2"
+        ]
+      },
+      "escape": {
+        "types": [
+          "MDN"
+        ]
+      },
+      "steering": {
+        "types": [
+          "DNa01",
+          "DNa02"
+        ]
+      },
+      "courtship": {
+        "type_regex": "^pC1"
+      },
+      "giant_fiber": {
+        "types": [
+          "DNp01"
+        ]
+      },
+      "food": {
+        "bodyIds": []
+      },
+      "temperature": {
+        "bodyIds": []
+      },
+      "pain": {
+        "bodyIds": []
+      }
+    },
+    "sign_policy": {
+      "field": "consensus_nt",
+      "signs": {
+        "acetylcholine": 1,
+        "gaba": -1,
+        "glutamate": -1,
+        "histamine": -1,
+        "dopamine": 0,
+        "octopamine": 0,
+        "serotonin": 0,
+        "unclear": 0
+      },
+      "unknown_sign": 0,
+      "normalization": "incoming absolute effective synapse count, minimum denominator 1"
+    },
+    "model": {
+      "dt_ms": 1.0,
+      "tau_m_ms": 20.0,
+      "tau_syn_ms": 5.0,
+      "threshold": 1.0,
+      "reset": 0.0,
+      "rest": 0.0,
+      "refractory_ms": 2.0,
+      "recurrent_gain": 2.0,
+      "baseline_current": 0.65,
+      "baseline_heterogeneity": 0.18,
+      "noise_std": 0.1,
+      "activity_tau_ms": 50.0
+    },
+    "experiment": {
+      "seed": 20260913,
+      "warmup_ms": 500.0,
+      "baseline_ms": 500.0,
+      "stimulus_ms": 500.0,
+      "recovery_ms": 500.0,
+      "input_group": "looming",
+      "stimulus_current": 3.0,
+      "observe_groups": [
+        "LC4",
+        "LPLC2",
+        "giant_fiber",
+        "escape",
+        "steering",
+        "courtship"
+      ],
+      "bin_ms": 50.0
+    },
+    "benchmark": {
+      "warmup_ms": 200.0,
+      "duration_ms": 1000.0
+    }
+  },
+  "actual_model_parameters": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 0.002,
+    "baseline_current": 1.5,
+    "baseline_heterogeneity": 0.0,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "body_config": {
+    "protocol_version": 1,
+    "host": "127.0.0.1",
+    "port": 14367,
+    "seed": 42,
+    "warmup_ms": 500,
+    "packet_neural_ms": 20,
+    "heartbeat_seconds": 0.5,
+    "disconnect_seconds": 30.0,
+    "neural_groups": {
+      "left": {
+        "types": [
+          "DNa01",
+          "DNa02"
+        ],
+        "somaSide": "L"
+      },
+      "right": {
+        "types": [
+          "DNa01",
+          "DNa02"
+        ],
+        "somaSide": "R"
+      },
+      "forward": {
+        "types": [
+          "DNp09"
+        ]
+      }
+    },
+    "decoder": {
+      "activity_scale_hz": 100.0,
+      "forward_gain": 1.0,
+      "turn_gain": 1.0
+    },
+    "body": {
+      "max_forward_units_per_neural_second": 2.0,
+      "max_turn_radians_per_neural_second": 2.0
+    },
+    "debug": {
+      "current": 3.0,
+      "duration_ms": 400,
+      "enabled": false
+    },
+    "arena": {
+      "half_width": 5.615432893255071
+    },
+    "assumptions": [
+      "Left/right anatomical sides verified from somaSide and instance; decoder maps ipsilateral activity to that side's turn.",
+      "DNa01+DNa02 mean EMA Hz differences are a minimal experimental steering decoder, not biological motor reconstruction.",
+      "Bilateral DNp09 mean EMA Hz is a configurable experimental forward decoder; literature supports walking involvement, not this scalar formula.",
+      "Body progresses only for completed post-warmup neural packets; 60FPS rendering does not advance neural/body time."
+    ],
+    "backend": "fast",
+    "scientific_model": "sensorimotor",
+    "tonic_current": 1.5,
+    "restore_weak": false,
+    "gf_ablated": false
+  },
+  "baseline_commit": "4cd038f",
+  "baseline_files_sha256": {
+    "braincore\\core.py": "7ed7803a88305b9b4a6bf7a20218e4f7dae06898a6fec209de6c32cc537779c9",
+    "config.json": "5c19f8803ea63d6975697d3eeb16c54446e96a398614e3ced0541319d78c0186",
+    "data\\runtime\\metadata.json": "dc88a9935ce0c4915d654046c620d8d4b21f54473c46e1db4f18f2f887a711c7",
+    "data\\runtime\\weights.npz": "3fb657efc33922829dea821d3fd08ac516a7db2fc471182a73b841844915aaf3",
+    "data\\runtime\\neurons.parquet": "f470a0b2934a1f3491d674f59c8a88e9a00fe6ca93643f67a8449d5f9a4c2084"
+  },
+  "actual_groups": {
+    "left": [
+      {
+        "bodyId": 10442,
+        "type": "DNa01",
+        "instance": "DNa01(VES006)_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 523769,
+        "type": "DNa02",
+        "instance": "DNa02_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "right": [
+      {
+        "bodyId": 10360,
+        "type": "DNa02",
+        "instance": "DNa02_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 10760,
+        "type": "DNa01",
+        "instance": "DNa01(VES006)_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ],
+    "forward": [
+      {
+        "bodyId": 10783,
+        "type": "DNp09",
+        "instance": "DNp09_L",
+        "somaSide": "L",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 11177,
+        "type": "DNp09",
+        "instance": "DNp09_R",
+        "somaSide": "R",
+        "superclass": "descending_neuron",
+        "consensus_nt": "acetylcholine"
+      }
+    ]
+  }
+}

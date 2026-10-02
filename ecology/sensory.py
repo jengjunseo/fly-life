@@ -37,6 +37,7 @@ def amplitudes(raw,p):
 class Encoder:
     def __init__(self,brain,params):
         self.brain=brain;self.params=params
+        self.selectors=dict(MAPPINGS);self.levels=dict(LEVELS)
         self.indices={name:brain.resolve(selector) for name,selector in MAPPINGS.items()}
         for name,idx in self.indices.items():
             if not len(idx):raise ValueError(f'Unresolved mapping: {name}')
@@ -59,4 +60,4 @@ class Encoder:
     def evidence(self):
         cols=['bodyId','type','instance','somaSide','superclass','class','receptorType','synonyms','consensus_nt']
         import json
-        return {name:dict(selector=MAPPINGS[name],level=LEVELS[name],members=json.loads(self.brain.neurons.iloc[idx][cols].to_json(orient='records'))) for name,idx in self.indices.items()}
+        return {name:dict(selector=self.selectors[name],level=self.levels[name],members=json.loads(self.brain.neurons.iloc[idx][cols].to_json(orient='records'))) for name,idx in self.indices.items()}

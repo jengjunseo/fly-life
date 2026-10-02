@@ -2,6 +2,7 @@
 import argparse
 import gzip
 import json
+import hashlib
 import subprocess
 import sys
 from pathlib import Path
@@ -19,7 +20,8 @@ def measure(folder):
     commits=[r for r in body if r['event']=='body_commit']
     events=rows(folder/'events.jsonl');resources=json.loads((folder/'resources.json').read_text())
     byseq={r['source_seq']:r for r in commits}
-    clock=all(abs(w['world_time_s']-w['neural_time_s']+.5)<1e-8 for w in world)
+    warmup_s=json.loads((folder/'body_runtime_config.json').read_text())['warmup_ms']/1000
+    clock=all(abs(w['world_time_s']-w['neural_time_s']+warmup_s)<1e-8 for w in world)
     links=all(p['seq'] in byseq and
               abs((0. if p['ecology']['world']['hp']<=0 else p['forward'])-byseq[p['seq']]['decoder_forward'])<1e-12 and
               abs((0. if p['ecology']['world']['hp']<=0 else p['turn'])-byseq[p['seq']]['decoder_turn'])<1e-12 for p in states)
@@ -44,7 +46,8 @@ def measure(folder):
         average_hot_temperature=float(np.mean([r['local_temperature_c'] for r in heat])) if heat else None)
 
 def criteria(results):
-    complete=len(results)==13
+    complete=all(k in results for k in ['control','control-no-sensory','predator','predator-no-sensory','predator-no-gf',
+        'food-left','food-left-no-sensory','food-right','food-right-no-sensory','heat-left','heat-left-no-sensory','heat-right','heat-right-no-sensory'])
     gf=None;avoid=None;food=None;heat=None
     if all(k in results for k in ['control','predator','predator-no-sensory','predator-no-gf']):
         gf=(results['control']['jumps']==0 and results['predator']['jumps']>0 and
@@ -62,7 +65,12 @@ def criteria(results):
                 biological_certification=False,limitations='One-seed paired assays. A primitive GF jump is not certified directional escape or full flight; innate odor/thermal valence is not inferred from anatomical connectivity alone.')
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--out',default='reports/behavior/assays');p.add_argument('--restore-weak',action='store_true');p.add_argument('--quick',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--out',default='reports/behavior/assays');p.add_argument('--restore-weak',action='store_true');p.add_argument('--quick',action='store_true')
+    p.add_argument('--model',choices=['counts','sensorimotor'],default='counts');p.add_argument('--duration',type=float,default=8.)
+    p.add_argument('--brain-seed',type=int,default=20260913);p.add_argument('--world-seed',type=int,default=20260914)
+    p.add_argument('--warmup-ms',type=int,choices=[500,2000],default=2000)
+    p.add_argument('--modalities',action='store_true');p.add_argument('--cases',nargs='+');a=p.parse_args()
+    if a.modalities and a.model!='sensorimotor':p.error('Modality assays require sensorimotor')
     root=ROOT/a.out;root.mkdir(parents=True,exist_ok=True)
     cases=[('control','CONTROL',[]),('control-no-sensory','CONTROL',['--no-sensory']),
            ('predator','PREDATOR',[]),('predator-no-sensory','PREDATOR',['--no-sensory']),('predator-no-gf','PREDATOR',['--no-gf']),
@@ -71,15 +79,34 @@ def main():
            ('heat-left','HEAT',[]),('heat-left-no-sensory','HEAT',['--no-sensory']),
            ('heat-right','HEAT RIGHT',[]),('heat-right-no-sensory','HEAT RIGHT',['--no-sensory'])]
     if a.quick:cases=cases[:5]
+    if a.modalities:
+        cases += [(f'food-{side}-no-{modality}',preset,['--no-'+modality])
+                  for side,preset in [('left','FOOD'),('right','FOOD RIGHT')] for modality in ['vision','chemical']]
+    if a.cases:
+        unknown=set(a.cases)-{c[0] for c in cases}
+        if unknown:p.error('Unknown cases: '+', '.join(sorted(unknown)))
+        cases=[c for c in cases if c[0] in a.cases]
     results={}
     for name,preset,flags in cases:
         folder=root/name
+        if (folder/'resources.json').exists():
+            saved=json.loads((folder/'body_runtime_config.json').read_text())
+            eco=json.loads((folder/'ecology_runtime_config.json').read_text())
+            expected=dict(scientific_model=a.model,seed=a.brain_seed,restore_weak=a.restore_weak,gf_ablated='--no-gf' in flags,warmup_ms=a.warmup_ms if a.model=='sensorimotor' else 500)
+            expected_sensory={k:'--no-'+flag not in flags for k,flag in [('enabled','sensory'),('vision_enabled','vision'),('chemical_enabled','chemical'),('thermal_enabled','thermal')]}
+            if any(saved.get(k)!=v for k,v in expected.items()) or eco['mode']!=preset or eco['world_seed']!=a.world_seed or eco['duration_s']!=a.duration or any(eco['sensory'].get(k,True)!=v for k,v in expected_sensory.items()):
+                raise ValueError(f'Refusing to reuse mismatched trial {folder}; choose a new output directory')
+            generation=json.loads((folder/'model-generation-1.json').read_text())
+            hashes=generation.get('source_sha256',{})
+            if not hashes or any(not (ROOT/path).is_file() or hashlib.sha256((ROOT/path).read_bytes()).hexdigest()!=digest for path,digest in hashes.items()):
+                raise ValueError(f'Refusing to reuse a trial with different or unavailable source hashes: {folder}; choose a new output directory')
         if not (folder/'resources.json').exists():
-            cmd=[sys.executable,'-m','mvp.launch','--headless','--preset',preset,'--duration','8','--logdir',str(folder)]+flags
+            cmd=[sys.executable,'-m','mvp.launch','--headless','--model',a.model,'--preset',preset,'--duration',str(a.duration),'--brain-seed',str(a.brain_seed),'--world-seed',str(a.world_seed),'--logdir',str(folder)]+flags
             if a.restore_weak:cmd+=['--restore-weak']
+            if a.model=='sensorimotor':cmd+=['--warmup-ms',str(a.warmup_ms)]
             subprocess.run(cmd,cwd=ROOT,check=True)
         results[name]=measure(folder)
-        report=dict(results=results,criteria=criteria(results),model='counts',restore_weak=a.restore_weak,brain_seed=20260913,world_seed=20260914)
+        report=dict(results=results,criteria=criteria(results),model=a.model,warmup_ms=a.warmup_ms if a.model=='sensorimotor' else 500,duration_s=a.duration,restore_weak=a.restore_weak,brain_seed=a.brain_seed,world_seed=a.world_seed)
         (root/'results.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
         print(json.dumps(dict(case=name,**results[name])),flush=True)
 

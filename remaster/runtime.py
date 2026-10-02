@@ -3,6 +3,7 @@ import argparse
 import json
 import sys
 import time
+import hashlib
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,6 +17,7 @@ from behavior.model import CountBrain,load_connectivity,parameters
 from behavior.world import ExperimentWorld
 from behavior.sensory import BilateralEncoder
 from behavior.readout import EscapeReadout
+from behavior.sensorimotor import SensorimotorWorld,SensorimotorEncoder,SteeringReadout
 
 class EfficientEncoder(Encoder):
     def __init__(self,*args):
@@ -31,18 +33,24 @@ class EfficientEncoder(Encoder):
 
 class RemasterRuntime(ConsoleRuntime):
     def __init__(self,*args):
-        self.cached_data=None;self.cached_key=None;self.model_evidence={};self.escape=None;self.gf_ablated=False;self.gf_brain=None;self.gf_indices=None
+        self.cached_data=None;self.cached_key=None;self.model_evidence={};self.escape=None;self.steering=None;self.steering_brain=None;self.gf_ablated=False;self.gf_brain=None;self.gf_indices=None
         self.test_until=0;self.test_group=None;self.test_current=None;self.active_test=None
         super().__init__(*args)
         self.gf_ablated=bool(self.config.get('gf_ablated',False))
 
     def load_brain(self):
         key=(self.config.get('scientific_model','frozen'),self.config.get('restore_weak',False),self.config.get('backend'))
-        if key[0]=='counts':
+        if key[0] in ('counts','sensorimotor'):
             if self.cached_key!=key:
-                w,n,self.model_evidence=load_connectivity(self.coreconfig,key[1]);self.cached_data=(w,n);self.cached_key=key
+                w,n,self.model_evidence=load_connectivity(self.coreconfig,key[1],psi_literature=key[0]=='sensorimotor');self.cached_data=(w,n);self.cached_key=key
             w,n=self.cached_data
             brain=CountBrain(w,parameters(self.coreconfig,self.config.get('tonic_current',1.5)),seed=self.config['seed'],neurons=n)
+            if key[0]=='sensorimotor':
+                kc_tonic=min(.85,float(self.config.get('tonic_current',1.5)))
+                brain.baseline[n['class'].eq('Kenyon_Cell').to_numpy()]=kc_tonic
+                self.model_evidence['excitability_profile']=dict(kenyon_cell_tonic=kc_tonic,
+                    other_cells_tonic=self.config.get('tonic_current',1.5),
+                    limitation='Sparse KC baseline hypothesis; cell dynamics are not experimentally fitted')
             if self.gf_ablated:brain.silenced=brain.resolve(dict(types=['DNp01']))
             return brain
         if self.cached_key!=key:self.cached_data=None;self.cached_key=key;self.model_evidence={}
@@ -55,35 +63,58 @@ class RemasterRuntime(ConsoleRuntime):
         return cls(weights,self.coreconfig['model'],seed=self.config['seed'],neurons=neurons)
 
     def reset(self):
-        self.escape=None
+        self.escape=None;self.steering=None;self.steering_brain=None
         self.test_until=0;self.test_group=None;self.test_current=None;self.active_test=None
         super().reset()
-        (self.logdir/f'model-generation-{self.generation}.json').write_text(json.dumps(dict(
-            scientific_model=self.config.get('scientific_model','frozen'),parameters=self.brain.p,
-            evidence=self.model_evidence,assumptions=['Uniform tonic drive is an assumed arousal condition, not natural spontaneous activity',
+        model=self.config.get('scientific_model','frozen')
+        assumptions=['No world stimulus label, target position or desired action enters the motor decoder']
+        if model!='frozen':assumptions += ['Tonic drive is an assumed arousal condition, not natural spontaneous activity',
             'Count-weighted spike-reset LIF is not equivalent to v0.1 or an exact Shiu replication',
-            'No world stimulus label, target position or desired action enters the motor decoder',
             'Hemispheric vision and local air cooling are explicit experimental approximations',
-            'GF readout drives a primitive jump, not a complete flight controller'])),encoding='utf-8')
+            'GF readout drives a primitive jump, not a complete flight controller']
+        if model=='sensorimotor':assumptions += [
+            'KC tonic capped at 0.85; other cells use the selected tonic setting',
+            'LC10a input is generic object motion, not food identity or reconstructed retinotopy',
+            'Looming uses geometric self-motion compensation; LC10a retains retinal motion',
+            'Signed thermal current approximates response polarity; ionic scales are assumed',
+            'DNa02-only readout: 0.3 rad/s/Hz, 150 ms filter, unstimulated warmup bias',
+            'GF takeoff: 4.2 vertical and 3 forward units/s, 9.8 gravity, 0.8/s drag; actuator assumptions',
+            'PSI acetylcholine assignment is literature-supported, not changed dataset annotation']
+        paths=['remaster/runtime.py','remaster/fastbrain.py','remaster/presets.py',
+               'behavior/model.py','behavior/sensorimotor.py','behavior/sensory.py','behavior/readout.py',
+               'behavior/world.py','behavior/presets.py','braincore/core.py','mvp/bridge.py','mvp/presets.py',
+               'ecology/bridge.py','ecology/model.py','ecology/sensory.py','ecology/config.json',
+               'body/main.gd','body/mvp/main.gd','body/ecology/main.gd','body/remaster/main.gd',
+               'body/decoder.py','config.json','body/body_config.json']
+        (self.logdir/f'model-generation-{self.generation}.json').write_text(json.dumps(dict(
+            scientific_model=model,warmup_ms=self.config['warmup_ms'],parameters=self.brain.p,evidence=self.model_evidence,assumptions=assumptions,
+            source_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths}),indent=2),encoding='utf-8')
 
     def create_world(self):
+        if self.config.get('scientific_model')=='sensorimotor':return SensorimotorWorld(self.eco_config)
         return ExperimentWorld(self.eco_config) if self.config.get('scientific_model')=='counts' else super().create_world()
 
     def create_encoder(self):
+        if self.config.get('scientific_model')=='sensorimotor':return SensorimotorEncoder(self.brain,self.eco_config['sensory'])
         cls=BilateralEncoder if self.config.get('scientific_model')=='counts' else EfficientEncoder
         return cls(self.brain,self.eco_config['sensory'])
 
     def sensory_assumptions(self):
-        if self.config.get('scientific_model')=='counts':
+        if self.config.get('scientific_model') in ('counts','sensorimotor'):
             return 'Experimental overlapping hemispheric visual projection, not measured retinotopy; separate antenna-local chemical and thermal samples; somaSide otherwise rootSide.'
         return super().sensory_assumptions()
 
     def decode_motor(self,activities):
         motor=super().decode_motor(activities)
-        if self.config.get('scientific_model')=='counts':
+        if self.config.get('scientific_model') in ('counts','sensorimotor'):
             if self.escape is None:self.escape=EscapeReadout(self.brain)
             self.escape.enabled=not self.gf_ablated
             motor.update(self.escape.decode(self.brain))
+            if self.config.get('scientific_model')=='sensorimotor':
+                motor.update(self.steering.decode(6.))
+                motor['steering_activity_hz']={s:float(self.brain.activity[idx].mean()) for s,idx in self.steering.sides.items()}
+                motor['max_turn_radians_per_neural_second']=6.
+                motor['takeoff_forward_impulse']=3.
         return motor
 
     def advance_neurons(self,external=None):
@@ -93,27 +124,37 @@ class RemasterRuntime(ConsoleRuntime):
                 self.gf_indices=self.brain.resolve(dict(types=['DNp01']));self.gf_brain=self.brain
             idx=self.gf_indices
             spikes[idx]=0.;self.brain.activity[idx]=0.;self.brain.v[idx]=self.brain.p['reset'];self.brain.syn[idx]=0.;self.brain.refractory[idx]=0
+        if self.config.get('scientific_model')=='sensorimotor':
+            if self.steering_brain is not self.brain:
+                self.steering=SteeringReadout(self.brain,warmup_ms=self.config['warmup_ms']);self.steering_brain=self.brain
+            self.steering.observe(self.brain,warmup=self.brain.step_count<=self.brain.steps_for(self.config['warmup_ms']))
         return spikes
 
     def configure_preset(self,name,seed,duration):
-        cfg=configure(name,seed,duration,behavior=self.config.get('scientific_model')=='counts')
+        cfg=configure(name,seed,duration,behavior=self.config.get('scientific_model') in ('counts','sensorimotor'))
         cfg['sensory']['enabled']=self.eco_config['sensory']['enabled']
+        for key in ['vision_enabled','chemical_enabled','thermal_enabled']:cfg['sensory'][key]=self.eco_config['sensory'].get(key,True)
         return cfg
 
     def apply_actions(self):
-        conditions=[m for m in self.pending_actions if m['kind'] in ('model_condition','sensory_condition','gf_condition')]
-        self.pending_actions=[m for m in self.pending_actions if m['kind'] not in ('model_condition','sensory_condition','gf_condition')]
+        conditions=[m for m in self.pending_actions if m['kind'] in ('model_condition','sensory_condition','gf_condition','modality_condition')]
+        self.pending_actions=[m for m in self.pending_actions if m['kind'] not in ('model_condition','sensory_condition','gf_condition','modality_condition')]
         for m in conditions:
             if m['id'] in self.command_ids:raise ValueError('Duplicate command')
             self.command_ids.add(m['id']);self.commands.append(m['id'])
             if m['kind']=='model_condition':
-                if m['model'] not in ('counts','frozen'):raise ValueError('Unknown scientific model')
+                if m['model'] not in ('counts','frozen','sensorimotor'):raise ValueError('Unknown scientific model')
                 parameters(self.coreconfig,float(m['tonic_current']))
                 self.config.update(scientific_model=m['model'],tonic_current=float(m['tonic_current']),restore_weak=bool(m['restore_weak']))
+                self.config['warmup_ms']=self.config.get('sensorimotor_warmup_ms',2000) if m['model']=='sensorimotor' else 500
                 if m['model']=='frozen' and self.eco_config['mode'] in ('FOOD RIGHT','HEAT RIGHT'):self.eco_config['mode']='CONTROL'
                 self.eco_config=self.configure_preset(self.eco_config['mode'],self.eco_config['world_seed'],self.eco_config['duration_s'])
                 self.pending_reset=True
             elif m['kind']=='sensory_condition':self.eco_config['sensory']['enabled']=bool(m['enabled'])
+            elif m['kind']=='modality_condition':
+                if m['modality'] not in ('vision','chemical','thermal') or self.config.get('scientific_model')!='sensorimotor':
+                    raise ValueError('Individual modality ablation requires sensorimotor model and a known modality')
+                self.eco_config['sensory'][m['modality']+'_enabled']=bool(m['enabled'])
             else:
                 self.gf_ablated=not bool(m['enabled'])
                 if isinstance(self.brain,CountBrain):
@@ -164,12 +205,14 @@ class RemasterRuntime(ConsoleRuntime):
         self.stimulus=None
 
     def console_metadata(self):
-        return dict(backend='fast' if self.config.get('scientific_model')=='counts' else self.config.get('backend','reference'),brain_frame_ms=self.config['packet_neural_ms'],
+        return dict(backend='fast' if self.config.get('scientific_model') in ('counts','sensorimotor') else self.config.get('backend','reference'),brain_frame_ms=self.config['packet_neural_ms'],
                     scientific_model=self.config.get('scientific_model','frozen'),tonic_current=float(self.brain.p['baseline_current']) if self.brain else 0.,
                     count_tonic_setting=self.config.get('tonic_current',1.5),
-                    restored_weak_connections=self.config.get('scientific_model')=='counts' and self.config.get('restore_weak',False),
+                    restored_weak_connections=self.config.get('scientific_model') in ('counts','sensorimotor') and self.config.get('restore_weak',False),
                     restored_available=(ROOT/'data/behavior/counts.npz').exists(),
                     sensory_enabled=self.eco_config['sensory']['enabled'],gf_enabled=not self.gf_ablated,
+                    modality_enabled={k:self.eco_config['sensory'].get(k+'_enabled',True) for k in ['vision','chemical','thermal']},
+                    warmup_ms=self.config['warmup_ms'],
                     shade_center=self.world.cfg['shade']['center'],shade_half_size=self.world.cfg['shade']['half_size'],
                     neural_test=dict(active=self.active_test is not None,group=self.active_test,
                                      amplitude=3. if self.active_test else 0.,

@@ -5,6 +5,7 @@ const R_NAMES = ["운동 뉴런 자극 · 경로 검사","기본 상태 · 환�
 const K_GROUPS = [["DNp09","DNp09","전진 관련 운동 뉴런"],["DNa01","DNa01","회전 관련 운동 뉴런"],["DNa02","DNa02","회전 관련 운동 뉴런"],["lc4","LC4","다가오는 물체 감지"],["lplc2","LPLC2","확대되는 물체 감지"],["GF","GF / DNp01","가설 모델: 신경 신호로 원시 도약"]]
 const K_EXTRA = [["figure","LC9 · 물체 움직임"],["food_odor","ORN DM1 / VA2 · 먹이 냄새"],["taste","Sugar SEL PN · 중추 당 자극"],["fly_odor","ORN VA1v / VA1d · 파리 냄새"],["hot","TRN VP2 · 가열"],["cold","TRN VP3 · 냉각"],["feeding_observation","Fdg · 섭식 관찰"],["courtship_observation","pC1 계열 · 구애 회로 관찰"]]
 const K_MODALITIES = {"lc4":"접근 감지","lplc2":"확대 감지","figure":"물체 움직임","food_odor":"먹이 냄새","taste":"당 접촉","fly_odor":"파리 냄새","hot":"가열","cold":"냉각"}
+const SCIENTIFIC_MODELS = ["sensorimotor","counts","frozen"]
 const K_EVENTS = {"RESET":"실험 초기화","HEAT_START":"가열 시작","HEAT_END":"가열 종료","PREDATOR_HIT":"포식자 접촉","DAMAGE":"체력 손실","DEATH":"체력 소진 · 몸체 정지","TEST_GUT_LOAD":"장 내용물 가상 입력","DEFECATION_PENDING":"배설 예약 · 생리 모형","DEFECATE":"배설 · 생리 모형","SHADE_ENTER":"그늘 진입","SHADE_EXIT":"그늘 이탈","TEMPERATURE_SET":"주변 온도 설정","SHADE_CONDITION":"그늘 냉각 변경","EXPERIMENT_CLEARED":"개체와 예정 자극 제거","NEURAL_TEST_FORWARD":"전진 뉴런 자극 시작","NEURAL_TEST_LEFT":"왼쪽 운동 뉴런 자극 시작","NEURAL_TEST_RIGHT":"오른쪽 운동 뉴런 자극 시작","NEURAL_TEST_STOP":"수동 신경 자극 중지","NEURAL_TEST_END":"인위적 신경 자극 종료"}
 var diagnosis_label: Label
 var test_label: Label
@@ -16,12 +17,15 @@ var qa_neural := false
 var qa_neural_stage := 0
 var qa_neural_generation := -1
 var jump_velocity := 0.0
+var takeoff_velocity := Vector3.ZERO
 var jump_generation := -1
 var model_select: OptionButton
+var model_apply_button: Button
 var tonic_control: SpinBox
 var restored_control: CheckBox
 var sensory_control: CheckBox
 var gf_control: CheckBox
+var modality_controls := {}
 var measurement_label: Label
 var scientific_label: Label
 var qa_model := false
@@ -29,18 +33,21 @@ var qa_model_stage := 0
 var qa_model_generation := -1
 
 func move_body(packet: Dictionary, neural_dt: float) -> void:
-	if jump_generation!=generation:jump_velocity=0.;jump_generation=generation
+	if jump_generation!=generation:jump_velocity=0.;takeoff_velocity=Vector3.ZERO;jump_generation=generation
 	if not packet.has("escape_motor"):
 		jump_velocity=0.;super.move_body(packet,neural_dt);return
 	if float(packet.ecology.world.hp)<=0.:
 		fly.velocity=Vector3.ZERO;return
 	if float(packet.escape_motor)>0. and fly.position.y<=.225:
 		jump_velocity=4.2
+		takeoff_velocity=-fly.transform.basis.z*float(packet.get("takeoff_forward_impulse",0.))
 		log_row("gf_jump",{"source_seq":packet.seq,"gf_hz":packet.escape_activity_hz,"threshold_hz":packet.escape_threshold_hz})
-	fly.rotation.y-=float(packet.turn)*float(cfg.body.max_turn_radians_per_neural_second)*neural_dt
+	fly.rotation.y-=float(packet.turn)*float(packet.get("max_turn_radians_per_neural_second",cfg.body.max_turn_radians_per_neural_second))*neural_dt
 	var velocity := -fly.transform.basis.z*float(packet.forward)*float(cfg.body.max_forward_units_per_neural_second)
 	if fly.position.y>.221 or jump_velocity>0.:jump_velocity-=9.8*neural_dt
 	velocity.y=jump_velocity
+	velocity+=takeoff_velocity
+	takeoff_velocity*=exp(-.8*neural_dt)
 	fly.velocity=velocity
 	var collision := fly.move_and_collide(velocity*neural_dt)
 	# Enclosed primitive arena: airborne movement cannot land outside its floor.
@@ -48,8 +55,8 @@ func move_body(packet: Dictionary, neural_dt: float) -> void:
 	if fly.position.y>.5:
 		fly.position.x=clampf(fly.position.x,-arena_limit,arena_limit)
 		fly.position.z=clampf(fly.position.z,-arena_limit,arena_limit)
-	if collision and collision.get_normal().y>.5:jump_velocity=0.
-	if fly.position.y<.22:fly.position.y=.22;jump_velocity=0.
+	if collision and collision.get_normal().y>.5:jump_velocity=0.;takeoff_velocity=Vector3.ZERO
+	if fly.position.y<.22:fly.position.y=.22;jump_velocity=0.;takeoff_velocity=Vector3.ZERO
 
 func _ready() -> void:
 	super._ready()
@@ -65,8 +72,21 @@ func _ready() -> void:
 
 func shutdown() -> void:
 	if shutdown_sent:return
-	super.shutdown()
-	log_file=null
+	shutdown_sent=true
+	log_row("console_health",{"ui_updates":ui_updates,"ui_mean_ms":float(ui_total_us)/maxi(ui_updates,1)/1000.,"ui_max_ms":ui_max_us/1000.,"window_size":[get_window().size.x,get_window().size.y],"viewport_size":[view.size.x,view.size.y] if view else []})
+	send_command("shutdown")
+	# Keep TCP open and drain pending frames until the brain consumes shutdown
+	# and closes its end. Immediate disconnect can discard the command on Windows.
+	var deadline := Time.get_ticks_msec()+3000
+	while peer.get_status()==StreamPeerTCP.STATUS_CONNECTED and Time.get_ticks_msec()<deadline:
+		peer.poll()
+		if peer.get_status()!=StreamPeerTCP.STATUS_CONNECTED:break
+		var available := peer.get_available_bytes()
+		if available>0:peer.get_data(available)
+		await get_tree().process_frame
+	log_row("quit",{"brain_closed_connection":peer.get_status()!=StreamPeerTCP.STATUS_CONNECTED})
+	if log_file:log_file.close();log_file=null
+	peer.disconnect_from_host();get_tree().quit()
 
 func capture_frame() -> void:
 	if DisplayServer.get_name()=="headless":return
@@ -144,14 +164,19 @@ func build_console() -> void:
 	var brain_col := HBoxContainer.new();seeds.add_child(brain_col);label(brain_col,"신경망 시드",15);brain_seed=SpinBox.new();brain_seed.max_value=2147483647;brain_seed.value=cfg.seed;brain_seed.size_flags_horizontal=Control.SIZE_EXPAND_FILL;brain_col.add_child(brain_seed)
 	config_label=label(experiment,"준비 중",16,Color("9fbdce"));config_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	var model_card := card(left,"신경 모델과 대조 조건")
-	model_select=OptionButton.new();model_select.add_item("시냅스 수 기반 · 행동 가설 모델");model_select.add_item("기존 v0.1 · 고정 대조 모델");model_card.add_child(model_select)
-	model_select.select(0 if cfg.get("scientific_model","frozen")=="counts" else 1)
-	label(model_card,"전뇌 기저 전류 · 각성 가정 (0~2)",15)
+	model_select=OptionButton.new();model_select.add_item("감각·운동 보정 · 새 행동 가설");model_select.add_item("이전 시냅스 수 · 행동 가설");model_select.add_item("기존 v0.1 · 고정 대조 모델");model_card.add_child(model_select)
+	model_select.select(SCIENTIFIC_MODELS.find(cfg.get("scientific_model","frozen")))
+	label(model_card,"기저 전류 · 모델별 각성 가정 (0~2)",15)
 	tonic_control=SpinBox.new();tonic_control.min_value=0.;tonic_control.max_value=2.;tonic_control.step=.05;tonic_control.value=cfg.get("tonic_current",1.5);model_card.add_child(tonic_control)
 	restored_control=CheckBox.new();restored_control.text="작은 시냅스까지 복원한 연결망";restored_control.button_pressed=cfg.get("restore_weak",false);model_card.add_child(restored_control)
-	button(model_card,"모델 조건 적용 · 초기화",func():command("model_condition",{"model":"counts" if model_select.selected==0 else "frozen","tonic_current":tonic_control.value,"restore_weak":restored_control.button_pressed}))
+	model_apply_button=button(model_card,"모델 조건 적용 · 초기화",func():command("model_condition",{"model":SCIENTIFIC_MODELS[model_select.selected],"tonic_current":tonic_control.value,"restore_weak":restored_control.button_pressed}))
 	sensory_control=CheckBox.new();sensory_control.text="환경 감각 입력 켜기";sensory_control.button_pressed=eco.sensory.enabled;model_card.add_child(sensory_control)
 	sensory_control.toggled.connect(func(on: bool):command("sensory_condition",{"enabled":on}))
+	for item in [["vision","시각 입력"],["chemical","냄새·당 감각 입력"],["thermal","온도 감각 입력"]]:
+		var modality: String=item[0]
+		var check := CheckBox.new();check.text=item[1]+" 켜기";check.button_pressed=eco.sensory.get(modality+"_enabled",true);model_card.add_child(check)
+		check.toggled.connect(func(on: bool):command("modality_condition",{"modality":modality,"enabled":on}))
+		modality_controls[modality]=check
 	gf_control=CheckBox.new();gf_control.text="GF 뉴런 켜기 · 끄면 신경 차단";gf_control.button_pressed=not cfg.get("gf_ablated",false);model_card.add_child(gf_control)
 	gf_control.toggled.connect(func(on: bool):command("gf_condition",{"enabled":on}))
 	label(model_card,"감각을 끄거나 GF를 차단한 뒤 초기화하여 같은 실험과 비교하세요. 기저 구동은 생물의 실제 각성 회로를 재현하지 않습니다.",15,Color("f0c780")).autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
@@ -223,7 +248,7 @@ func accept_packet(packet: Dictionary) -> void:
 	super.accept_packet(packet)
 	if packet.has("console") and previous!=observer_generation:
 		preset_select.select(R_KEYS.find(console_state.preset));last_motion_world=0.;last_motion_position=Vector3.ZERO;measured_speed=0.
-		model_select.select(0 if console_state.get("scientific_model")=="counts" else 1)
+		model_select.select(SCIENTIFIC_MODELS.find(console_state.get("scientific_model","frozen")))
 		tonic_control.value=console_state.get("count_tonic_setting",1.5)
 		restored_control.set_pressed_no_signal(console_state.get("restored_weak_connections",false))
 
@@ -231,6 +256,7 @@ func event_name(key: String) -> String:
 	if key=="MODEL_CONDITION":return "신경 모델 조건 변경"
 	if key=="SENSORY_CONDITION":return "감각 입력 대조 조건 변경"
 	if key=="GF_CONDITION":return "GF 신경 차단 조건 변경"
+	if key=="MODALITY_CONDITION":return "감각별 입력 대조 조건 변경"
 	if K_EVENTS.has(key):return K_EVENTS[key]
 	if key.ends_with(" ACTIVITY RISE"):
 		var circuit := key.trim_suffix(" ACTIVITY RISE")
@@ -257,12 +283,16 @@ func update_hud() -> void:
 	clocks_label.text="환경 %.2f초 · 신경 %.2f초\n실제 경과 %.1f초" % [world_time,state.get("neural_time_s",0),wall]
 	if console_state.is_empty():return
 	if pending_command_id in state.get("acknowledged_commands",[]):pending_command_id=""
-	var experimental: bool=console_state.get("scientific_model","frozen")=="counts"
+	var experimental: bool=console_state.get("scientific_model","frozen")!="frozen"
 	if pending_command_id.is_empty():config_label.text=("2초 기준 상태 → 장시간 행동 관찰" if experimental else "0.5초 기준 상태 → 유한 자극 → 회복")+"\n모든 시간은 완료된 뇌시간 기준입니다."
 	sensory_control.set_pressed_no_signal(console_state.get("sensory_enabled",true));gf_control.set_pressed_no_signal(console_state.get("gf_enabled",true))
-	model_select.disabled=not ready;tonic_control.editable=ready and model_select.selected==0
+	model_select.disabled=not ready;tonic_control.editable=ready and model_select.selected!=2
 	sensory_control.disabled=not ready;gf_control.disabled=not ready
-	restored_control.disabled=not ready or model_select.selected!=0 or not console_state.get("restored_available",false)
+	for modality in modality_controls:
+		modality_controls[modality].set_pressed_no_signal(console_state.get("modality_enabled",{}).get(modality,true))
+		modality_controls[modality].disabled=not ready or console_state.get("scientific_model")!="sensorimotor"
+		modality_controls[modality].tooltip_text="새 감각·운동 가설 모델에서 감각별 대조 시험을 할 수 있습니다."
+	restored_control.disabled=not ready or model_select.selected==2 or not console_state.get("restored_available",false)
 	restored_control.tooltip_text="연결 복원 준비가 필요합니다" if restored_control.disabled else "약 2,556만 개의 추적 뉴런 간 연결을 보존합니다"
 	for idx in [7,8]:preset_select.set_item_disabled(idx,not experimental)
 	if shade_mesh:
@@ -278,6 +308,7 @@ func update_hud() -> void:
 	var budget := "목표 시간 충족" if total<=frame_ms and total>0 else "실시간 목표 미달 · 완료 결과에 맞춰 진행"
 	var backend := "동일 결과 JIT + 희소 스파이크 전달" if console_state.get("backend")=="fast" else "원본 SciPy 대조 계산"
 	if experimental:backend="행동 가설 LIF · 시냅스 수 기반 · 기존 모델과 다름"
+	if console_state.get("scientific_model")=="sensorimotor":backend="새 가설 · PSI 문헌 보정 / 희소 KC / DNa02 회전"
 	health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n계산 %.1f · 통신/몸체 %.1f밀리초\n중앙값 %.1f · 95백분위 %.1f밀리초\n화면 %d프레임/초 · 처리율 약 %.2f배\n%s\n%s" % [frame_ms,int(frame_ms),compute,maxf(0.,total-compute),perf.get("p50_ms",0),perf.get("p95_ms",0),int(Engine.get_frames_per_second()),frame_ms/maxf(total,.001),budget,backend]
 	if perf.is_empty():health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n첫 완료 프레임의 실제 처리 시간 측정 대기\n화면 %d프레임/초\n%s" % [frame_ms,int(frame_ms),int(Engine.get_frames_per_second()),backend]
 	var lines := ""
@@ -291,6 +322,7 @@ func update_hud() -> void:
 	var is_test := bool(neural_test.get("active",false))
 	test_label.text="인위적 신경 자극 중 · 운동 뉴런에 전류 3.0 입력 → 실제 스파이크 → 기존 디코더 → 몸체" if is_test else "환경 감각 입력만 사용 중 · 인위적 운동 신경 자극 없음"
 	if experimental and not is_test:test_label.text="행동 가설 모델 · 전뇌 기저 전류 %.2f (각성 가정) · 표적을 지정하는 운동 규칙 없음\n먹이 접근·그늘 선택: 아직 미인증 · 감각 %s / GF %s" % [console_state.get("tonic_current",0),"켜짐" if console_state.get("sensory_enabled",true) else "차단","켜짐" if console_state.get("gf_enabled",true) else "차단"]
+	if console_state.get("scientific_model")=="sensorimotor" and not is_test:test_label.text="새 행동 가설 · 기저 전류 %.2f / 케니언 세포 최대 0.85 · 감각 %s / GF %s\n물체 접근·도약을 대조 조건과 비교하세요 · 그늘 선택 미해결 · 생물 행동 인증 아님" % [console_state.get("tonic_current",0),"켜짐" if console_state.get("sensory_enabled",true) else "차단","켜짐" if console_state.get("gf_enabled",true) else "차단"]
 	if world_time>last_motion_world:
 		measured_speed=fly.position.distance_to(last_motion_position)/(world_time-last_motion_world)
 		last_motion_world=world_time;last_motion_position=fly.position
@@ -300,15 +332,17 @@ func update_hud() -> void:
 	elif forward<.0001 and absf(turn)<.0001:diagnosis_label.text="운동 출력 0 · 현재 운동 뉴런이 보행 신호를 내지 않습니다.\n왼쪽 ‘전진 뉴런 자극’으로 신경→몸체 경로를 검사할 수 있습니다."
 	else:diagnosis_label.text="운동 신호 전달 중 · 전진 %.3f / 회전 %+.3f · 실제 이동 속도 %.3f 단위/뇌초" % [forward,turn,measured_speed]
 	if experimental and ready:diagnosis_label.text+="\nGF 최대 %.2f / 원시 도약 기준 %.2f 회/초" % [state.get("escape_activity_hz",0),state.get("escape_threshold_hz",0)]
+	if state.has("steering_difference_hz"):diagnosis_label.text+=" · DNa02 차이 %+.2f 회/초" % float(state.steering_difference_hz)
 	if not last_ecology.is_empty():
 		var w: Dictionary=last_ecology.world
 		physiology_label.text="체력 %.1f · 허기 %.2f\n장 내용물 %.2f · 국소 온도 %.2f℃\n그늘 내부: %s\n환경 시드 %d / 뇌 시드 %d" % [w.hp,w.hunger,w.gut,w.local_temperature_c,"예" if w.in_shade else "아니요",last_ecology.world_seed,console_state.get("brain_seed",cfg.seed)]
 		motor_label.text="전진 %.4f · 회전 %+.4f\n섭식 미검증 · 장 상태는 단순 모형" % [forward,turn]
 		var currents := "현재 뇌 프레임의 감각 입력: "
 		for term in last_ecology.sensory_terms:
-			if float(term.amplitude)>.001:
+			if absf(float(term.amplitude))>.001:
 				var side: String={"L":"왼쪽 ","R":"오른쪽 ","U":""}.get(term.get("side","U"),"")
-				currents+="%s%s %.3f  " % [side,K_MODALITIES.get(term.modality,"감각"),term.amplitude]
+				var modality: String="작은 물체 움직임" if term.modality=="small_object" else K_MODALITIES.get(term.modality,"감각")
+				currents+="%s%s %+.3f  " % [side,modality,term.amplitude]
 		var source: Variant=last_ecology.get("sensor_source_body_seq")
 		var source_text: String="초기 상태" if source==null else "몸체 응답 #%d" % int(source)
 		stimulus_label.text=currents+"\n감각 기준: %s · 화면 감각 상태는 최대 한 뇌 프레임 전 입력" % source_text
@@ -323,18 +357,33 @@ func update_hud() -> void:
 func qa_driver(now: int) -> void:
 	if qa_model:
 		if connection!="ready":return
-		if qa_model_stage==0 and world_time>=.2:command("sensory_condition",{"enabled":false});qa_model_stage=1
-		elif qa_model_stage==1 and not console_state.get("sensory_enabled",true):command("gf_condition",{"enabled":false});qa_model_stage=2
+		if qa_model_stage==0 and world_time>=.2:sensory_control.button_pressed=false;qa_model_stage=1
+		elif qa_model_stage==1 and not console_state.get("sensory_enabled",true):gf_control.button_pressed=false;qa_model_stage=2
 		elif qa_model_stage==2 and not console_state.get("gf_enabled",true):qa_model_generation=generation;command("reset");qa_model_stage=3
 		elif qa_model_stage==3 and generation>qa_model_generation:
 			log_row("qa_conditions_persist",{"passed":not console_state.get("sensory_enabled",true) and not console_state.get("gf_enabled",true)})
-			qa_model_generation=generation;command("model_condition",{"model":"frozen","tonic_current":0.,"restore_weak":false});qa_model_stage=4
+			qa_model_generation=generation;model_select.select(2);tonic_control.value=0.;restored_control.set_pressed_no_signal(false);model_apply_button.pressed.emit();qa_model_stage=4
 		elif qa_model_stage==4 and generation>qa_model_generation and console_state.get("scientific_model")=="frozen":
 			log_row("qa_frozen_switch",{"passed":fly.position.distance_to(Vector3(0,.22,0))<.001 and float(state.get("forward",1))==0.})
-			qa_model_generation=generation;command("model_condition",{"model":"counts","tonic_current":1.5,"restore_weak":false});qa_model_stage=5
+			qa_model_generation=generation;model_select.select(1);tonic_control.value=1.5;model_apply_button.pressed.emit();qa_model_stage=5
 		elif qa_model_stage==5 and generation>qa_model_generation and console_state.get("scientific_model")=="counts":
 			log_row("qa_counts_switch",{"passed":not console_state.get("sensory_enabled",true) and not console_state.get("gf_enabled",true) and is_equal_approx(float(console_state.get("tonic_current",0)),1.5)})
 			qa_model_stage=6
+		elif qa_model_stage==6:
+			qa_model_generation=generation;model_select.select(0);tonic_control.value=1.5;model_apply_button.pressed.emit();qa_model_stage=7
+		elif qa_model_stage==7 and generation>qa_model_generation and console_state.get("scientific_model")=="sensorimotor":
+			modality_controls["vision"].button_pressed=false;qa_model_stage=8
+		elif qa_model_stage==8 and not console_state.get("modality_enabled",{}).get("vision",true):
+			modality_controls["chemical"].button_pressed=false;qa_model_stage=9
+		elif qa_model_stage==9 and not console_state.get("modality_enabled",{}).get("chemical",true):
+			modality_controls["thermal"].button_pressed=false;qa_model_stage=10
+		elif qa_model_stage==10 and not console_state.get("modality_enabled",{}).get("thermal",true):
+			qa_model_generation=generation;command("reset");qa_model_stage=11
+		elif qa_model_stage==11 and generation>qa_model_generation:
+			var modalities: Dictionary=console_state.get("modality_enabled",{})
+			log_row("qa_sensorimotor_conditions_persist",{"passed":not modalities.get("vision",true) and not modalities.get("chemical",true) and not modalities.get("thermal",true) and not console_state.get("sensory_enabled",true) and not console_state.get("gf_enabled",true)})
+			qa_model_stage=12
+			shutdown()
 		return
 	if qa_neural:
 		if qa_neural_stage==0 and world_time>=.3:

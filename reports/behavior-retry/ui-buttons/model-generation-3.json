@@ -1,0 +1,32 @@
+{
+  "scientific_model": "frozen",
+  "warmup_ms": 500,
+  "parameters": {
+    "dt_ms": 1.0,
+    "tau_m_ms": 20.0,
+    "tau_syn_ms": 5.0,
+    "threshold": 1.0,
+    "reset": 0.0,
+    "rest": 0.0,
+    "refractory_ms": 2.0,
+    "recurrent_gain": 2.0,
+    "baseline_current": 0.65,
+    "baseline_heterogeneity": 0.18,
+    "noise_std": 0.1,
+    "activity_tau_ms": 50.0
+  },
+  "evidence": {},
+  "assumptions": [
+    "No world stimulus label, target position or desired action enters the motor decoder"
+  ],
+  "source_sha256": {
+    "remaster/runtime.py": "bd322876ccd4d5c593e0f986c813a16c983493e86cab581b51d32f83d388bc51",
+    "behavior/model.py": "3c26254ca83a862b634a991deecdb9ff22b9d7cff6ec80a680d6fae94e6795c8",
+    "behavior/sensorimotor.py": "6fc243a79fc761ba16b8ca664dedba7101843e744659c2cc496e3c4ce3b6ba43",
+    "behavior/sensory.py": "84adbad1a3e569104ef6a4c200f1082947a0f5a20f4195d46a1b0484149d37b4",
+    "behavior/readout.py": "4dee7a43303138e164d72ce97769da477ed14fa5fbf4a39adee507c8b91b5c87",
+    "body/remaster/main.gd": "f46d2e1d4eb28642d02f47f0771939bba6c125634997268cd99475099122a54f",
+    "config.json": "5c19f8803ea63d6975697d3eeb16c54446e96a398614e3ced0541319d78c0186",
+    "body/body_config.json": "954952a414f34fb16127660e0f236b83d901c0ae7d8559a6f6b29308e72c0131"
+  }
+}

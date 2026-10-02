@@ -1,0 +1,14 @@
+{
+  "world_seed": 20260914,
+  "schedule": [
+    {
+      "kind": "food",
+      "at_s": 2.0,
+      "position": [
+        -1.5,
+        0.22,
+        -2.0
+      ]
+    }
+  ]
+}

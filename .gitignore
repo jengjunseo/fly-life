@@ -21,3 +21,8 @@ reports/behavior/**/sensory_mapping.json
 reports/behavior/**/engine.log
 reports/behavior/**/godot_console.txt
 reports/behavior/**/brain_console.txt
+reports/behavior-retry/**/*.jsonl
+reports/behavior-retry/**/sensory_mapping.json
+reports/behavior-retry/**/engine.log
+reports/behavior-retry/**/godot_console.txt
+reports/behavior-retry/**/brain_console.txt

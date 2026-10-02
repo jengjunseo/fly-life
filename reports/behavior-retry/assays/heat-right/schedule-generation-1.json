@@ -1,0 +1,9 @@
+{
+  "world_seed": 20260914,
+  "schedule": [
+    {
+      "kind": "heat",
+      "at_s": 2.0
+    }
+  ]
+}

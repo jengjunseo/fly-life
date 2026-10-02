@@ -1,0 +1,4166 @@
+{
+  "lossless_verified": true,
+  "originals_preserved_locally": true,
+  "files": [
+    {
+      "source": "first-food-left/brain.jsonl",
+      "archive": "first-food-left/brain.jsonl.gz",
+      "sha256": "4921a28c104644cbb4ada119d792b299d106d7538fe7c3c52b67d550743ceabd",
+      "original_bytes": 4278580,
+      "archive_bytes": 336437
+    },
+    {
+      "source": "first-food-left/brain_console.txt",
+      "archive": "first-food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "first-food-left/engine.log",
+      "archive": "first-food-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "first-food-left/events.jsonl",
+      "archive": "first-food-left/events.jsonl.gz",
+      "sha256": "e45ff730cb1cb120c1d8a46ce849957896260fa1db24607a400126414e696ff8",
+      "original_bytes": 9896,
+      "archive_bytes": 1215
+    },
+    {
+      "source": "first-food-left/godot.jsonl",
+      "archive": "first-food-left/godot.jsonl.gz",
+      "sha256": "eafef1d7179e2b7ec1f57f22378f36f8b036bba7b0cf74d0b103f8f1e8b75673",
+      "original_bytes": 4659803,
+      "archive_bytes": 351271
+    },
+    {
+      "source": "first-food-left/godot_console.txt",
+      "archive": "first-food-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "first-food-left/performance.jsonl",
+      "archive": "first-food-left/performance.jsonl.gz",
+      "sha256": "0c8222d00c9d6dff368631996fd4a18879b2bf75ae3e8e0bdb581be09d077943",
+      "original_bytes": 199255,
+      "archive_bytes": 33256
+    },
+    {
+      "source": "first-food-left/sensory_mapping.json",
+      "archive": "first-food-left/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "first-food-left/world.jsonl",
+      "archive": "first-food-left/world.jsonl.gz",
+      "sha256": "e9de4f4677619c0b09c8bbeaba4e0baee008dae99b905719cc25793f3ff68945",
+      "original_bytes": 605332,
+      "archive_bytes": 78790
+    },
+    {
+      "source": "calibrated-food-left/brain.jsonl",
+      "archive": "calibrated-food-left/brain.jsonl.gz",
+      "sha256": "648deb38c61931c2700e7c60cde6c28536706d330b1b7d44092ae33cfc477886",
+      "original_bytes": 3446750,
+      "archive_bytes": 313016
+    },
+    {
+      "source": "calibrated-food-left/brain_console.txt",
+      "archive": "calibrated-food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "calibrated-food-left/engine.log",
+      "archive": "calibrated-food-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "calibrated-food-left/events.jsonl",
+      "archive": "calibrated-food-left/events.jsonl.gz",
+      "sha256": "4fdf68189dee4bd86707d8330a9275eaa55b3f2ce6407820cc5f7406096f3536",
+      "original_bytes": 1917,
+      "archive_bytes": 527
+    },
+    {
+      "source": "calibrated-food-left/godot.jsonl",
+      "archive": "calibrated-food-left/godot.jsonl.gz",
+      "sha256": "c598c5334539ee542280d99ef8a3e35f9dfc6fe730adb40943dfa8322d3c2ec9",
+      "original_bytes": 3832615,
+      "archive_bytes": 327264
+    },
+    {
+      "source": "calibrated-food-left/godot_console.txt",
+      "archive": "calibrated-food-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "calibrated-food-left/performance.jsonl",
+      "archive": "calibrated-food-left/performance.jsonl.gz",
+      "sha256": "fb422c5e111ec65f9de1d6cab8c2b019593b937288b16a9438645c4106affa47",
+      "original_bytes": 198844,
+      "archive_bytes": 31728
+    },
+    {
+      "source": "calibrated-food-left/sensory_mapping.json",
+      "archive": "calibrated-food-left/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "calibrated-food-left/world.jsonl",
+      "archive": "calibrated-food-left/world.jsonl.gz",
+      "sha256": "d9c6c99e85bb2a5c5eeba81e4619fd5f33e26afea9668c3099fd0b117fbead37",
+      "original_bytes": 626081,
+      "archive_bytes": 78238
+    },
+    {
+      "source": "assays/control/brain.jsonl",
+      "archive": "assays/control/brain.jsonl.gz",
+      "sha256": "76f57d447ca808a96d33e482ded9781f3d85a13c64e3607c2b1a7abc4463037c",
+      "original_bytes": 3022257,
+      "archive_bytes": 262460
+    },
+    {
+      "source": "assays/control/brain_console.txt",
+      "archive": "assays/control/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/control/engine.log",
+      "archive": "assays/control/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/control/events.jsonl",
+      "archive": "assays/control/events.jsonl.gz",
+      "sha256": "b7552107463980960a1c90527c1e9673d4e6aa0de0ea78fd976c7570e92f00af",
+      "original_bytes": 416,
+      "archive_bytes": 229
+    },
+    {
+      "source": "assays/control/godot.jsonl",
+      "archive": "assays/control/godot.jsonl.gz",
+      "sha256": "f6bdd39c9f356bf6cee6a72b30098be92c5f0bf60f59e2cdfc2642832c8367e7",
+      "original_bytes": 3423214,
+      "archive_bytes": 284916
+    },
+    {
+      "source": "assays/control/godot_console.txt",
+      "archive": "assays/control/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/control/performance.jsonl",
+      "archive": "assays/control/performance.jsonl.gz",
+      "sha256": "24d594df83c06d638ef2f53d16b2b62d80f0168c9493922009823b19e8b0071d",
+      "original_bytes": 199554,
+      "archive_bytes": 33201
+    },
+    {
+      "source": "assays/control/sensory_mapping.json",
+      "archive": "assays/control/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/control/world.jsonl",
+      "archive": "assays/control/world.jsonl.gz",
+      "sha256": "0551a10796e0c44a6872dfb22bb520b0678ed0c2bf1503551c4e639b6c5fc07f",
+      "original_bytes": 485858,
+      "archive_bytes": 51337
+    },
+    {
+      "source": "assays/control-no-sensory/brain.jsonl",
+      "archive": "assays/control-no-sensory/brain.jsonl.gz",
+      "sha256": "5bb096b925d03ea94d5305334946464341f9fbd95548c40e0394b244f4fb0ff6",
+      "original_bytes": 2726995,
+      "archive_bytes": 240023
+    },
+    {
+      "source": "assays/control-no-sensory/brain_console.txt",
+      "archive": "assays/control-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/control-no-sensory/engine.log",
+      "archive": "assays/control-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/control-no-sensory/events.jsonl",
+      "archive": "assays/control-no-sensory/events.jsonl.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/control-no-sensory/godot.jsonl",
+      "archive": "assays/control-no-sensory/godot.jsonl.gz",
+      "sha256": "afed0628520f57e5f2a2fb48a728c2b4ffac81498567ce6f0ee246cc09123675",
+      "original_bytes": 3125960,
+      "archive_bytes": 258182
+    },
+    {
+      "source": "assays/control-no-sensory/godot_console.txt",
+      "archive": "assays/control-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/control-no-sensory/performance.jsonl",
+      "archive": "assays/control-no-sensory/performance.jsonl.gz",
+      "sha256": "efa6d31366484b9748f2e8da9100edc2a6ea871a09f0faab707cd5789c6d52c4",
+      "original_bytes": 199055,
+      "archive_bytes": 31872
+    },
+    {
+      "source": "assays/control-no-sensory/sensory_mapping.json",
+      "archive": "assays/control-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/control-no-sensory/world.jsonl",
+      "archive": "assays/control-no-sensory/world.jsonl.gz",
+      "sha256": "8855451b38b6099933fc2914790e10053a0799a59eeed2a260a658a05e57a241",
+      "original_bytes": 485631,
+      "archive_bytes": 51126
+    },
+    {
+      "source": "assays/food-left/brain.jsonl",
+      "archive": "assays/food-left/brain.jsonl.gz",
+      "sha256": "04d38486065e2583d57f539f426eab8b11a9e60277bf94d7deaac82887bcc382",
+      "original_bytes": 3447410,
+      "archive_bytes": 313877
+    },
+    {
+      "source": "assays/food-left/brain_console.txt",
+      "archive": "assays/food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-left/engine.log",
+      "archive": "assays/food-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-left/events.jsonl",
+      "archive": "assays/food-left/events.jsonl.gz",
+      "sha256": "4fdf68189dee4bd86707d8330a9275eaa55b3f2ce6407820cc5f7406096f3536",
+      "original_bytes": 1917,
+      "archive_bytes": 527
+    },
+    {
+      "source": "assays/food-left/godot.jsonl",
+      "archive": "assays/food-left/godot.jsonl.gz",
+      "sha256": "272fde0820c2275e0c6dfcf09138da2c4ce5dda6a59622eeda5e8108de2fd13d",
+      "original_bytes": 3838290,
+      "archive_bytes": 328379
+    },
+    {
+      "source": "assays/food-left/godot_console.txt",
+      "archive": "assays/food-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-left/performance.jsonl",
+      "archive": "assays/food-left/performance.jsonl.gz",
+      "sha256": "92610e71b5a3124abad9c4024087b502215ea54082aae1688083d19e81c01fe3",
+      "original_bytes": 199712,
+      "archive_bytes": 32683
+    },
+    {
+      "source": "assays/food-left/sensory_mapping.json",
+      "archive": "assays/food-left/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/food-left/world.jsonl",
+      "archive": "assays/food-left/world.jsonl.gz",
+      "sha256": "d9c6c99e85bb2a5c5eeba81e4619fd5f33e26afea9668c3099fd0b117fbead37",
+      "original_bytes": 626081,
+      "archive_bytes": 78238
+    },
+    {
+      "source": "assays/food-left-no-chemical/brain.jsonl",
+      "archive": "assays/food-left-no-chemical/brain.jsonl.gz",
+      "sha256": "182d8fcfeb96aa79f91889b389d4f2d649c88abae283d0fbe1613d272d08ff3f",
+      "original_bytes": 3355743,
+      "archive_bytes": 301852
+    },
+    {
+      "source": "assays/food-left-no-chemical/brain_console.txt",
+      "archive": "assays/food-left-no-chemical/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-left-no-chemical/engine.log",
+      "archive": "assays/food-left-no-chemical/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-left-no-chemical/events.jsonl",
+      "archive": "assays/food-left-no-chemical/events.jsonl.gz",
+      "sha256": "e5270d6f723cce51615eb92a94c385e2d5c36af09a248fe736e9cea63774f08b",
+      "original_bytes": 1841,
+      "archive_bytes": 506
+    },
+    {
+      "source": "assays/food-left-no-chemical/godot.jsonl",
+      "archive": "assays/food-left-no-chemical/godot.jsonl.gz",
+      "sha256": "cf60ae5ee586b995257f1e5caee825bbe21815387b7a7789a4f011b46d36f507",
+      "original_bytes": 3750369,
+      "archive_bytes": 316809
+    },
+    {
+      "source": "assays/food-left-no-chemical/godot_console.txt",
+      "archive": "assays/food-left-no-chemical/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-left-no-chemical/performance.jsonl",
+      "archive": "assays/food-left-no-chemical/performance.jsonl.gz",
+      "sha256": "d51d0311be99d30934ee4f886177820b69bcbe08c622ca44c9ed86a3277e4485",
+      "original_bytes": 198902,
+      "archive_bytes": 31497
+    },
+    {
+      "source": "assays/food-left-no-chemical/sensory_mapping.json",
+      "archive": "assays/food-left-no-chemical/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "assays/food-left-no-chemical/world.jsonl",
+      "archive": "assays/food-left-no-chemical/world.jsonl.gz",
+      "sha256": "d0f39875979fec777581b1bbcd6b8b2b2a0496048914ee63afd74c6901b842f9",
+      "original_bytes": 625423,
+      "archive_bytes": 78260
+    },
+    {
+      "source": "assays/food-left-no-sensory/brain.jsonl",
+      "archive": "assays/food-left-no-sensory/brain.jsonl.gz",
+      "sha256": "c18265d58dbfd523a3424bcba18237b5147b40bc8879b4a9dfed00502fa098d2",
+      "original_bytes": 2917094,
+      "archive_bytes": 267263
+    },
+    {
+      "source": "assays/food-left-no-sensory/brain_console.txt",
+      "archive": "assays/food-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-left-no-sensory/engine.log",
+      "archive": "assays/food-left-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-left-no-sensory/events.jsonl",
+      "archive": "assays/food-left-no-sensory/events.jsonl.gz",
+      "sha256": "06ae995057c84be72ce26342d4f23eccdee9eb69b84db1958a47665f91871161",
+      "original_bytes": 274,
+      "archive_bytes": 200
+    },
+    {
+      "source": "assays/food-left-no-sensory/godot.jsonl",
+      "archive": "assays/food-left-no-sensory/godot.jsonl.gz",
+      "sha256": "e928d51cecb3d68ce40579d1a40798c421c2ad06988c60ef944353fa0c21d8f8",
+      "original_bytes": 3317041,
+      "archive_bytes": 287595
+    },
+    {
+      "source": "assays/food-left-no-sensory/godot_console.txt",
+      "archive": "assays/food-left-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-left-no-sensory/performance.jsonl",
+      "archive": "assays/food-left-no-sensory/performance.jsonl.gz",
+      "sha256": "7295099bbab878a0520ac1b56e3e1817a14ddcefc1ac1809435181ec23317eca",
+      "original_bytes": 199701,
+      "archive_bytes": 32541
+    },
+    {
+      "source": "assays/food-left-no-sensory/sensory_mapping.json",
+      "archive": "assays/food-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/food-left-no-sensory/world.jsonl",
+      "archive": "assays/food-left-no-sensory/world.jsonl.gz",
+      "sha256": "767ba6953adf1202d8923331306f86f75b0fa2c6f38d53cc28fd21692895b424",
+      "original_bytes": 624383,
+      "archive_bytes": 76123
+    },
+    {
+      "source": "assays/food-left-no-vision/brain.jsonl",
+      "archive": "assays/food-left-no-vision/brain.jsonl.gz",
+      "sha256": "7fef4b6332652ce55a196f6ae71515ba03176c19b80ce052cba39f3cf391322a",
+      "original_bytes": 3373969,
+      "archive_bytes": 302632
+    },
+    {
+      "source": "assays/food-left-no-vision/brain_console.txt",
+      "archive": "assays/food-left-no-vision/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-left-no-vision/engine.log",
+      "archive": "assays/food-left-no-vision/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-left-no-vision/events.jsonl",
+      "archive": "assays/food-left-no-vision/events.jsonl.gz",
+      "sha256": "20eda226ae2c302782ae9f0261fd91a376381a9b446acf19773eeb8b4107da43",
+      "original_bytes": 1319,
+      "archive_bytes": 419
+    },
+    {
+      "source": "assays/food-left-no-vision/godot.jsonl",
+      "archive": "assays/food-left-no-vision/godot.jsonl.gz",
+      "sha256": "caaef1b1a0ca85ce94d2e52393883a9a4089ce49bfb77939b704491f6e22e5bf",
+      "original_bytes": 3770462,
+      "archive_bytes": 317379
+    },
+    {
+      "source": "assays/food-left-no-vision/godot_console.txt",
+      "archive": "assays/food-left-no-vision/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-left-no-vision/performance.jsonl",
+      "archive": "assays/food-left-no-vision/performance.jsonl.gz",
+      "sha256": "0a67fef0c33a9aa79e5d3df5a6b3c8c27bfa4f661624726f85a1e0e0ab06bbaf",
+      "original_bytes": 199245,
+      "archive_bytes": 31739
+    },
+    {
+      "source": "assays/food-left-no-vision/sensory_mapping.json",
+      "archive": "assays/food-left-no-vision/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "assays/food-left-no-vision/world.jsonl",
+      "archive": "assays/food-left-no-vision/world.jsonl.gz",
+      "sha256": "33caae0fe817cb668cb308d6b7031b5a6a29b8e56764864d8b927e64c4b0c84a",
+      "original_bytes": 623921,
+      "archive_bytes": 75785
+    },
+    {
+      "source": "assays/food-right/brain.jsonl",
+      "archive": "assays/food-right/brain.jsonl.gz",
+      "sha256": "ac229411f795450bfc2cf71d4b07798039ecdc47095f94903ffa2de5944fe175",
+      "original_bytes": 3528755,
+      "archive_bytes": 298086
+    },
+    {
+      "source": "assays/food-right/brain_console.txt",
+      "archive": "assays/food-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-right/engine.log",
+      "archive": "assays/food-right/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-right/events.jsonl",
+      "archive": "assays/food-right/events.jsonl.gz",
+      "sha256": "8dc0c1d56e93be142e366510e7a031bcc2192f592241afc2b12e7c384fc7179f",
+      "original_bytes": 3274,
+      "archive_bytes": 663
+    },
+    {
+      "source": "assays/food-right/godot.jsonl",
+      "archive": "assays/food-right/godot.jsonl.gz",
+      "sha256": "82bce4fa0161153c9bc92c3bd50272788745fcfbf403671c58aeda1cffccb308",
+      "original_bytes": 3929585,
+      "archive_bytes": 313486
+    },
+    {
+      "source": "assays/food-right/godot_console.txt",
+      "archive": "assays/food-right/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-right/performance.jsonl",
+      "archive": "assays/food-right/performance.jsonl.gz",
+      "sha256": "c8fe210217cf52148a271b4ec76f2c75461f56c92cc0930eaa6e0db58ada0478",
+      "original_bytes": 200006,
+      "archive_bytes": 33527
+    },
+    {
+      "source": "assays/food-right/sensory_mapping.json",
+      "archive": "assays/food-right/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/food-right/world.jsonl",
+      "archive": "assays/food-right/world.jsonl.gz",
+      "sha256": "e736926350cbac8fdbc2724fc91fc034334829dcd565fc2a3baa253f530f7c90",
+      "original_bytes": 613130,
+      "archive_bytes": 69962
+    },
+    {
+      "source": "assays/food-right-no-chemical/brain.jsonl",
+      "archive": "assays/food-right-no-chemical/brain.jsonl.gz",
+      "sha256": "989e2735676c3496c457a42edce865d2b98c86bf8f95cc40c998b1d5dc3b5f0a",
+      "original_bytes": 3346381,
+      "archive_bytes": 282091
+    },
+    {
+      "source": "assays/food-right-no-chemical/brain_console.txt",
+      "archive": "assays/food-right-no-chemical/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-right-no-chemical/engine.log",
+      "archive": "assays/food-right-no-chemical/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-right-no-chemical/events.jsonl",
+      "archive": "assays/food-right-no-chemical/events.jsonl.gz",
+      "sha256": "e1dcb9d2e9f9f47d50f8863ca53ceb05a5da09bc64cf56cc825e68b85b7bd5df",
+      "original_bytes": 2029,
+      "archive_bytes": 542
+    },
+    {
+      "source": "assays/food-right-no-chemical/godot.jsonl",
+      "archive": "assays/food-right-no-chemical/godot.jsonl.gz",
+      "sha256": "03448807c9a355fb726b591952939d15a4b1535d854f04094f6608b199167110",
+      "original_bytes": 3744020,
+      "archive_bytes": 298725
+    },
+    {
+      "source": "assays/food-right-no-chemical/godot_console.txt",
+      "archive": "assays/food-right-no-chemical/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-right-no-chemical/performance.jsonl",
+      "archive": "assays/food-right-no-chemical/performance.jsonl.gz",
+      "sha256": "05c3b3a87bf4e6737d5fba05bf985344263adc512f95d5c17098b5b71f3a9dbb",
+      "original_bytes": 199607,
+      "archive_bytes": 33551
+    },
+    {
+      "source": "assays/food-right-no-chemical/sensory_mapping.json",
+      "archive": "assays/food-right-no-chemical/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "assays/food-right-no-chemical/world.jsonl",
+      "archive": "assays/food-right-no-chemical/world.jsonl.gz",
+      "sha256": "8ed2b61a2565a95b2224e20e9474276113ac9b143fd00fb140dd4b64852c4e45",
+      "original_bytes": 608308,
+      "archive_bytes": 67285
+    },
+    {
+      "source": "assays/food-right-no-sensory/brain.jsonl",
+      "archive": "assays/food-right-no-sensory/brain.jsonl.gz",
+      "sha256": "52c973213f927458bbe2bdfe877548c31a5e99872aa601e3b47ccf8617764e4b",
+      "original_bytes": 2917764,
+      "archive_bytes": 265703
+    },
+    {
+      "source": "assays/food-right-no-sensory/brain_console.txt",
+      "archive": "assays/food-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-right-no-sensory/engine.log",
+      "archive": "assays/food-right-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-right-no-sensory/events.jsonl",
+      "archive": "assays/food-right-no-sensory/events.jsonl.gz",
+      "sha256": "ba9b6c9ee6bb295f04e9b29aad04851f18f8d14c830417b6fd4ef657a00672e5",
+      "original_bytes": 273,
+      "archive_bytes": 199
+    },
+    {
+      "source": "assays/food-right-no-sensory/godot.jsonl",
+      "archive": "assays/food-right-no-sensory/godot.jsonl.gz",
+      "sha256": "842b8f19f8bef4a3482734df69c71eaa7febc0bc95d2f2419908a96d65e8f928",
+      "original_bytes": 3314966,
+      "archive_bytes": 285867
+    },
+    {
+      "source": "assays/food-right-no-sensory/godot_console.txt",
+      "archive": "assays/food-right-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-right-no-sensory/performance.jsonl",
+      "archive": "assays/food-right-no-sensory/performance.jsonl.gz",
+      "sha256": "1c99f35e2e01eef5d11d419fb0e52f5e6db169f45e0bce2c9e6137ccb332c9aa",
+      "original_bytes": 199626,
+      "archive_bytes": 31789
+    },
+    {
+      "source": "assays/food-right-no-sensory/sensory_mapping.json",
+      "archive": "assays/food-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/food-right-no-sensory/world.jsonl",
+      "archive": "assays/food-right-no-sensory/world.jsonl.gz",
+      "sha256": "d4d3dca356ce59b48c7be1925aadfceac094a2fea294a5058b3e6a78432f5b54",
+      "original_bytes": 623446,
+      "archive_bytes": 75481
+    },
+    {
+      "source": "assays/food-right-no-vision/brain.jsonl",
+      "archive": "assays/food-right-no-vision/brain.jsonl.gz",
+      "sha256": "89b22c48c6880771e9323a653649095b91493f78b627f16eb95caab920c2c4a2",
+      "original_bytes": 3382750,
+      "archive_bytes": 302963
+    },
+    {
+      "source": "assays/food-right-no-vision/brain_console.txt",
+      "archive": "assays/food-right-no-vision/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/food-right-no-vision/engine.log",
+      "archive": "assays/food-right-no-vision/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/food-right-no-vision/events.jsonl",
+      "archive": "assays/food-right-no-vision/events.jsonl.gz",
+      "sha256": "8602d58eb053befd2f7b2abdcf31b01f58942c9b46444531ddfa9dc7cd01f666",
+      "original_bytes": 1318,
+      "archive_bytes": 418
+    },
+    {
+      "source": "assays/food-right-no-vision/godot.jsonl",
+      "archive": "assays/food-right-no-vision/godot.jsonl.gz",
+      "sha256": "7952c9922ac8e1352ca1cf9abc05d16443c2aef85c9f90e3219adf6497748dc1",
+      "original_bytes": 3777305,
+      "archive_bytes": 317320
+    },
+    {
+      "source": "assays/food-right-no-vision/godot_console.txt",
+      "archive": "assays/food-right-no-vision/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/food-right-no-vision/performance.jsonl",
+      "archive": "assays/food-right-no-vision/performance.jsonl.gz",
+      "sha256": "c883106e300c820e69f75bc9b16d2d0700af9bb364148df6c44e509999046548",
+      "original_bytes": 199393,
+      "archive_bytes": 32646
+    },
+    {
+      "source": "assays/food-right-no-vision/sensory_mapping.json",
+      "archive": "assays/food-right-no-vision/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "assays/food-right-no-vision/world.jsonl",
+      "archive": "assays/food-right-no-vision/world.jsonl.gz",
+      "sha256": "2ca7c5450e4743a58cfa3c30cfff6d8155b9882e3b32107943c5b92b27abde56",
+      "original_bytes": 623957,
+      "archive_bytes": 75665
+    },
+    {
+      "source": "assays/heat-left/brain.jsonl",
+      "archive": "assays/heat-left/brain.jsonl.gz",
+      "sha256": "f64877a749860887299c99f85f926f4dcc3ecbba4fe6fec246f220ebe340d347",
+      "original_bytes": 2985712,
+      "archive_bytes": 260964
+    },
+    {
+      "source": "assays/heat-left/brain_console.txt",
+      "archive": "assays/heat-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/heat-left/engine.log",
+      "archive": "assays/heat-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/heat-left/events.jsonl",
+      "archive": "assays/heat-left/events.jsonl.gz",
+      "sha256": "b434ddefcc124aacbf37caa49537276b0689b54e5040e6966300353c9962e71c",
+      "original_bytes": 313,
+      "archive_bytes": 228
+    },
+    {
+      "source": "assays/heat-left/godot.jsonl",
+      "archive": "assays/heat-left/godot.jsonl.gz",
+      "sha256": "60f9c80de6dcb5a8904c214356296fc8d23e0ba679a97b8e892764b62ba9b186",
+      "original_bytes": 3386681,
+      "archive_bytes": 283310
+    },
+    {
+      "source": "assays/heat-left/godot_console.txt",
+      "archive": "assays/heat-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/heat-left/performance.jsonl",
+      "archive": "assays/heat-left/performance.jsonl.gz",
+      "sha256": "002f081b2061424bee25e0f5d937df79c06e2e03dd9c9b8b0cd7a586cd94a382",
+      "original_bytes": 199103,
+      "archive_bytes": 31263
+    },
+    {
+      "source": "assays/heat-left/sensory_mapping.json",
+      "archive": "assays/heat-left/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/heat-left/world.jsonl",
+      "archive": "assays/heat-left/world.jsonl.gz",
+      "sha256": "bbf904596d27a41c9c65180df3786333dd8ca4a7c1a8b49c081f4dc4e4d22368",
+      "original_bytes": 488051,
+      "archive_bytes": 55207
+    },
+    {
+      "source": "assays/heat-left-no-sensory/brain.jsonl",
+      "archive": "assays/heat-left-no-sensory/brain.jsonl.gz",
+      "sha256": "b6a81857bbd9ffe5c050d1580d079bf659535623d43dc46888ec583187d6f1de",
+      "original_bytes": 2753246,
+      "archive_bytes": 241020
+    },
+    {
+      "source": "assays/heat-left-no-sensory/brain_console.txt",
+      "archive": "assays/heat-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/heat-left-no-sensory/engine.log",
+      "archive": "assays/heat-left-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/heat-left-no-sensory/events.jsonl",
+      "archive": "assays/heat-left-no-sensory/events.jsonl.gz",
+      "sha256": "1b89958a7961341e22171675b5ad71e2bc94ea903ccc2248855465aaca9cb450",
+      "original_bytes": 320,
+      "archive_bytes": 162
+    },
+    {
+      "source": "assays/heat-left-no-sensory/godot.jsonl",
+      "archive": "assays/heat-left-no-sensory/godot.jsonl.gz",
+      "sha256": "c87fc34676c5b3bd1dac5070db6db610d1e30d66b9aab083f61f512abb655a78",
+      "original_bytes": 3151592,
+      "archive_bytes": 260050
+    },
+    {
+      "source": "assays/heat-left-no-sensory/godot_console.txt",
+      "archive": "assays/heat-left-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/heat-left-no-sensory/performance.jsonl",
+      "archive": "assays/heat-left-no-sensory/performance.jsonl.gz",
+      "sha256": "a7fa6a988c61cc27f7cd8de97c4c67b0903979e8dd16198660fd241984fd796f",
+      "original_bytes": 199195,
+      "archive_bytes": 30550
+    },
+    {
+      "source": "assays/heat-left-no-sensory/sensory_mapping.json",
+      "archive": "assays/heat-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/heat-left-no-sensory/world.jsonl",
+      "archive": "assays/heat-left-no-sensory/world.jsonl.gz",
+      "sha256": "8e18f6ffc63b8b524b4b1928f4bdb89e814f931e2e995a2aca7287b9f4bd12cd",
+      "original_bytes": 486240,
+      "archive_bytes": 52731
+    },
+    {
+      "source": "assays/heat-right/brain.jsonl",
+      "archive": "assays/heat-right/brain.jsonl.gz",
+      "sha256": "b85d8fe783eada43d4c30d2fa686910f233b442e8aa3f749568e4bec5889e008",
+      "original_bytes": 3041928,
+      "archive_bytes": 260481
+    },
+    {
+      "source": "assays/heat-right/brain_console.txt",
+      "archive": "assays/heat-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/heat-right/engine.log",
+      "archive": "assays/heat-right/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/heat-right/events.jsonl",
+      "archive": "assays/heat-right/events.jsonl.gz",
+      "sha256": "b8d1aba135bfe6d384d6dfa1c549c5023c84927dac277e5e8e19b52b596f4389",
+      "original_bytes": 520,
+      "archive_bytes": 255
+    },
+    {
+      "source": "assays/heat-right/godot.jsonl",
+      "archive": "assays/heat-right/godot.jsonl.gz",
+      "sha256": "a32bf415b5718f9fd6da1a7a462b6cac6c88da42c752a09fd93e24327eb1c3b5",
+      "original_bytes": 3444896,
+      "archive_bytes": 282537
+    },
+    {
+      "source": "assays/heat-right/godot_console.txt",
+      "archive": "assays/heat-right/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/heat-right/performance.jsonl",
+      "archive": "assays/heat-right/performance.jsonl.gz",
+      "sha256": "2f72bc52b25e9ca9a3b4b1e841fc30cdfccb9456a104f3b732a092fa40121a3f",
+      "original_bytes": 199116,
+      "archive_bytes": 31303
+    },
+    {
+      "source": "assays/heat-right/sensory_mapping.json",
+      "archive": "assays/heat-right/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/heat-right/world.jsonl",
+      "archive": "assays/heat-right/world.jsonl.gz",
+      "sha256": "5e7786af55d3eaa0b238018d4a3dd6c8852755560aa5ef1d2a35e6dbe01e6654",
+      "original_bytes": 489729,
+      "archive_bytes": 54432
+    },
+    {
+      "source": "assays/heat-right-no-sensory/brain.jsonl",
+      "archive": "assays/heat-right-no-sensory/brain.jsonl.gz",
+      "sha256": "c30c6e0f7411d7de909868a22a7b7e969eef930284fcc3fb7a511981266bb105",
+      "original_bytes": 2748258,
+      "archive_bytes": 242728
+    },
+    {
+      "source": "assays/heat-right-no-sensory/brain_console.txt",
+      "archive": "assays/heat-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/heat-right-no-sensory/engine.log",
+      "archive": "assays/heat-right-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/heat-right-no-sensory/events.jsonl",
+      "archive": "assays/heat-right-no-sensory/events.jsonl.gz",
+      "sha256": "bb5ddc46f8c0015c595823a144c8280f8902cca14a59b35dfeda68f509feb063",
+      "original_bytes": 105,
+      "archive_bytes": 106
+    },
+    {
+      "source": "assays/heat-right-no-sensory/godot.jsonl",
+      "archive": "assays/heat-right-no-sensory/godot.jsonl.gz",
+      "sha256": "926629aea460da078ae1fc62005f1daa6b0c49e84c32c2ce3263426f887fa0cf",
+      "original_bytes": 3148489,
+      "archive_bytes": 261994
+    },
+    {
+      "source": "assays/heat-right-no-sensory/godot_console.txt",
+      "archive": "assays/heat-right-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/heat-right-no-sensory/performance.jsonl",
+      "archive": "assays/heat-right-no-sensory/performance.jsonl.gz",
+      "sha256": "daad36d2f8a0d9d5b12c17716053d0131cd591a3ce9727412b006f4dbe968483",
+      "original_bytes": 198999,
+      "archive_bytes": 31437
+    },
+    {
+      "source": "assays/heat-right-no-sensory/sensory_mapping.json",
+      "archive": "assays/heat-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/heat-right-no-sensory/world.jsonl",
+      "archive": "assays/heat-right-no-sensory/world.jsonl.gz",
+      "sha256": "a97620a6c092319613811b7a5203461d06f6817aabf33aa9e5efd0a0db3573a1",
+      "original_bytes": 489173,
+      "archive_bytes": 54575
+    },
+    {
+      "source": "assays/predator/brain.jsonl",
+      "archive": "assays/predator/brain.jsonl.gz",
+      "sha256": "71fb3efeb3be583d8e5f5b627fcfbf58fbfebe9b1a895edc1e445650f7c37cd2",
+      "original_bytes": 3931503,
+      "archive_bytes": 333379
+    },
+    {
+      "source": "assays/predator/brain_console.txt",
+      "archive": "assays/predator/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/predator/engine.log",
+      "archive": "assays/predator/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/predator/events.jsonl",
+      "archive": "assays/predator/events.jsonl.gz",
+      "sha256": "528ee4fc328baa450cf4a05dfc2fa2cd4b8447bd001c29baf24e280035a32c9a",
+      "original_bytes": 5832,
+      "archive_bytes": 865
+    },
+    {
+      "source": "assays/predator/godot.jsonl",
+      "archive": "assays/predator/godot.jsonl.gz",
+      "sha256": "b663d7b15cc3e262f3b8cd1e882267fc2d7c009c1715c190149d192fd7012b16",
+      "original_bytes": 4311339,
+      "archive_bytes": 348569
+    },
+    {
+      "source": "assays/predator/godot_console.txt",
+      "archive": "assays/predator/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/predator/performance.jsonl",
+      "archive": "assays/predator/performance.jsonl.gz",
+      "sha256": "dfac7364a2e5a541eea7f81641ec169fc1de47c04ff60a993bda0166cca467d7",
+      "original_bytes": 199514,
+      "archive_bytes": 32722
+    },
+    {
+      "source": "assays/predator/sensory_mapping.json",
+      "archive": "assays/predator/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/predator/world.jsonl",
+      "archive": "assays/predator/world.jsonl.gz",
+      "sha256": "ddcc7d42a2f2798c83aef27dd04cb3d68291ad9d383651aef7e84a8e3ffd49bc",
+      "original_bytes": 630065,
+      "archive_bytes": 83221
+    },
+    {
+      "source": "assays/predator-no-gf/brain.jsonl",
+      "archive": "assays/predator-no-gf/brain.jsonl.gz",
+      "sha256": "e62ad87927c6baf24ff2bf9b1c1ed23468e6ba2b96bc7ed8b8e75dbc53942ee1",
+      "original_bytes": 4086523,
+      "archive_bytes": 292579
+    },
+    {
+      "source": "assays/predator-no-gf/brain_console.txt",
+      "archive": "assays/predator-no-gf/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/predator-no-gf/engine.log",
+      "archive": "assays/predator-no-gf/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/predator-no-gf/events.jsonl",
+      "archive": "assays/predator-no-gf/events.jsonl.gz",
+      "sha256": "8a1df96ef2f7360f33ff470ab1e68a220c87735d61222bf973f1a55d57006bae",
+      "original_bytes": 8092,
+      "archive_bytes": 1109
+    },
+    {
+      "source": "assays/predator-no-gf/godot.jsonl",
+      "archive": "assays/predator-no-gf/godot.jsonl.gz",
+      "sha256": "f6bcfa55cbbd2942b56f4fd2fd46eb3b3bbb449afed1924b33ef2954f7f836d7",
+      "original_bytes": 4479128,
+      "archive_bytes": 308383
+    },
+    {
+      "source": "assays/predator-no-gf/godot_console.txt",
+      "archive": "assays/predator-no-gf/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/predator-no-gf/performance.jsonl",
+      "archive": "assays/predator-no-gf/performance.jsonl.gz",
+      "sha256": "6c02663fb68a27dc5e4e1b734b149704310796a23b1ce0034f7ea2c557bfe5bd",
+      "original_bytes": 199464,
+      "archive_bytes": 32643
+    },
+    {
+      "source": "assays/predator-no-gf/sensory_mapping.json",
+      "archive": "assays/predator-no-gf/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/predator-no-gf/world.jsonl",
+      "archive": "assays/predator-no-gf/world.jsonl.gz",
+      "sha256": "94953885bff7e221830d830109c29a47756e128b63cfce1155e7c139c550c3af",
+      "original_bytes": 617746,
+      "archive_bytes": 65635
+    },
+    {
+      "source": "assays/predator-no-sensory/brain.jsonl",
+      "archive": "assays/predator-no-sensory/brain.jsonl.gz",
+      "sha256": "e1e6eb791878b244ec9459ca459605a03ce1a82d2019b8730be4f506c12e088d",
+      "original_bytes": 3213158,
+      "archive_bytes": 256903
+    },
+    {
+      "source": "assays/predator-no-sensory/brain_console.txt",
+      "archive": "assays/predator-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "assays/predator-no-sensory/engine.log",
+      "archive": "assays/predator-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "assays/predator-no-sensory/events.jsonl",
+      "archive": "assays/predator-no-sensory/events.jsonl.gz",
+      "sha256": "c7fe0a40d435b66e5414006da352a8704cfc9958f2ffa4076b9d0706bb9ced68",
+      "original_bytes": 3401,
+      "archive_bytes": 521
+    },
+    {
+      "source": "assays/predator-no-sensory/godot.jsonl",
+      "archive": "assays/predator-no-sensory/godot.jsonl.gz",
+      "sha256": "679fd33890d0554db1d24e7053d0f8bbd74c338749146aeb3975253b73d36c05",
+      "original_bytes": 3623522,
+      "archive_bytes": 275041
+    },
+    {
+      "source": "assays/predator-no-sensory/godot_console.txt",
+      "archive": "assays/predator-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "assays/predator-no-sensory/performance.jsonl",
+      "archive": "assays/predator-no-sensory/performance.jsonl.gz",
+      "sha256": "9a6390e39c9204eed3b1a3da66e3c6219b2af6bf69cb1be2d8eb4128e512a6a1",
+      "original_bytes": 199150,
+      "archive_bytes": 32012
+    },
+    {
+      "source": "assays/predator-no-sensory/sensory_mapping.json",
+      "archive": "assays/predator-no-sensory/sensory_mapping.json.gz",
+      "sha256": "def9b68826660e5d0a7e8266d0d74d5bc71f8018a53a8c54a5683bd4a38fd3e7",
+      "original_bytes": 462191,
+      "archive_bytes": 16393
+    },
+    {
+      "source": "assays/predator-no-sensory/world.jsonl",
+      "archive": "assays/predator-no-sensory/world.jsonl.gz",
+      "sha256": "595ea2d8c11805b1b0fc0da23a3653a16592fcb27a5f21970db55f9d67fbd981",
+      "original_bytes": 623645,
+      "archive_bytes": 63129
+    },
+    {
+      "source": "model-controls/brain.jsonl",
+      "archive": "model-controls/brain.jsonl.gz",
+      "sha256": "79c0659c424e92cbf2b6824ce5f4af6f6581e33143af7801c3f2ce79f0663043",
+      "original_bytes": 10306947,
+      "archive_bytes": 828618
+    },
+    {
+      "source": "model-controls/brain_console.txt",
+      "archive": "model-controls/brain_console.txt.gz",
+      "sha256": "eedd7808e63cd6f40168b0f95c8301328264beaebdb37eb8f3beb837def0432d",
+      "original_bytes": 1018,
+      "archive_bytes": 484
+    },
+    {
+      "source": "model-controls/engine.log",
+      "archive": "model-controls/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "model-controls/events.jsonl",
+      "archive": "model-controls/events.jsonl.gz",
+      "sha256": "a753184046bf238a37d8b63a077d45fcb549fcedfdad1a22363893afac281fb7",
+      "original_bytes": 2098,
+      "archive_bytes": 439
+    },
+    {
+      "source": "model-controls/godot.jsonl",
+      "archive": "model-controls/godot.jsonl.gz",
+      "sha256": "4265b05854384f5ee1cd17f98309c56a97af720e77c8ff28617116979236d464",
+      "original_bytes": 11757260,
+      "archive_bytes": 896246
+    },
+    {
+      "source": "model-controls/godot_console.txt",
+      "archive": "model-controls/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "model-controls/performance.jsonl",
+      "archive": "model-controls/performance.jsonl.gz",
+      "sha256": "dcff1299bb4a0d9b0c0bd19b215f8e447284a7d201ba2dcda2cfc68b441e3efc",
+      "original_bytes": 722519,
+      "archive_bytes": 105015
+    },
+    {
+      "source": "model-controls/sensory_mapping.json",
+      "archive": "model-controls/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "model-controls/world.jsonl",
+      "archive": "model-controls/world.jsonl.gz",
+      "sha256": "b9582ed104dd39bbafed377e50879e081170dcbfea7b53648e28f88e025f7d1b",
+      "original_bytes": 1767832,
+      "archive_bytes": 181550
+    },
+    {
+      "source": "model-controls-final/brain.jsonl",
+      "archive": "model-controls-final/brain.jsonl.gz",
+      "sha256": "30233acbc805fa61b718d4655825125b0be292b82398d2c6bf19e9cd745b66ca",
+      "original_bytes": 339688,
+      "archive_bytes": 31429
+    },
+    {
+      "source": "model-controls-final/brain_console.txt",
+      "archive": "model-controls-final/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "model-controls-final/engine.log",
+      "archive": "model-controls-final/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "model-controls-final/events.jsonl",
+      "archive": "model-controls-final/events.jsonl.gz",
+      "sha256": "e74576dd581d8007cb72c41fad91ff9d8555182efc72373bd9f82af76a2c308d",
+      "original_bytes": 1457,
+      "archive_bytes": 324
+    },
+    {
+      "source": "model-controls-final/godot.jsonl",
+      "archive": "model-controls-final/godot.jsonl.gz",
+      "sha256": "2f90009d3b20ad7f0dc879ce6a1a50f51fa5f19ceca7dbea5cfc20bfba3efc8a",
+      "original_bytes": 398256,
+      "archive_bytes": 34491
+    },
+    {
+      "source": "model-controls-final/godot_console.txt",
+      "archive": "model-controls-final/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "model-controls-final/performance.jsonl",
+      "archive": "model-controls-final/performance.jsonl.gz",
+      "sha256": "aa4627a7c2a5d637ab717c359b24949b06d2cbcb1c60cd7afa528b7ca0afcb51",
+      "original_bytes": 10881,
+      "archive_bytes": 2270
+    },
+    {
+      "source": "model-controls-final/sensory_mapping.json",
+      "archive": "model-controls-final/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "model-controls-final/world.jsonl",
+      "archive": "model-controls-final/world.jsonl.gz",
+      "sha256": "6783c1383af962434a9cb9ad54756be9699d4f647485e2e5bcdab2676bd61d29",
+      "original_bytes": 32921,
+      "archive_bytes": 3611
+    },
+    {
+      "source": "model-controls-steady/brain.jsonl",
+      "archive": "model-controls-steady/brain.jsonl.gz",
+      "sha256": "36efba0ae502d6025bcb10360a61b0c194025d2143bcb81341c49dcd7b37e1da",
+      "original_bytes": 700880,
+      "archive_bytes": 60941
+    },
+    {
+      "source": "model-controls-steady/brain_console.txt",
+      "archive": "model-controls-steady/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "model-controls-steady/engine.log",
+      "archive": "model-controls-steady/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "model-controls-steady/events.jsonl",
+      "archive": "model-controls-steady/events.jsonl.gz",
+      "sha256": "da12277b1adbab09aa60a4111ec3d81c26f8af28651355da5b5b7dfdc7b95867",
+      "original_bytes": 1461,
+      "archive_bytes": 329
+    },
+    {
+      "source": "model-controls-steady/godot.jsonl",
+      "archive": "model-controls-steady/godot.jsonl.gz",
+      "sha256": "772c9f2523600a3d44c4eb7304912a0bfa5e51a83461a9214f395b997b9909cf",
+      "original_bytes": 810439,
+      "archive_bytes": 65145
+    },
+    {
+      "source": "model-controls-steady/godot_console.txt",
+      "archive": "model-controls-steady/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "model-controls-steady/performance.jsonl",
+      "archive": "model-controls-steady/performance.jsonl.gz",
+      "sha256": "8c3ffd9a3a0571079891fe15329a02f466eb49f1dd244a51fd6d80cdc6c45ccf",
+      "original_bytes": 10443,
+      "archive_bytes": 2247
+    },
+    {
+      "source": "model-controls-steady/sensory_mapping.json",
+      "archive": "model-controls-steady/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "model-controls-steady/world.jsonl",
+      "archive": "model-controls-steady/world.jsonl.gz",
+      "sha256": "77d3e48033a9a2be2e913266e7b0ba0d3b2ecf178c97500dd6e6aec8a86c1557",
+      "original_bytes": 31714,
+      "archive_bytes": 3512
+    },
+    {
+      "source": "steady-calibration/control/brain.jsonl",
+      "archive": "steady-calibration/control/brain.jsonl.gz",
+      "sha256": "7cc07a8da33b8a06ceccb564dc26f645cc72d78d004c304f4b6dd51e6b324666",
+      "original_bytes": 3128322,
+      "archive_bytes": 267477
+    },
+    {
+      "source": "steady-calibration/control/brain_console.txt",
+      "archive": "steady-calibration/control/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "steady-calibration/control/engine.log",
+      "archive": "steady-calibration/control/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "steady-calibration/control/events.jsonl",
+      "archive": "steady-calibration/control/events.jsonl.gz",
+      "sha256": "c9395e8188004b1dfd781a128e41561a4c10eeb433ea53f397111653b0279b47",
+      "original_bytes": 1269,
+      "archive_bytes": 342
+    },
+    {
+      "source": "steady-calibration/control/godot.jsonl",
+      "archive": "steady-calibration/control/godot.jsonl.gz",
+      "sha256": "ea0b648c37c1a8f562d37b592f339aded9ce2d60f6a1f1a679ce0f6bcb92b3a2",
+      "original_bytes": 3540833,
+      "archive_bytes": 288161
+    },
+    {
+      "source": "steady-calibration/control/godot_console.txt",
+      "archive": "steady-calibration/control/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "steady-calibration/control/performance.jsonl",
+      "archive": "steady-calibration/control/performance.jsonl.gz",
+      "sha256": "3f2007c0a8337553c6075dc1b9ac3160d807697246004755379f2bf9ff8dc799",
+      "original_bytes": 199216,
+      "archive_bytes": 32434
+    },
+    {
+      "source": "steady-calibration/control/sensory_mapping.json",
+      "archive": "steady-calibration/control/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "steady-calibration/control/world.jsonl",
+      "archive": "steady-calibration/control/world.jsonl.gz",
+      "sha256": "8db52be081701a556f37b320e9bb671b35d35d229b05f0830906dee16fae9d52",
+      "original_bytes": 485038,
+      "archive_bytes": 51209
+    },
+    {
+      "source": "steady-calibration/food-left/brain.jsonl",
+      "archive": "steady-calibration/food-left/brain.jsonl.gz",
+      "sha256": "a1001e27cfb999e40e13f3d951818732c1a04feeb619729ab962ef97ebe87658",
+      "original_bytes": 3458896,
+      "archive_bytes": 318058
+    },
+    {
+      "source": "steady-calibration/food-left/brain_console.txt",
+      "archive": "steady-calibration/food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "steady-calibration/food-left/engine.log",
+      "archive": "steady-calibration/food-left/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "steady-calibration/food-left/events.jsonl",
+      "archive": "steady-calibration/food-left/events.jsonl.gz",
+      "sha256": "83230a9420e119a3840aebbfabd6ca26b580fd1c07cfce0f9b3dd0fb11dd4735",
+      "original_bytes": 1810,
+      "archive_bytes": 508
+    },
+    {
+      "source": "steady-calibration/food-left/godot.jsonl",
+      "archive": "steady-calibration/food-left/godot.jsonl.gz",
+      "sha256": "9b0b089bbcc8277f4a24c83965fbce52bfe358811a60603792f3dd9ec726b416",
+      "original_bytes": 3861914,
+      "archive_bytes": 332046
+    },
+    {
+      "source": "steady-calibration/food-left/godot_console.txt",
+      "archive": "steady-calibration/food-left/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "steady-calibration/food-left/performance.jsonl",
+      "archive": "steady-calibration/food-left/performance.jsonl.gz",
+      "sha256": "a62e65d1f19901043fdd781cd00a1147c8766489fc486bf8bd2943e16ab8a486",
+      "original_bytes": 199317,
+      "archive_bytes": 31159
+    },
+    {
+      "source": "steady-calibration/food-left/sensory_mapping.json",
+      "archive": "steady-calibration/food-left/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "steady-calibration/food-left/world.jsonl",
+      "archive": "steady-calibration/food-left/world.jsonl.gz",
+      "sha256": "f39d0a7ed5ae4809b7797238ba74aa5aa493f28f87ac2b84dc84749027b3228e",
+      "original_bytes": 625677,
+      "archive_bytes": 78921
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/brain.jsonl",
+      "archive": "steady-calibration/food-left-no-sensory/brain.jsonl.gz",
+      "sha256": "d51ca0879e66cd1cefb470d4ac42b187542ae2faad772624230ba52f3e3d1804",
+      "original_bytes": 3028734,
+      "archive_bytes": 274610
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/brain_console.txt",
+      "archive": "steady-calibration/food-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/engine.log",
+      "archive": "steady-calibration/food-left-no-sensory/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/events.jsonl",
+      "archive": "steady-calibration/food-left-no-sensory/events.jsonl.gz",
+      "sha256": "ec9f256437969ffdd80b66e951e87c645f1a87f9de4acbdc14db1b59faa9ff88",
+      "original_bytes": 274,
+      "archive_bytes": 202
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/godot.jsonl",
+      "archive": "steady-calibration/food-left-no-sensory/godot.jsonl.gz",
+      "sha256": "f7ecc8298c6540de899fa4ebc36e1724bb8a8ecc2a52ee605a6a82b0179df5e7",
+      "original_bytes": 3438751,
+      "archive_bytes": 294233
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/godot_console.txt",
+      "archive": "steady-calibration/food-left-no-sensory/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/performance.jsonl",
+      "archive": "steady-calibration/food-left-no-sensory/performance.jsonl.gz",
+      "sha256": "7d838cf5b8cf0ff379078c1ec80491174b4907511b7584839f07feeb6629920b",
+      "original_bytes": 199156,
+      "archive_bytes": 32546
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/sensory_mapping.json",
+      "archive": "steady-calibration/food-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "steady-calibration/food-left-no-sensory/world.jsonl",
+      "archive": "steady-calibration/food-left-no-sensory/world.jsonl.gz",
+      "sha256": "117ba3d8d63d9aad839a65c389c2e88c322c696061d72426edd8b3e07a747385",
+      "original_bytes": 625701,
+      "archive_bytes": 75413
+    },
+    {
+      "source": "steady-calibration/food-right/brain.jsonl",
+      "archive": "steady-calibration/food-right/brain.jsonl.gz",
+      "sha256": "91d9b7efbe096cc257b2f4997f2a2a9c85f8a621ee7327aa316fb0dbccd8938f",
+      "original_bytes": 3500161,
+      "archive_bytes": 296213
+    },
+    {
+      "source": "steady-calibration/food-right/brain_console.txt",
+      "archive": "steady-calibration/food-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "steady-calibration/food-right/engine.log",
+      "archive": "steady-calibration/food-right/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "steady-calibration/food-right/events.jsonl",
+      "archive": "steady-calibration/food-right/events.jsonl.gz",
+      "sha256": "0e559e3c1cee27223b8f170ef017e93a6e9446430f905b18e0e6b3dff3d708ea",
+      "original_bytes": 2365,
+      "archive_bytes": 575
+    },
+    {
+      "source": "steady-calibration/food-right/godot.jsonl",
+      "archive": "steady-calibration/food-right/godot.jsonl.gz",
+      "sha256": "b69ad277253c8eb207f660e40262409fcbbddc8a00d66534a5ca978e908983d9",
+      "original_bytes": 3906017,
+      "archive_bytes": 311111
+    },
+    {
+      "source": "steady-calibration/food-right/godot_console.txt",
+      "archive": "steady-calibration/food-right/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "steady-calibration/food-right/performance.jsonl",
+      "archive": "steady-calibration/food-right/performance.jsonl.gz",
+      "sha256": "cd0a60c5294caafa8d8c5f98694ad8fde19a9dff0a4f5e78830a45ac11c83fd5",
+      "original_bytes": 199530,
+      "archive_bytes": 32893
+    },
+    {
+      "source": "steady-calibration/food-right/sensory_mapping.json",
+      "archive": "steady-calibration/food-right/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "steady-calibration/food-right/world.jsonl",
+      "archive": "steady-calibration/food-right/world.jsonl.gz",
+      "sha256": "0fedb150c9cd7355b7e382e617fc7f863e9e31dd4b67921269183d0de72d47dc",
+      "original_bytes": 606110,
+      "archive_bytes": 65296
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/brain.jsonl",
+      "archive": "steady-calibration/food-right-no-sensory/brain.jsonl.gz",
+      "sha256": "f452c4ce50aa34c2b1de0ed084e8fdcf5ee9d85bf38e9e71b1802dcec84b73e2",
+      "original_bytes": 3032949,
+      "archive_bytes": 273923
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/brain_console.txt",
+      "archive": "steady-calibration/food-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/engine.log",
+      "archive": "steady-calibration/food-right-no-sensory/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/events.jsonl",
+      "archive": "steady-calibration/food-right-no-sensory/events.jsonl.gz",
+      "sha256": "ef2f02d7c8254c9368d90b47c37c01fe674fb4362793d46341c92ac016d90cda",
+      "original_bytes": 273,
+      "archive_bytes": 201
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/godot.jsonl",
+      "archive": "steady-calibration/food-right-no-sensory/godot.jsonl.gz",
+      "sha256": "d06522798c9e0f63a165b2bbde2294245cb3e60bdf04fd4251d248326fd42a52",
+      "original_bytes": 3442143,
+      "archive_bytes": 293426
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/godot_console.txt",
+      "archive": "steady-calibration/food-right-no-sensory/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/performance.jsonl",
+      "archive": "steady-calibration/food-right-no-sensory/performance.jsonl.gz",
+      "sha256": "e2890d6be632c69ba821dbb16d7df8abe1b7e49b805f800226a7a8693d528ed8",
+      "original_bytes": 199206,
+      "archive_bytes": 31282
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/sensory_mapping.json",
+      "archive": "steady-calibration/food-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "steady-calibration/food-right-no-sensory/world.jsonl",
+      "archive": "steady-calibration/food-right-no-sensory/world.jsonl.gz",
+      "sha256": "1795ae1ec2a8ea6a7ccaa74315d5b89175d52883bc994944ff44f73c23cd9719",
+      "original_bytes": 625162,
+      "archive_bytes": 75556
+    },
+    {
+      "source": "seed-42/control/brain.jsonl",
+      "archive": "seed-42/control/brain.jsonl.gz",
+      "sha256": "39f8c47c5affa275a05581df3bd7a7d6d1b62dc4f7b50cd05586fa88d059da17",
+      "original_bytes": 3037356,
+      "archive_bytes": 260680
+    },
+    {
+      "source": "seed-42/control/brain_console.txt",
+      "archive": "seed-42/control/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/control/engine.log",
+      "archive": "seed-42/control/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/control/events.jsonl",
+      "archive": "seed-42/control/events.jsonl.gz",
+      "sha256": "6414e7191dd6c6fd6482e979cc07d1c906f54cf48861c07a559e2e9637de177c",
+      "original_bytes": 416,
+      "archive_bytes": 230
+    },
+    {
+      "source": "seed-42/control/godot.jsonl",
+      "archive": "seed-42/control/godot.jsonl.gz",
+      "sha256": "180f2c5806e44bf67eb3ad13c3dbb638e162968c69a688e57d13192bb5b1abc5",
+      "original_bytes": 3433253,
+      "archive_bytes": 283046
+    },
+    {
+      "source": "seed-42/control/godot_console.txt",
+      "archive": "seed-42/control/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/control/performance.jsonl",
+      "archive": "seed-42/control/performance.jsonl.gz",
+      "sha256": "1adac8c9718e1b837530902742736a82abaa9bee76b4646596f562768987221d",
+      "original_bytes": 198863,
+      "archive_bytes": 30938
+    },
+    {
+      "source": "seed-42/control/sensory_mapping.json",
+      "archive": "seed-42/control/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/control/world.jsonl",
+      "archive": "seed-42/control/world.jsonl.gz",
+      "sha256": "b94123864f54f2f8fef448ec29647e5f60917f0e936b91b1375ddb50296e95f3",
+      "original_bytes": 485836,
+      "archive_bytes": 51826
+    },
+    {
+      "source": "seed-42/food-left/brain.jsonl",
+      "archive": "seed-42/food-left/brain.jsonl.gz",
+      "sha256": "4573fe626e5c439e160ae07ebe2e58b7fdd93ac2b8983b9b14cd4b7f9424fabd",
+      "original_bytes": 3533180,
+      "archive_bytes": 313999
+    },
+    {
+      "source": "seed-42/food-left/brain_console.txt",
+      "archive": "seed-42/food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/food-left/engine.log",
+      "archive": "seed-42/food-left/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/food-left/events.jsonl",
+      "archive": "seed-42/food-left/events.jsonl.gz",
+      "sha256": "ef771bccdd2df430a37cd7b9d03318c74d4e48239ad995e054fce562a1aff84a",
+      "original_bytes": 2886,
+      "archive_bytes": 610
+    },
+    {
+      "source": "seed-42/food-left/godot.jsonl",
+      "archive": "seed-42/food-left/godot.jsonl.gz",
+      "sha256": "128bca7f857ae9509444cf391a5519ff638a71286b87abf236579cd524d64900",
+      "original_bytes": 3922296,
+      "archive_bytes": 327970
+    },
+    {
+      "source": "seed-42/food-left/godot_console.txt",
+      "archive": "seed-42/food-left/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/food-left/performance.jsonl",
+      "archive": "seed-42/food-left/performance.jsonl.gz",
+      "sha256": "a2488a3abf8f92aa929418f7b5c2066c589d31e7acca4d8ddd02adeb4e00cd4d",
+      "original_bytes": 199325,
+      "archive_bytes": 32164
+    },
+    {
+      "source": "seed-42/food-left/sensory_mapping.json",
+      "archive": "seed-42/food-left/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/food-left/world.jsonl",
+      "archive": "seed-42/food-left/world.jsonl.gz",
+      "sha256": "63985eab2aaca174f272dff02cfd51ffe8e52ed1fc7e46eeb48466025ba048e2",
+      "original_bytes": 625426,
+      "archive_bytes": 78648
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/brain.jsonl",
+      "archive": "seed-42/food-left-no-sensory/brain.jsonl.gz",
+      "sha256": "d4345d19787a93e169542cc934c8a371392c5893d0c1d33519e815a740b81492",
+      "original_bytes": 2954801,
+      "archive_bytes": 268128
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/brain_console.txt",
+      "archive": "seed-42/food-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/engine.log",
+      "archive": "seed-42/food-left-no-sensory/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/events.jsonl",
+      "archive": "seed-42/food-left-no-sensory/events.jsonl.gz",
+      "sha256": "234448f951838f764ae3383c8d65d135ea183f9db98bcab37d9d8a1d6efe089d",
+      "original_bytes": 406,
+      "archive_bytes": 237
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/godot.jsonl",
+      "archive": "seed-42/food-left-no-sensory/godot.jsonl.gz",
+      "sha256": "dd9f4fda1130bd6014c9dcb3e5875f9a814a3abf58c1c5fcf0905e9df6defe79",
+      "original_bytes": 3348876,
+      "archive_bytes": 287701
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/godot_console.txt",
+      "archive": "seed-42/food-left-no-sensory/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/performance.jsonl",
+      "archive": "seed-42/food-left-no-sensory/performance.jsonl.gz",
+      "sha256": "bb51668a4e3381e47fed6cbcae0622b970b71ad3da370bb2cbdc58be91d5ecc1",
+      "original_bytes": 199093,
+      "archive_bytes": 32054
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/sensory_mapping.json",
+      "archive": "seed-42/food-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/food-left-no-sensory/world.jsonl",
+      "archive": "seed-42/food-left-no-sensory/world.jsonl.gz",
+      "sha256": "66355956cda459e75564de5e952ed84cb57a4e8d75b7c6bc388aafb2baae792a",
+      "original_bytes": 624672,
+      "archive_bytes": 76700
+    },
+    {
+      "source": "seed-42/food-right/brain.jsonl",
+      "archive": "seed-42/food-right/brain.jsonl.gz",
+      "sha256": "cbdefd93501aeb667ca0b7d7f7ca4c656933407e834a82b4cfb72a2d5a2c2073",
+      "original_bytes": 3403587,
+      "archive_bytes": 302996
+    },
+    {
+      "source": "seed-42/food-right/brain_console.txt",
+      "archive": "seed-42/food-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/food-right/engine.log",
+      "archive": "seed-42/food-right/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/food-right/events.jsonl",
+      "archive": "seed-42/food-right/events.jsonl.gz",
+      "sha256": "129a39772864cd4684b03bd631d0844cca5f0a0415524f26e634fa97c1353d94",
+      "original_bytes": 1907,
+      "archive_bytes": 537
+    },
+    {
+      "source": "seed-42/food-right/godot.jsonl",
+      "archive": "seed-42/food-right/godot.jsonl.gz",
+      "sha256": "f8c2cbc8d1162e46f47210bf3a56dcc031be961ce43acf00809a0fde1106b08a",
+      "original_bytes": 3787449,
+      "archive_bytes": 317503
+    },
+    {
+      "source": "seed-42/food-right/godot_console.txt",
+      "archive": "seed-42/food-right/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/food-right/performance.jsonl",
+      "archive": "seed-42/food-right/performance.jsonl.gz",
+      "sha256": "89196e3847448228fab1e27f7390be5248675f78a4837c0a523693f1399a80d2",
+      "original_bytes": 199019,
+      "archive_bytes": 31459
+    },
+    {
+      "source": "seed-42/food-right/sensory_mapping.json",
+      "archive": "seed-42/food-right/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/food-right/world.jsonl",
+      "archive": "seed-42/food-right/world.jsonl.gz",
+      "sha256": "fdf914496ae5e10ba73078d91c118704cdccde3f1328db7e5d1a3ba70ec22886",
+      "original_bytes": 619875,
+      "archive_bytes": 74921
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/brain.jsonl",
+      "archive": "seed-42/food-right-no-sensory/brain.jsonl.gz",
+      "sha256": "a47681feb924caad96204e8e8918fbfaa5db48ca3d0bcd6c2a69bc46b5eaf336",
+      "original_bytes": 2941819,
+      "archive_bytes": 267834
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/brain_console.txt",
+      "archive": "seed-42/food-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/engine.log",
+      "archive": "seed-42/food-right-no-sensory/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/events.jsonl",
+      "archive": "seed-42/food-right-no-sensory/events.jsonl.gz",
+      "sha256": "ba9b6c9ee6bb295f04e9b29aad04851f18f8d14c830417b6fd4ef657a00672e5",
+      "original_bytes": 273,
+      "archive_bytes": 199
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/godot.jsonl",
+      "archive": "seed-42/food-right-no-sensory/godot.jsonl.gz",
+      "sha256": "4f430b1e483482f6cd4e2ad7e7bb0a0824cc9c7e1e76f7171429d2b5fbbf96de",
+      "original_bytes": 3335793,
+      "archive_bytes": 286724
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/godot_console.txt",
+      "archive": "seed-42/food-right-no-sensory/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/performance.jsonl",
+      "archive": "seed-42/food-right-no-sensory/performance.jsonl.gz",
+      "sha256": "e42eccae72a3e6f40b219e09c5dab10f7f6a04ac97970c1a186430013b246c11",
+      "original_bytes": 198871,
+      "archive_bytes": 31244
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/sensory_mapping.json",
+      "archive": "seed-42/food-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/food-right-no-sensory/world.jsonl",
+      "archive": "seed-42/food-right-no-sensory/world.jsonl.gz",
+      "sha256": "6b1b7f0d8b384224bc4b778b1cdcf764929d532749970d0739d4c294b8300ca8",
+      "original_bytes": 625463,
+      "archive_bytes": 77122
+    },
+    {
+      "source": "seed-42/predator/brain.jsonl",
+      "archive": "seed-42/predator/brain.jsonl.gz",
+      "sha256": "8bd7c6026654a6d7710e3ef7fb6db2ad99c52661ccf61710312565c442cef918",
+      "original_bytes": 3950111,
+      "archive_bytes": 332930
+    },
+    {
+      "source": "seed-42/predator/brain_console.txt",
+      "archive": "seed-42/predator/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/predator/engine.log",
+      "archive": "seed-42/predator/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/predator/events.jsonl",
+      "archive": "seed-42/predator/events.jsonl.gz",
+      "sha256": "7e66c5db2e05b61f929fd22f251e6e9a5d3cde40d84daa2dcb3c918bf966940b",
+      "original_bytes": 6651,
+      "archive_bytes": 1029
+    },
+    {
+      "source": "seed-42/predator/godot.jsonl",
+      "archive": "seed-42/predator/godot.jsonl.gz",
+      "sha256": "5daca99206c2d7a0abb0368b8c8000a17b9399d911aa6f1c9028a27eab9e8f6e",
+      "original_bytes": 4333445,
+      "archive_bytes": 347444
+    },
+    {
+      "source": "seed-42/predator/godot_console.txt",
+      "archive": "seed-42/predator/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/predator/performance.jsonl",
+      "archive": "seed-42/predator/performance.jsonl.gz",
+      "sha256": "e83432bed19999c13d3978eb38e863e6312be286dec3ae235a89549736a4c4b6",
+      "original_bytes": 199133,
+      "archive_bytes": 32613
+    },
+    {
+      "source": "seed-42/predator/sensory_mapping.json",
+      "archive": "seed-42/predator/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/predator/world.jsonl",
+      "archive": "seed-42/predator/world.jsonl.gz",
+      "sha256": "cc4cf61f22f1617a27ed5b15c4a69f64b1c45a177a3ef7939ca05561a1bcfec6",
+      "original_bytes": 630908,
+      "archive_bytes": 85052
+    },
+    {
+      "source": "seed-42/predator-no-gf/brain.jsonl",
+      "archive": "seed-42/predator-no-gf/brain.jsonl.gz",
+      "sha256": "540f5b72b05dad31164b4db5920a6ea0bf380fa920b237437725dd24a0fcd280",
+      "original_bytes": 3932291,
+      "archive_bytes": 289101
+    },
+    {
+      "source": "seed-42/predator-no-gf/brain_console.txt",
+      "archive": "seed-42/predator-no-gf/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/predator-no-gf/engine.log",
+      "archive": "seed-42/predator-no-gf/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/predator-no-gf/events.jsonl",
+      "archive": "seed-42/predator-no-gf/events.jsonl.gz",
+      "sha256": "8645c67a3de2b20bbfeb5108b9971cbeab00a345eeba56ea33d6af0ab4f8d0ad",
+      "original_bytes": 5929,
+      "archive_bytes": 884
+    },
+    {
+      "source": "seed-42/predator-no-gf/godot.jsonl",
+      "archive": "seed-42/predator-no-gf/godot.jsonl.gz",
+      "sha256": "ffccb99a039a78f4ab9c2519800b2b203e7a3b0fd770bd9ded877ded1223cc18",
+      "original_bytes": 4339603,
+      "archive_bytes": 303896
+    },
+    {
+      "source": "seed-42/predator-no-gf/godot_console.txt",
+      "archive": "seed-42/predator-no-gf/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/predator-no-gf/performance.jsonl",
+      "archive": "seed-42/predator-no-gf/performance.jsonl.gz",
+      "sha256": "27c9ddd0d095321f7800491ffefb76b356ba9232a0e930a03c01651ae55793bf",
+      "original_bytes": 199092,
+      "archive_bytes": 31790
+    },
+    {
+      "source": "seed-42/predator-no-gf/sensory_mapping.json",
+      "archive": "seed-42/predator-no-gf/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/predator-no-gf/world.jsonl",
+      "archive": "seed-42/predator-no-gf/world.jsonl.gz",
+      "sha256": "c215b320386f3178a05ab007ed8baa60210f716ba677c9d03a5dbf72c53a4d83",
+      "original_bytes": 623158,
+      "archive_bytes": 63115
+    },
+    {
+      "source": "seed-42/predator-no-sensory/brain.jsonl",
+      "archive": "seed-42/predator-no-sensory/brain.jsonl.gz",
+      "sha256": "6dc4848be8a6f312017098a26806fdea12fe9580ca51f16b5427fdc6d1c6ce69",
+      "original_bytes": 3129888,
+      "archive_bytes": 269962
+    },
+    {
+      "source": "seed-42/predator-no-sensory/brain_console.txt",
+      "archive": "seed-42/predator-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "seed-42/predator-no-sensory/engine.log",
+      "archive": "seed-42/predator-no-sensory/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "seed-42/predator-no-sensory/events.jsonl",
+      "archive": "seed-42/predator-no-sensory/events.jsonl.gz",
+      "sha256": "21197e22e8bf215eb27c2e67aefcb7b5475235838dd5bf4361779e533da6d4da",
+      "original_bytes": 3399,
+      "archive_bytes": 524
+    },
+    {
+      "source": "seed-42/predator-no-sensory/godot.jsonl",
+      "archive": "seed-42/predator-no-sensory/godot.jsonl.gz",
+      "sha256": "1985f65f56893858a8a4885642a6f21d414478619a0b0bb9d44f248895b2be2c",
+      "original_bytes": 3524196,
+      "archive_bytes": 287557
+    },
+    {
+      "source": "seed-42/predator-no-sensory/godot_console.txt",
+      "archive": "seed-42/predator-no-sensory/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "seed-42/predator-no-sensory/performance.jsonl",
+      "archive": "seed-42/predator-no-sensory/performance.jsonl.gz",
+      "sha256": "7a31363576bfa253923aa713ee1f5db49622263601069cd3dce5f334594787f1",
+      "original_bytes": 198978,
+      "archive_bytes": 31125
+    },
+    {
+      "source": "seed-42/predator-no-sensory/sensory_mapping.json",
+      "archive": "seed-42/predator-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "seed-42/predator-no-sensory/world.jsonl",
+      "archive": "seed-42/predator-no-sensory/world.jsonl.gz",
+      "sha256": "d9fd8de15bac295956e4b4d7be361769c132bc67996b94098952a10c475de323",
+      "original_bytes": 630659,
+      "archive_bytes": 75963
+    },
+    {
+      "source": "final-assays/control/brain.jsonl",
+      "archive": "final-assays/control/brain.jsonl.gz",
+      "sha256": "8d9087341c52cfa4a58d5cdd57d0d3885eaec5276081a8d54049c9784069c670",
+      "original_bytes": 3245187,
+      "archive_bytes": 279994
+    },
+    {
+      "source": "final-assays/control/brain_console.txt",
+      "archive": "final-assays/control/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/control/engine.log",
+      "archive": "final-assays/control/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/control/events.jsonl",
+      "archive": "final-assays/control/events.jsonl.gz",
+      "sha256": "8fe4a1012acdba80b5931ff0686a6e48a6e9f43b0b632aacc200b67c40aa2382",
+      "original_bytes": 624,
+      "archive_bytes": 252
+    },
+    {
+      "source": "final-assays/control/godot.jsonl",
+      "archive": "final-assays/control/godot.jsonl.gz",
+      "sha256": "a9b28b3b06a0d42e6dd478e4e5cc7051dc4db3e6b46309d31257751f67c1ec88",
+      "original_bytes": 3661010,
+      "archive_bytes": 302953
+    },
+    {
+      "source": "final-assays/control/godot_console.txt",
+      "archive": "final-assays/control/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/control/performance.jsonl",
+      "archive": "final-assays/control/performance.jsonl.gz",
+      "sha256": "4537341e3f13a4e40c4801ff47e33671134e515fe6cd89a4f1961978b18041ab",
+      "original_bytes": 199505,
+      "archive_bytes": 32615
+    },
+    {
+      "source": "final-assays/control/sensory_mapping.json",
+      "archive": "final-assays/control/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/control/world.jsonl",
+      "archive": "final-assays/control/world.jsonl.gz",
+      "sha256": "7cb0bd52fc96c4cd4b5939d66bdf2d6f261f56fe3cc240e8f6e501846eda68f8",
+      "original_bytes": 485662,
+      "archive_bytes": 51337
+    },
+    {
+      "source": "final-assays/control-no-sensory/brain.jsonl",
+      "archive": "final-assays/control-no-sensory/brain.jsonl.gz",
+      "sha256": "7e7829b48c1a20fc47946c02b90903cb4958eb329ee12ef032d0d433f8b7f32e",
+      "original_bytes": 2895334,
+      "archive_bytes": 257935
+    },
+    {
+      "source": "final-assays/control-no-sensory/brain_console.txt",
+      "archive": "final-assays/control-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/control-no-sensory/engine.log",
+      "archive": "final-assays/control-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/control-no-sensory/events.jsonl",
+      "archive": "final-assays/control-no-sensory/events.jsonl.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/control-no-sensory/godot.jsonl",
+      "archive": "final-assays/control-no-sensory/godot.jsonl.gz",
+      "sha256": "8495595b80e00c1c32f70abb3fbe9a2c85062758d3ba202ee9d206f89995d12f",
+      "original_bytes": 3313309,
+      "archive_bytes": 276779
+    },
+    {
+      "source": "final-assays/control-no-sensory/godot_console.txt",
+      "archive": "final-assays/control-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/control-no-sensory/performance.jsonl",
+      "archive": "final-assays/control-no-sensory/performance.jsonl.gz",
+      "sha256": "740e99a8982c8267539a2c6bb52a1e88f22d77a8f4167b4558ee131afbabb0e0",
+      "original_bytes": 199565,
+      "archive_bytes": 32057
+    },
+    {
+      "source": "final-assays/control-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/control-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/control-no-sensory/world.jsonl",
+      "archive": "final-assays/control-no-sensory/world.jsonl.gz",
+      "sha256": "1e2267101ede746cd84b25e8a529c990bce45f13e1ed55729d999ba2bceab6f8",
+      "original_bytes": 486223,
+      "archive_bytes": 50751
+    },
+    {
+      "source": "final-assays/food-left/brain.jsonl",
+      "archive": "final-assays/food-left/brain.jsonl.gz",
+      "sha256": "37c1df3c413c234ef412f643979e1e7ac5efda919c24eea0fe7756da12014bbd",
+      "original_bytes": 3698584,
+      "archive_bytes": 334897
+    },
+    {
+      "source": "final-assays/food-left/brain_console.txt",
+      "archive": "final-assays/food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-left/engine.log",
+      "archive": "final-assays/food-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-left/events.jsonl",
+      "archive": "final-assays/food-left/events.jsonl.gz",
+      "sha256": "1338df7ffdb8ddd558c702a8bc32ab627d85b2e68a28a0bafefeec49ed2c2c23",
+      "original_bytes": 2465,
+      "archive_bytes": 581
+    },
+    {
+      "source": "final-assays/food-left/godot.jsonl",
+      "archive": "final-assays/food-left/godot.jsonl.gz",
+      "sha256": "981961fe17c0b07cbdee9924f2c4961b172829a4d1ae79442f8588d82fc7db69",
+      "original_bytes": 4118108,
+      "archive_bytes": 349906
+    },
+    {
+      "source": "final-assays/food-left/godot_console.txt",
+      "archive": "final-assays/food-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-left/performance.jsonl",
+      "archive": "final-assays/food-left/performance.jsonl.gz",
+      "sha256": "ebca4813d5fb8c5de2fa3e57b9d4e8bb36fd2daa533ef8ccbccbd7a5c873b7c7",
+      "original_bytes": 200102,
+      "archive_bytes": 34425
+    },
+    {
+      "source": "final-assays/food-left/sensory_mapping.json",
+      "archive": "final-assays/food-left/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-left/world.jsonl",
+      "archive": "final-assays/food-left/world.jsonl.gz",
+      "sha256": "f86555e09ab2c62b19c80b2b393811593f4e8eaa50f2434c130b8618b5ecb332",
+      "original_bytes": 626227,
+      "archive_bytes": 78542
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/brain.jsonl",
+      "archive": "final-assays/food-left-no-chemical/brain.jsonl.gz",
+      "sha256": "b306b37b8341a81d3243a0c45dc5ae1fe5f52eea407a7109a7edfab6aea2396e",
+      "original_bytes": 3547779,
+      "archive_bytes": 320696
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/brain_console.txt",
+      "archive": "final-assays/food-left-no-chemical/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/engine.log",
+      "archive": "final-assays/food-left-no-chemical/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/events.jsonl",
+      "archive": "final-assays/food-left-no-chemical/events.jsonl.gz",
+      "sha256": "2ca4ed7c5e5f5ee4dd45689279209c9ce64d42f60b3a86704e19633b46f70ac0",
+      "original_bytes": 2034,
+      "archive_bytes": 519
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/godot.jsonl",
+      "archive": "final-assays/food-left-no-chemical/godot.jsonl.gz",
+      "sha256": "af5288fe8d9fec1aadacd588619d5df5dd130b2072a502436c29129dcdb385b2",
+      "original_bytes": 3956084,
+      "archive_bytes": 336189
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/godot_console.txt",
+      "archive": "final-assays/food-left-no-chemical/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/performance.jsonl",
+      "archive": "final-assays/food-left-no-chemical/performance.jsonl.gz",
+      "sha256": "f0af9036fe681ccd9aeeb461663f695ce5ac84b286499dd3f6c38079dc6400fe",
+      "original_bytes": 199384,
+      "archive_bytes": 33326
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/sensory_mapping.json",
+      "archive": "final-assays/food-left-no-chemical/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-left-no-chemical/world.jsonl",
+      "archive": "final-assays/food-left-no-chemical/world.jsonl.gz",
+      "sha256": "4527174b62b97e37c9b6f723ad035efcdeade48c6da08513a7255661a9216312",
+      "original_bytes": 625355,
+      "archive_bytes": 78388
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/brain.jsonl",
+      "archive": "final-assays/food-left-no-sensory/brain.jsonl.gz",
+      "sha256": "0efcf3c17ab78d3a9b4d30a029b5ed31c9085f76d66e2a16a9daedf932839bfe",
+      "original_bytes": 3106781,
+      "archive_bytes": 285415
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/brain_console.txt",
+      "archive": "final-assays/food-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/engine.log",
+      "archive": "final-assays/food-left-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/events.jsonl",
+      "archive": "final-assays/food-left-no-sensory/events.jsonl.gz",
+      "sha256": "c597d8052148269c1402ee685ec76625415d07a1afa7e6668d174187e74902b4",
+      "original_bytes": 406,
+      "archive_bytes": 236
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/godot.jsonl",
+      "archive": "final-assays/food-left-no-sensory/godot.jsonl.gz",
+      "sha256": "672dc529d1a112742424658f8bf464a0021f2069651fdc115a39901db1eeb8b0",
+      "original_bytes": 3529930,
+      "archive_bytes": 306861
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/godot_console.txt",
+      "archive": "final-assays/food-left-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/performance.jsonl",
+      "archive": "final-assays/food-left-no-sensory/performance.jsonl.gz",
+      "sha256": "a29fe570e0198816f8c0ecca34ec1989cf58238e11b2de7ba0de2c26829a9fed",
+      "original_bytes": 200313,
+      "archive_bytes": 32244
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/food-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-left-no-sensory/world.jsonl",
+      "archive": "final-assays/food-left-no-sensory/world.jsonl.gz",
+      "sha256": "9a800abffc933c4bb52655e883b11e0c395628da71f81b488f9bb5a1e0a4f5a0",
+      "original_bytes": 624720,
+      "archive_bytes": 75650
+    },
+    {
+      "source": "final-assays/food-left-no-vision/brain.jsonl",
+      "archive": "final-assays/food-left-no-vision/brain.jsonl.gz",
+      "sha256": "1aa9f854e918a4945241710dc0b5970a8a612ec60cff75801e177b400698afc3",
+      "original_bytes": 3503404,
+      "archive_bytes": 318510
+    },
+    {
+      "source": "final-assays/food-left-no-vision/brain_console.txt",
+      "archive": "final-assays/food-left-no-vision/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-left-no-vision/engine.log",
+      "archive": "final-assays/food-left-no-vision/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-left-no-vision/events.jsonl",
+      "archive": "final-assays/food-left-no-vision/events.jsonl.gz",
+      "sha256": "32397df07b4c371a385b14a1effb0a21766cde3917db2b333279f841b0af447d",
+      "original_bytes": 1333,
+      "archive_bytes": 432
+    },
+    {
+      "source": "final-assays/food-left-no-vision/godot.jsonl",
+      "archive": "final-assays/food-left-no-vision/godot.jsonl.gz",
+      "sha256": "eb04d410a1dacc3affcf1ba7c79103c5b70aceacaa820357f48c0a8dc80cb7cf",
+      "original_bytes": 3905701,
+      "archive_bytes": 333670
+    },
+    {
+      "source": "final-assays/food-left-no-vision/godot_console.txt",
+      "archive": "final-assays/food-left-no-vision/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-left-no-vision/performance.jsonl",
+      "archive": "final-assays/food-left-no-vision/performance.jsonl.gz",
+      "sha256": "10c42463fb65e09e4939be4721e4a5fa59a9ae28fe600903ced5fab845b68f09",
+      "original_bytes": 198771,
+      "archive_bytes": 31281
+    },
+    {
+      "source": "final-assays/food-left-no-vision/sensory_mapping.json",
+      "archive": "final-assays/food-left-no-vision/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-left-no-vision/world.jsonl",
+      "archive": "final-assays/food-left-no-vision/world.jsonl.gz",
+      "sha256": "beac4ef84e488f083bfc8d9d4ad0fe808f57b4eca7e8a12ad87f4da2b234d2fc",
+      "original_bytes": 623839,
+      "archive_bytes": 75631
+    },
+    {
+      "source": "final-assays/food-right/brain.jsonl",
+      "archive": "final-assays/food-right/brain.jsonl.gz",
+      "sha256": "b008d895704c5558431ad0c7d9bf384515afe69956c9a1996eb1c959ec89c550",
+      "original_bytes": 3628388,
+      "archive_bytes": 311730
+    },
+    {
+      "source": "final-assays/food-right/brain_console.txt",
+      "archive": "final-assays/food-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-right/engine.log",
+      "archive": "final-assays/food-right/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-right/events.jsonl",
+      "archive": "final-assays/food-right/events.jsonl.gz",
+      "sha256": "8cc1194cecb9fb49979f6f88e28c05740502c83eaf76bc549668d3edf8cc6066",
+      "original_bytes": 2590,
+      "archive_bytes": 609
+    },
+    {
+      "source": "final-assays/food-right/godot.jsonl",
+      "archive": "final-assays/food-right/godot.jsonl.gz",
+      "sha256": "bc9e35bea7cc933423e04c612368852b882641b3a69d36be3813d086e58f21bb",
+      "original_bytes": 4040626,
+      "archive_bytes": 328005
+    },
+    {
+      "source": "final-assays/food-right/godot_console.txt",
+      "archive": "final-assays/food-right/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-right/performance.jsonl",
+      "archive": "final-assays/food-right/performance.jsonl.gz",
+      "sha256": "0d4882fb7867929a38e90ce5fd100d94fb88cf052020396b04d3ffb0f9b14179",
+      "original_bytes": 200237,
+      "archive_bytes": 33413
+    },
+    {
+      "source": "final-assays/food-right/sensory_mapping.json",
+      "archive": "final-assays/food-right/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-right/world.jsonl",
+      "archive": "final-assays/food-right/world.jsonl.gz",
+      "sha256": "7a607c9700d49587bf981ca5bb46ed7e9ff65dffbc20efebe610becbe25cab4f",
+      "original_bytes": 608346,
+      "archive_bytes": 67064
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/brain.jsonl",
+      "archive": "final-assays/food-right-no-chemical/brain.jsonl.gz",
+      "sha256": "cfec8186f4addd26f9448beacb284b6e07124e9e3cc9bf2707d3961ab14986a6",
+      "original_bytes": 3514924,
+      "archive_bytes": 298681
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/brain_console.txt",
+      "archive": "final-assays/food-right-no-chemical/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/engine.log",
+      "archive": "final-assays/food-right-no-chemical/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/events.jsonl",
+      "archive": "final-assays/food-right-no-chemical/events.jsonl.gz",
+      "sha256": "705733b402a25e85b65d8d30d46969edc33513b0a6694908913e9508dbccd191",
+      "original_bytes": 2490,
+      "archive_bytes": 590
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/godot.jsonl",
+      "archive": "final-assays/food-right-no-chemical/godot.jsonl.gz",
+      "sha256": "cb44591e516ac5658ab44ceb8c3b3a46fd3018a41a2cb1126722dce3d797cc9d",
+      "original_bytes": 3915690,
+      "archive_bytes": 315190
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/godot_console.txt",
+      "archive": "final-assays/food-right-no-chemical/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/performance.jsonl",
+      "archive": "final-assays/food-right-no-chemical/performance.jsonl.gz",
+      "sha256": "b6744ca82ccaa0bc7a0f0e4cf2596b13cd1ddc2a1d7af30e6af21aa263e01e18",
+      "original_bytes": 198681,
+      "archive_bytes": 32339
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/sensory_mapping.json",
+      "archive": "final-assays/food-right-no-chemical/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-right-no-chemical/world.jsonl",
+      "archive": "final-assays/food-right-no-chemical/world.jsonl.gz",
+      "sha256": "17725887ec1d0c1eb5c11adb6f1aab61af36101216d7fdbe76b10ff3d94cb4f2",
+      "original_bytes": 607683,
+      "archive_bytes": 66799
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/brain.jsonl",
+      "archive": "final-assays/food-right-no-sensory/brain.jsonl.gz",
+      "sha256": "1ea6ec813b5cf71bdd82bd1542119710f9a6d0f5a1ebd0db09c4fc0d43e8904b",
+      "original_bytes": 3068211,
+      "archive_bytes": 282185
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/brain_console.txt",
+      "archive": "final-assays/food-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/engine.log",
+      "archive": "final-assays/food-right-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/events.jsonl",
+      "archive": "final-assays/food-right-no-sensory/events.jsonl.gz",
+      "sha256": "b241c2aa28c204da5e3c1a8bfc3232604ed035be7f274693c55ac33ade1589cc",
+      "original_bytes": 273,
+      "archive_bytes": 200
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/godot.jsonl",
+      "archive": "final-assays/food-right-no-sensory/godot.jsonl.gz",
+      "sha256": "62b08a82057f6ec5f42848ad4c3c637a8e8966be769eed4c3a6e7dc0a240197c",
+      "original_bytes": 3473621,
+      "archive_bytes": 302256
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/godot_console.txt",
+      "archive": "final-assays/food-right-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/performance.jsonl",
+      "archive": "final-assays/food-right-no-sensory/performance.jsonl.gz",
+      "sha256": "a5ccd99dbd431db79fa51a27a27a03362d8bef45e0b45bcc5cb93c2c3a8844c0",
+      "original_bytes": 198702,
+      "archive_bytes": 30937
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/food-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-right-no-sensory/world.jsonl",
+      "archive": "final-assays/food-right-no-sensory/world.jsonl.gz",
+      "sha256": "e5d3dccb076ad44c5f6d99e989189d130b39f73b6e4979c80d50a5fb4e7715fc",
+      "original_bytes": 624523,
+      "archive_bytes": 75193
+    },
+    {
+      "source": "final-assays/food-right-no-vision/brain.jsonl",
+      "archive": "final-assays/food-right-no-vision/brain.jsonl.gz",
+      "sha256": "5f4356f05ab19173f612c9ea8cc0339596cced3f92706e005e92b5d27d056e65",
+      "original_bytes": 3510178,
+      "archive_bytes": 321098
+    },
+    {
+      "source": "final-assays/food-right-no-vision/brain_console.txt",
+      "archive": "final-assays/food-right-no-vision/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/food-right-no-vision/engine.log",
+      "archive": "final-assays/food-right-no-vision/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/food-right-no-vision/events.jsonl",
+      "archive": "final-assays/food-right-no-vision/events.jsonl.gz",
+      "sha256": "b615e9d9561f7b278697d10a198067379efc949fab6fd015ec7cbc695b81670f",
+      "original_bytes": 1316,
+      "archive_bytes": 423
+    },
+    {
+      "source": "final-assays/food-right-no-vision/godot.jsonl",
+      "archive": "final-assays/food-right-no-vision/godot.jsonl.gz",
+      "sha256": "f40f038ee30442e922008ae7aa001dd26a1c42750d6a03970b15cc13a6ad14af",
+      "original_bytes": 3923644,
+      "archive_bytes": 336943
+    },
+    {
+      "source": "final-assays/food-right-no-vision/godot_console.txt",
+      "archive": "final-assays/food-right-no-vision/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/food-right-no-vision/performance.jsonl",
+      "archive": "final-assays/food-right-no-vision/performance.jsonl.gz",
+      "sha256": "fdcf3612ac6ca1a574a1bffd12f80580ee784e47ee9d584b583180562b95c124",
+      "original_bytes": 199787,
+      "archive_bytes": 32857
+    },
+    {
+      "source": "final-assays/food-right-no-vision/sensory_mapping.json",
+      "archive": "final-assays/food-right-no-vision/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/food-right-no-vision/world.jsonl",
+      "archive": "final-assays/food-right-no-vision/world.jsonl.gz",
+      "sha256": "e37d64f500f95ac92276c7575197927d4d5f329542c01e1c9878517f1ce52616",
+      "original_bytes": 623727,
+      "archive_bytes": 75588
+    },
+    {
+      "source": "final-assays/heat-left/brain.jsonl",
+      "archive": "final-assays/heat-left/brain.jsonl.gz",
+      "sha256": "7da8f10edbfcac720d7ed1ac916e51ec830ee0ae943eed80fd442fe2306a0af3",
+      "original_bytes": 3346098,
+      "archive_bytes": 283606
+    },
+    {
+      "source": "final-assays/heat-left/brain_console.txt",
+      "archive": "final-assays/heat-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/heat-left/engine.log",
+      "archive": "final-assays/heat-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/heat-left/events.jsonl",
+      "archive": "final-assays/heat-left/events.jsonl.gz",
+      "sha256": "d2ae9564941e8d81bc8dc83a945d28503c72e65bc63dafbb4cbac37aeed3f02a",
+      "original_bytes": 1574,
+      "archive_bytes": 372
+    },
+    {
+      "source": "final-assays/heat-left/godot.jsonl",
+      "archive": "final-assays/heat-left/godot.jsonl.gz",
+      "sha256": "06b0c7c946690af7634c02e53065cf7c39033c7a54ad4c645203af66ba6775c3",
+      "original_bytes": 3758684,
+      "archive_bytes": 304044
+    },
+    {
+      "source": "final-assays/heat-left/godot_console.txt",
+      "archive": "final-assays/heat-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/heat-left/performance.jsonl",
+      "archive": "final-assays/heat-left/performance.jsonl.gz",
+      "sha256": "e61951c951514b3171bc33c4a4d8519409893113b1598ecb8cbf4a9ff00b6ec3",
+      "original_bytes": 199759,
+      "archive_bytes": 32336
+    },
+    {
+      "source": "final-assays/heat-left/sensory_mapping.json",
+      "archive": "final-assays/heat-left/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/heat-left/world.jsonl",
+      "archive": "final-assays/heat-left/world.jsonl.gz",
+      "sha256": "3776ab70d3e8850f12b77606cb8db5735ad3d9c5f7b2e6c8d6ac68c430b96eb7",
+      "original_bytes": 487706,
+      "archive_bytes": 54883
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/brain.jsonl",
+      "archive": "final-assays/heat-left-no-sensory/brain.jsonl.gz",
+      "sha256": "21470125472bf9a2c87f1b0ff424508a1cde0110135bd4945622f987c5f6f74b",
+      "original_bytes": 2941362,
+      "archive_bytes": 255683
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/brain_console.txt",
+      "archive": "final-assays/heat-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/engine.log",
+      "archive": "final-assays/heat-left-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/events.jsonl",
+      "archive": "final-assays/heat-left-no-sensory/events.jsonl.gz",
+      "sha256": "d33df2fa1ea135b6210688b22d8a0f7bc3a7b8b2909923df05dfb1cba67df60a",
+      "original_bytes": 318,
+      "archive_bytes": 155
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/godot.jsonl",
+      "archive": "final-assays/heat-left-no-sensory/godot.jsonl.gz",
+      "sha256": "3a0f7f36f0625ec9f899eec28e0825b702c46fca5b8881d25a4b95dd56f7c395",
+      "original_bytes": 3349801,
+      "archive_bytes": 275339
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/godot_console.txt",
+      "archive": "final-assays/heat-left-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/performance.jsonl",
+      "archive": "final-assays/heat-left-no-sensory/performance.jsonl.gz",
+      "sha256": "15ecb6aa68540fd5b82542cd1dd0b7d5453e2088b42ad5b24691a42f86b4aa97",
+      "original_bytes": 198690,
+      "archive_bytes": 32369
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/heat-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/heat-left-no-sensory/world.jsonl",
+      "archive": "final-assays/heat-left-no-sensory/world.jsonl.gz",
+      "sha256": "3e21c2c73161551326bef19046448bfb49c5987bfa6a45c8786fd43c348a3625",
+      "original_bytes": 484998,
+      "archive_bytes": 47588
+    },
+    {
+      "source": "final-assays/heat-right/brain.jsonl",
+      "archive": "final-assays/heat-right/brain.jsonl.gz",
+      "sha256": "457456200cca1a7dda025e3e38e067c0d48799b7849a7910699898e6bd02b524",
+      "original_bytes": 3256224,
+      "archive_bytes": 278846
+    },
+    {
+      "source": "final-assays/heat-right/brain_console.txt",
+      "archive": "final-assays/heat-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/heat-right/engine.log",
+      "archive": "final-assays/heat-right/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/heat-right/events.jsonl",
+      "archive": "final-assays/heat-right/events.jsonl.gz",
+      "sha256": "427e2bbd911c0a48a1b05ee489d586964212cb86b48b05faa1b89a171ad401bc",
+      "original_bytes": 729,
+      "archive_bytes": 278
+    },
+    {
+      "source": "final-assays/heat-right/godot.jsonl",
+      "archive": "final-assays/heat-right/godot.jsonl.gz",
+      "sha256": "d516da15c3afe15879179a7d86ecf72783d67d73fd7abec1f1e3abed427c7d78",
+      "original_bytes": 3662248,
+      "archive_bytes": 299977
+    },
+    {
+      "source": "final-assays/heat-right/godot_console.txt",
+      "archive": "final-assays/heat-right/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/heat-right/performance.jsonl",
+      "archive": "final-assays/heat-right/performance.jsonl.gz",
+      "sha256": "3a1c6578ee279d373d6de7df293e98f2e97435a1a9382066f81f77c267ff2785",
+      "original_bytes": 198813,
+      "archive_bytes": 32005
+    },
+    {
+      "source": "final-assays/heat-right/sensory_mapping.json",
+      "archive": "final-assays/heat-right/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/heat-right/world.jsonl",
+      "archive": "final-assays/heat-right/world.jsonl.gz",
+      "sha256": "2632b0e880bfa3d708f353ebdf3f3c6e8577e68a00c952e59c158d5c06faaeab",
+      "original_bytes": 489214,
+      "archive_bytes": 54722
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/brain.jsonl",
+      "archive": "final-assays/heat-right-no-sensory/brain.jsonl.gz",
+      "sha256": "8348efaac2b63ccfebd61a56f7688c77e1e3e047bbc5a16fd98ddf8d3589052e",
+      "original_bytes": 2899049,
+      "archive_bytes": 259962
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/brain_console.txt",
+      "archive": "final-assays/heat-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/engine.log",
+      "archive": "final-assays/heat-right-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/events.jsonl",
+      "archive": "final-assays/heat-right-no-sensory/events.jsonl.gz",
+      "sha256": "bf32db3c10292ac8235e910ea04c08715cf123c654a26e9ddf834e63ab914b55",
+      "original_bytes": 105,
+      "archive_bytes": 105
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/godot.jsonl",
+      "archive": "final-assays/heat-right-no-sensory/godot.jsonl.gz",
+      "sha256": "98c77b2aa1672cab4fca2365e3971c5d584c4402d528d979554b4d9c04660a84",
+      "original_bytes": 3311781,
+      "archive_bytes": 280019
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/godot_console.txt",
+      "archive": "final-assays/heat-right-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/performance.jsonl",
+      "archive": "final-assays/heat-right-no-sensory/performance.jsonl.gz",
+      "sha256": "978a375243739132e3a0f1fce4db904c53a23e79eddfcfc1aa48229c41ba1081",
+      "original_bytes": 199262,
+      "archive_bytes": 32235
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/heat-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/heat-right-no-sensory/world.jsonl",
+      "archive": "final-assays/heat-right-no-sensory/world.jsonl.gz",
+      "sha256": "cd5358bedf4450b58a521fcc0a3060875a63c0a0c0f18cf04da91d73a0b490e6",
+      "original_bytes": 489630,
+      "archive_bytes": 54230
+    },
+    {
+      "source": "final-assays/predator/brain.jsonl",
+      "archive": "final-assays/predator/brain.jsonl.gz",
+      "sha256": "f7b32ed072e84b63bbbbd4c584d400ddadf6b3b3e80e217d2e2c37fb4674d8c2",
+      "original_bytes": 4250666,
+      "archive_bytes": 354837
+    },
+    {
+      "source": "final-assays/predator/brain_console.txt",
+      "archive": "final-assays/predator/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/predator/engine.log",
+      "archive": "final-assays/predator/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/predator/events.jsonl",
+      "archive": "final-assays/predator/events.jsonl.gz",
+      "sha256": "5631120a7c4325bc06e01a123fa471dfa96fadef114423de896125b18a99c76b",
+      "original_bytes": 6166,
+      "archive_bytes": 959
+    },
+    {
+      "source": "final-assays/predator/godot.jsonl",
+      "archive": "final-assays/predator/godot.jsonl.gz",
+      "sha256": "360d76d06c2d9f9784f69d06ad406acca158c6f23e0aeb215daafad87fb8a8c6",
+      "original_bytes": 4661238,
+      "archive_bytes": 370749
+    },
+    {
+      "source": "final-assays/predator/godot_console.txt",
+      "archive": "final-assays/predator/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/predator/performance.jsonl",
+      "archive": "final-assays/predator/performance.jsonl.gz",
+      "sha256": "a5d26829335e60e790c0b43a547db5d7a6490e6ac7c205690f57c34701fa2a6e",
+      "original_bytes": 200077,
+      "archive_bytes": 34108
+    },
+    {
+      "source": "final-assays/predator/sensory_mapping.json",
+      "archive": "final-assays/predator/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/predator/world.jsonl",
+      "archive": "final-assays/predator/world.jsonl.gz",
+      "sha256": "da87974920b508bb53bc96b8ee0e048d38228ade5efc2ad4600512ccc9096504",
+      "original_bytes": 630561,
+      "archive_bytes": 83833
+    },
+    {
+      "source": "final-assays/predator-no-gf/brain.jsonl",
+      "archive": "final-assays/predator-no-gf/brain.jsonl.gz",
+      "sha256": "80e6f95760f8f2947bb19f57086ab0263cd6b5412a11643845ac7aecc11f0916",
+      "original_bytes": 4021765,
+      "archive_bytes": 298174
+    },
+    {
+      "source": "final-assays/predator-no-gf/brain_console.txt",
+      "archive": "final-assays/predator-no-gf/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/predator-no-gf/engine.log",
+      "archive": "final-assays/predator-no-gf/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/predator-no-gf/events.jsonl",
+      "archive": "final-assays/predator-no-gf/events.jsonl.gz",
+      "sha256": "d14e824cfc74c1b652dc5d53060870135cf7350b33cec46423732e1b2eb443a5",
+      "original_bytes": 5307,
+      "archive_bytes": 897
+    },
+    {
+      "source": "final-assays/predator-no-gf/godot.jsonl",
+      "archive": "final-assays/predator-no-gf/godot.jsonl.gz",
+      "sha256": "ae5dc6c17c8bd51183b084782318bd14676cb657e01916bf52b76864919fa81c",
+      "original_bytes": 4459601,
+      "archive_bytes": 316164
+    },
+    {
+      "source": "final-assays/predator-no-gf/godot_console.txt",
+      "archive": "final-assays/predator-no-gf/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/predator-no-gf/performance.jsonl",
+      "archive": "final-assays/predator-no-gf/performance.jsonl.gz",
+      "sha256": "6afafa4ffe64c892724a514bd40c2d27b8f7c7a161fc821a23e4dc6813630184",
+      "original_bytes": 200358,
+      "archive_bytes": 32634
+    },
+    {
+      "source": "final-assays/predator-no-gf/sensory_mapping.json",
+      "archive": "final-assays/predator-no-gf/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/predator-no-gf/world.jsonl",
+      "archive": "final-assays/predator-no-gf/world.jsonl.gz",
+      "sha256": "f0069dce372956d6d01a373e9dbe15117e68227a109e3d9fa60768b8b23653ee",
+      "original_bytes": 622104,
+      "archive_bytes": 62106
+    },
+    {
+      "source": "final-assays/predator-no-sensory/brain.jsonl",
+      "archive": "final-assays/predator-no-sensory/brain.jsonl.gz",
+      "sha256": "b932510628b8fb6f154fad5d88851973a42a50d3728b742a2afdb868c3279fe2",
+      "original_bytes": 3230349,
+      "archive_bytes": 287006
+    },
+    {
+      "source": "final-assays/predator-no-sensory/brain_console.txt",
+      "archive": "final-assays/predator-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-assays/predator-no-sensory/engine.log",
+      "archive": "final-assays/predator-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-assays/predator-no-sensory/events.jsonl",
+      "archive": "final-assays/predator-no-sensory/events.jsonl.gz",
+      "sha256": "5a41b76f7900c2027bdf32c7fd45dece8be2848c4569afcb1a4bf4c9659c8c5f",
+      "original_bytes": 2935,
+      "archive_bytes": 498
+    },
+    {
+      "source": "final-assays/predator-no-sensory/godot.jsonl",
+      "archive": "final-assays/predator-no-sensory/godot.jsonl.gz",
+      "sha256": "3a86b72d1eeaa1ffc7879dde003a1720b7687d4271f7dbc85c5c9a053bf99dd6",
+      "original_bytes": 3642503,
+      "archive_bytes": 305951
+    },
+    {
+      "source": "final-assays/predator-no-sensory/godot_console.txt",
+      "archive": "final-assays/predator-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-assays/predator-no-sensory/performance.jsonl",
+      "archive": "final-assays/predator-no-sensory/performance.jsonl.gz",
+      "sha256": "84dd0e2d35b693cf29b806ffe2bd49d186a8a058cb2b1f45be3df3a2be216398",
+      "original_bytes": 199738,
+      "archive_bytes": 32016
+    },
+    {
+      "source": "final-assays/predator-no-sensory/sensory_mapping.json",
+      "archive": "final-assays/predator-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-assays/predator-no-sensory/world.jsonl",
+      "archive": "final-assays/predator-no-sensory/world.jsonl.gz",
+      "sha256": "791257f57bbb9a8bc6e7fa8b7a2fcb105549115dfdc4c0da48a4fd40507e4cdf",
+      "original_bytes": 631713,
+      "archive_bytes": 76382
+    },
+    {
+      "source": "final-seed-42/control/brain.jsonl",
+      "archive": "final-seed-42/control/brain.jsonl.gz",
+      "sha256": "d08f63547b51a24d0e959899a227e24e5c0e0c46d3cad8ce48a2a6efc5247e60",
+      "original_bytes": 3127597,
+      "archive_bytes": 278951
+    },
+    {
+      "source": "final-seed-42/control/brain_console.txt",
+      "archive": "final-seed-42/control/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/control/engine.log",
+      "archive": "final-seed-42/control/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/control/events.jsonl",
+      "archive": "final-seed-42/control/events.jsonl.gz",
+      "sha256": "ff8b1c749215bde021e52c6e79b8bb47cdff85df0a4fdeef4e84b04fcf3ca2e6",
+      "original_bytes": 207,
+      "archive_bytes": 194
+    },
+    {
+      "source": "final-seed-42/control/godot.jsonl",
+      "archive": "final-seed-42/control/godot.jsonl.gz",
+      "sha256": "f88e36a3a38b092cced3b5be97315a8ca0ea1cef798b42734bdf7959a9b92569",
+      "original_bytes": 3548694,
+      "archive_bytes": 301836
+    },
+    {
+      "source": "final-seed-42/control/godot_console.txt",
+      "archive": "final-seed-42/control/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/control/performance.jsonl",
+      "archive": "final-seed-42/control/performance.jsonl.gz",
+      "sha256": "60f359ef98bd9965ac7ab239d61e71deff8f185733475f9651a214f0e41ab79e",
+      "original_bytes": 199371,
+      "archive_bytes": 32544
+    },
+    {
+      "source": "final-seed-42/control/sensory_mapping.json",
+      "archive": "final-seed-42/control/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/control/world.jsonl",
+      "archive": "final-seed-42/control/world.jsonl.gz",
+      "sha256": "811a7f3f9026a129ebed9ab92760b44763d68b3ec2043462ec23f2411d5a27c7",
+      "original_bytes": 486361,
+      "archive_bytes": 51113
+    },
+    {
+      "source": "final-seed-42/food-left/brain.jsonl",
+      "archive": "final-seed-42/food-left/brain.jsonl.gz",
+      "sha256": "e6de41eae33725d51624d0fc33f0fbbe24604414aab540986ab66df29cf4232f",
+      "original_bytes": 3610801,
+      "archive_bytes": 332515
+    },
+    {
+      "source": "final-seed-42/food-left/brain_console.txt",
+      "archive": "final-seed-42/food-left/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/food-left/engine.log",
+      "archive": "final-seed-42/food-left/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/food-left/events.jsonl",
+      "archive": "final-seed-42/food-left/events.jsonl.gz",
+      "sha256": "68b49a5c00d37c17cbdaf3bc51f8f8ce74c1fbf17220a0e599c1e9a5c71600d3",
+      "original_bytes": 1679,
+      "archive_bytes": 492
+    },
+    {
+      "source": "final-seed-42/food-left/godot.jsonl",
+      "archive": "final-seed-42/food-left/godot.jsonl.gz",
+      "sha256": "43ae90da55b9a0196657fa750e73a16fcce4ca4bf86db38ffda95f28ba2d59a2",
+      "original_bytes": 4032303,
+      "archive_bytes": 347002
+    },
+    {
+      "source": "final-seed-42/food-left/godot_console.txt",
+      "archive": "final-seed-42/food-left/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/food-left/performance.jsonl",
+      "archive": "final-seed-42/food-left/performance.jsonl.gz",
+      "sha256": "5004faac9dca720ac7300eb895aacb4bbc467da0212a9fa614edc0d894b3bd99",
+      "original_bytes": 200239,
+      "archive_bytes": 32723
+    },
+    {
+      "source": "final-seed-42/food-left/sensory_mapping.json",
+      "archive": "final-seed-42/food-left/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/food-left/world.jsonl",
+      "archive": "final-seed-42/food-left/world.jsonl.gz",
+      "sha256": "55c6f0985465138438c288c10578d729adf8cd50fd8d51ff4e8040d6960da2be",
+      "original_bytes": 626009,
+      "archive_bytes": 77819
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/brain.jsonl",
+      "archive": "final-seed-42/food-left-no-sensory/brain.jsonl.gz",
+      "sha256": "afd0f0862cf782ecdc0687f5c7c0a56c805d5fc8b5393b2b3c09e6cad9b65ff2",
+      "original_bytes": 3074947,
+      "archive_bytes": 286742
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/brain_console.txt",
+      "archive": "final-seed-42/food-left-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/engine.log",
+      "archive": "final-seed-42/food-left-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/events.jsonl",
+      "archive": "final-seed-42/food-left-no-sensory/events.jsonl.gz",
+      "sha256": "103b7b0d03fa635e9186e3137ee3ab3994c79c713f76cd3e8d68619f73f7fb7c",
+      "original_bytes": 274,
+      "archive_bytes": 202
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/godot.jsonl",
+      "archive": "final-seed-42/food-left-no-sensory/godot.jsonl.gz",
+      "sha256": "28475bda54b003e3b6b11fc13c0b8c50b921519626e820dc97c16c8336c9bc9f",
+      "original_bytes": 3507260,
+      "archive_bytes": 307593
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/godot_console.txt",
+      "archive": "final-seed-42/food-left-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/performance.jsonl",
+      "archive": "final-seed-42/food-left-no-sensory/performance.jsonl.gz",
+      "sha256": "25e26f511570dc49eecdb3a61e688d32e5cc9aeb1d9e01ff6d5e43aff0317d6d",
+      "original_bytes": 199787,
+      "archive_bytes": 34555
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/sensory_mapping.json",
+      "archive": "final-seed-42/food-left-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/food-left-no-sensory/world.jsonl",
+      "archive": "final-seed-42/food-left-no-sensory/world.jsonl.gz",
+      "sha256": "4f6029477ede230891548374cb3216675669db90e2a56ecc4525c2f04719f97a",
+      "original_bytes": 625594,
+      "archive_bytes": 75268
+    },
+    {
+      "source": "final-seed-42/food-right/brain.jsonl",
+      "archive": "final-seed-42/food-right/brain.jsonl.gz",
+      "sha256": "5c8ad708d329fa44e3ae8344d3c905f812b3849144f96b3543232c9aa42e5d04",
+      "original_bytes": 3529065,
+      "archive_bytes": 308874
+    },
+    {
+      "source": "final-seed-42/food-right/brain_console.txt",
+      "archive": "final-seed-42/food-right/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/food-right/engine.log",
+      "archive": "final-seed-42/food-right/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/food-right/events.jsonl",
+      "archive": "final-seed-42/food-right/events.jsonl.gz",
+      "sha256": "fabf4ff6b628c9ac04dc905ba56bfeac26bb435b89fed35cc4b8dc6471b0689e",
+      "original_bytes": 1958,
+      "archive_bytes": 532
+    },
+    {
+      "source": "final-seed-42/food-right/godot.jsonl",
+      "archive": "final-seed-42/food-right/godot.jsonl.gz",
+      "sha256": "02ec40aede3c9a9cd2d9f0ed869c27611bc63005d311f98b91d34bb0fdb06ca8",
+      "original_bytes": 3947995,
+      "archive_bytes": 325169
+    },
+    {
+      "source": "final-seed-42/food-right/godot_console.txt",
+      "archive": "final-seed-42/food-right/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/food-right/performance.jsonl",
+      "archive": "final-seed-42/food-right/performance.jsonl.gz",
+      "sha256": "e6fa3bc8cc3c7825ac849294f5379dde8d6526fa4e195b50fa5901e83f315ed7",
+      "original_bytes": 200276,
+      "archive_bytes": 32356
+    },
+    {
+      "source": "final-seed-42/food-right/sensory_mapping.json",
+      "archive": "final-seed-42/food-right/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/food-right/world.jsonl",
+      "archive": "final-seed-42/food-right/world.jsonl.gz",
+      "sha256": "63937ad99c4bad7ff586c664e533a1ad04067179cf2e4ca189c66add01a3d182",
+      "original_bytes": 607196,
+      "archive_bytes": 66520
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/brain.jsonl",
+      "archive": "final-seed-42/food-right-no-sensory/brain.jsonl.gz",
+      "sha256": "604972367b137b285afdae0aa183908984a81b659637176aa0a3c41968227bd6",
+      "original_bytes": 3094031,
+      "archive_bytes": 287232
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/brain_console.txt",
+      "archive": "final-seed-42/food-right-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/engine.log",
+      "archive": "final-seed-42/food-right-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/events.jsonl",
+      "archive": "final-seed-42/food-right-no-sensory/events.jsonl.gz",
+      "sha256": "e4e8149b65255dd2e548d7106390a028fdab123dd56613ff3ab57b46f33b77bc",
+      "original_bytes": 273,
+      "archive_bytes": 200
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/godot.jsonl",
+      "archive": "final-seed-42/food-right-no-sensory/godot.jsonl.gz",
+      "sha256": "b2a446b08d8148ba8e0e420ed5f36236ccb9495cc2d487f3287fc34fb59cf1f5",
+      "original_bytes": 3517445,
+      "archive_bytes": 307234
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/godot_console.txt",
+      "archive": "final-seed-42/food-right-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/performance.jsonl",
+      "archive": "final-seed-42/food-right-no-sensory/performance.jsonl.gz",
+      "sha256": "4fe52d5312d598c33b85c5976e2c4abe7d84b5032bc962af5bda14a2f9db01c8",
+      "original_bytes": 200182,
+      "archive_bytes": 33185
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/sensory_mapping.json",
+      "archive": "final-seed-42/food-right-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/food-right-no-sensory/world.jsonl",
+      "archive": "final-seed-42/food-right-no-sensory/world.jsonl.gz",
+      "sha256": "80e4dfd660d915a8aaa069007f8b11656ff95e41e5171d30de63e1117cdb4837",
+      "original_bytes": 625116,
+      "archive_bytes": 75346
+    },
+    {
+      "source": "final-seed-42/predator/brain.jsonl",
+      "archive": "final-seed-42/predator/brain.jsonl.gz",
+      "sha256": "498316c766104f522b54eb98e509c02ec3a8638ed715f623e8226ea938ec85a9",
+      "original_bytes": 4313085,
+      "archive_bytes": 347383
+    },
+    {
+      "source": "final-seed-42/predator/brain_console.txt",
+      "archive": "final-seed-42/predator/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/predator/engine.log",
+      "archive": "final-seed-42/predator/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/predator/events.jsonl",
+      "archive": "final-seed-42/predator/events.jsonl.gz",
+      "sha256": "28c8ec05be04406b85bac98b65be23008330c2cabf81de99381f5cbbc0beaeb3",
+      "original_bytes": 9295,
+      "archive_bytes": 1290
+    },
+    {
+      "source": "final-seed-42/predator/godot.jsonl",
+      "archive": "final-seed-42/predator/godot.jsonl.gz",
+      "sha256": "259b42185b1ec590b46eba4c1ed85a652459b8ca03b24b68e0f5ef25b9bb7c9f",
+      "original_bytes": 4703438,
+      "archive_bytes": 362368
+    },
+    {
+      "source": "final-seed-42/predator/godot_console.txt",
+      "archive": "final-seed-42/predator/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/predator/performance.jsonl",
+      "archive": "final-seed-42/predator/performance.jsonl.gz",
+      "sha256": "206ae0f5c2ba75f57bc3b3309ca67c37d81b3b6c17e53317b7e5b9d56e71fb53",
+      "original_bytes": 199529,
+      "archive_bytes": 32119
+    },
+    {
+      "source": "final-seed-42/predator/sensory_mapping.json",
+      "archive": "final-seed-42/predator/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/predator/world.jsonl",
+      "archive": "final-seed-42/predator/world.jsonl.gz",
+      "sha256": "eb64e68fb74e5fcc06344c0e0b161e9ac7c1c5c025b923f2fb2ffac4e1317987",
+      "original_bytes": 628332,
+      "archive_bytes": 82202
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/brain.jsonl",
+      "archive": "final-seed-42/predator-no-gf/brain.jsonl.gz",
+      "sha256": "a0311998f4dedaa9d56072a16a10ed85efa730d9cc54da71d3c054625833b0bd",
+      "original_bytes": 4061324,
+      "archive_bytes": 303804
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/brain_console.txt",
+      "archive": "final-seed-42/predator-no-gf/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/engine.log",
+      "archive": "final-seed-42/predator-no-gf/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/events.jsonl",
+      "archive": "final-seed-42/predator-no-gf/events.jsonl.gz",
+      "sha256": "8dfe3bd23ef5288138f3e6be212459f70cf16777a941f439ff60b55b0f085f35",
+      "original_bytes": 5698,
+      "archive_bytes": 889
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/godot.jsonl",
+      "archive": "final-seed-42/predator-no-gf/godot.jsonl.gz",
+      "sha256": "f3dccec9814f96d7f6282eb14689d1ae8fb2afc3a382229a78392a730cf7816d",
+      "original_bytes": 4488239,
+      "archive_bytes": 320956
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/godot_console.txt",
+      "archive": "final-seed-42/predator-no-gf/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/performance.jsonl",
+      "archive": "final-seed-42/predator-no-gf/performance.jsonl.gz",
+      "sha256": "7ca22ef83986840854b15bb798f039a62bbcae9791005df316546bd30d2fb716",
+      "original_bytes": 199440,
+      "archive_bytes": 31939
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/sensory_mapping.json",
+      "archive": "final-seed-42/predator-no-gf/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/predator-no-gf/world.jsonl",
+      "archive": "final-seed-42/predator-no-gf/world.jsonl.gz",
+      "sha256": "69e4d01b48af3525237ae1c91cd7ddb09c458c5619820e1d94e0d08636829660",
+      "original_bytes": 623157,
+      "archive_bytes": 63312
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/brain.jsonl",
+      "archive": "final-seed-42/predator-no-sensory/brain.jsonl.gz",
+      "sha256": "654652bbd6b7ef26f901900379a31a916295bff210fb4db907c4e967e2c95a83",
+      "original_bytes": 3432161,
+      "archive_bytes": 274431
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/brain_console.txt",
+      "archive": "final-seed-42/predator-no-sensory/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/engine.log",
+      "archive": "final-seed-42/predator-no-sensory/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/events.jsonl",
+      "archive": "final-seed-42/predator-no-sensory/events.jsonl.gz",
+      "sha256": "103073e0d50ae2171142ccb25398a9c2d0c09f370ab769cc3c073c6af96e24ae",
+      "original_bytes": 3399,
+      "archive_bytes": 509
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/godot.jsonl",
+      "archive": "final-seed-42/predator-no-sensory/godot.jsonl.gz",
+      "sha256": "3d7265acf56fc9b447eaa89d326a5de6a99d8630e8414779cca97a8044bfa839",
+      "original_bytes": 3892417,
+      "archive_bytes": 292680
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/godot_console.txt",
+      "archive": "final-seed-42/predator-no-sensory/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/performance.jsonl",
+      "archive": "final-seed-42/predator-no-sensory/performance.jsonl.gz",
+      "sha256": "a8c852ce8f28d25af7c8274f41d029cf3ef026a28d4e2a8ece959132b76e4aec",
+      "original_bytes": 200227,
+      "archive_bytes": 34307
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/sensory_mapping.json",
+      "archive": "final-seed-42/predator-no-sensory/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "final-seed-42/predator-no-sensory/world.jsonl",
+      "archive": "final-seed-42/predator-no-sensory/world.jsonl.gz",
+      "sha256": "45ab22f637c6928745c16f2d4490f7babbe9018a9edfc908a912d5a2c91a09ec",
+      "original_bytes": 622046,
+      "archive_bytes": 58376
+    },
+    {
+      "source": "frozen-path/brain.jsonl",
+      "archive": "frozen-path/brain.jsonl.gz",
+      "sha256": "6fe5fd7419da618c99d9f8bc937ba2d869c94cec87ca19e2f05428e2a784d88b",
+      "original_bytes": 630972,
+      "archive_bytes": 49452
+    },
+    {
+      "source": "frozen-path/brain_console.txt",
+      "archive": "frozen-path/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "frozen-path/engine.log",
+      "archive": "frozen-path/engine.log.gz",
+      "sha256": "4e710929f28521dba8f94293f166dfa9db74c5467101b6ec375fd05b901d2c43",
+      "original_bytes": 294,
+      "archive_bytes": 246
+    },
+    {
+      "source": "frozen-path/events.jsonl",
+      "archive": "frozen-path/events.jsonl.gz",
+      "sha256": "c9029d24d02e21259331245449e0c0e697a7f145e9ccd6286620b3c540e66ddc",
+      "original_bytes": 463,
+      "archive_bytes": 273
+    },
+    {
+      "source": "frozen-path/godot.jsonl",
+      "archive": "frozen-path/godot.jsonl.gz",
+      "sha256": "2002669c43b0ecd3972c2b7c6df965e830be43fb56035ef503b97453867aea57",
+      "original_bytes": 758531,
+      "archive_bytes": 54062
+    },
+    {
+      "source": "frozen-path/godot_console.txt",
+      "archive": "frozen-path/godot_console.txt.gz",
+      "sha256": "8c2abe83ccdcf9f2340b71a5717b12e93ebddac0ce770faa5961dce34c14c6a1",
+      "original_bytes": 300,
+      "archive_bytes": 249
+    },
+    {
+      "source": "frozen-path/performance.jsonl",
+      "archive": "frozen-path/performance.jsonl.gz",
+      "sha256": "29f9d12086d00f7d4d0697b49252c4e96c53fa0ebd6868a0e711f94321bfd983",
+      "original_bytes": 74541,
+      "archive_bytes": 13944
+    },
+    {
+      "source": "frozen-path/sensory_mapping.json",
+      "archive": "frozen-path/sensory_mapping.json.gz",
+      "sha256": "39da00fa4bceca6a3e8d2bd6d43aca88e48169744c550f4eda775d451eac5bb5",
+      "original_bytes": 343542,
+      "archive_bytes": 8449
+    },
+    {
+      "source": "frozen-path/world.jsonl",
+      "archive": "frozen-path/world.jsonl.gz",
+      "sha256": "057247aadb113114264a780592f4c397ef4aa2f4fbc17cd804da2e9ceae4a157",
+      "original_bytes": 98110,
+      "archive_bytes": 3952
+    },
+    {
+      "source": "ui-controls/brain.jsonl",
+      "archive": "ui-controls/brain.jsonl.gz",
+      "sha256": "3034dbc52ec4bfe1380423392e18a787137063c0735e53af82348dc56843f8ca",
+      "original_bytes": 846420,
+      "archive_bytes": 72158
+    },
+    {
+      "source": "ui-controls/brain_console.txt",
+      "archive": "ui-controls/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "ui-controls/engine.log",
+      "archive": "ui-controls/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "ui-controls/events.jsonl",
+      "archive": "ui-controls/events.jsonl.gz",
+      "sha256": "693e70a701fbe6eae5fa01f445a615bd72adadb6dc2041dc5cd02d80aa2e4c08",
+      "original_bytes": 1463,
+      "archive_bytes": 326
+    },
+    {
+      "source": "ui-controls/godot.jsonl",
+      "archive": "ui-controls/godot.jsonl.gz",
+      "sha256": "363c9b31a4f3de916bbdbba7841125eb2f7eb7997a674cc096867f82fc24bf43",
+      "original_bytes": 981029,
+      "archive_bytes": 77464
+    },
+    {
+      "source": "ui-controls/godot_console.txt",
+      "archive": "ui-controls/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "ui-controls/performance.jsonl",
+      "archive": "ui-controls/performance.jsonl.gz",
+      "sha256": "9a629f99aab648b1394895e00c009ea280ea3a7e94f7f48a70bade0a8585c57c",
+      "original_bytes": 9472,
+      "archive_bytes": 2082
+    },
+    {
+      "source": "ui-controls/sensory_mapping.json",
+      "archive": "ui-controls/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "ui-controls/world.jsonl",
+      "archive": "ui-controls/world.jsonl.gz",
+      "sha256": "4c91647650bfb33708cb8fb2eb171f0e67cd50badbc802769de0e196e520b594",
+      "original_bytes": 29286,
+      "archive_bytes": 3245
+    },
+    {
+      "source": "ui-buttons/brain.jsonl",
+      "archive": "ui-buttons/brain.jsonl.gz",
+      "sha256": "f93299538aa1423781c3469a64b26d15f5a8e6571884b7b692168f56f8687c45",
+      "original_bytes": 696450,
+      "archive_bytes": 60363
+    },
+    {
+      "source": "ui-buttons/brain_console.txt",
+      "archive": "ui-buttons/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "ui-buttons/engine.log",
+      "archive": "ui-buttons/engine.log.gz",
+      "sha256": "f4c12d2bacb9c3dc42732906e2c8ca54d21c793344083599a8429b044159ebc4",
+      "original_bytes": 73,
+      "archive_bytes": 88
+    },
+    {
+      "source": "ui-buttons/events.jsonl",
+      "archive": "ui-buttons/events.jsonl.gz",
+      "sha256": "c7fe5e9003321e3fd4cf67a5a8056e808db5c9e97cbf9bd39ef629529dfa49bb",
+      "original_bytes": 1460,
+      "archive_bytes": 327
+    },
+    {
+      "source": "ui-buttons/godot.jsonl",
+      "archive": "ui-buttons/godot.jsonl.gz",
+      "sha256": "40a0b20215a5ee35dfa79f2c4b74e6817a945c97c927df01d9eaa548c429cc3f",
+      "original_bytes": 805076,
+      "archive_bytes": 64564
+    },
+    {
+      "source": "ui-buttons/godot_console.txt",
+      "archive": "ui-buttons/godot_console.txt.gz",
+      "sha256": "4b724f3610c5e863fe6e9287e78d4a0bce5252238f69f3c92b8d02f1f1f31a8d",
+      "original_bytes": 75,
+      "archive_bytes": 90
+    },
+    {
+      "source": "ui-buttons/performance.jsonl",
+      "archive": "ui-buttons/performance.jsonl.gz",
+      "sha256": "f9c7872cd2652ac694f6b12f3a796ce29edf8054ace9353d388a164f10a20234",
+      "original_bytes": 8918,
+      "archive_bytes": 1936
+    },
+    {
+      "source": "ui-buttons/sensory_mapping.json",
+      "archive": "ui-buttons/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "ui-buttons/world.jsonl",
+      "archive": "ui-buttons/world.jsonl.gz",
+      "sha256": "fd555d0e89c27412f87bb59a91c80ced4c32710858b011a3a33213fb4174312a",
+      "original_bytes": 28067,
+      "archive_bytes": 3111
+    },
+    {
+      "source": "ui-live/brain.jsonl",
+      "archive": "ui-live/brain.jsonl.gz",
+      "sha256": "9f995907ab5bf7d1a451ad093632a17fa722ed4bfdaa092e215af1c21a34d9d5",
+      "original_bytes": 18132909,
+      "archive_bytes": 1318568
+    },
+    {
+      "source": "ui-live/brain_console.txt",
+      "archive": "ui-live/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "ui-live/engine.log",
+      "archive": "ui-live/engine.log.gz",
+      "sha256": "c31f8f8fa7fbb94de14ef79fd9630214dc9d61271789c19fc693856d5a125ec2",
+      "original_bytes": 202,
+      "archive_bytes": 188
+    },
+    {
+      "source": "ui-live/events.jsonl",
+      "archive": "ui-live/events.jsonl.gz",
+      "sha256": "2e82a1f32e7027ad0ff2067d3548442570ab0059948316a6e462e26404aa14cf",
+      "original_bytes": 7252,
+      "archive_bytes": 1099
+    },
+    {
+      "source": "ui-live/godot.jsonl",
+      "archive": "ui-live/godot.jsonl.gz",
+      "sha256": "8ef8e1902a5f5a9e4577df32d067dacdf8e656f93d861debc7d85ecfb08ebff9",
+      "original_bytes": 19759435,
+      "archive_bytes": 1376711
+    },
+    {
+      "source": "ui-live/godot_console.txt",
+      "archive": "ui-live/godot_console.txt.gz",
+      "sha256": "f1fabe2ac4a1b9b508c0fd78e8d513401fb6af103ccdacdbc1dd2d1f218575ca",
+      "original_bytes": 205,
+      "archive_bytes": 191
+    },
+    {
+      "source": "ui-live/performance.jsonl",
+      "archive": "ui-live/performance.jsonl.gz",
+      "sha256": "9871e1e7ecee17af9fc68edb750b2e71c48825105c676b7e053c9fabd8f0ce6d",
+      "original_bytes": 838185,
+      "archive_bytes": 123699
+    },
+    {
+      "source": "ui-live/sensory_mapping.json",
+      "archive": "ui-live/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "ui-live/world.jsonl",
+      "archive": "ui-live/world.jsonl.gz",
+      "sha256": "37bd560c28266f0ba77f6497dcb1ef59bce796c27dd65ea87fbeb399080f60b1",
+      "original_bytes": 2692986,
+      "archive_bytes": 304864
+    },
+    {
+      "source": "ui-normal/brain.jsonl",
+      "archive": "ui-normal/brain.jsonl.gz",
+      "sha256": "c9f85134873103b2bedcacfe1816da923c529d5b1634d49eb1d9e43a5e3c2e11",
+      "original_bytes": 1284722,
+      "archive_bytes": 116307
+    },
+    {
+      "source": "ui-normal/brain_console.txt",
+      "archive": "ui-normal/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "ui-normal/engine.log",
+      "archive": "ui-normal/engine.log.gz",
+      "sha256": "c31f8f8fa7fbb94de14ef79fd9630214dc9d61271789c19fc693856d5a125ec2",
+      "original_bytes": 202,
+      "archive_bytes": 188
+    },
+    {
+      "source": "ui-normal/events.jsonl",
+      "archive": "ui-normal/events.jsonl.gz",
+      "sha256": "8fe4a1012acdba80b5931ff0686a6e48a6e9f43b0b632aacc200b67c40aa2382",
+      "original_bytes": 624,
+      "archive_bytes": 252
+    },
+    {
+      "source": "ui-normal/godot.jsonl",
+      "archive": "ui-normal/godot.jsonl.gz",
+      "sha256": "b105500bb951b1d9846d1b9e341e7c1acc361df2c7bc123d06c10ff14434ea55",
+      "original_bytes": 1445041,
+      "archive_bytes": 124988
+    },
+    {
+      "source": "ui-normal/godot_console.txt",
+      "archive": "ui-normal/godot_console.txt.gz",
+      "sha256": "f1fabe2ac4a1b9b508c0fd78e8d513401fb6af103ccdacdbc1dd2d1f218575ca",
+      "original_bytes": 205,
+      "archive_bytes": 191
+    },
+    {
+      "source": "ui-normal/performance.jsonl",
+      "archive": "ui-normal/performance.jsonl.gz",
+      "sha256": "e08f8bbc0b6975baddb1f2fa42f58ce25135aa20499dcc7ba4934a2916c90d64",
+      "original_bytes": 75277,
+      "archive_bytes": 14143
+    },
+    {
+      "source": "ui-normal/sensory_mapping.json",
+      "archive": "ui-normal/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "ui-normal/world.jsonl",
+      "archive": "ui-normal/world.jsonl.gz",
+      "sha256": "f3ccc5392ebd83a283c9d565e2eda91cc2cfbffa969376240c29f657d0dccd5d",
+      "original_bytes": 182905,
+      "archive_bytes": 20138
+    },
+    {
+      "source": "ui-vulkan/brain.jsonl",
+      "archive": "ui-vulkan/brain.jsonl.gz",
+      "sha256": "92871146d5cb89e13151eaf6fc3c27931a4975469ea32ced7b2d6f7319929595",
+      "original_bytes": 2009412,
+      "archive_bytes": 184047
+    },
+    {
+      "source": "ui-vulkan/brain_console.txt",
+      "archive": "ui-vulkan/brain_console.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "archive_bytes": 20
+    },
+    {
+      "source": "ui-vulkan/engine.log",
+      "archive": "ui-vulkan/engine.log.gz",
+      "sha256": "4e5fd1b63e2a914239cf6ee218f0eca31c90902a3cdfe261e5ad012f0319be14",
+      "original_bytes": 151,
+      "archive_bytes": 151
+    },
+    {
+      "source": "ui-vulkan/events.jsonl",
+      "archive": "ui-vulkan/events.jsonl.gz",
+      "sha256": "8b79e93f5a5f9551d4a7865c1a233c3005ebb9b451d9e03b6f301f6ebc9375f4",
+      "original_bytes": 1569,
+      "archive_bytes": 494
+    },
+    {
+      "source": "ui-vulkan/godot.jsonl",
+      "archive": "ui-vulkan/godot.jsonl.gz",
+      "sha256": "04205255733f9de8ff1583c29550d252e0e1712a86c7e5008deeeee53c4dd085",
+      "original_bytes": 2256837,
+      "archive_bytes": 194596
+    },
+    {
+      "source": "ui-vulkan/godot_console.txt",
+      "archive": "ui-vulkan/godot_console.txt.gz",
+      "sha256": "68bb0d1bbc4397cbd8b5ad0c7445db7de2f58a961ecadee0db4c677817169fd6",
+      "original_bytes": 154,
+      "archive_bytes": 155
+    },
+    {
+      "source": "ui-vulkan/performance.jsonl",
+      "archive": "ui-vulkan/performance.jsonl.gz",
+      "sha256": "6b3f7423069cdd72c51cbea04751b276dfde70e3dca13380a773921a7833a5a9",
+      "original_bytes": 113161,
+      "archive_bytes": 20144
+    },
+    {
+      "source": "ui-vulkan/sensory_mapping.json",
+      "archive": "ui-vulkan/sensory_mapping.json.gz",
+      "sha256": "1776b6dac38f562316640cf04d1307078c5ad0adfee2a975f92d74585d448a73",
+      "original_bytes": 486551,
+      "archive_bytes": 16620
+    },
+    {
+      "source": "ui-vulkan/world.jsonl",
+      "archive": "ui-vulkan/world.jsonl.gz",
+      "sha256": "69b2eff4dd253300f04a9e73d8bc940f461fff4fd45a943961dfbda5a5ae164a",
+      "original_bytes": 330154,
+      "archive_bytes": 38981
+    }
+  ],
+  "original_bytes": 563564783,
+  "archive_bytes": 47462632
+}
