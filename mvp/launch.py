@@ -20,24 +20,34 @@ def main():
     p.add_argument('--preset',choices=REMASTER_PRESETS);p.add_argument('--world-seed',type=int,default=20260914)
     p.add_argument('--legacy',action='store_true',help='Original English v0.1 console and reference backend')
     p.add_argument('--backend',choices=['fast','reference'],default='fast')
+    p.add_argument('--model',choices=['counts','frozen'],default='counts',help='Explicit behavioral LIF hypothesis, or preserved v0.1 equations')
+    p.add_argument('--tonic-current',type=float,default=1.5,help='Uniform assumed arousal current in count model (0..2)')
+    p.add_argument('--restore-weak',action='store_true',help='Use separately restored threshold-1 connectivity; prepare with behavior.prepare')
+    p.add_argument('--no-sensory',action='store_true');p.add_argument('--no-gf',action='store_true')
     p.add_argument('--brain-frame-ms',type=int,choices=[10,20,50],default=20)
     p.add_argument('--brain-seed',type=int,default=20260913);p.add_argument('--duration',type=float,default=0)
     p.add_argument('--windowed',action='store_true');p.add_argument('--headless',action='store_true');p.add_argument('--qa-controls',action='store_true')
     p.add_argument('--qa-neural',action='store_true',help='Exercise explicit neural-test controls and reset')
+    p.add_argument('--qa-model',action='store_true',help='Exercise model switching and sensory/GF ablations across resets')
     p.add_argument('--quit-after',type=float,default=0);p.add_argument('--logdir');p.add_argument('--godot',default=str(ROOT/'body/tools/Godot_v4.6.1-stable_win64.exe'))
     a=p.parse_args()
-    a.preset=a.preset or ('CONTROL' if a.legacy else 'MOTOR TEST')
+    a.preset=a.preset or 'CONTROL'
+    if not 0<=a.tonic_current<=2:p.error('Tonic current must be 0..2')
+    if not a.legacy and a.model=='counts' and a.backend=='reference':p.error('Count hypothesis uses JIT; reference backend requires --model frozen')
+    if a.restore_weak and not (ROOT/'data/behavior/counts.npz').exists():p.error('Restored connectivity missing: python -m behavior.prepare')
     if not Path(a.godot).exists():p.error('Godot missing: run mvp/setup_godot.py or provide --godot')
     if not 0<=a.brain_seed<=2147483647 or not 0<=a.world_seed<=2147483647:p.error('Seeds must be 0..2147483647')
     folder=Path(a.logdir).resolve() if a.logdir else ROOT/'mvp/logs'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
     folder.mkdir(parents=True,exist_ok=False)
-    eco=(configure if a.legacy else configure_remaster)(a.preset,a.world_seed,a.duration)
+    eco=configure(a.preset,a.world_seed,a.duration) if a.legacy else configure_remaster(a.preset,a.world_seed,a.duration,behavior=a.model=='counts')
     with socket.socket() as reservation:
         reservation.bind(('127.0.0.1',0))
         port=reservation.getsockname()[1]
     body=json.loads((ROOT/'body/body_config.json').read_text());body.update(port=port,seed=a.brain_seed,disconnect_seconds=30.)
     body['debug']['enabled']=False;body['arena']['half_width']=NEW_HALF
     body['backend']='reference' if a.legacy else a.backend
+    body.update(scientific_model='frozen' if a.legacy else a.model,tonic_current=a.tonic_current,restore_weak=a.restore_weak)
+    body['gf_ablated']=a.no_gf;eco['sensory']['enabled']=not a.no_sensory
     if not a.legacy:body['packet_neural_ms']=a.brain_frame_ms
     for name,value in [('ecology_runtime_config.json',eco),('body_runtime_config.json',body),('world-area.json',area_evidence())]:
         (folder/name).write_text(json.dumps(value,indent=2))
@@ -55,6 +65,7 @@ def main():
                '--logdir='+str(folder),'--duration='+str(a.duration),'--life-run','--quit-after='+str(a.quit_after)]
         if a.qa_controls:args.append('--qa-controls')
         if a.qa_neural:args.append('--qa-neural')
+        if a.qa_model:args.append('--qa-model')
         cache=ROOT/'mvp/cache';cache.mkdir(exist_ok=True)
         env=os.environ.copy();env['APPDATA']=str(cache)
         godot=subprocess.Popen(args,stdout=logs[1],stderr=subprocess.STDOUT,creationflags=hidden,env=env)

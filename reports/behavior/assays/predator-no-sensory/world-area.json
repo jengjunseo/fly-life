@@ -1,0 +1,16 @@
+{
+  "definition": "horizontal floor inside wall collision faces, before fly-radius clearance",
+  "old_wall_center_width": 8.0,
+  "new_wall_center_width": 11.230865786510142,
+  "wall_thickness": 0.2,
+  "old_width": 7.8,
+  "old_depth": 7.8,
+  "old_area": 60.839999999999996,
+  "new_width": 11.030865786510143,
+  "new_depth": 11.030865786510143,
+  "new_area": 121.68000000000004,
+  "ratio": 2.0000000000000004,
+  "fly_radius": 0.19,
+  "old_center_accessible_width": 7.42,
+  "new_center_accessible_width": 10.650865786510142
+}

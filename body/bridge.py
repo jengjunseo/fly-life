@@ -52,7 +52,7 @@ class Runtime:
     def emit(self,status,dt=0.,extra=None):
         now=time.perf_counter()
         activities={g:float(self.brain.read_activity(idx)['activity_hz'].mean()) for g,idx in self.groups.items()} if self.brain else dict(left=0.,right=0.,forward=0.)
-        motor=decode(activities,self.config['decoder']) if status=='ready' else dict(forward=0.,turn=0.)
+        motor=self.decode_motor(activities) if status=='ready' else dict(forward=0.,turn=0.)
         neural_time=self.brain.step_count*self.brain.p['dt_ms']/1000 if self.brain else 0.
         motor_time=self.motor_steps*self.brain.p['dt_ms']/1000 if self.brain else 0.
         wall=now-self.start
@@ -69,6 +69,12 @@ class Runtime:
         self.log.write(data.decode()); self.log.flush()
         if self.conn: self.conn.sendall(data)
         self.sequence+=1; self.last_status=now; self.status=status
+
+    def decode_motor(self,activities):
+        return decode(activities,self.config['decoder'])
+
+    def advance_neurons(self,external=None):
+        return self.brain.step(external)
 
     def receive(self):
         if not self.conn: return
@@ -121,7 +127,7 @@ class Runtime:
         evidence={g:json.loads(self.brain.neurons.iloc[idx][['bodyId','type','instance','somaSide','superclass','consensus_nt']].to_json(orient='records')) for g,idx in self.groups.items()}
         save(self.logdir/'baseline_mapping.json',dict(dataset=self.coreconfig['dataset'],machine=machine(),
             runtime_pid=os.getpid(),parent_pid=os.getppid(),
-            brain_config=self.coreconfig,body_config=self.config,
+            brain_config=self.coreconfig,actual_model_parameters=self.brain.p,body_config=self.config,
             baseline_commit='4cd038f',baseline_files_sha256={str(p.relative_to(CORE)):sha(p) for p in
                 [CORE/'braincore/core.py',CORE/'config.json',CORE/'data/runtime/metadata.json',CORE/'data/runtime/weights.npz',CORE/'data/runtime/neurons.parquet']},
             actual_groups=evidence))
@@ -129,7 +135,7 @@ class Runtime:
         for _ in range(self.brain.steps_for(self.config['warmup_ms'])):
             self.receive()
             if not self.running or self.pending_reset: return
-            begin=time.perf_counter(); self.brain.step(); self.core_seconds+=time.perf_counter()-begin
+            begin=time.perf_counter(); self.advance_neurons(); self.core_seconds+=time.perf_counter()-begin
             if time.perf_counter()-self.last_status>.25: self.emit('warming_up')
         self.emit('ready')
 

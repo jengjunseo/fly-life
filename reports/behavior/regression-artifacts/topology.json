@@ -1,0 +1,52 @@
+{
+  "level": "INTEGRATION_ACTUAL_MATRIX",
+  "figure_LC9_to_DNp09_contacts": 1904,
+  "targets": [
+    {
+      "bodyId": 10783,
+      "LC9_contacts": 1098,
+      "LC9_signed_normalized_weight": 0.1511147916316986,
+      "LC4_LPLC2_contacts": 104
+    },
+    {
+      "bodyId": 11177,
+      "LC9_contacts": 806,
+      "LC9_signed_normalized_weight": 0.13674922287464142,
+      "LC4_LPLC2_contacts": 7
+    }
+  ],
+  "Sugar_SEL_PN_to_Fdg_contacts": 0,
+  "Fdg_aliases": {
+    "selector": {
+      "types": [
+        "GNG588"
+      ]
+    },
+    "level": "VERIFIED_ALIAS_GATE_DISABLED_UNRESOLVED",
+    "members": [
+      {
+        "bodyId": 12617,
+        "type": "GNG588",
+        "instance": "GNG588_L",
+        "somaSide": "L",
+        "superclass": "cb_intrinsic",
+        "class": null,
+        "receptorType": null,
+        "synonyms": "Shiu 2022: Fdg",
+        "consensus_nt": "acetylcholine"
+      },
+      {
+        "bodyId": 14321,
+        "type": "GNG588",
+        "instance": "GNG588_R",
+        "somaSide": "R",
+        "superclass": "cb_intrinsic",
+        "class": null,
+        "receptorType": null,
+        "synonyms": "Shiu 2022: Fdg",
+        "consensus_nt": "acetylcholine"
+      }
+    ]
+  },
+  "ingestion_enabled": false
+}

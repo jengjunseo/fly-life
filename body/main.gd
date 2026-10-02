@@ -260,15 +260,19 @@ func _physics_process(_delta: float) -> void:
 
 func apply_neural_frame(packet: Dictionary) -> void:
 	var neural_dt := float(packet.dt_s)
+	move_body(packet,neural_dt)
+	world_time += neural_dt
+	test_clock = float(packet.motor_time_s)
+	log_row("body_commit", {"source_seq":packet.seq,"source_activity_hz":packet.activity_hz,
+		"decoder_forward":packet.forward,"decoder_turn":packet.turn,"neural_dt_s":neural_dt,
+		"escape_motor":packet.get("escape_motor",0.)})
+
+func move_body(packet: Dictionary, neural_dt: float) -> void:
 	var turn_rate := float(packet.turn)*float(cfg.body.max_turn_radians_per_neural_second)
 	# Positive decoder turn means RIGHT; Godot positive Y yaw means LEFT.
 	fly.rotation.y -= turn_rate*neural_dt
 	fly.velocity = -fly.transform.basis.z*float(packet.forward)*float(cfg.body.max_forward_units_per_neural_second)
 	fly.move_and_collide(fly.velocity*neural_dt)
-	world_time += neural_dt
-	test_clock = float(packet.motor_time_s)
-	log_row("body_commit", {"source_seq":packet.seq,"source_activity_hz":packet.activity_hz,
-		"decoder_forward":packet.forward,"decoder_turn":packet.turn,"neural_dt_s":neural_dt})
 
 func update_hud() -> void:
 	var activity: Dictionary = state.get("activity_hz",{})

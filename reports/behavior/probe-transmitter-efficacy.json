@@ -1,0 +1,1045 @@
+{
+  "assumptions": "Free transmitter efficacies, fitted screen; not biological certification",
+  "results": [
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "control",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 66.66666666666667,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 65.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 70.0,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 65.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 70.0,
+        "a1_R": 66.66666666666667,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 65.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 66.66666666666667,
+        "a2_L": 126.66666666666667,
+        "a2_R": 120.0,
+        "p9": 65.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 70.0,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 65.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "control",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 43.333333333333336,
+        "a2_L": 106.66666666666667,
+        "a2_R": 103.33333333333334,
+        "p9": 53.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 43.333333333333336,
+        "a1_R": 43.333333333333336,
+        "a2_L": 103.33333333333334,
+        "a2_R": 100.0,
+        "p9": 53.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 43.333333333333336,
+        "a1_R": 43.333333333333336,
+        "a2_L": 106.66666666666667,
+        "a2_R": 103.33333333333334,
+        "p9": 53.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 43.333333333333336,
+        "a1_R": 43.333333333333336,
+        "a2_L": 106.66666666666667,
+        "a2_R": 100.0,
+        "p9": 53.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 43.333333333333336,
+        "a1_R": 43.333333333333336,
+        "a2_L": 103.33333333333334,
+        "a2_R": 103.33333333333334,
+        "p9": 53.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 23.333333333333336,
+        "a2_R": 10.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 20.0,
+        "a2_R": 16.666666666666668,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 16.666666666666668,
+        "a2_R": 6.666666666666667,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 23.333333333333336,
+        "a2_R": 13.333333333333334,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 16.666666666666668,
+        "a2_R": 13.333333333333334,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "control",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 46.66666666666667,
+        "a2_L": 100.0,
+        "a2_R": 93.33333333333334,
+        "p9": 40.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 46.66666666666667,
+        "a2_L": 103.33333333333334,
+        "a2_R": 96.66666666666667,
+        "p9": 40.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 43.333333333333336,
+        "a2_L": 100.0,
+        "a2_R": 96.66666666666667,
+        "p9": 40.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 43.333333333333336,
+        "a2_L": 103.33333333333334,
+        "a2_R": 96.66666666666667,
+        "p9": 40.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 46.66666666666667,
+        "a1_R": 46.66666666666667,
+        "a2_L": 96.66666666666667,
+        "a2_R": 100.0,
+        "p9": 40.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "control",
+      "hz": {
+        "a1_L": 33.333333333333336,
+        "a1_R": 33.333333333333336,
+        "a2_L": 90.0,
+        "a2_R": 83.33333333333334,
+        "p9": 33.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 33.333333333333336,
+        "a1_R": 30.0,
+        "a2_L": 90.0,
+        "a2_R": 83.33333333333334,
+        "p9": 33.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 33.333333333333336,
+        "a1_R": 33.333333333333336,
+        "a2_L": 90.0,
+        "a2_R": 80.0,
+        "p9": 33.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 30.0,
+        "a1_R": 30.0,
+        "a2_L": 86.66666666666667,
+        "a2_R": 83.33333333333334,
+        "p9": 33.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 30.0,
+        "a1_R": 30.0,
+        "a2_L": 86.66666666666667,
+        "a2_R": 83.33333333333334,
+        "p9": 33.333333333333336
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 36.66666666666667,
+        "a2_R": 33.333333333333336,
+        "p9": 5.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 36.66666666666667,
+        "a2_R": 33.333333333333336,
+        "p9": 5.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 30.0,
+        "a2_R": 30.0,
+        "p9": 5.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 33.333333333333336,
+        "a2_R": 33.333333333333336,
+        "p9": 5.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 36.66666666666667,
+        "a2_R": 33.333333333333336,
+        "p9": 6.666666666666667
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 3.3333333333333335,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.2,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "control",
+      "hz": {
+        "a1_L": 86.66666666666667,
+        "a1_R": 90.0,
+        "a2_L": 153.33333333333334,
+        "a2_R": 150.0,
+        "p9": 86.66666666666667
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 86.66666666666667,
+        "a1_R": 90.0,
+        "a2_L": 153.33333333333334,
+        "a2_R": 150.0,
+        "p9": 88.33333333333334
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 86.66666666666667,
+        "a1_R": 90.0,
+        "a2_L": 153.33333333333334,
+        "a2_R": 150.0,
+        "p9": 88.33333333333334
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 86.66666666666667,
+        "a1_R": 90.0,
+        "a2_L": 156.66666666666669,
+        "a2_R": 153.33333333333334,
+        "p9": 88.33333333333334
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.25,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 86.66666666666667,
+        "a1_R": 90.0,
+        "a2_L": 150.0,
+        "a2_R": 150.0,
+        "p9": 88.33333333333334
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "control",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 66.66666666666667,
+        "a2_L": 136.66666666666669,
+        "a2_R": 133.33333333333334,
+        "p9": 75.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 66.66666666666667,
+        "a2_L": 136.66666666666669,
+        "a2_R": 133.33333333333334,
+        "p9": 75.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 70.0,
+        "a1_R": 66.66666666666667,
+        "a2_L": 136.66666666666669,
+        "a2_R": 133.33333333333334,
+        "p9": 75.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 63.333333333333336,
+        "a2_L": 140.0,
+        "a2_R": 136.66666666666669,
+        "p9": 75.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 0.5,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 63.333333333333336,
+        "a2_L": 140.0,
+        "a2_R": 130.0,
+        "p9": 75.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 36.66666666666667,
+        "a2_R": 23.333333333333336,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 33.333333333333336,
+        "a2_R": 23.333333333333336,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 33.333333333333336,
+        "a2_R": 20.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 36.66666666666667,
+        "a2_R": 20.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 2.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 33.333333333333336,
+        "a2_R": 16.666666666666668,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "gaba",
+      "efficacy": 4.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "control",
+      "hz": {
+        "a1_L": 70.0,
+        "a1_R": 70.0,
+        "a2_L": 130.0,
+        "a2_R": 126.66666666666667,
+        "p9": 63.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 70.0,
+        "a1_R": 70.0,
+        "a2_L": 136.66666666666669,
+        "a2_R": 126.66666666666667,
+        "p9": 63.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 70.0,
+        "a2_L": 133.33333333333334,
+        "a2_R": 126.66666666666667,
+        "p9": 63.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 73.33333333333334,
+        "a1_R": 70.0,
+        "a2_L": 130.0,
+        "a2_R": 126.66666666666667,
+        "p9": 63.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.25,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 66.66666666666667,
+        "a1_R": 70.0,
+        "a2_L": 133.33333333333334,
+        "a2_R": 130.0,
+        "p9": 63.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "control",
+      "hz": {
+        "a1_L": 53.333333333333336,
+        "a1_R": 56.66666666666667,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 58.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 53.333333333333336,
+        "a1_R": 53.333333333333336,
+        "a2_L": 126.66666666666667,
+        "a2_R": 120.0,
+        "p9": 58.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 53.333333333333336,
+        "a1_R": 53.333333333333336,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 58.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 53.333333333333336,
+        "a1_R": 56.66666666666667,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 58.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 0.5,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 56.66666666666667,
+        "a1_R": 56.66666666666667,
+        "a2_L": 123.33333333333334,
+        "a2_R": 120.0,
+        "p9": 58.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 63.333333333333336,
+        "a2_R": 56.66666666666667,
+        "p9": 25.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 60.0,
+        "a2_R": 56.66666666666667,
+        "p9": 25.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 60.0,
+        "a2_R": 53.333333333333336,
+        "p9": 26.666666666666668
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 63.333333333333336,
+        "a2_R": 53.333333333333336,
+        "p9": 28.333333333333336
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 2.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 60.0,
+        "a2_R": 56.66666666666667,
+        "p9": 26.666666666666668
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "control",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "odor_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 3.3333333333333335,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "odor_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "heat_L",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    },
+    {
+      "tonic": 1.5,
+      "transmitter": "glutamate",
+      "efficacy": 4.0,
+      "condition": "heat_R",
+      "hz": {
+        "a1_L": 0.0,
+        "a1_R": 0.0,
+        "a2_L": 0.0,
+        "a2_R": 0.0,
+        "p9": 0.0
+      }
+    }
+  ]
+}

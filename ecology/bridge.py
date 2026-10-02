@@ -32,18 +32,18 @@ class EcologyRuntime(baseline.Runtime):
         save(self.logdir/'ecology_config.json',eco_config)
 
     def reset(self):
-        self.world=World(self.eco_config);self.encoder=None;self.encoder_brain=None
+        self.world=self.create_world();self.encoder=None;self.encoder_brain=None
         self.awaiting_seq=None;self.last_pose=None;self.terms=[];self.sensor_source_seq=None
         save(self.logdir/f'schedule-generation-{self.generation+1}.json',dict(world_seed=self.eco_config['world_seed'],schedule=self.world.initial_schedule))
         super().reset()
         save(self.logdir/'sensory_mapping.json',dict(dataset=self.coreconfig['dataset'],actual=self.encoder.evidence(),
             disabled=dict(pain='No verified adult nociceptive identity/circuit mapping',female_contact='putative_ppk23 annotation is not female-specific proof',
                           ingestion='Fdg alias verified, upstream->functional feeding gate unresolved',hunger_modulation='No implemented verified modulatory circuit'),
-            bilateral_visual_pool='somaSide L/R verified; no retinotopic receptive-field positions available. Both pools get same feature, no invented steering direction.'))
+            bilateral_visual_pool=self.sensory_assumptions()))
 
     def emit(self,status,dt=0.,extra=None):
         if self.brain is not None and self.encoder_brain is not self.brain:
-            self.encoder=Encoder(self.brain,self.eco_config['sensory']);self.encoder_brain=self.brain
+            self.encoder=self.create_encoder();self.encoder_brain=self.brain
         ext=dict(extra or {})
         if self.world is not None:
             ext['ecology']=dict(world=self.world.snapshot(),sensory_terms=self.terms,readouts_hz=self.encoder.readouts() if self.encoder else {},
@@ -51,6 +51,15 @@ class EcologyRuntime(baseline.Runtime):
         if status=='ready':
             self.awaiting_seq=self.sequence;self.awaiting_dt=dt
         super().emit(status,dt,ext)
+
+    def create_world(self):
+        return World(self.eco_config)
+
+    def sensory_assumptions(self):
+        return 'somaSide L/R verified; no retinotopic receptive-field positions available. Both pools get same feature, no invented steering direction.'
+
+    def create_encoder(self):
+        return Encoder(self.brain,self.eco_config['sensory'])
 
     def flush_world(self,ack):
         neural=self.brain.step_count*self.brain.p['dt_ms']/1000

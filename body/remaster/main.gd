@@ -1,9 +1,9 @@
 extends "res://mvp/main.gd"
 
-const R_KEYS = ["MOTOR TEST","CONTROL","PREDATOR","FOOD","FEMALE","HEAT","PREDATOR + HEAT"]
-const R_NAMES = ["운동 뉴런 자극 · 경로 검사","기본 상태 · 무자극","포식자 접근","먹이 냄새와 접촉","다른 파리","가열과 냉각","포식자와 가열"]
-const K_GROUPS = [["DNp09","DNp09","전진 관련 운동 뉴런"],["DNa01","DNa01","회전 관련 운동 뉴런"],["DNa02","DNa02","회전 관련 운동 뉴런"],["lc4","LC4","다가오는 물체 감지"],["lplc2","LPLC2","확대되는 물체 감지"],["GF","GF / DNp01","하류 회로 · 도피 동작 연결은 미검증"]]
-const K_EXTRA = [["figure","LC9 · 물체 움직임"],["food_odor","ORN DM1 · 먹이 냄새"],["taste","Sugar SEL PN · 중추 당 자극"],["fly_odor","ORN VA1v / VA1d · 파리 냄새"],["hot","TRN VP2 · 가열"],["cold","TRN VP3 · 냉각"],["feeding_observation","Fdg · 섭식 관찰"],["courtship_observation","pC1 계열 · 구애 회로 관찰"]]
+const R_KEYS = ["MOTOR TEST","CONTROL","PREDATOR","FOOD","FEMALE","HEAT","PREDATOR + HEAT","FOOD RIGHT","HEAT RIGHT"]
+const R_NAMES = ["운동 뉴런 자극 · 경로 검사","기본 상태 · 환경 무자극","포식자 접근 · 도약 검사","왼쪽 먹이 · 접근 검사","다른 파리","왼쪽 그늘 · 열 회피 검사","포식자와 가열","오른쪽 먹이 · 접근 검사","오른쪽 그늘 · 열 회피 검사"]
+const K_GROUPS = [["DNp09","DNp09","전진 관련 운동 뉴런"],["DNa01","DNa01","회전 관련 운동 뉴런"],["DNa02","DNa02","회전 관련 운동 뉴런"],["lc4","LC4","다가오는 물체 감지"],["lplc2","LPLC2","확대되는 물체 감지"],["GF","GF / DNp01","가설 모델: 신경 신호로 원시 도약"]]
+const K_EXTRA = [["figure","LC9 · 물체 움직임"],["food_odor","ORN DM1 / VA2 · 먹이 냄새"],["taste","Sugar SEL PN · 중추 당 자극"],["fly_odor","ORN VA1v / VA1d · 파리 냄새"],["hot","TRN VP2 · 가열"],["cold","TRN VP3 · 냉각"],["feeding_observation","Fdg · 섭식 관찰"],["courtship_observation","pC1 계열 · 구애 회로 관찰"]]
 const K_MODALITIES = {"lc4":"접근 감지","lplc2":"확대 감지","figure":"물체 움직임","food_odor":"먹이 냄새","taste":"당 접촉","fly_odor":"파리 냄새","hot":"가열","cold":"냉각"}
 const K_EVENTS = {"RESET":"실험 초기화","HEAT_START":"가열 시작","HEAT_END":"가열 종료","PREDATOR_HIT":"포식자 접촉","DAMAGE":"체력 손실","DEATH":"체력 소진 · 몸체 정지","TEST_GUT_LOAD":"장 내용물 가상 입력","DEFECATION_PENDING":"배설 예약 · 생리 모형","DEFECATE":"배설 · 생리 모형","SHADE_ENTER":"그늘 진입","SHADE_EXIT":"그늘 이탈","TEMPERATURE_SET":"주변 온도 설정","SHADE_CONDITION":"그늘 냉각 변경","EXPERIMENT_CLEARED":"개체와 예정 자극 제거","NEURAL_TEST_FORWARD":"전진 뉴런 자극 시작","NEURAL_TEST_LEFT":"왼쪽 운동 뉴런 자극 시작","NEURAL_TEST_RIGHT":"오른쪽 운동 뉴런 자극 시작","NEURAL_TEST_STOP":"수동 신경 자극 중지","NEURAL_TEST_END":"인위적 신경 자극 종료"}
 var diagnosis_label: Label
@@ -15,6 +15,41 @@ var low_latency_ready := false
 var qa_neural := false
 var qa_neural_stage := 0
 var qa_neural_generation := -1
+var jump_velocity := 0.0
+var jump_generation := -1
+var model_select: OptionButton
+var tonic_control: SpinBox
+var restored_control: CheckBox
+var sensory_control: CheckBox
+var gf_control: CheckBox
+var measurement_label: Label
+var scientific_label: Label
+var qa_model := false
+var qa_model_stage := 0
+var qa_model_generation := -1
+
+func move_body(packet: Dictionary, neural_dt: float) -> void:
+	if jump_generation!=generation:jump_velocity=0.;jump_generation=generation
+	if not packet.has("escape_motor"):
+		jump_velocity=0.;super.move_body(packet,neural_dt);return
+	if float(packet.ecology.world.hp)<=0.:
+		fly.velocity=Vector3.ZERO;return
+	if float(packet.escape_motor)>0. and fly.position.y<=.225:
+		jump_velocity=4.2
+		log_row("gf_jump",{"source_seq":packet.seq,"gf_hz":packet.escape_activity_hz,"threshold_hz":packet.escape_threshold_hz})
+	fly.rotation.y-=float(packet.turn)*float(cfg.body.max_turn_radians_per_neural_second)*neural_dt
+	var velocity := -fly.transform.basis.z*float(packet.forward)*float(cfg.body.max_forward_units_per_neural_second)
+	if fly.position.y>.221 or jump_velocity>0.:jump_velocity-=9.8*neural_dt
+	velocity.y=jump_velocity
+	fly.velocity=velocity
+	var collision := fly.move_and_collide(velocity*neural_dt)
+	# Enclosed primitive arena: airborne movement cannot land outside its floor.
+	var arena_limit: float=float(cfg.arena.half_width)-.29
+	if fly.position.y>.5:
+		fly.position.x=clampf(fly.position.x,-arena_limit,arena_limit)
+		fly.position.z=clampf(fly.position.z,-arena_limit,arena_limit)
+	if collision and collision.get_normal().y>.5:jump_velocity=0.
+	if fly.position.y<.22:fly.position.y=.22;jump_velocity=0.
 
 func _ready() -> void:
 	super._ready()
@@ -26,6 +61,7 @@ func _ready() -> void:
 	camera_follow=true
 	for arg in OS.get_cmdline_user_args():
 		if arg=="--qa-neural":qa_neural=true
+		if arg=="--qa-model":qa_model=true
 
 func shutdown() -> void:
 	if shutdown_sent:return
@@ -107,6 +143,18 @@ func build_console() -> void:
 	var world_col := HBoxContainer.new();seeds.add_child(world_col);label(world_col,"환경 시드",15);world_seed=SpinBox.new();world_seed.max_value=2147483647;world_seed.value=eco.world_seed;world_seed.size_flags_horizontal=Control.SIZE_EXPAND_FILL;world_col.add_child(world_seed)
 	var brain_col := HBoxContainer.new();seeds.add_child(brain_col);label(brain_col,"신경망 시드",15);brain_seed=SpinBox.new();brain_seed.max_value=2147483647;brain_seed.value=cfg.seed;brain_seed.size_flags_horizontal=Control.SIZE_EXPAND_FILL;brain_col.add_child(brain_seed)
 	config_label=label(experiment,"준비 중",16,Color("9fbdce"));config_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	var model_card := card(left,"신경 모델과 대조 조건")
+	model_select=OptionButton.new();model_select.add_item("시냅스 수 기반 · 행동 가설 모델");model_select.add_item("기존 v0.1 · 고정 대조 모델");model_card.add_child(model_select)
+	model_select.select(0 if cfg.get("scientific_model","frozen")=="counts" else 1)
+	label(model_card,"전뇌 기저 전류 · 각성 가정 (0~2)",15)
+	tonic_control=SpinBox.new();tonic_control.min_value=0.;tonic_control.max_value=2.;tonic_control.step=.05;tonic_control.value=cfg.get("tonic_current",1.5);model_card.add_child(tonic_control)
+	restored_control=CheckBox.new();restored_control.text="작은 시냅스까지 복원한 연결망";restored_control.button_pressed=cfg.get("restore_weak",false);model_card.add_child(restored_control)
+	button(model_card,"모델 조건 적용 · 초기화",func():command("model_condition",{"model":"counts" if model_select.selected==0 else "frozen","tonic_current":tonic_control.value,"restore_weak":restored_control.button_pressed}))
+	sensory_control=CheckBox.new();sensory_control.text="환경 감각 입력 켜기";sensory_control.button_pressed=eco.sensory.enabled;model_card.add_child(sensory_control)
+	sensory_control.toggled.connect(func(on: bool):command("sensory_condition",{"enabled":on}))
+	gf_control=CheckBox.new();gf_control.text="GF 뉴런 켜기 · 끄면 신경 차단";gf_control.button_pressed=not cfg.get("gf_ablated",false);model_card.add_child(gf_control)
+	gf_control.toggled.connect(func(on: bool):command("gf_condition",{"enabled":on}))
+	label(model_card,"감각을 끄거나 GF를 차단한 뒤 초기화하여 같은 실험과 비교하세요. 기저 구동은 생물의 실제 각성 회로를 재현하지 않습니다.",15,Color("f0c780")).autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	var transport := card(left,"실행")
 	var row := HBoxContainer.new();transport.add_child(row)
 	button(row,"진행",func():command("resume"));button(row,"정지",func():command("pause"));button(row,"한 프레임",func():command("step"))
@@ -143,6 +191,7 @@ func build_console() -> void:
 	diagnosis_label=label(center,"움직임 진단 준비 중",20,Color("8ed4cc"));diagnosis_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	test_label=label(center,"",17,Color("f0c780"));test_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	stimulus_label=label(center,"감각 입력 준비 중",16,Color("9fbdce"));stimulus_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	measurement_label=label(center,"실험 수치 준비 중",16,Color("8ed4cc"));measurement_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	label(center,"녹색: 먹이 · 빨강: 포식자 · 보라: 다른 파리 · 청록: 그늘 | 바닥 121.68 단위²",15,Color("9fbdce"))
 	var right_scroll := ScrollContainer.new();right_scroll.custom_minimum_size.x=340;right_scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;middle.add_child(right_scroll)
 	var right := VBoxContainer.new();right.size_flags_horizontal=Control.SIZE_EXPAND_FILL;right.add_theme_constant_override("separation",8);right_scroll.add_child(right)
@@ -156,7 +205,7 @@ func build_console() -> void:
 	var extra := VBoxContainer.new();extra.name="다른 회로";tabs.add_child(extra)
 	for group in K_EXTRA:extra_labels[group[0]]=label(extra,group[1]+"  —",15)
 	var evidence := VBoxContainer.new();evidence.name="해석과 한계";tabs.add_child(evidence)
-	label(evidence,"신경 세포 정체성과 연결: 확인됨\n감각 부호화와 운동 해석: 실험적\nGF 반응만으로 도피를 뜻하지 않습니다.\n먹이 섭취·구애·자발적 회피: 미검증\n신경 통증·암컷 특이 접촉 입력: 비활성\n장·배설·체력 변화: 단순 환경/생리 모형\n운동 경로 검사는 인위적 신경 자극입니다.\n그래프는 회로별 자동 축척입니다.",16,Color("f0c780")).autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	scientific_label=label(evidence,"신경 세포 정체성과 연결: 확인됨\n행동 가설 모델은 기존 인증 모델과 다릅니다.\n기저 구동·감각 부호화·도약은 모형 가정입니다.\n먹이 접근·그늘 선택은 검증을 통과해야 합니다.\n원시 도약은 비행·방향성 도피의 완성본이 아닙니다.\n섭식·구애·신경 통증: 미검증\n장·배설·체력: 단순 모형\n그래프는 회로별 자동 축척입니다.",16,Color("f0c780"));scientific_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	var bottom := HBoxContainer.new();bottom.custom_minimum_size.y=190;bottom.add_theme_constant_override("separation",12);stack.add_child(bottom)
 	var physiology := card(bottom,"몸체와 생리 상태");physiology.get_parent().custom_minimum_size.x=310
 	physiology_label=label(physiology,"준비 중",18);motor_label=label(physiology,"운동 출력 준비 중",16)
@@ -174,8 +223,14 @@ func accept_packet(packet: Dictionary) -> void:
 	super.accept_packet(packet)
 	if packet.has("console") and previous!=observer_generation:
 		preset_select.select(R_KEYS.find(console_state.preset));last_motion_world=0.;last_motion_position=Vector3.ZERO;measured_speed=0.
+		model_select.select(0 if console_state.get("scientific_model")=="counts" else 1)
+		tonic_control.value=console_state.get("count_tonic_setting",1.5)
+		restored_control.set_pressed_no_signal(console_state.get("restored_weak_connections",false))
 
 func event_name(key: String) -> String:
+	if key=="MODEL_CONDITION":return "신경 모델 조건 변경"
+	if key=="SENSORY_CONDITION":return "감각 입력 대조 조건 변경"
+	if key=="GF_CONDITION":return "GF 신경 차단 조건 변경"
 	if K_EVENTS.has(key):return K_EVENTS[key]
 	if key.ends_with(" ACTIVITY RISE"):
 		var circuit := key.trim_suffix(" ACTIVITY RISE")
@@ -202,8 +257,19 @@ func update_hud() -> void:
 	clocks_label.text="환경 %.2f초 · 신경 %.2f초\n실제 경과 %.1f초" % [world_time,state.get("neural_time_s",0),wall]
 	if console_state.is_empty():return
 	if pending_command_id in state.get("acknowledged_commands",[]):pending_command_id=""
-	if pending_command_id.is_empty():config_label.text="0.5초 기준 상태 → 유한 자극 → 회복\n모든 시간은 실제 완료된 뇌시간 기준입니다."
-	if shade_mesh:shade_mesh.visible=console_state.shade_enabled
+	var experimental: bool=console_state.get("scientific_model","frozen")=="counts"
+	if pending_command_id.is_empty():config_label.text=("2초 기준 상태 → 장시간 행동 관찰" if experimental else "0.5초 기준 상태 → 유한 자극 → 회복")+"\n모든 시간은 완료된 뇌시간 기준입니다."
+	sensory_control.set_pressed_no_signal(console_state.get("sensory_enabled",true));gf_control.set_pressed_no_signal(console_state.get("gf_enabled",true))
+	model_select.disabled=not ready;tonic_control.editable=ready and model_select.selected==0
+	sensory_control.disabled=not ready;gf_control.disabled=not ready
+	restored_control.disabled=not ready or model_select.selected!=0 or not console_state.get("restored_available",false)
+	restored_control.tooltip_text="연결 복원 준비가 필요합니다" if restored_control.disabled else "약 2,556만 개의 추적 뉴런 간 연결을 보존합니다"
+	for idx in [7,8]:preset_select.set_item_disabled(idx,not experimental)
+	if shade_mesh:
+		shade_mesh.visible=console_state.shade_enabled
+		if console_state.has("shade_center"):
+			var c: Array=console_state.shade_center;var h: Array=console_state.shade_half_size
+			shade_mesh.position=Vector3(float(c[0]),.015,float(c[2]));shade_mesh.mesh.size=Vector3(2.*float(h[0]),.015,2.*float(h[2]))
 	var groups: Dictionary=console_state.groups_hz
 	for key in circuit_labels:circuit_labels[key].text="%.2f 회/초" % float(groups.get(key,0.))
 	for group in K_EXTRA:extra_labels[group[0]].text="%s  %.2f 회/초" % [group[1],float(groups.get(group[0],0.))]
@@ -211,6 +277,7 @@ func update_hud() -> void:
 	var compute := float(perf.get("compute_ms",0));var total := compute+float(perf.get("integration_before_emit_ms",0))+float(perf.get("previous_body_ack_ms",0))
 	var budget := "목표 시간 충족" if total<=frame_ms and total>0 else "실시간 목표 미달 · 완료 결과에 맞춰 진행"
 	var backend := "동일 결과 JIT + 희소 스파이크 전달" if console_state.get("backend")=="fast" else "원본 SciPy 대조 계산"
+	if experimental:backend="행동 가설 LIF · 시냅스 수 기반 · 기존 모델과 다름"
 	health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n계산 %.1f · 통신/몸체 %.1f밀리초\n중앙값 %.1f · 95백분위 %.1f밀리초\n화면 %d프레임/초 · 처리율 약 %.2f배\n%s\n%s" % [frame_ms,int(frame_ms),compute,maxf(0.,total-compute),perf.get("p50_ms",0),perf.get("p95_ms",0),int(Engine.get_frames_per_second()),frame_ms/maxf(total,.001),budget,backend]
 	if perf.is_empty():health_label.text="뇌 1프레임 %.0f밀리초 (%d개 1밀리초 적분)\n첫 완료 프레임의 실제 처리 시간 측정 대기\n화면 %d프레임/초\n%s" % [frame_ms,int(frame_ms),int(Engine.get_frames_per_second()),backend]
 	var lines := ""
@@ -223,6 +290,7 @@ func update_hud() -> void:
 	var neural_test: Dictionary=console_state.get("neural_test",{})
 	var is_test := bool(neural_test.get("active",false))
 	test_label.text="인위적 신경 자극 중 · 운동 뉴런에 전류 3.0 입력 → 실제 스파이크 → 기존 디코더 → 몸체" if is_test else "환경 감각 입력만 사용 중 · 인위적 운동 신경 자극 없음"
+	if experimental and not is_test:test_label.text="행동 가설 모델 · 전뇌 기저 전류 %.2f (각성 가정) · 표적을 지정하는 운동 규칙 없음\n먹이 접근·그늘 선택: 아직 미인증 · 감각 %s / GF %s" % [console_state.get("tonic_current",0),"켜짐" if console_state.get("sensory_enabled",true) else "차단","켜짐" if console_state.get("gf_enabled",true) else "차단"]
 	if world_time>last_motion_world:
 		measured_speed=fly.position.distance_to(last_motion_position)/(world_time-last_motion_world)
 		last_motion_world=world_time;last_motion_position=fly.position
@@ -231,22 +299,43 @@ func update_hud() -> void:
 	elif connection=="paused":diagnosis_label.text="정지됨 · 진행 버튼을 누르면 완료된 신경 결과로 몸체가 갱신됩니다."
 	elif forward<.0001 and absf(turn)<.0001:diagnosis_label.text="운동 출력 0 · 현재 운동 뉴런이 보행 신호를 내지 않습니다.\n왼쪽 ‘전진 뉴런 자극’으로 신경→몸체 경로를 검사할 수 있습니다."
 	else:diagnosis_label.text="운동 신호 전달 중 · 전진 %.3f / 회전 %+.3f · 실제 이동 속도 %.3f 단위/뇌초" % [forward,turn,measured_speed]
+	if experimental and ready:diagnosis_label.text+="\nGF 최대 %.2f / 원시 도약 기준 %.2f 회/초" % [state.get("escape_activity_hz",0),state.get("escape_threshold_hz",0)]
 	if not last_ecology.is_empty():
 		var w: Dictionary=last_ecology.world
-		physiology_label.text="체력 %.1f · 허기 %.2f\n장 내용물 %.2f · 체온 %.2f℃\n그늘 내부: %s\n환경 시드 %d / 뇌 시드 %d" % [w.hp,w.hunger,w.gut,w.local_temperature_c,"예" if w.in_shade else "아니요",last_ecology.world_seed,console_state.get("brain_seed",cfg.seed)]
+		physiology_label.text="체력 %.1f · 허기 %.2f\n장 내용물 %.2f · 국소 온도 %.2f℃\n그늘 내부: %s\n환경 시드 %d / 뇌 시드 %d" % [w.hp,w.hunger,w.gut,w.local_temperature_c,"예" if w.in_shade else "아니요",last_ecology.world_seed,console_state.get("brain_seed",cfg.seed)]
 		motor_label.text="전진 %.4f · 회전 %+.4f\n섭식 미검증 · 장 상태는 단순 모형" % [forward,turn]
 		var currents := "현재 뇌 프레임의 감각 입력: "
 		for term in last_ecology.sensory_terms:
-			if float(term.amplitude)>.001:currents+="%s %.2f  " % [K_MODALITIES.get(term.modality,"감각"),term.amplitude]
+			if float(term.amplitude)>.001:
+				var side: String={"L":"왼쪽 ","R":"오른쪽 ","U":""}.get(term.get("side","U"),"")
+				currents+="%s%s %.3f  " % [side,K_MODALITIES.get(term.modality,"감각"),term.amplitude]
 		var source: Variant=last_ecology.get("sensor_source_body_seq")
 		var source_text: String="초기 상태" if source==null else "몸체 응답 #%d" % int(source)
 		stimulus_label.text=currents+"\n감각 기준: %s · 화면 감각 상태는 최대 한 뇌 프레임 전 입력" % source_text
+		var measures: Dictionary=w.get("experiment_measurements",{})
+		var food_distance: Variant=w.distances.get("food");var predator_distance: Variant=w.distances.get("predator")
+		measurement_label.text="먹이 거리 %s · 포식자 거리 %s · 그늘 체류 %.2f초\n누적 경로 %.2f · 열 노출 %.2f℃·초 · 거리 감소만으로 자율 접근을 입증하지 않습니다." % ["—" if food_distance==null else "%.2f" % float(food_distance),"—" if predator_distance==null else "%.2f" % float(predator_distance),measures.get("shade_seconds",0),measures.get("path_length",0),measures.get("heat_exposure_c_s",0)]
 	if camera_follow:
 		world_camera.position=fly.position+Vector3(3,5,4);world_camera.look_at(fly.position);world_camera.size=6
 	ui_updates+=1;var elapsed := Time.get_ticks_usec()-started;ui_total_us+=elapsed;ui_max_us=maxi(ui_max_us,elapsed)
-	if qa_controls or qa_neural:qa_driver(now)
+	if qa_controls or qa_neural or qa_model:qa_driver(now)
 
 func qa_driver(now: int) -> void:
+	if qa_model:
+		if connection!="ready":return
+		if qa_model_stage==0 and world_time>=.2:command("sensory_condition",{"enabled":false});qa_model_stage=1
+		elif qa_model_stage==1 and not console_state.get("sensory_enabled",true):command("gf_condition",{"enabled":false});qa_model_stage=2
+		elif qa_model_stage==2 and not console_state.get("gf_enabled",true):qa_model_generation=generation;command("reset");qa_model_stage=3
+		elif qa_model_stage==3 and generation>qa_model_generation:
+			log_row("qa_conditions_persist",{"passed":not console_state.get("sensory_enabled",true) and not console_state.get("gf_enabled",true)})
+			qa_model_generation=generation;command("model_condition",{"model":"frozen","tonic_current":0.,"restore_weak":false});qa_model_stage=4
+		elif qa_model_stage==4 and generation>qa_model_generation and console_state.get("scientific_model")=="frozen":
+			log_row("qa_frozen_switch",{"passed":fly.position.distance_to(Vector3(0,.22,0))<.001 and float(state.get("forward",1))==0.})
+			qa_model_generation=generation;command("model_condition",{"model":"counts","tonic_current":1.5,"restore_weak":false});qa_model_stage=5
+		elif qa_model_stage==5 and generation>qa_model_generation and console_state.get("scientific_model")=="counts":
+			log_row("qa_counts_switch",{"passed":not console_state.get("sensory_enabled",true) and not console_state.get("gf_enabled",true) and is_equal_approx(float(console_state.get("tonic_current",0)),1.5)})
+			qa_model_stage=6
+		return
 	if qa_neural:
 		if qa_neural_stage==0 and world_time>=.3:
 			qa_neural_generation=generation;command("neural_test",{"group":"left"});qa_neural_stage=1

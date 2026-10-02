@@ -12,3 +12,12 @@ mvp/logs/
 mvp/cache/
 *.pyc
 reports/remaster/live-fast-0*/
+data/behavior/
+reports/behavior/smoke-*/
+reports/behavior/predator-active/
+reports/behavior/model-controls/
+reports/behavior/**/*.jsonl
+reports/behavior/**/sensory_mapping.json
+reports/behavior/**/engine.log
+reports/behavior/**/godot_console.txt
+reports/behavior/**/brain_console.txt
