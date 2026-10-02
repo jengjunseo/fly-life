@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "fast": {
+    "compute_ms": {
+      "p50": 52.06720000569476,
+      "p95": 56.345704984050826
+    },
+    "body_ack_ms": {
+      "p50": 7.014300001173979,
+      "p95": 22.436604998074465
+    },
+    "total_lockstep_ms": {
+      "p50": 66.63320000006934,
+      "p95": 90.22551000198277
+    },
+    "committed_frames": 150,
+    "brain_frame_ms": 20.0,
+    "observed_world_wall_rate": 0.2804077191789595,
+    "deadline_misses": 150,
+    "max_displacement": 4.03373146057129,
+    "fps_p50": 60.0,
+    "qa": {
+      "qa_pause": true,
+      "qa_step": true
+    },
+    "resource_cleanup": [],
+    "normal_shutdown": true,
+    "godot_errors": false,
+    "causal_commit_match": true,
+    "continuous_time": true
+  },
+  "reference": {
+    "compute_ms": {
+      "p50": 200.97490000262042,
+      "p95": 226.79716998572982
+    },
+    "body_ack_ms": {
+      "p50": 11.911250003322493,
+      "p95": 30.09083000215468
+    },
+    "total_lockstep_ms": {
+      "p50": 216.9440500001656,
+      "p95": 250.07483500048693
+    },
+    "committed_frames": 150,
+    "brain_frame_ms": 20.0,
+    "observed_world_wall_rate": 0.08804599548634617,
+    "deadline_misses": 150,
+    "max_displacement": 4.03373146057129,
+    "fps_p50": 60.0,
+    "qa": {
+      "qa_pause": true,
+      "qa_step": true
+    },
+    "resource_cleanup": [],
+    "normal_shutdown": true,
+    "godot_errors": false,
+    "causal_commit_match": true,
+    "continuous_time": true
+  },
+  "controls": {
+    "compute_ms": {
+      "p50": 50.35920000227634,
+      "p95": 55.81656000940711
+    },
+    "body_ack_ms": {
+      "p50": 10.288500001479406,
+      "p95": 14.528529997187432
+    },
+    "total_lockstep_ms": {
+      "p50": 66.60410000040429,
+      "p95": 83.24081000100705
+    },
+    "committed_frames": 287,
+    "brain_frame_ms": 20.0,
+    "observed_world_wall_rate": 0.2880872426948948,
+    "deadline_misses": 287,
+    "max_displacement": 1.2816326947073418,
+    "fps_p50": 60.0,
+    "qa": {
+      "qa_reset": true
+    },
+    "resource_cleanup": [],
+    "normal_shutdown": true,
+    "godot_errors": false,
+    "causal_commit_match": true,
+    "continuous_time": true,
+    "left_turn_verified": true,
+    "right_turn_verified": true,
+    "forward_verified": true,
+    "control_after_reset_motor_zero": true
+  },
+  "identical_committed_neural_readouts_and_body_trajectory": true,
+  "compared_neural_frames": 150,
+  "equivalence": {
+    "passed": true,
+    "steps": 1000,
+    "mismatch": null,
+    "scope": "Full float32 membrane, synaptic, spikes, refractory, activity, baseline and PCG64 state. Same actual graph, seed and currents.",
+    "milliseconds_per_neural_ms": {
+      "reference": {
+        "p50": 12.982349999219878,
+        "p95": 18.28762499608274
+      },
+      "candidate": {
+        "p50": 2.7661500025715213,
+        "p95": 3.5149199989973563
+      }
+    }
+  },
+  "regressions": true,
+  "realtime_achieved": false
+}

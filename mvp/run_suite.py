@@ -14,7 +14,7 @@ if __name__=='__main__':
     results=[]
     for name in PRESETS:
         label=name.lower().replace(' + ','-').replace(' ','-')
-        cmd=[sys.executable,str(ROOT/'mvp/launch.py'),'--preset',name,'--duration','3.5','--quit-after','160','--logdir',str(dest/label)]
+        cmd=[sys.executable,str(ROOT/'mvp/launch.py'),'--legacy','--preset',name,'--duration','3.5','--quit-after','160','--logdir',str(dest/label)]
         print('RUN '+name,flush=True)
         r=subprocess.Popen(cmd,cwd=ROOT)
         try:r.wait()

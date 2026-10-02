@@ -1,0 +1,5 @@
+{"generation": 1, "event": "NEURAL_TEST_LEFT", "world_time_s": 0.32, "artificial": true, "source": "manual", "amplitude": 3.0}
+{"generation": 1, "event": "NEURAL_TEST_RIGHT", "world_time_s": 0.92, "artificial": true, "source": "manual", "amplitude": 3.0}
+{"generation": 1, "event": "NEURAL_TEST_FORWARD", "world_time_s": 1.52, "artificial": true, "source": "manual", "amplitude": 3.0}
+{"generation": 1, "source_seq": 86, "event": "DNp09 ACTIVITY RISE", "world_time_s": 1.54, "activity_hz": 40.874420166015625, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "event": "NEURAL_TEST_END", "world_time_s": 2.14, "artificial": true, "source": "manual", "amplitude": 0.0}

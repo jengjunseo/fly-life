@@ -109,11 +109,14 @@ class Runtime:
         if time.perf_counter()-self.last_client>self.config['disconnect_seconds']:
             raise TimeoutError('Godot heartbeat lost')
 
+    def load_brain(self):
+        return Brain.load(CORE/'data/runtime',self.coreconfig,seed=self.config['seed'])
+
     def reset(self):
         self.generation+=1; self.stimulus=None; self.brain=None; self.motor_steps=0
         self.last_frame_steps=0; self.batch_spikes=0; self.pending_reset=False
         self.emit('starting')
-        self.brain=Brain.load(CORE/'data/runtime',self.coreconfig,seed=self.config['seed'])
+        self.brain=self.load_brain()
         self.groups={g:resolve(self.brain,s) for g,s in self.config['neural_groups'].items()}
         evidence={g:json.loads(self.brain.neurons.iloc[idx][['bodyId','type','instance','somaSide','superclass','consensus_nt']].to_json(orient='records')) for g,idx in self.groups.items()}
         save(self.logdir/'baseline_mapping.json',dict(dataset=self.coreconfig['dataset'],machine=machine(),

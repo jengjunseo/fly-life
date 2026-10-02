@@ -1,0 +1,3 @@
+{"generation": 1, "event": "NEURAL_TEST_FORWARD", "world_time_s": 0.5, "artificial": true, "source": "preset", "amplitude": 3.0}
+{"generation": 1, "source_seq": 51, "event": "DNp09 ACTIVITY RISE", "world_time_s": 0.52, "activity_hz": 40.51462173461914, "criterion": "EMA > pre-stimulus maximum + 10 Hz; observation, not causality proof"}
+{"generation": 1, "event": "NEURAL_TEST_END", "world_time_s": 2.5, "artificial": true, "source": "preset", "amplitude": 0.0}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "steps": 1000,
+  "mismatch": null,
+  "scope": "Full float32 membrane, synaptic, spikes, refractory, activity, baseline and PCG64 state. Same actual graph, seed and currents.",
+  "milliseconds_per_neural_ms": {
+    "reference": {
+      "p50": 12.982349999219878,
+      "p95": 18.28762499608274
+    },
+    "candidate": {
+      "p50": 2.7661500025715213,
+      "p95": 3.5149199989973563
+    }
+  }
+}

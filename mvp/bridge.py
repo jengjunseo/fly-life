@@ -57,6 +57,7 @@ class ConsoleRuntime(EcologyRuntime):
             groups_hz=groups,group_spikes=self.counts,performance=self.metrics,
             events=list(self.recent_events),shade_enabled=self.world.cfg['shade']['cooling_c']>0,
             ambient_setting=self.world.cfg['ambient_c'],backend='SciPy reference / PCG64 / dt 1ms')
+        ext['console'].update(self.console_metadata())
         terms=self.terms
         self.terms=[{k:v for k,v in t.items() if k!='bodyIds'} for t in terms]
         before=time.perf_counter()
@@ -64,6 +65,9 @@ class ConsoleRuntime(EcologyRuntime):
         finally:self.terms=terms
         self.last_emit_ms=(time.perf_counter()-before)*1000
         if status=='ready':self.emitted_at=time.perf_counter()
+
+    def console_metadata(self):
+        return {}
 
     def flush_world(self,ack):
         self.recent_events.extend(copy.deepcopy(self.world.events))
@@ -77,7 +81,7 @@ class ConsoleRuntime(EcologyRuntime):
             return
         if kind in ('heartbeat','shutdown'):
             super().handle(m);return
-        # World edits and pause take effect only at a completed 50ms boundary.
+        # World edits and pause take effect only at a completed neural frame boundary.
         if m.get('v')!=1 or not isinstance(m.get('id'),str):raise ValueError('Invalid command')
         self.pending_actions.append(m)
         self.last_client=time.perf_counter()
@@ -95,7 +99,7 @@ class ConsoleRuntime(EcologyRuntime):
                 elif kind=='resume':self.paused=False
                 elif kind=='step':self.paused=True;self.step_once=True
                 elif kind=='preset':
-                    self.eco_config=configure(m['preset'],int(m['world_seed']),self.eco_config['duration_s'])
+                    self.eco_config=self.configure_preset(m['preset'],int(m['world_seed']),self.eco_config['duration_s'])
                     seed=int(m['brain_seed'])
                     if not 0<=seed<=2147483647:raise ValueError('Invalid brain seed')
                     self.config['seed']=seed;self.pending_reset=True
@@ -121,10 +125,22 @@ class ConsoleRuntime(EcologyRuntime):
                 self.world.events.clear();self.event_log.flush()
         if actions:self.log.flush()
 
+    def configure_preset(self,name,seed,duration):
+        return configure(name,seed,duration)
+
+    def compute_quantum(self,external,quantum,watched):
+        for _ in range(quantum):
+            self.receive()
+            if not self.running:break
+            begin=time.perf_counter();spikes=self.brain.step(external)
+            self.core_seconds+=time.perf_counter()-begin
+            self.motor_steps+=1;self.batch_spikes+=int(spikes.sum())
+            for name,idx in watched.items():self.counts[name]+=int(spikes[idx].sum())
+
     def run(self):
         self.groups={}
         with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as listener:
-            listener.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
+            listener.setsockopt(socket.SOL_SOCKET,getattr(socket,'SO_EXCLUSIVEADDRUSE',socket.SO_REUSEADDR),1)
             listener.bind((self.config['host'],self.config['port']));listener.listen(1);listener.settimeout(30)
             conn,addr=listener.accept()
             if addr[0]!='127.0.0.1':raise ValueError('Localhost only')
@@ -143,22 +159,17 @@ class ConsoleRuntime(EcologyRuntime):
                     external,self.terms=self.encoder.encode(self.world.sensor)
                     watched={**self.encoder.indices,**self.observer}
                     self.counts={name:0 for name in watched}
-                    for _ in range(quantum):
-                        self.receive()
-                        if not self.running:break
-                        begin=time.perf_counter();spikes=self.brain.step(external)
-                        self.core_seconds+=time.perf_counter()-begin
-                        self.motor_steps+=1;self.batch_spikes+=int(spikes.sum())
-                        for name,idx in watched.items():self.counts[name]+=int(spikes[idx].sum())
+                    self.compute_quantum(external,quantum,watched)
                     if not self.running:break
                     core_ms=(self.core_seconds-core_before)*1000
                     self.windows.append(core_ms)
-                    self.metrics=dict(neural_quantum_ms=50.,compute_ms=core_ms,
+                    neural_dt=quantum*self.brain.p['dt_ms']/1000
+                    self.metrics=dict(neural_quantum_ms=neural_dt*1000,compute_ms=core_ms,
                         p50_ms=float(np.percentile(self.windows,50)),p95_ms=float(np.percentile(self.windows,95)),p99_ms=float(np.percentile(self.windows,99)),
                         integration_before_emit_ms=(time.perf_counter()-start)*1000-core_ms,
                         previous_serialization_log_send_ms=self.last_emit_ms,previous_body_ack_ms=self.ack_ms,
                         rolling_windows=len(self.windows))
-                    self.emit('ready',.05)
+                    self.emit('ready',neural_dt)
                     self.wait_ack()
                     self.perf_log.write(json.dumps(dict(generation=self.generation,seq=self.sequence-1,world_time_s=self.world.time,
                         compute_ms=core_ms,total_lockstep_ms=(time.perf_counter()-start)*1000,

@@ -1,28 +1,34 @@
-# MaleCNS Virtual Fly — MVP v0.1
+# MaleCNS 파리 신경망 실험실 · 한글 리마스터
 
-A real **165,122-neuron MaleCNS-connectome-derived LIF brain** drives one virtual
-fruit fly in a small interactive 3D ecology. A native Godot experiment console
-makes the sensory inputs, selected circuits, body consequences and scientific
-uncertainty visible on a 4K desktop.
+실제 MaleCNS 연결망의 **165,122개 뉴런**을 LIF 모형으로 계산하고, 운동 뉴런의 발화율을 기존 디코더로 해석해 Godot 파리 몸체에 전달합니다.
 
-This is an experimental connectome-driven animal model, not biologically complete
-Drosophila. The original SciPy brain, signed/pruned graph, PCG64 noise, 1 ms neural
-timestep and motor decoder remain unchanged. No scripted focal-fly steering,
-hidden behavior policy or substitute network is used.
+## 실행
 
-## Run
-
-On the prepared development machine, from this repository root:
+준비된 개발 PC에서 이 저장소 폴더를 열고 실행합니다.
 
 ```powershell
 .\run_mvp.ps1
 ```
 
-It launches both owned processes, opens 3840×2160 fullscreen, warms the actual
-brain, and creates a fresh session directory. Exit shuts down the brain and its
-process tree. No five-terminal setup is required.
+한글 전체 화면, 고속 계산, **운동 뉴런 자극 · 경로 검사**가 기본입니다. 신경망 초기 안정화가 끝나면 환경시간 0.5–2.5초 동안 DNp09 뉴런에 전류 3.0을 넣습니다. 실제 발화 → 원본 디코더 → 몸체 이동을 확인하는 **인위적 신경 검사**이며, 자연 감각에서 생긴 자발적 보행의 증거가 아닙니다. 검사는 한 번 끝나고 회복을 관찰합니다. 다시 보려면 **현재 실험 초기화** 또는 **전진 뉴런 자극**을 누르세요.
 
-Fresh checkout (Windows, Python 3.11 x64):
+자연 감각만 관찰하려면 **기본 상태 · 무자극**, **포식자 접근**, **먹이 냄새와 접촉** 등을 선택하고 **선택한 실험 시작**을 누릅니다. 현재 자연 감각만으로는 운동 출력이 거의 없거나 0일 수 있습니다. 중앙 진단에서 운동 출력 0과 계산 대기를 구분합니다.
+
+```powershell
+.\run_mvp.ps1 --preset CONTROL
+.\run_mvp.ps1 --preset PREDATOR --windowed
+.\run_mvp.ps1 --brain-frame-ms 10
+.\run_mvp.ps1 --backend reference
+.\run_mvp.ps1 --legacy
+```
+
+`--brain-frame-ms`는 10, 20, 50을 지원합니다. 기본 20밀리초는 **원본 1밀리초 적분 20회**입니다. 화면 렌더링과 신경 계산의 빈도는 별개이며, 이 PC에서 실제시간 1:1은 아직 달성하지 못했습니다. 완료된 신경 프레임만 몸체에 적용하고 실제 위치 응답을 다음 감각 입력에 사용합니다. 화면은 실제 처리율과 목표 미달을 표시합니다.
+
+진행/정지: 스페이스 · 한 뇌 프레임: N · 초기화: R · 전체 화면: F11. 왼쪽 운동 검사 버튼은 몸체를 직접 조종하지 않고 실제 운동 뉴런을 자극합니다.
+
+실행마다 새 로그 폴더와 별도 통신 포트를 만듭니다. **종료** 버튼은 해당 실행의 뇌·몸체 프로세스를 함께 닫습니다. `--duration`은 환경시간, `--quit-after`는 실제시간 초 단위입니다. `--logdir`에는 아직 없는 폴더를 지정합니다.
+
+새 Windows PC에서는 Python 3.11 x64를 설치하고 다음을 실행합니다.
 
 ```powershell
 python -m venv .venv
@@ -31,84 +37,24 @@ python -m venv .venv
 .\run_mvp.ps1
 ```
 
-The freeze includes the checksummed runtime weights, annotation table and count
-matrix (about 60 MB total), so running does not require re-downloading the raw
-1.03 GiB dataset. To regenerate from official pinned data, use `acquire.py` and
-`preprocess.py`; the preserved [brain-core guide](docs/BRAIN_CORE.md) explains
-preprocessing, sign assumptions and the older core-only commands. Do not run old
-report-writing certification scripts over archived evidence; use the new suite.
+검증된 연결망·주석 데이터가 저장소에 포함되어 있어 실행 시 원본 대용량 데이터의 재다운로드가 필요하지 않습니다. 최초 고속 실행에는 JIT 준비 시간이 추가될 수 있습니다.
 
-Useful launch options:
+## 과학적 범위와 변경
 
-```powershell
-.\run_mvp.ps1 --preset PREDATOR
-.\run_mvp.ps1 --preset "PREDATOR + HEAT" --world-seed 20260914 --brain-seed 20260913
-.\run_mvp.ps1 --preset FOOD --duration 3.5 --logdir mvp/logs/my-new-food-run
-```
+원본 [LIF 코드](braincore/core.py), 연결망 데이터, 뉴런 정체성, 부호, 가중치, PCG64 난수, 1밀리초 적분, [운동 디코더](body/decoder.py)는 보존했습니다. 고속 경로는 발화한 뉴런의 연결만 동일한 순서로 합산하고 float32 계산을 결합합니다. 감각 부호화는 반복 배열 할당을 줄였으며 원본과 동일한 입력을 생성합니다. 같은 시드·입력에서 1,000회 적분의 전체 신경 상태와 난수 상태가 원본과 정확히 같았습니다.
 
-`--windowed`, `--godot <path>`, and a wall-time safety `--quit-after <seconds>` are
-available. Log destinations must be new, protecting prior experiments.
+먹이 섭취, 구애, 자발적 도피·회피는 미검증입니다. 신경 통증과 암컷 특이 접촉 입력은 비활성입니다. 장·배설·체력은 단순 환경/생리 모형입니다. 인위적 운동 검사는 이러한 생물학적 행동의 재현을 뜻하지 않습니다. 바닥 내부 면적은 기존의 정확히 2배, 121.68 단위²를 유지합니다.
 
-## Use the console
+[리마스터 검증 결과](reports/remaster/RESULTS.md) · [원본 과학적 상태](SCIENTIFIC_STATUS.md) · [모델 안내](docs/BRAIN_CORE.md).
 
-Select CONTROL, PREDATOR, FOOD, FEMALE, HEAT or PREDATOR + HEAT and apply/reset.
-The common 0.5 s baseline is followed by finite stimuli and recovery. Run, pause,
-single 50 ms step, reset, seeded world-object creation, temperature and shade
-controls work without editing code. Only initial conditions and world objects
-change; locomotion remains neural-driven. Camera overview/follow and F11 affect
-viewing only. Escape exits fullscreen before closing a windowed session.
-
-LC4, LPLC2, GF/DNp01, DNa01, DNa02 and DNp09 remain visible; secondary tabs expose
-LC9, food/fly-odor/thermal groups, Fdg and the actual pC1 family. Bounded neural
-sparklines, explicit status badges, physiology, performance health and a causal
-timeline make both positive and negative observations readable.
-
-[Practical experiment guide](EXPERIMENTS.md) · [Scientific status](SCIENTIFIC_STATUS.md)
-· [Known limitations](KNOWN_LIMITATIONS.md)
-
-## What is real and what remains unresolved
-
-**VERIFIED:** MaleCNS identities, actual connectome-derived matrix and tested
-sensory-current → neural computation → original decoder → collision-aware body →
-next-sensory chain. **EXPERIMENTAL:** receptor transfer functions, pooled visual
-features, motor interpretation and simplified physiology. **UNRESOLVED:** feeding,
-courtship, directional retinotopy and biological avoidance. **DISABLED:** neural
-pain and female-specific contact mappings. **PLACEHOLDER:** gut/defecation model.
-Food contact never automatically feeds the fly; no pC1/P1 injection creates courtship.
-
-Arena interior expands from 7.8×7.8 = 60.84 to 11.0308658×11.0308658 = 121.68
-world units², exactly 2× inside the wall collision faces. Object counts and sensory
-gains are not doubled. Floor/outer dimensions and fly-radius clearance are
-reported separately so the area claim is unambiguous.
-
-## Hardware and performance
-
-Tested on Ryzen 3 4100 (4C/8T), 16 GB RAM, Radeon RX 570, Windows, Godot 4.6.1
-OpenGL. Neural computation is CPU-only. The screen can render near 60 FPS while
-the original full-population SciPy simulation advances well below realtime.
-The console displays actual compute p50/p95/p99 and neural/wall time; it does not
-hide slow biological time or change scientific semantics to meet a deadline.
-
-See [final full-app measurements](reports/mvp/RESULTS.md). The separate
-[Performance v1 freeze](PERFORMANCE_V1_FREEZE.md) preserves Gate A–E findings;
-Brian2 experimental numbers are not claimed as final-app performance.
-
-## Verify and reproduce
+## 검증과 이전 동결판
 
 ```powershell
-.venv/Scripts/python.exe mvp/test_all.py
-.venv/Scripts/python.exe mvp/integrity.py after
-.venv/Scripts/python.exe mvp/run_suite.py --out mvp/logs/my-new-suite
-.venv/Scripts/python.exe mvp/analyze.py --runs mvp/logs/my-new-suite --out mvp/logs/my-new-analysis
+.venv/Scripts/python.exe -m remaster.test_all
+.venv/Scripts/python.exe -m remaster.validate
+.venv/Scripts/python.exe -m remaster.analyze
 ```
 
-The test runner redirects outputs from legacy tests into new MVP evidence and
-preserves their old certificates. The final freeze manifest, hashes, screenshots
-and classified gates are in [MVP_FREEZE.md](MVP_FREEZE.md). Future work belongs in
-[v0.2 / research backlog](DEFERRED_WORK.md), not another unfinished v0.1 round.
+리마스터 결과는 `reports/remaster/`에 따로 저장합니다. 기존 `reports/mvp/`, 과거 인증 자료와 `male-cns-mvp-v0.1` 태그는 보존합니다. v0.1 동결 해시의 대상은 그 태그의 소스이며 현재 리마스터 소스에 같은 동결 해시를 적용하지 않습니다. 이전 실행 화면·계산 경로는 `--legacy`로 선택할 수 있습니다.
 
-Data credit: FlyEM / HHMI Janelia, Cambridge, MRC LMB and Google Research;
-MaleCNS v1.0, CC-BY-4.0. Official pinned source URLs and SHA-256 are retained in
-`data/raw/manifest.json`; exact processing/sign policies are in `config.json`
-and `data/runtime/metadata.json`. See [data attribution](DATA_ATTRIBUTION.md).
-
+데이터: FlyEM / HHMI Janelia, Cambridge, MRC LMB, Google Research. 이 프로젝트는 실험적 연결망 기반 동물 모형이며 생물학적으로 완전한 초파리 모형은 아닙니다.

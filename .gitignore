@@ -11,3 +11,4 @@ ecology/logs/
 mvp/logs/
 mvp/cache/
 *.pyc
+reports/remaster/live-fast-0*/
